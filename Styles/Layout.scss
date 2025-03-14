@@ -1,0 +1,72 @@
+﻿.cloak {
+    display: none;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.baseline {
+    vertical-align: baseline;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline-block-clearfix {
+    display: inline-block;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.tooltip {
+    cursor: help;
+}
+
+.disable-selection {
+    user-select: none;
+}
+
+.unselectable {
+    // Legacy.
+    @extend .disable-selection;
+}
+
+.no-margin { 
+    margin: 0!important;
+}
+.no-padding { 
+    padding: 0!important;
+}
+
+.full-inline-block {
+    display: inline-block;
+    width: 100%;
+}

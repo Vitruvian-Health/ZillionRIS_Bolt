@@ -1,0 +1,157 @@
+﻿@using System.Collections.Generic
+@using System.Linq
+@using Rogan.ZillionRis.Web.Shared
+@using Rogan.ZillionRis.Web.Shared.Defintions
+@using ZillionRis.Common
+@inherits ASP.RisRazorBase
+<style>
+    .module-view {
+        background: #fff;
+        background: #555;
+        border: 2px solid #555;
+        display: block;
+        margin: 2px;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        transition: all 0.5s ease;
+        vertical-align: top;
+    }
+
+    .module-view:focus {
+        background: #c60;
+        border: 2px solid #c60;
+        overflow-y: auto;
+    }
+
+    .module-view-name {
+        color: #fff;
+        padding: 2px;
+    }
+
+    .module-view-componentlist {
+        list-style: disc;
+        padding-left: 2em;
+        text-overflow: ellipsis
+    }
+
+    .module-view-component {
+        background: #fff;
+        ;
+        padding: 5px;
+    }
+
+    .module-view-componentlist ul {
+        list-style: disc;
+        padding-left: 2em;
+    }
+</style>
+@{
+    var colCount = 5;
+    var cols = Enumerable.Range(0, colCount).Select(x => new List<ModuleDefinition>()).ToList();
+    var filters = RisApplication.ModuleManager.Modules.SelectMany(x => x.Tasks).SelectMany(x => x.GetActions()).OfType<ActionDefinition>().SelectMany(x => x.Filters).Select(x => x.ToString()).Distinct();
+
+    foreach (var module in RisApplication.ModuleManager.Modules)
+    {
+        var c = cols.OrderBy(a => a.Sum(x => x.Tasks.Count + x.Scripts.Count + x.Views.Count + x.Providers.Count + x.Contents.Count)).First();
+        c.Add(module);
+    }
+    <div class="module-view" tabindex="0">
+        <div class="module-view-name">Action Filters</div>
+		
+        @if (filters.Any())
+        {
+            <div class="module-view-component">
+                <ul class="module-view-componentlist">
+                    @foreach (string vd in filters)
+                    {
+                        <li>@vd</li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+
+    foreach (var col in cols)
+    {<div style="display: inline-block; width: 20%">
+        @foreach (var m in col)
+            {
+                    <div class="module-view" tabindex="0">
+                        <div class="module-view-name">@m.ModuleUri</div>
+		
+                        @if (m.Views.Any())
+                        {
+                            <div class="module-view-component">
+                                <span>Views:</span>
+                                <ul class="module-view-componentlist">
+                                    @foreach (IViewDefintion vd in m.Views)
+                                    {
+                                        <li>@vd.Identifier</li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+		
+                        @if (m.Providers.Any())
+                        {
+                            <div class="module-view-component">
+                                <span>Content Providers:</span>
+                                <ul class="module-view-componentlist">
+                                    @foreach (IContentProviderDefinition pd in m.Providers)
+                                    {
+                                        <li>@pd.Identifier</li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+		
+                        @if (m.Contents.Any())
+                        {
+                            <div class="module-view-component">
+                                <span>Contents:</span>
+                                <ul class="module-view-componentlist">
+                                    @foreach (IContentDefintion cd in m.Contents)
+                                    {
+                                        <li>@cd.Identifier</li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+		
+                        @if (m.Scripts.Any())
+                        {
+                            <div class="module-view-component">
+                                <span>Scripts:</span>
+                                <ul class="module-view-componentlist">
+                                    @foreach (IScriptDefintion sd in m.Scripts)
+                                    {
+                                        <li>@sd.Identifier</li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+		
+                        @if (m.Tasks.Any())
+                        {
+                            <div class="module-view-component">
+                                <span>Tasks:</span>
+                                <ul class="module-view-componentlist">
+                                    @foreach (ITaskDefinition td in m.Tasks)
+                                    {
+                                        <li>
+                                            @td.Identifier
+                                            <ul style="font-size: 10px">
+                                                @foreach (IActionDefinition actionDefinition in td.GetActions())
+                                                {
+                                                    <li>@actionDefinition.Name</li>
+                                                }
+                                            </ul>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+                    </div>
+            }
+        </div>}
+}

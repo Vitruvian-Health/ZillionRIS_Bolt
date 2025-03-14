@@ -1,0 +1,56 @@
+﻿@using Rogan.ZillionRis.Website.App_GlobalResources
+<div id="IntermediateView" class="radiologist-tasks-dialog" title="Intermediate Patient">
+	<dl class="details-list">
+		<dd>
+			<table class="details-table line-spacing-large" style="width: 100%">
+				<tbody>
+					<tr>
+						<td class="label">@WebResources.ltPatientName</td>
+						<td data-bind="text: patient"></td>
+					</tr>
+					<tr>
+						<td class="label">@WebResources.ltTechnician</td>
+						<td data-bind="text: technician"></td>
+					</tr>
+					<tr>
+						<td class="label">@WebResources.ltExaminationType</td>
+						<td data-bind="text: examination"></td>
+					</tr>
+					<tr>
+						<td class="label">@WebResources.ltScheduled</td>
+						<td data-bind="text: scheduled"></td>
+					</tr>
+					<tr>
+						<td class="label">@WebResources.ltProtocol</td>
+						<td data-bind="text: protocol"></td>
+					</tr>
+					<tr>
+						<td class="label">@WebResources.ltAccessionNumber</td>
+						<td data-bind="text: accessionNumber"></td>
+					</tr>
+                    <tr>
+                        <td class="label">@WebResources.ltNote:</td>
+                        <td data-bind="text: intermediateMemo"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> 
+                            <hr/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> 
+                            <textarea class="ui-input" id="Notes" style="width:100%; height: auto" rows="6"></textarea>
+                        </td>
+                    </tr>
+				</tbody>
+			</table>					
+		</dd>
+		<dd class="details-list-spacing"></dd>
+		<dd style="margin: 0.5em; width: 40%; float: left">
+			<button data-bind="click: decline" style="width: 100%">@WebResources.DeclineImages</button>
+		</dd>
+		<dd style="margin: 0.5em; width: 40%; float: right;">
+			<button data-bind="click: accept" style="width: 100%">@WebResources.AcceptImages</button>
+		</dd>
+	</dl>
+</div>

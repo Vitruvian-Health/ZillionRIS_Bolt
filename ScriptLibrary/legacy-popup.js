@@ -1,0 +1,1 @@
+﻿window.notifications = parent.window.notifications;

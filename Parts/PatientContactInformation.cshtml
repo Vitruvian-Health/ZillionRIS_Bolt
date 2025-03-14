@@ -1,0 +1,207 @@
+﻿@using System
+@using System.Linq
+@using Rogan.ZillionRis
+@using Rogan.ZillionRis.Configuration
+@using Rogan.ZillionRis.EntityData
+@using Rogan.ZillionRis.Extensibility.Audit
+@using Rogan.ZillionRis.Extensibility.Security
+@using Rogan.ZillionRis.UrnUtility
+@using Rogan.ZillionRis.WebControls.Common
+@using Rogan.ZillionRis.Website.App_GlobalResources
+@using ZillionRis.Utilities
+
+@inherits ASP.RisRazorBase
+@{
+    if (Application.UserHasPermission(UserPermissions.PatientContactInformation) == false)
+    {
+        throw new Exception("The currently logged in user does not have permission to view patient details.");
+    }
+
+    InitializeCulture();
+
+    // Do not require .Load to be called on entities.
+    Database.ContextOptions.LazyLoadingEnabled = true;
+
+    var patientID = Convert.ToInt32(Application.Request.Params["id"]);
+    var patient = Database.QueryPatient(patientID);
+    var contact = patient.Person.PersonContacts.Where(pc => pc.percon_Code == MagicConstants.ContactCode_Home).Select(pc => pc.Contact).FirstOrDefault();
+    var address = patient.Person.PersonAddresses.Where(pc => pc.peradd_Code == MagicConstants.AddressCode_Home).Select(pc => pc.Address).FirstOrDefault();
+
+    var mailingAddress = patient.Person.PersonAddresses.Where(pc => pc.peradd_Code == MagicConstants.AddressCode_Mailing && pc.Address != null 
+            && (!pc.Address.add_ActiveFrom.HasValue || pc.Address.add_ActiveFrom.Value <= DateTime.Now) 
+            && (!pc.Address.add_ActiveUntil.HasValue || pc.Address.add_ActiveUntil.Value >= DateTime.Now)).Select(pc => pc.Address).FirstOrDefault();
+
+    var socialSecurityNumberType = RisAppSettings.EnglishSocialSecurityNumber ? UrnNamespaces.NhsNumber : UrnNamespaces.BsnNumber;
+    var socialSecurityNumber = patient.Person.PersonExternalCodes.Where(ec => ec.perextcod_Type == socialSecurityNumberType).Select(ec => ec.perextcod_Value).FirstOrDefault();
+
+    var gpPracticeWorkLocationLink = patient.PatientsGeneralPractitionersWorkLocations.Any() ? patient.PatientsGeneralPractitionersWorkLocations.First() : null;
+    var gp = gpPracticeWorkLocationLink != null ? gpPracticeWorkLocationLink.GeneralPracticioner : null;
+    var workLocation = gpPracticeWorkLocationLink != null ? gpPracticeWorkLocationLink.WorkLocation : null;
+
+    // Audit the patient history viewed
+    var context = Application.GetSessionContext();
+    var auditor = context.Get<IAuditor>();
+    if (auditor == null)
+    {
+        throw new ApplicationException("Auditor could not be found.");
+    }
+
+    var referralPage = Application.Request.Params["referralPage"];
+    var auditContext = new AuditContext { Patient = patient };
+    auditor.LogView(referralPage, auditContext, new { Content = "ContactInformation" });
+}
+<table class="details-table line-spacing-normal" style="width: 100%">
+    <tr>
+        <td class="label">@WebResources.Pat_Patient_Number</td>
+        <td>@patient.pat_PatientNumber</td>
+    </tr>
+    <tr>
+        <td class="label">@WebResources.ltDummyPatient</td>
+        @if (!patient.IsDummyPatient())
+        {
+            @:<td>@WebResources.General_False</td>
+        }
+        else
+        {
+            @:<td>@patient.IsDummyPatient()</td>
+        }  
+		
+        
+    </tr>
+    <tr>
+        <td colspan="2"><hr/></td>
+    </tr>
+    <tr>
+        <td class="label">@WebResources.pat_FirstName</td>
+        <td>@patient.Person.per_FirstName</td>
+    </tr>
+    <tr>
+        <td class="label">@WebResources.pat_MiddleNames</td>
+        <td>@patient.Person.per_MiddleNames</td>
+    </tr>
+    <tr>
+        <td class="label">@WebResources.pat_LastName</td>
+        <td>@patient.Person.per_LastName</td>
+    </tr>
+    <tr>
+        <td class="label">@WebResources.pat_BirthDate</td>
+        <td>@(patient.Person.per_DateOfBirth.HasValue ? patient.Person.per_DateOfBirth.Value.LocalDateTime.ToLongDateString() : "Not filled in")</td>
+    </tr>
+    <tr>
+        <td class="label">@WebResources.pat_BSN</td>
+        <td>@(String.IsNullOrWhiteSpace(socialSecurityNumber) ? "N/A" : socialSecurityNumber)</td>
+    </tr>
+    <tr>
+		<td colspan="2"><hr/></td>
+	</tr>
+	@if (contact != null)
+ {
+		<tr>
+			<td class="label">@WebResources.pat_Email</td>
+			<td>@contact.con_EmailAddress</td>
+		</tr>
+		<tr>
+			<td class="label">@WebResources.pat_MobileNr</td>
+			<td>@contact.con_MobileNumber</td>
+		</tr>
+		<tr>
+			<td class="label">@WebResources.pat_HomePhoneNr</td>
+			<td>@contact.con_HomePhoneNumber</td>
+		</tr>
+		<tr>
+			<td class="label">@WebResources.pat_BusinessPhoneNr</td>
+			<td>@contact.con_BusinessPhoneNumber</td>
+		</tr>
+ }
+	@if (address != null)
+ {
+		<tr>
+			<td class="label">@WebResources.pat_Address</td>
+			<td>@address.add_DisplayName</td>
+		</tr>
+ }
+    @if (mailingAddress != null)
+    {
+        <tr>
+            <td class="label">@WebResources.pat_MailingAddress</td>
+            <td>@mailingAddress.add_DisplayName</td>
+        </tr>
+    }
+    <tr>
+        <td colspan="2"><hr/></td>
+    </tr>
+    <tr>
+        <td class="label">@WebResources.ltGeneralPhysicianName</td>
+        @if (gp == null)
+        {
+            @:<td>@WebResources.Worklist_None</td>
+        }
+        else
+        {
+            @:<td>[@gp.phy_PhysicianCode] @gp.Person.per_DisplayName</td>
+        }
+    </tr>
+    @if (workLocation == null)
+    {
+        <tr>
+            <td class="label">@WebResources.ltGeneralPracticionerAddress</td>
+            @if (gp == null)
+            {
+                <td>@WebResources.Worklist_None</td>
+            }
+            else
+            {
+                <td>@gp.Person.PersonAddresses.Where(pa=>pa.peradd_Code == MagicConstants.AddressCode_Home).Select(pa=>pa.Address.add_DisplayName).FirstOrDefault().ToHtmlEncodedText()</td>
+            }
+        </tr>
+    }
+    else
+    {
+        <tr>
+            <td class="label">@WebResources.ltGPPracticeDescription</td>
+            @if (workLocation.Practice == null)
+            {
+                <td>@WebResources.Worklist_None</td>
+            }
+            else
+            {
+                <td>@workLocation.Practice.pra_Description</td>
+            }
+        </tr>
+        <tr>
+            <td class="label">@WebResources.ltGPPracticeCode</td>
+            @if (workLocation.Practice == null)
+            {
+                <td>@WebResources.Worklist_None</td>
+            }
+            else
+            {
+                <td>@workLocation.Practice.pra_Code</td>
+            }
+        </tr>
+        <tr>
+            <td class="label">@WebResources.ltGPPracticeCCGCode</td>
+            @if (workLocation.Practice == null)
+            {
+                <td>@WebResources.Worklist_None</td>
+            }
+            else
+            {
+                <td>@workLocation.Practice.pra_CCGCode</td>
+            }
+        </tr>
+        <tr>
+            <td class="label">@WebResources.ltGPWorkLocationAddress</td>
+            <td>@workLocation.worloc_Address</td>
+        </tr>
+        <tr>
+            <td class="label">@WebResources.ltGPWorkLocationPostalCode</td>
+            <td>@workLocation.worloc_PostalCode</td>
+        </tr>
+        <tr>
+            <td class="label">@WebResources.ltGPWorkLocationPhoneNumber</td>
+            <td>@workLocation.worloc_TelephoneNumber</td>
+        </tr>
+    }
+
+</table >

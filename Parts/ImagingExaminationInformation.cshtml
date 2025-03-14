@@ -1,0 +1,291 @@
+﻿@using System.Linq
+@using System.Web
+@using Rogan.ZillionRis.Business
+@using Rogan.ZillionRis.Codes.ExaminationStatus
+@using Rogan.ZillionRis.Configuration
+@using Rogan.ZillionRis.Extensibility.Security
+@using Rogan.ZillionRis.Protocols.Tasks
+@using Rogan.ZillionRis.Security
+@using Rogan.ZillionRis.Website.App_GlobalResources
+@using Rogan.ZillionRis.Workflow
+
+@inherits ASP.RisRazorBase
+@{
+    InitializeCulture();
+
+    var sessionContext = Application.GetSessionContext();
+    var examinationID = Convert.ToInt32(Application.Request["examinationID"]);
+    var clinicalInformationOnExaminationLevel = RisAppSettings.ClinicalInformationOnExaminationLevel;
+
+    var query = Database.Examinations.Where(item => item.exa_ExaminationID == examinationID);
+    var summary = query
+        .Select(item => new
+        {
+            OrderNumber = item.Order.ord_OrderNumber,
+            ExaminationTypeName = item.ExaminationType.exatyp_Laterality == false || item.exa_Laterality == null
+                ? item.ExaminationType.exatyp_ExaminationTypeName
+                : item.ExaminationType.exatyp_ExaminationTypeName + " (" + item.exa_Laterality + ")",
+            ProtocolName = item.Protocol != null
+                ? item.Protocol.pro_ProtocolName
+                : !string.IsNullOrEmpty(item.exa_FreeTextProtocol)
+                    ? "Custom Protocol"
+                    : string.Empty,
+            IsProtocolEdited = item.Protocol != null && !string.IsNullOrEmpty(item.exa_FreeTextProtocol),
+            IsProtocolInactive = item.Protocol != null && item.Protocol.pro_DateTimeInactive != null && item.Protocol.pro_DateTimeInactive <= DateTimeOffset.Now,
+            ExaminationTypeHasProtocols = item.ExaminationType.ExaminationTypeProtocols
+                .Select(etp => etp.Protocol)
+                .Any(p => p.pro_DateTimeInactive == null || p.pro_DateTimeInactive > DateTimeOffset.Now),
+            ClinicalInformation = clinicalInformationOnExaminationLevel ? item.ClinicalInformation : item.Order.MedicalIndication,
+            OrderMemo = new
+            {
+                item.Order.Memo,
+                Type = WorkflowLanguage.Order
+            },
+            ExaminationsMemo = item.Order.Examinations.Select(ex => new
+            {
+                ex.Memo,
+                Type = ex.ExaminationType.exatyp_ExaminationTypeName
+            }
+            ),
+            ApproverName = item.StatusEvents.FirstOrDefault(s => s.ExaminationStatus.exasta_StatusID == ExaminationStatusValue.Approved).ChangedBy.Person.per_DisplayName,
+            ApproverPhone = item.StatusEvents.FirstOrDefault(s => s.ExaminationStatus.exasta_StatusID == ExaminationStatusValue.Approved).ChangedBy.Person.PersonContacts.Select(c => c.Contact.con_BusinessPhoneNumber).FirstOrDefault(),
+            IntermediateMemoID = item.Studies.SelectMany(x=>x.StudyPendings).Select(x=>x.Note.not_NoteID).FirstOrDefault(),
+            OrderQandAList = item.Order.QandASets
+                .SelectMany(set => set.QandAs.OrderBy(qa => qa.qna_Index)
+                                             .Select(qa => new { Question = qa.qna_Question, Answer = qa.qna_Answer })),
+            ExaminationQandAList = item.QandASets
+                .SelectMany(set => set.QandAs.OrderBy(qa => qa.qna_Index)
+                                             .Select(qa => new { Question = qa.qna_Question, Answer = qa.qna_Answer })),
+            ExaminationStatusID = item.Status.exasta_StatusID,
+        })
+        .FirstOrDefault();
+
+    var hasQandAForOrder = summary.OrderQandAList.Any();
+    var hasQandAForExams = summary.ExaminationQandAList.Any();
+
+    if (summary == null)
+    {
+        throw new Exception(WebResources.ExaminationNotFound);
+    }
+}
+
+<style>
+    table#qAndA {
+        border-spacing: 10px 0;
+        border-collapse: separate;
+        table-layout: fixed;
+    }
+
+    table#qAndA td {
+        width: 50%;
+    }
+</style>
+
+<dl class="details-list" style="margin: 10px">
+
+    <dt>@WebResources.stu_ExaminationID</dt>
+    <dd><span>@summary.ExaminationTypeName</span></dd>
+    <dd class="details-list-spacing"></dd>
+
+
+    <dt>@WebResources.ltProtocol</dt>
+    <dd>
+        @if (!string.IsNullOrEmpty(summary.ProtocolName))
+        {
+            <span>
+                <a class="ui-link" id="ViewProtocol">
+                    @summary.ProtocolName
+                    @if (summary.IsProtocolInactive)
+                    {
+                        <span class="text-emphasis-light"> @WebResources.InactiveSuffix</span>
+                    }
+                    else if (summary.IsProtocolEdited)
+                    {
+                        <span class="text-emphasis-light"> @WebResources.EditedSuffix</span>
+                    }
+                </a>
+            </span>
+        }
+        else if (summary.ExaminationTypeHasProtocols)
+        {
+            <span>
+                @if (AssignProtocolTask.UserHasAssignPermission(sessionContext, summary.ExaminationStatusID))
+                {
+                    <a class="ui-link" id="AssignProtocol">@WebResources.Imaging_NoProtocol</a>
+                }
+                else
+                {
+                    @WebResources.Imaging_NoProtocol
+                }
+            </span>
+        }
+        else
+        {
+            <span>-</span>
+        }
+    </dd>
+    <dd class="details-list-spacing"></dd>
+    
+    
+    <dt>@WebResources.ltClinicalInformation</dt>
+    @{
+        if (summary.ClinicalInformation != null)
+        {
+            <dd><span class="text-emphasis">@summary.ClinicalInformation.GetChildText(sessionContext.DataContext, true, "<br />").Replace("\n", "<br />")</span></dd>
+        }
+        else
+        {
+            <dd>-</dd>
+        }
+    }
+    <dd class="details-list-spacing"></dd>
+
+    @if (hasQandAForOrder || hasQandAForExams)
+    {
+        <dt>
+            @WebResources.DigitalQandA
+        </dt>
+        <dd>
+            <table id="qAndA">
+                @if (hasQandAForOrder)
+                {
+                    <tbody>
+                        <tr><td colspan="2">@WebResources.DigitalQandAForOrder @summary.OrderNumber</td></tr>
+                        @foreach (var qandA in summary.OrderQandAList)
+                        {
+                            <tr><td>@HttpUtility.HtmlEncode(qandA.Question):</td><td>@HttpUtility.HtmlEncode(qandA.Answer)</td></tr>
+                        }
+                    </tbody>
+                }
+
+                @if (hasQandAForExams)
+                {
+                    <tbody>
+                        @if (hasQandAForOrder)
+                        {
+                            <tr><td colspan="2">&nbsp;</td></tr>
+                        }
+
+                        <tr><td colspan="2">@WebResources.DigitalQandAForExamination @summary.ExaminationTypeName</td></tr>
+                        @foreach (var qandA in summary.ExaminationQandAList)
+                        {
+                            <tr><td>@HttpUtility.HtmlEncode(qandA.Question):</td><td>@HttpUtility.HtmlEncode(qandA.Answer)</td></tr>
+                        }
+                    </tbody>
+                }
+            </table>
+        </dd>
+        <dd class="details-list-spacing"></dd>
+    }
+
+    @{
+        <dt>@WebResources.Imaging_ExaminationMemo</dt>
+
+        var memos = summary.OrderMemo.Memo.QueryChildNotes(sessionContext.DataContext, true).Select(orderMemo => new {Memo = orderMemo, summary.OrderMemo.Type}).ToList();
+
+        foreach (var note in summary.ExaminationsMemo)
+        {
+            var examinationNotes = note.Memo.QueryChildNotes(sessionContext.DataContext, true).ToList();
+            memos.AddRange(examinationNotes.Select(examinationNote => new {Memo = examinationNote, note.Type}));
+        }
+
+        memos = memos.OrderByDescending(m => m.Memo.CreationTime).ToList();
+
+        if (memos.Any())
+        {
+            <dd>
+                <div class="notes-container">
+                    <div>
+                        <dl class="notes-list">
+                            @{
+                                foreach (var note in memos)
+                                {
+                                    <dt>
+                                        <span class="notes-time">
+                                            <spa>@note.Memo.CreationTime.LocalDateTime.Date.ToShortDateString()</spa>
+                                            <span>@note.Memo.CreationTime.LocalDateTime.ToShortTimeString()</span>
+                                        </span>
+                                        -
+                                        <span class="notes-person">@note.Memo.CreatedByPersonDisplayName</span>
+                                        <span class="notes-type">@note.Type</span>
+                                    </dt>
+                                    <dd class="notes-text">@note.Memo.Text.Replace("\n", "<br />")</dd>
+                                }
+                            }
+                        </dl>
+                    </div>
+                </div>
+            </dd>
+        }
+        else
+        {
+            <dd>@WebResources.Imaging_NoMemo</dd>
+        }
+        <dd class="details-list-spacing"></dd>
+    }   
+
+    @{
+    if (summary.ApproverName != null)
+        {
+            <dt>@WebResources.ltApprover</dt>
+            var approverName = summary.ApproverName;
+            if (!string.IsNullOrEmpty(summary.ApproverPhone))
+            {
+                approverName = approverName + ": " + summary.ApproverPhone;
+            }
+            <dd><span>@approverName</span></dd>
+        }
+    }   
+    
+    @{
+        if (summary.IntermediateMemoID != 0)
+        {
+            var notes = Database.Notes.FirstOrDefault(x => x.not_NoteID == summary.IntermediateMemoID).QueryChildNotes(sessionContext.DataContext, true);
+            if (notes != null && notes.Any())
+            {
+                <dt>@WebResources.Imaging_IntermediateMemo</dt>
+                <dd>
+                    <div class="notes-container">
+                        <div>
+                            <dl class="notes-list">
+                                @{
+                                    foreach (var note in notes)
+                                    {
+                                        <dt>
+                                            <span class="notes-time">
+                                                <spa>@note.CreationTime.LocalDateTime.Date.ToShortDateString()</spa> 
+                                                <span>@note.CreationTime.LocalDateTime.ToShortTimeString()</span>
+                                            </span> 
+                                            - 
+                                            <span class="notes-person">@note.CreatedByPersonDisplayName</span>
+                                        </dt>
+                                        <dd class="notes-text">@note.Text.Replace("\n", "<br />")</dd>
+                                    }
+                                }
+                            </dl>
+                        </div>
+                    </div>
+                </dd>
+            }
+        }
+        <dd class="details-list-spacing"></dd>
+    }
+</dl>
+
+<script>
+    var commandManager = new ZillionParts.CommandManager();
+    commandManager.assign(ZillionRis.Commands.Application);
+
+    $('#ViewProtocol').click(function() {
+        commandManager.execute('protocol.open-protocol', {
+            examinationID: @examinationID
+        });
+    });
+
+    $('#AssignProtocol').click(function() {
+        ZillionRis.SubNavs.ShowAssignProtocol({
+            mode: 'assign',
+            worklist: new Worklist.SingleItemWorklist(@examinationID)
+        });
+    });
+</script>

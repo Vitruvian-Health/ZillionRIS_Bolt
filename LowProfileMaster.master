@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="ZillionRis.LowProfileMaster" CodeBehind="LowProfileMaster.master.cs" %>
+<%@ Import Namespace="ZillionRis.Common" %>
+<%@ Import Namespace="Rogan.ZillionRis.Configuration" %>
+<%@ Import Namespace="Rogan.ZillionRis.Extensibility.Security" %>
+<%@ Import Namespace="Rogan.ZillionRis.Website.App_GlobalResources" %>
+<%@ Register TagPrefix="locRIS" TagName="PopupMessageControl" Src="~/Controls/PopupMessageControl.ascx" %>
+<%@ Register TagPrefix="CD" Namespace="ClientDependency.Core.Controls" Assembly="ClientDependency.Core" %>
+<!DOCTYPE html>
+<html class="<%= RisAppSettings.AppSetting_HtmlCssClass %>">
+<head runat="server">
+    <meta name="viewport" content="width=1280, maximum-scale=1"/>
+
+    <title>...</title>
+
+    <link href="~/Styles/images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link title="RIS Patient Search" type="application/opensearchdescription+xml" href="~/OpenSearch.ashx" rel="search" />
+    
+    <link href="~/Styles/Fonts/roboto-v15-latin/roboto-v15-latin.css" rel="stylesheet" type="text/css" />
+
+    <CD:CssInclude FilePath="~/Styles/Site.min.css" Priority="5" runat="server" ID="SiteStyle" />
+    <CD:CssInclude FilePath="~/Styles/Aqua/special-loading-overlays.css" Priority="4" runat="server" />
+    <CD:CssInclude FilePath="~/Styles/Aqua/tool-tip.css" Priority="4" runat="server" />
+    <CD:CssInclude FilePath="~/Styles/Icons/Icons.css" Priority="4" runat="server" />
+    <CD:CssInclude FilePath="~/Content/font-awesome.min.css" Priority="4" runat="server" />
+	
+    <CD:JsInclude FilePath="~/Scripts/jquery.min.js" Priority="1" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/jquery-migrate.js" Priority="1" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/jquery-ui.min.js" Priority="1" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/moment.min.js" Priority="2" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/moment-with-locales.min.js" Priority="2" runat="server" />
+    
+    <CD:JsInclude FilePath="~/Scripts/knockout-latest.js" Priority="3" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/knockout.mapping-2.1.0.js" Priority="4" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/knockout-jqauto.js" Priority="5" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/angular.min.js" Priority="5" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/angular-animate.min.js" Priority="6" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/ng-infinite-scroll.js" Priority="6" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/tool-tip.js" Priority="7" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/eventsource.js" Priority="7" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/zillion-parts.min.js" Priority="8" runat="server" />
+    <CD:JsInclude FilePath="~/Scripts/jquery.PrintArea.js" Priority="9" runat="server" />
+
+    <CD:JsInclude FilePath="~/ScriptLibrary/support.js" Priority="10" runat="server" />
+    <%--<CD:JsInclude FilePath="~/ScriptLibrary/support.touch.js" Priority="11" runat="server" />--%>
+    <CD:JsInclude FilePath="~/Scripts/rangyinputs-jquery.js" Priority="11" runat="server" />
+	
+    <CD:JsInclude FilePath="~/ScriptLibrary/JSGeneral.js" Priority="15" runat="server" />
+
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.ng-ris-module.js" Priority="28" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.ng-ris-ui-module.js" Priority="29" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.ng-ris-ui-module-ts.js" Priority="30" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.knockout.js" Priority="31" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.virtual-data-grid.js" Priority="32" runat="server" />
+
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.modules.js" Priority="39" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.core.js" Priority="40" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.commands.js" Priority="40" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.command-resources.js" Priority="41" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.interval-timer.js" Priority="41" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.notifications.js" Priority="42" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.user-settings.js" Priority="43" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.locations.js" Priority="43" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.async-iterator.js" Priority="44" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.server-time.js" Priority="44" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.patient-history.js" Priority="44" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.work-list-filters.js" Priority="44" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.last-accessed-examinations.js" Priority="44" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.housekeeping.js" Priority="44" runat="server" />
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.zillion-speech.js" Priority="45" runat="server" />
+	
+    <CD:JsInclude FilePath="~/ScriptLibrary/zillion-ris.sub-page-nav.js" Priority="44" runat="server" />
+	
+    <CD:JsInclude FilePath="~/LowProfileMaster.js" Priority="50" runat="server" />
+        
+    <script>
+        window.RISMAGICDOWNTIME = new Date();
+    </script>
+    <CD:ClientDependencyLoader ID="Loader" runat="server" />
+
+    <asp:PlaceHolder ID="CoreScripts" runat="server"></asp:PlaceHolder>
+    <asp:PlaceHolder ID="AdditionalScripts" runat="server"></asp:PlaceHolder>
+
+    <asp:PlaceHolder ID="DynScripts" runat="server">
+        <%= this.ScriptUrl(this.JavaScriptCultureUrl) %>
+        <%= this.ScriptContent(this.InitializeCulture) %>
+    </asp:PlaceHolder>
+    <script>
+        (function () {
+            window.RISMAGICDOWNTIME = (new Date() - window.RISMAGICDOWNTIME);
+            console.log('Zillion RIS CSS+JS, load time: ' + window.RISMAGICDOWNTIME + 'ms');
+            if (localStorage.debug == 'true') {
+                $(function () {
+                    var x = document.createElement('span');
+                    x.style.position = 'absolute';
+                    x.style.bottom = '0px';
+                    x.style.right = '0px';
+                    x.style.background = '#f00';
+                    x.style.color = '#fff';
+                    x.style.zIndex = 9999;
+                    x.innerHTML = window.RISMAGICDOWNTIME + 'ms';
+                    document.body.appendChild(x);
+                    setTimeout(function () {
+                        document.body.removeChild(x);
+                    }, 3000);
+                });
+            }
+        })();
+    </script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<% this.Response.Flush(); %>
+<body runat="server">
+    <form id="MasterForm" runat="server">
+    <asp:ScriptManager EnablePartialRendering="true" EnableScriptGlobalization="false" EnablePageMethods="false" LoadScriptsBeforeUI="true" AjaxFrameworkMode="Enabled" ScriptMode="Release" EnableSecureHistoryState="false" OnAsyncPostBackError="MasterScriptManager_OnAsyncPostBackError" ID="MasterScriptManager" runat="server" />
+
+    <locRIS:PopupMessageControl ID="Popup" runat="server" />
+    <asp:ContentPlaceHolder ID="StandaloneContent" runat="server"></asp:ContentPlaceHolder>
+    <div id="Document" zp-fluids="window">
+        <nav id="DocumentHeader" ng-controller="PageHeaderCtrl">
+            <div id="Logo">
+                <div id="LogoImage" class="logo-image" ng-class="cssLogoImage()"></div>
+                <div id="LogoAlertCount" class="alert-count-icon ng-cloak" ng-show="alerts.length">{{alerts.length}}</div>
+				<ul class="logo-alert-list ng-cloak" style="margin-top: 5px; height: 60px; overflow: hidden">
+                    <li class="logo-alert-item" ng-repeat="alert in alerts"><a class="ui-link" id="PageHeader_alert_{{alert.key}}" ng-click="alert.click()">{{alert.title}}</a></li>
+                </ul>
+            </div>
+            <div modules-template="module://shell/view/sysmenu"></div>
+            <div id="PatientBanner" class="hidden-sm hidden-xs" style="z-index: 10">
+            </div>
+            <% if (this.Application.UserHasPermission(UserPermissions.SearchPatient))
+                { %>
+                <div id="SearchBox">
+                    <div style="clear: both; float: right;">
+                        <a id="AdvanceSearch" href="<%= this.ResolveClientUrl("~/advanced/patient/search/") %>"><%: WebResources.ltAdvancedSearch %></a>&nbsp;|&nbsp;<a id="HelpButton" ng-click="showHelp()"><%: WebResources.LowProfileMaster_Help%></a>
+                    </div>
+                    <br />
+                    <input type="text" class="ui-input search-input" id="PatientSearchInput" accesskey="P" autocomplete="off" title="<%: WebResources.ltPatientSearchToolTip %>" style="clear: both; float: right;" />
+                </div>
+            <% } %>
+            <nav id="Navigation">
+                <%= this.RenderView("module://workflow/view/navigation-tabs") %>
+            </nav>
+            <div id="CurrentTime">
+                <span class="mct"></span><span class="mcd"></span>
+            </div>
+        </nav>
+        <div id="Content" zp-fluids="fill">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </div>
+    </form>
+
+    <%= this.RenderView("module://workflow/view/contact-popup") %>
+    <% foreach (var s in this.JavaScriptResourceUrl) { %>
+    <%= this.ScriptUrl(s) %>
+    <% } %>
+    <asp:ContentPlaceHolder ID="FooterContent" runat="server" />
+</body>
+</html>

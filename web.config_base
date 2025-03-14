@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  !!!
+  !!! PLEASE DO NOT MODIFY THIS FILE IN PRODUCTION ENVIRONMENTS      !!!
+  !!! THIS FILE IS ALWAYS OVERWRITTEN WHEN A NEW RELEASE IS DEPLOYED !!!
+  !!! IF CHANGES ARE UNAVOIDABLE PLEASE REPORT THEM TO RIS HELPDESK  !!!
+  !!!
+ -->
+<configuration>
+  <configSections>
+    <section name="clientDependency" type="ClientDependency.Core.Config.ClientDependencySection, ClientDependency.Core" requirePermission="false" />
+    <section name="razorEngine" type="RazorEngine.Configuration.RazorEngineConfigurationSection, RazorEngine" requirePermission="false" />
+    <section name="JSLocalize" type="Rogan.ZillionRis.Web.Services.LocalizeConfigSection, Rogan.ZillionRis.Web" requirePermission="false" />
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration" />
+    <section name="webmodule" type="Rogan.ZillionRis.Web.Configuration.WebModuleSection, Rogan.ZillionRis.Web" />
+    <section name="Hl7PackageCollection" type="NHapi.Base.Model.Configuration.HL7PackageConfigurationSection, NHapi.Base" />
+    <section name="senderConfiguration" type="Rogan.Configuration.ProtocolSection, Rogan.Configuration" />
+    <section name="DelftDI" type="DelftDI.Common.Logging.LogAdapterSectionHandler, DelftDI.Common.Logging" />
+  </configSections>
+  <DelftDI>
+      <logAdapter type="DelftDI.Common.Logging.Log4Net.Log4NetAdapter, DelftDI.Common.Logging.Log4Net">
+          <add key="configFile" value="[AssemblyDirectory]\..\Config\Log4Net.config"/>
+      </logAdapter>
+  </DelftDI>
+
+    <!-- 
+    AppSettings are merged, include any framework specific settings here, put our application
+    settings with default values in Config\AppSettings.config :) 
+  -->
+  <appSettings file="Config\AppSettings.config">
+    <!-- 
+    This file contains the default RIS settings, please DO NOT EDIT IT in production.
+    To override a setting simply copy it from here and paste it into AppSettings.config - all of
+    the settings in that file override the settings in this file.
+    -->
+    <!-- RIS Settings-->
+    <add key="AllowMultipleRequestDocument" value="true" />
+    <add key="AllowToHoldScheduledExams" value="false" />
+    <add key="AllowUsersToSetPassword" value="true" />
+    <add key="AlwaysShowGP" value="true" />
+    <add key="AuthorizationPage_RefreshInterval" value="" />
+    <add key="AutomaticallyScan" value="true" />
+    <add key="AutomaticScheduling.ShowFirstSlotPerLocation" value="false" />
+    <add key="AutoPrintAuthorizedReport" value="false" />
+    <add key="AutoPrintConfirmationLetter" value="false" />
+    <add key="AutoPrintPatientLabel" value="false" />
+    <add key="AutoSchedulingSearchPeriod" value="84" />
+    <add key="BundleScripts" value="false" />
+    <add key="ClinicalInformationOnExaminationLevel" value="false" />
+    <add key="Command_CorrectAdministrationErrors" value="false" />
+    <add key="CreateDummyPatientsByDefault" value="true" />
+    <add key="CrystalReports_DNALetters" value="false" />
+    <add key="CrystalReports_PatientLabel" value="false" />
+    <add key="DailyRoomSchedulesInCalendarPage" value="false" />
+    <add key="DefaultCountry" value="Nederland" />
+    <add key="DefaultDictationType" value="INT" />
+    <add key="DefaultReferralType" value="Poliklinisch" />
+    <!-- Disable all script error notifications and reporting-->
+    <!-- When running the RIS from the browser on the server, it runs in "debug" mode and the "Script Error" box will always be shown; unless "Demo" mode is turned on.
+         When the module is not registered the RIS will show the original red bar.-->
+    <add key="Demo" value="false" />
+    <add key="DictationModeDefault" value="Single" />
+    <add key="Dictation_AutoShowRequestForm" value="true" />
+    <add key="Dictation.DictationConfiguration.FinishDictationActions.Default" value="AuthorizeImmediately" />
+    <add key="Dictation.OrderPanel.ShowComplicationForm" value="true" />
+    <add key="Dictation.OrderPanel.ShowIndicatorForm" value="true" />
+    <add key="Dictation.OrderPanel.ShowProtocol" value="true" />
+    <add key="Dictation.TaskOverview.ShowIntermediatePatients" value="true" />
+    <add key="DictationPage.PatientHistory.ShowLocationColumn" value="true" />
+    <add key="DictationPage_WorklistByDefault" value="General" />
+    <add key="DictationWorklist.DictationOptions.ShowDigital" value="true" />
+    <add key="DictationWorklist.DictationGrid.ShowRequestTypeColumn" value="true" />
+    <add key="DictationWorklist.DictationGrid.ShowPatientDelayedColumn" value="true" />
+    <add key="DictationWorklist.DictationGrid.ShowRequestingLocationColumn" value="true" />
+    <add key="DictationWorklist.DictationGrid.ShowPatientCategoryColumn" value="true" />
+    <add key="DictationWorklist.ShowLocationFilter" value="true" />
+    <add key="DictationWorklist.WorklistType.ShowAllExternalUsers" value="true" />
+    <add key="DisplayNameFormat" value="{{[[PartnerPrefix]] [[PartnerName]]- }}{{[[Prefix]] }}[[LastName]]{{, [[FirstName]] [[MiddleNames]]}}" />
+    <add key="DomainGroup" value="" />
+    <add key="EditableAppointmentLetter" value="true" />
+    <add key="EditOrder_FocusNextEmptyExamination" value="false" />
+    <add key="EditOrder_ShowFirstPossibilities" value="false" />
+    <add key="EnableDataSetHArray" value="true" />
+    <add key="EnableGeneralWorklist" value="true" />
+    <add key="EnableLateralityBoth" value="true" />
+    <add key="EnableVersionOverlay" value="true" />
+    <add key="ExternalOrders_OpenEditOrderPage" value="true" />
+    <add key="FailSafeOnOrderLevel" value="false" />
+    <add key="GeneralPractitionerCanBeChanged" value="false" />
+    <add key="GroupSchedulerBasedOnTypeResources" value="false" />
+    <add key="HideNextOfKinTab" value="true" />
+    <add key="HtmlCssClass" value="x-training" />
+    <add key="ICE_NHSORGANISATIONS" value="RP500" />
+    <add key="ImageViewer_RelevantImageOpeningMode" value="AddImages" />
+    <add key="Imaging_AutoShowRequestForm" value="false" />
+    <add key="ImagingPage_RefreshInterval" value="1" />
+    <add key="Imaging.AllGrids.AutoSortOnUrgency" value="true" />
+    <add key="InDepartmentWaitingTime" value="4" />
+    <add key="IsSpecialisationRequired" value="false" />
+    <add key="Key" value="Dr.M4r!0" />
+    <add key="Language" value="" />
+    <add key="LateralityBothAsDefault" value="true" />
+    <add key="Login_WelcomeText" value="this is a test" />
+    <add key="loginUrl" value="~/Login.aspx" />
+    <add key="LogoffUrl" value="" />
+    <add key="LogProfiler" value="false" />
+    <add key="MaintenanceAddress" value="~/Maintenance/" />
+    <add key="MedisecPCIEncryption" value="true" />
+    <add key="MedisecPCIUrl" value="" />
+    <add key="OrderApproval_AutoShowRequestForm" value="false" />
+    <add key="OrderApproval.PatientHistoryGrid.ExcludeCancelledExaminations" value="true" />
+    <add key="OrderBooking_ShowOrdersNeedApproval" value="false" />
+    <add key="OrderCommPassword" value="" />
+    <add key="OrderCommUrl" value="" />
+    <add key="OrderType_PlannedUnplanned" value="false" />
+    <add key="PatientBanner.ShowPatientLocation" value="true" />
+    <add key="PatientLocationsAreRequestingLocations" value="false" />
+    <add key="PatientSearchContains" value="false" />
+    <add key="PatientOverview.PatientHistory.ContextMenu.ShowPrintPatientLabel" value="true" />
+    <add key="PatientOverview.PatientHistory.ContextMenu.ShowComplicationForm" value="true" />
+    <add key="PatientOverview.PatientHistory.ContextMenu.ShowChangeAssignments" value="true" />
+    <add key="PatientOverview.PatientHistory.ContextMenu.ShowViewQAForms" value="true" />
+    <add key="PatientOverview.PatientHistoryGrid.ShowExternalOrderNumber" value="true" />
+    <add key="PatientOverview.PatientHistoryGrid.ShowImported" value="true" />
+    <add key="PromoteStatus_ShowSeparate" value="false" />
+    <add key="ReceptionWaitingTime" value="4" />
+    <add key="RefreshInterval" value="0" />
+    <add key="ReportOnOrderLevel" value="false" />
+    <add key="ReschedulingReasonRequired" value="false" />
+    <add key="ReturnUrl" value="" />
+    <add key="RISDeterminesRelevantStudies" value="true" />
+    <add key="RoganSysLogHost" value="0.0.0.0" />
+    <add key="RoganSysLogPort" value="514" />
+    <add key="RunningRIS_WithoutHIS" value="true" />
+    <add key="SelectAuthorizer" value="DictationBased" />
+    <add key="ShowConflictingAppointmentsForNextNDays" value="30" />
+    <add key="ShowIntendedRadiologist" value="true" />
+    <add key="ShowXdsPendingDocumentsButton" value="false" />
+    <add key="StandardReportDefaultAuthorizer" value="" />
+    <add key="StandardReportNeedsAuthorizer" value="false" />
+    <add key="StandardReportText" value="A standard report was created." />
+    <add key="TranscriptionPage_RefreshInterval" value="" />
+    <add key="UseExternalAccessionNumbers_DictationAndImageViewer" value="false" />
+    <add key="UserAssignment_Radiologist" value="1" />
+    <add key="UserAssignment_Technician" value="1" />
+    <add key="UseRequestingLocation" value="true" />
+    <add key="UseUnknownLaterality" value="true" />
+    <add key="ZillionSpeech_ServiceUrl" value="" />
+    <add key="ZillionSpeech_SilverlightServiceUrl" value="" />
+    <add key="ZillionWebCustomize" value="si" />
+    <!-- RIS.HL7 Settings-->
+    <add key="AccessionNumberLength" value="9" />
+    <add key="DFT_InsurancePlanID" value="" />
+    <add key="Doncaster_VisitNumberInAWrongPlace" value="" />
+    <add key="EnglishNamesInHL7Messages" value="false" />
+    <add key="ExaminationStatusToSendORMToG2Speech" value="5" />
+    <add key="Fill_FT1_18_Field_In_DFT_Message" value="true" />
+    <add key="HL7_AccessionNumberExpectedIn_OBR_2" value="false" />
+    <add key="HL7_AccessionNumberExpectedIn_OBR_3" value="false" />
+    <add key="HL7_AllowChangesAfterScheduled" value="false" />
+    <add key="HL7_DFT_DepartmentCode_Nuclear" value="" />
+    <add key="HL7_DFT_DepartmentCode_Radiology" value="" />
+    <add key="HL7_DFT_FileLocation" value="C:\Temp" />
+    <add key="HL7_DFT_UsageOf_ZDBSegment" value="false" />
+    <add key="HL7_DontAppendLateralityToExamName" value="false" />
+    <add key="HL7_MEDRAD_DepartmentName" value="Afd. Radiodiagnostiek" />
+    <add key="HL7_MEDRAD_HospitalCode" value="" />
+    <add key="HL7_MEDRAD_HospitalName" value="" />
+    <add key="HL7_ORM_OrderLevelQandACode" value="VRGANTORD" />
+    <add key="HL7_PatientName_LazyFormat" value="true" />
+    <add key="HL7_Reports_AddExtraDutchText" value="false" />
+    <add key="HL7_RIS_AssigningAuthority" value="" />
+    <add key="HL7_RIS_USER_IDTypeCode" value="" />
+    <add key="HL7_RISIsPlacerForAllOrder" value="false" />
+    <add key="HL7_RISNamespaceID" value="ZILLIONRIS" />
+    <add key="HL7_RISUniversalID" value="" />
+    <add key="HL7_SupportMultilineClinicalInformation" value="false" />
+    <add key="HL7_UseTransactionToParseSingleHL7Message" value="true" />
+    <add key="HL7PatientNumber_AssigningAuthority" value="CS" />
+    <add key="HL7PatientNumber_IDStartsWith" value="" />
+    <add key="HL7PatientNumber_IDTypeCode" value="PI" />
+    <add key="HL7_StoreMessageMetadata" value="false" />
+    <add key="PermissiveMode" value="true" />
+    <!-- RIS.XDS Settings -->
+    <add key="Certificate" value="" />
+    <add key="EnableAtnaLogging" value="false" />
+    <add key="EnableSysLog" value="false" />
+    <add key="Password" value="password" />
+    <add key="RegistryUrl" value="" />
+    <add key="RepositoryUrl" value="" />
+    <!-- RIS.ViewProX Settings-->
+    <add key="ViewProX_LockTrue" value="false" />
+    <add key="ViewProX_TeleradiologyUrl" value="" />
+    <!-- IIS or framework settings -->
+    <add key="webpages:Enabled" value="false" />
+  </appSettings>  
+  <unity configSource="Config\Unity.config" />
+  <connectionStrings configSource="Config\ConnectionStrings.config" />
+  <clientDependency configSource="Config\ClientDependency.config" />
+  <webmodule configSource="Config\WebModules.config" />
+  <Hl7PackageCollection configSource="Config\Hl7PackageCollection.config" />
+  <senderConfiguration configSource="Config\XdsSender.config" />
+  <JSLocalize>
+    <add key="ris" value="Rogan.ZillionRis.Website.App_GlobalResources.JSResources, Rogan.ZillionRis.Website" />
+    <!-- Localization for the Calendars module -->
+    <add key="calendars" value="Rogan.ZillionRis.Calendars.JSResources, Rogan.ZillionRis.Calendars" />
+    <add key="dictation" value="Rogan.ZillionRis.Dictation.JSResources, Rogan.ZillionRis.Dictation" />
+  </JSLocalize>
+  <system.serviceModel>
+    <bindings>
+      <customBinding>
+        <binding name="TeleradiologySoap12">
+          <textMessageEncoding maxReadPoolSize="64" maxWritePoolSize="16" messageVersion="Soap12" writeEncoding="utf-8">
+            <readerQuotas maxDepth="32" maxStringContentLength="8192" maxArrayLength="16384" maxBytesPerRead="4096" maxNameTableCharCount="16384" />
+          </textMessageEncoding>
+          <httpTransport manualAddressing="false" maxBufferPoolSize="524288" maxReceivedMessageSize="65536" allowCookies="false" authenticationScheme="Anonymous" bypassProxyOnLocal="false" hostNameComparisonMode="StrongWildcard" keepAliveEnabled="true" maxBufferSize="65536" proxyAuthenticationScheme="Anonymous" realm="" transferMode="Buffered" unsafeConnectionNtlmAuthentication="false" useDefaultWebProxy="true" />
+        </binding>
+      </customBinding>
+    </bindings>
+    <client configSource="Config\ServiceClient.config" />
+    <behaviors>
+      <serviceBehaviors>
+        <behavior>
+          <serviceDebug includeExceptionDetailInFaults="true" />
+          <serviceMetadata httpGetEnabled="true" httpsGetEnabled="true" />
+        </behavior>
+      </serviceBehaviors>
+      <endpointBehaviors />
+    </behaviors>
+  </system.serviceModel>
+  <system.web>
+    <!-- 30 minutes before timing out, maximum request length is 200mb -->
+    <httpRuntime executionTimeout="1800" maxRequestLength="209715200" requestValidationMode="2.0" maxUrlLength="4096" enableVersionHeader="false" />
+    <sessionState mode="Off" />
+    <authentication configSource="Config\Authentication.config" />
+    <authorization configSource="Config\Authorization.config" />
+    <compilation defaultLanguage="c#" targetFramework="4.8">
+      <assemblies>
+        <add assembly="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Data.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Data.Entity.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Web.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add assembly="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+      </assemblies>
+      <!--<buildProviders>
+        <add extension=".cshtml" type="RazorEngine.Web.CSharp.CSharpRazorBuildProvider" />
+      </buildProviders>-->
+    </compilation>
+    <identity impersonate="false" />
+    <customErrors mode="Off" />
+    <pages clientIDMode="AutoID">
+      <controls>
+        <!-- TODO: Cleanup -->
+        <add assembly="Rogan.ZillionRis.Website" namespace="ZillionRis" tagPrefix="RIS" />
+        <add assembly="Rogan.ZillionRis.Website" namespace="ZillionRis.Controls" tagPrefix="RIS" />
+        <add assembly="Rogan.ZillionRis.WebControls" namespace="Rogan.ZillionRis.WebControls" tagPrefix="RIS" />
+        <add assembly="Rogan.ZillionRis.WebControls" namespace="Rogan.ZillionRis.WebControls.Common" tagPrefix="RIS" />
+        <add assembly="Rogan.ZillionRis.WebControls" namespace="Rogan.ZillionRis.WebControls.Editors" tagPrefix="RIS" />
+      </controls>
+    </pages>
+    <machineKey configSource="Config\MachineKey.config" />
+    <globalization responseEncoding="utf-8"></globalization>
+    <httpCookies httpOnlyCookies="true" sameSite="Strict" requireSSL="true" />
+  </system.web>
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules runAllManagedModulesForAllRequests="true">
+      <remove name="RoutingModule" />
+      <remove name="ClientDependencyModule" />
+      <add name="RoutingModule" type="System.Web.Routing.UrlRoutingModule" />
+      <add name="ClientDependencyModule" type="ClientDependency.Core.Module.ClientDependencyModule, ClientDependency.Core" />
+    </modules>
+    <handlers>
+      <remove name="DependencyHandler" />
+      <remove name="razorCsHtml" />
+      <add name="DependencyHandler" preCondition="integratedMode" verb="*" path="DependencyHandler.axd" type="ClientDependency.Core.CompositeFiles.CompositeDependencyHandler, ClientDependency.Core " />
+      <add name="razorCsHtml" path="*.cshtml" verb="*" type="Rogan.ZillionRis.Web.Handlers.Razor.RazorHandler" />
+      <add name="AspNetStaticFileHandler-JS" path="*.js" verb="GET,HEAD" type="System.Web.StaticFileHandler"/>
+      <add name="AspNetStaticFileHandler-CSS" path="*.css" verb="GET,HEAD" type="System.Web.StaticFileHandler"/>
+      <add name="AspNetStaticFileHandler-PNG" path="*.png" verb="GET,HEAD" type="System.Web.StaticFileHandler"/>
+    </handlers>
+    <staticContent>
+      <!-- Register fonts -->
+      <remove fileExtension=".eot" />
+      <remove fileExtension=".woff" />
+      <remove fileExtension=".woff2" />
+      <remove fileExtension=".svg" />
+      <remove fileExtension=".ttf" />
+      <mimeMap fileExtension=".eot" mimeType="application/font-eot" />
+      <mimeMap fileExtension=".woff" mimeType="application/font-woff" />
+      <mimeMap fileExtension=".woff2" mimeType="application/font-woff2" />
+      <mimeMap fileExtension=".svg" mimeType="application/font-svg" />
+      <mimeMap fileExtension=".ttf" mimeType="application/font-ttf" />
+    </staticContent>
+    <httpProtocol>
+      <customHeaders>
+        <remove name="X-Powered-By" />
+        <add name="Content-Security-Policy" value="frame-ancestors 'none'" />
+        <add name="Referrer-Policy" value="same-origin" />
+        <add name="Strict-Transport-Security" value="max-age=31536000" />
+        <add name="X-Content-Type-Options" value="nosniff" />
+        <add name="X-Frame-Options" value="DENY" />
+      </customHeaders>  
+    </httpProtocol>
+    <security>
+      <requestFiltering removeServerHeader="true">
+        <verbs>
+          <add verb="HEAD" allowed="false" />
+          <add verb="OPTIONS" allowed="false" />
+          <add verb="TRACE" allowed="false" />
+          <add verb="PATCH" allowed="false" />
+        </verbs>
+        <fileExtensions allowUnlisted="false">
+          <add fileExtension="." allowed="true" />
+          <add fileExtension=".ashx" allowed="true" />
+          <add fileExtension=".aspx" allowed="true" />
+          <add fileExtension=".axd" allowed="true" />
+          <add fileExtension=".css" allowed="true" />
+          <add fileExtension=".cshtml" allowed="true" />
+          <add fileExtension=".html" allowed="true" />
+          <add fileExtension=".ico" allowed="true" />
+          <add fileExtension=".js" allowed="true" />
+          <add fileExtension=".gif" allowed="true" />
+          <add fileExtension=".map" allowed="true" />
+          <add fileExtension=".png" allowed="true" />
+          <add fileExtension=".ttf" allowed="true" />
+          <add fileExtension=".woff" allowed="true" />
+          <add fileExtension=".woff2" allowed="true" />
+        </fileExtensions>
+      </requestFiltering>
+    </security>
+  </system.webServer>
+  <!-- Security: Describes locations which are allowed to be requested while the user has not been authenticated yet -->
+  <location path="ScriptLibrary">
+    <system.webServer>
+      <caching>
+        <profiles>
+          <clear />
+          <add extension="*.*" kernelCachePolicy="CacheUntilChange" policy="CacheForTimePeriod" duration="24:00:00" />
+        </profiles>
+      </caching>
+    </system.webServer>
+  </location>
+  <location path="Styles">
+    <system.webServer>
+      <caching>
+        <profiles>
+          <clear />
+          <add extension="*.*" kernelCachePolicy="CacheUntilChange" policy="CacheForTimePeriod" duration="24:00:00" />
+        </profiles>
+      </caching>
+    </system.webServer>
+  </location>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Practices.ServiceLocation" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-1.3.0.0" newVersion="1.3.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-8.0.0.0" newVersion="8.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

@@ -1,0 +1,71 @@
+﻿$fontLight: 300;
+$fontNormal: 400;
+$fontBold: 500;
+
+/* Shared Styles */
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 16) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin font-small() {
+  font: $fontNormal 12px/1.33em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+
+.font-default { 
+    font: $fontNormal 14px/1.4em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+    font: $fontNormal 14px/20px Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-small { 
+    font: $fontNormal 12px/1.33em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-smaller { 
+    font: $fontNormal 10px/1.4em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-large { 
+    font: $fontNormal 16px/1.25em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-bold { 
+    font: $fontBold 15px/1.2em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+    font: $fontBold 14px/20px Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-light {
+    font: 400 15px/18px 'Segoe UI Light', Trebuchet MS, Tahoma, Arial;
+    font: $fontLight 15px/1.2em Roboto;
+    font: $fontLight 14px/20px Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-large-light { 
+    font: 400 16px/20px 'Segoe UI Light', Trebuchet MS, Tahoma, Arial;
+    font: $fontLight 16px/1.25em Roboto;
+}
+.font-header {
+    font: $fontNormal 15px/1.2em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-header-large {
+    font: 400 15px/1.2em 'Segoe UI Light', Trebuchet MS, Tahoma, Arial;
+    font: $fontNormal 20px/1.2em Roboto;
+}
+.font-header-large-light {
+    font: 400 15px/1.2em 'Segoe UI Light', Trebuchet MS, Tahoma, Arial;
+    font: 100 20px/1.2em Roboto;
+}
+.font-header-small {
+    font: $fontNormal 12px/1.2em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-header-light {
+    font: 400 15px/1.2em 'Segoe UI Light', Trebuchet MS, Tahoma, Arial;
+    font: $fontLight 15px/1.2em Roboto;
+}
+.font-header-normal {
+    font: $fontNormal 15px/1.2em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-header-bold {
+    font: $fontBold 15px/1.2em Roboto, 'Segoe UI', Trebuchet MS, Tahoma, Arial;
+}
+.font-letter {
+    font: 400 1.0rem/1.3em Optima, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    /*font: 400 1.0rem/1.3em Roboto;*/
+}
+.font-html-viewer {
+    font: 16px/1.5 'Segoe UI', sans-serif;
+}       

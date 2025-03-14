@@ -1,0 +1,48 @@
+﻿@using System
+@using System.Linq
+@using Rogan.ZillionRis
+@using Rogan.ZillionRis.Codes.ExaminationStatus
+@using Rogan.ZillionRis.Extensibility.Security
+@using Rogan.ZillionRis.Website.App_GlobalResources
+@inherits ASP.RisRazorBase
+@{
+    this.InitializeCulture();
+
+    if (this.Application.UserHasPermission(UserPermissions.ViewExaminations) == false)
+    {
+        @WebResources.OrderDetails_NoPermission
+        return;
+    }
+    
+    if (this.Application.Request.Params["orderId"] == null)
+    {
+        throw new Exception("Something went wrong. Please try again.");
+    }
+    int orderId = Convert.ToInt32(this.Application.Request["orderId"]);
+    
+    const string waitingStatusID = ExaminationStatusValue.Waiting;
+    const string approvedStatusID = ExaminationStatusValue.Approved;
+
+    var data = this.Database.Orders
+        .Where(item => item.ord_OrderID == orderId)
+        .Select(item =>
+            new
+            {
+                ScheduleNotes = item.Examinations
+                .Where(examination => examination.Status.exasta_StatusID == waitingStatusID
+									  || examination.Status.exasta_StatusID == approvedStatusID)
+                .Select(examination => new
+                {
+                    examination.ExaminationType.exatyp_ExaminationTypeName,
+                    examination.ExaminationType.exatyp_PlanningNote
+                }).Distinct()
+            })
+        .FirstOrDefault();
+}
+<dl class="details-list">
+    @foreach (var item in data.ScheduleNotes.Where(item => string.IsNullOrEmpty(item.exatyp_PlanningNote) == false))
+    {
+        <dt>@item.exatyp_ExaminationTypeName:</dt>
+        <dd>@item.exatyp_PlanningNote</dd>
+    }
+</dl>

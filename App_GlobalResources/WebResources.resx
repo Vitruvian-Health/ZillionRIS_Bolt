@@ -1,0 +1,4294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcceptImages" xml:space="preserve">
+    <value>Accept Images</value>
+  </data>
+  <data name="act_ActionID" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="act_ActionName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="act_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="actreq_Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="actreq_Minutes" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="actreq_Resource" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="actsch_ActionID" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="actsch_examinationID" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="actsch_ResourceID" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="actsch_StartDateTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Addendum_Report" xml:space="preserve">
+    <value>Addendum:</value>
+  </data>
+  <data name="AddIntendedVetter_SummaryLabel" xml:space="preserve">
+    <value>Add Intended Vetter</value>
+  </data>
+  <data name="AdvancedFilter_AllLocations" xml:space="preserve">
+    <value>All locations</value>
+  </data>
+  <data name="AdvancedFilter_CriterionCaption" xml:space="preserve">
+    <value>Choose filter type...</value>
+  </data>
+  <data name="AdvancedFilter_ExportButton" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="AdvancedFilter_NoFilterSelected" xml:space="preserve">
+    <value>(No filter)</value>
+  </data>
+  <data name="AdvancedFilter_ReportType" xml:space="preserve">
+    <value>Report Type</value>
+  </data>
+  <data name="AdvancedFilter_ValueCaption" xml:space="preserve">
+    <value>Choose...</value>
+  </data>
+  <data name="AdvancedOverview_DateFromUnspecified" xml:space="preserve">
+    <value>Date from unspecified.</value>
+  </data>
+  <data name="AdvancedOverview_DateToUnspecified" xml:space="preserve">
+    <value>Date to unspecified.</value>
+  </data>
+  <data name="AdvancedOverview_InvalidLocationID" xml:space="preserve">
+    <value>Invalid location ID specified.</value>
+  </data>
+  <data name="AdvancedPatientSearchPage_PatientsSearchResultGridViewHeader" xml:space="preserve">
+    <value>Patient Search Result</value>
+  </data>
+  <data name="Appointments_FailedToMoveTheOrder" xml:space="preserve">
+    <value> Failed to move the order.</value>
+  </data>
+  <data name="Appointments_FailedToMoveTheStudy" xml:space="preserve">
+    <value>"Failed to move the study."</value>
+  </data>
+  <data name="Appointments_FailedToRegisterThePatient" xml:space="preserve">
+    <value>Failed to register the patient.</value>
+  </data>
+  <data name="Appointments_NoPatientSelected" xml:space="preserve">
+    <value>No patient has been selected.</value>
+  </data>
+  <data name="Appointments_Submit" xml:space="preserve">
+    <value>Submit (XDS)</value>
+  </data>
+  <data name="Appointments_SubmitPatient" xml:space="preserve">
+    <value>Submit Patient (XDS)</value>
+  </data>
+  <data name="General_AddAddendum" xml:space="preserve">
+    <value>Add Addendum</value>
+  </data>
+  <data name="AuditTrails_FinishDictation" xml:space="preserve">
+    <value>Finished {0} dictation for {1} examination(s) ({2}). Next action: {3}.</value>
+  </data>
+  <data name="AuditTrails_OpenDictation" xml:space="preserve">
+    <value>Opened dictation page for {0} examination(s) ({1}).</value>
+  </data>
+  <data name="AuditTrails_StartDictation" xml:space="preserve">
+    <value>Started {0} dictation for {1} examination(s) ({2}).</value>
+  </data>
+  <data name="Authorization_Authorize" xml:space="preserve">
+    <value>Authorize Report</value>
+  </data>
+  <data name="Authorization_AutoFinishNextTooltip" xml:space="preserve">
+    <value>Finish authorization and select the next available dictation</value>
+  </data>
+  <data name="Authorization_ChangeTextArea" xml:space="preserve">
+    <value>Make the text area</value>
+  </data>
+  <data name="Authorization_ContinueLater" xml:space="preserve">
+    <value>Continue Later</value>
+  </data>
+  <data name="Authorization_DisableAudio" xml:space="preserve">
+    <value>Disable audio</value>
+  </data>
+  <data name="Authorization_FilterText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Authorization_InterActive" xml:space="preserve">
+    <value>InterActive</value>
+  </data>
+  <data name="Authorization_Large" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="Authorization_Multiple" xml:space="preserve">
+    <value>Multiple</value>
+  </data>
+  <data name="Authorization_NextAuthorize" xml:space="preserve">
+    <value>Authorize and next </value>
+  </data>
+  <data name="Authorization_Open" xml:space="preserve">
+    <value>Start Authorizing</value>
+  </data>
+  <data name="Authorization_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Authorization_RestoreDefaultSize" xml:space="preserve">
+    <value>Restore to default size</value>
+  </data>
+  <data name="Authorization_Single" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="Authorization_Small" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="Authorization_Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Authorization_WorkListFilters" xml:space="preserve">
+    <value>Authorization Work List Filters</value>
+  </data>
+  <data name="AuthorizationPage_AuthorizationGridViewHeader" xml:space="preserve">
+    <value>Examinations to authorize</value>
+  </data>
+  <data name="AuthorizationPage_StartAuthorize" xml:space="preserve">
+    <value>Start authorizing</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnChange" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Button_BookManually" xml:space="preserve">
+    <value>Schedule Manually</value>
+  </data>
+  <data name="Button_BookOrder" xml:space="preserve">
+    <value>Schedule Automatically</value>
+  </data>
+  <data name="Button_BookOrderNow" xml:space="preserve">
+    <value>Schedule Now</value>
+  </data>
+  <data name="Button_CreateDummyPatient" xml:space="preserve">
+    <value>New Dummy Patient</value>
+  </data>
+  <data name="Calendar_Date" xml:space="preserve">
+    <value>Selected date</value>
+  </data>
+  <data name="Calendar_Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Calendar_TimeBackward" xml:space="preserve">
+    <value>Backward</value>
+  </data>
+  <data name="Calendar_TimeForward" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="CalendarPage_CalendarGridViewHeader" xml:space="preserve">
+    <value>Schedule per Location</value>
+  </data>
+  <data name="CalendarPage_FailedToLoad" xml:space="preserve">
+    <value>Failed to load the calendar overview.</value>
+  </data>
+  <data name="CalendarPage_SingleClick" xml:space="preserve">
+    <value>Schedule per LocationSingleClick</value>
+  </data>
+  <data name="canrea_Text" xml:space="preserve">
+    <value>Cancellation reason</value>
+  </data>
+  <data name="ClinicalInformationForExamination" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="ClinicalInformationForExamination_Long" xml:space="preserve">
+    <value>Clinical information for examination</value>
+  </data>
+  <data name="closedRoomFormEndTime" xml:space="preserve">
+    <value>End time:</value>
+  </data>
+  <data name="closedRoomFormReason" xml:space="preserve">
+    <value>Reason:</value>
+  </data>
+  <data name="closedRoomFormResource" xml:space="preserve">
+    <value>Room:</value>
+  </data>
+  <data name="closedRoomFormStartTime" xml:space="preserve">
+    <value>Start time:</value>
+  </data>
+  <data name="Co_Country_Name" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="co_CountryID" xml:space="preserve">
+    <value>Country ID</value>
+  </data>
+  <data name="CoCountry" xml:space="preserve">
+    <value>Country ID</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_actsch_StartDateTime" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_exatyp_ExaminationTypeName" xml:space="preserve">
+    <value>Examination Type</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_gen_GenderName" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_pat_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_pat_PatientNumber" xml:space="preserve">
+    <value>Patient Number</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_ref_ReferringPhysicianName" xml:space="preserve">
+    <value>Referring Physician</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_reftyp_ReferralTypeName" xml:space="preserve">
+    <value>Referral Type</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_roo_RoomName" xml:space="preserve">
+    <value>Room Name</value>
+  </data>
+  <data name="Column_Appointments_ExaminationTypeName" xml:space="preserve">
+    <value>Examination Type</value>
+  </data>
+  <data name="Column_Appointments_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="Column_Appointments_RoomName" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="Column_Appointments_StartDateTime" xml:space="preserve">
+    <value>Appointment Time</value>
+  </data>
+  <data name="Column_DiscussionLists_AccessionNumber" xml:space="preserve">
+    <value>Accession Nr.</value>
+  </data>
+  <data name="Column_DiscussionLists_DiscussionCategoryID" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Column_DiscussionLists_DiscussionNote" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Column_DiscussionLists_ExaminationDisplayName" xml:space="preserve">
+    <value>Examination Type</value>
+  </data>
+  <data name="Column_DiscussionLists_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="Column_DiscussionLists_PatientNumber" xml:space="preserve">
+    <value>Patient Number</value>
+  </data>
+  <data name="Column_DiscussionLists_Requester" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="Column_DiscussionLists_RequesterType" xml:space="preserve">
+    <value>Requestertype</value>
+  </data>
+  <data name="Column_Examinations_AccessionNumber" xml:space="preserve">
+    <value>Accession nr</value>
+  </data>
+  <data name="Column_Examinations_actsch_StartDateTime" xml:space="preserve">
+    <value>Schedule Date</value>
+  </data>
+  <data name="Column_Examinations_AuthoriserName" xml:space="preserve">
+    <value>Authorizer</value>
+  </data>
+  <data name="Column_Examinations_CancellationReason" xml:space="preserve">
+    <value>Cancellation Reason</value>
+  </data>
+  <data name="Column_Examinations_canrea_Text" xml:space="preserve">
+    <value>Cancellation Reason</value>
+  </data>
+  <data name="Column_Examinations_DepartmentName" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="Column_Examinations_discat_DiscussionCategoryID" xml:space="preserve">
+    <value>Discussion ID</value>
+  </data>
+  <data name="Column_Examinations_exa_ManuallyPlanned" xml:space="preserve">
+    <value>Forced</value>
+  </data>
+  <data name="Column_Examinations_exadislis_DateTime" xml:space="preserve">
+    <value>Discussion Date</value>
+  </data>
+  <data name="Column_Examinations_exadislis_Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Column_Examinations_ExaminationDisplayName" xml:space="preserve">
+    <value>Examination Name</value>
+  </data>
+  <data name="Column_Examinations_ExaminationStatusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Column_Examinations_ExaminationTypeName" xml:space="preserve">
+    <value>Examination Name</value>
+  </data>
+  <data name="Column_Examinations_exasta_statusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Column_Examinations_exatyp_ExaminationTypeName" xml:space="preserve">
+    <value>Examination Type</value>
+  </data>
+  <data name="Column_Examinations_gen_GenderName" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Column_Examinations_loc_LocationName" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Column_Examinations_LocationName" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Column_Examinations_Modality" xml:space="preserve">
+    <value>Modality</value>
+  </data>
+  <data name="Column_Examinations_ord_OrderID" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="Column_Examinations_OrderID" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="Column_Examinations_ordtyp_OrderTypeName" xml:space="preserve">
+    <value>Order Type</value>
+  </data>
+  <data name="Column_Examinations_ori_OriginName" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="Column_Examinations_pat_DateOfBirth" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="Column_Examinations_pat_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="Column_Examinations_pat_PatientNumber" xml:space="preserve">
+    <value>Patient Number</value>
+  </data>
+  <data name="Column_Examinations_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="Column_Examinations_Physician" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="Column_Examinations_PhysicianName" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="Column_Examinations_Radiologist" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="Column_Examinations_RadiologistName" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="Column_Examinations_Radiologists" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="Column_Examinations_ref_ReferringPhysicianName" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="Column_Examinations_ReferralTypeName" xml:space="preserve">
+    <value>Requester Type</value>
+  </data>
+  <data name="Column_Examinations_ReferringPhysicianName" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="Column_Examinations_reftyp_ReferralTypeName" xml:space="preserve">
+    <value>Requester Type</value>
+  </data>
+  <data name="Column_Examinations_risuse_Name" xml:space="preserve">
+    <value>Assignee</value>
+  </data>
+  <data name="Column_Examinations_roo_RoomName" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="Column_Examinations_RoomName" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="Column_Examinations_ScheduleDateTime" xml:space="preserve">
+    <value>Schedule Date</value>
+  </data>
+  <data name="Column_Examinations_Speciality" xml:space="preserve">
+    <value>Speciality</value>
+  </data>
+  <data name="Column_Examinations_SpeechCreationDate" xml:space="preserve">
+    <value>Dictation timestamp</value>
+  </data>
+  <data name="Column_Examinations_SpeechStatusName" xml:space="preserve">
+    <value>Speech Status</value>
+  </data>
+  <data name="Column_Examinations_stu_AccessionNumber" xml:space="preserve">
+    <value>Accession Nr.</value>
+  </data>
+  <data name="Column_Examinations_TypistName" xml:space="preserve">
+    <value>Typist</value>
+  </data>
+  <data name="Column_Examinations_war_WardName" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="Column_Orders_DateOfRequest" xml:space="preserve">
+    <value>Request Date</value>
+  </data>
+  <data name="Column_Orders_IntendedApprover" xml:space="preserve">
+    <value>Intended Approver</value>
+  </data>
+  <data name="Column_Orders_OrderID" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="Column_Orders_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="Column_Orders_PatientNumber" xml:space="preserve">
+    <value>Patient Number</value>
+  </data>
+  <data name="Column_Patients_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Column_Patients_DateOfBirth" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="Column_Patients_FullName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="Column_Patients_Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Column_Patients_PatientDisplayName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Column_Patients_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="Column_Patients_PatientNumber" xml:space="preserve">
+    <value>Patient Number</value>
+  </data>
+  <data name="Column_Protocols_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Column_Protocols_Title" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Column_Timestamps_ExaminationStatusName" xml:space="preserve">
+    <value>Target status</value>
+  </data>
+  <data name="Column_TimestampsLogging_RISUserName" xml:space="preserve">
+    <value>RIS Username</value>
+  </data>
+  <data name="Column_TimestampsLogging_TimeStamp" xml:space="preserve">
+    <value>Timestamp</value>
+  </data>
+  <data name="con_CountryName" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ctg_CtgCodeDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ctg_CtgCodeID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ctg_CtgCodeName" xml:space="preserve">
+    <value>CTG Code</value>
+  </data>
+  <data name="ctg_SandersPunten" xml:space="preserve">
+    <value>Sanders point</value>
+  </data>
+  <data name="DeclineImages" xml:space="preserve">
+    <value>Decline Images</value>
+  </data>
+  <data name="dep_DepartmentDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="dep_DepartmentName" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="dep_HospitalID" xml:space="preserve">
+    <value>Hospital</value>
+  </data>
+  <data name="Dictation_ActiveWorkItems" xml:space="preserve">
+    <value>Active Work Items</value>
+  </data>
+  <data name="Dictation_ActiveWorklistOverview" xml:space="preserve">
+    <value>Active worklist overview</value>
+  </data>
+  <data name="Dictation_AuthorizationSkipped" xml:space="preserve">
+    <value>Authorization Skipped</value>
+  </data>
+  <data name="Dictation_AuthorizationSkippedTooltip" xml:space="preserve">
+    <value>Your current settings allow authorization to be skipped and a report is created immediatly after dictation.</value>
+  </data>
+  <data name="Dictation_ClearSelection" xml:space="preserve">
+    <value>Clear Selection</value>
+  </data>
+  <data name="Dictation_ConfirmDictateStatusDictating" xml:space="preserve">
+    <value>This examination has the status dictation, are you sure you want to open this examination for another dictation?</value>
+  </data>
+  <data name="Dictation_MoveToRadiologist" xml:space="preserve">
+    <value>Change Intended Reporter</value>
+  </data>
+  <data name="Dictation_SendToSupervisor" xml:space="preserve">
+    <value>Send to Supervisor</value>
+  </data>
+  <data name="Dictation_WorkListFilters" xml:space="preserve">
+    <value>Dictation Work List Filters</value>
+  </data>
+  <data name="DictationLow_FailedToLoadAMemo" xml:space="preserve">
+    <value>Failed to load a memo for an examination.</value>
+  </data>
+  <data name="DictationLow_FailedToLoadAReport" xml:space="preserve">
+    <value>Failed to load a report for an examination.</value>
+  </data>
+  <data name="DictationLow_UnableToContinue" xml:space="preserve">
+    <value>Unable to continue with dictation.</value>
+  </data>
+  <data name="DictationLow_WorkList_Addendum" xml:space="preserve">
+    <value>Addendum</value>
+  </data>
+  <data name="DictationLow_WorkList_Completed" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="DictationLow_WorkList_Intermediate" xml:space="preserve">
+    <value>Intermediate ({0})</value>
+  </data>
+  <data name="DictationLow_WorkList_Overview" xml:space="preserve">
+    <value>Collective</value>
+  </data>
+  <data name="DictationLow_WorkList_ToBeDictated" xml:space="preserve">
+    <value>Examinations to be dictated</value>
+  </data>
+  <data name="DictationOverview_ChangeStatus" xml:space="preserve">
+    <value>Change status</value>
+  </data>
+  <data name="DictationOverview_SpeechOverviewCaption" xml:space="preserve">
+    <value>Overview dictations</value>
+  </data>
+  <data name="DictationPage_AddImages" xml:space="preserve">
+    <value>Add Images</value>
+  </data>
+  <data name="DictationPage_Configuration_AutoStart_Label" xml:space="preserve">
+    <value>Automatically start the dictation when the page is opened.</value>
+  </data>
+  <data name="DictationPage_Configuration_AutoStart_Text" xml:space="preserve">
+    <value>Automatically starts the dictation immediately after the page has been loaded.</value>
+  </data>
+  <data name="DictationPage_Configuration_CreateReport_Label" xml:space="preserve">
+    <value>Create a report for a finished InterActive dictation.</value>
+  </data>
+  <data name="DictationPage_Configuration_CreateReport_Text" xml:space="preserve">
+    <value>When enabled a report will be created instead of sending the dictation to the transcriptionist.</value>
+  </data>
+  <data name="DictationPage_Configuration_OpenNext_Label" xml:space="preserve">
+    <value>Open the next dictation, when finished.</value>
+  </data>
+  <data name="DictationPage_Configuration_OpenNext_Text" xml:space="preserve">
+    <value>When this is enabled the next dictation of the same order will be opened for dictation, otherwise the next in the work list.
+						If no completed examination is available you will be redirected to the work list.</value>
+  </data>
+  <data name="DictationPage_ConsultingSpecialistPatient" xml:space="preserve">
+    <value>Consulting Specialist Patient</value>
+  </data>
+  <data name="DictationPage_ExaminationMemoLabel" xml:space="preserve">
+    <value>Memos:</value>
+  </data>
+  <data name="DictationPage_LoadMoreExaminations" xml:space="preserve">
+    <value>Load More Examinations</value>
+  </data>
+  <data name="DictationPage_Memo_NullText" xml:space="preserve">
+    <value>Press enter to add a memo</value>
+  </data>
+  <data name="DictationPage_OpenDictation" xml:space="preserve">
+    <value>Open Dictation</value>
+  </data>
+  <data name="DictationPage_OrderDocuments" xml:space="preserve">
+    <value>Order Documents</value>
+  </data>
+  <data name="DictationPage_OrderMemoLabel" xml:space="preserve">
+    <value>Order Memo:</value>
+  </data>
+  <data name="DictationPage_RequestInformation" xml:space="preserve">
+    <value>Request Information</value>
+  </data>
+  <data name="DictationPage_ResumeDictationText" xml:space="preserve">
+    <value>Continue dictation</value>
+  </data>
+  <data name="DictationPage_ResumeDictationTooltip" xml:space="preserve">
+    <value>There is an examination left in dictation, when you press this button the dictation will be started for that examination.</value>
+  </data>
+  <data name="DictationPage_StartSpeechDictation" xml:space="preserve">
+    <value>Start Speech Dictation</value>
+  </data>
+  <data name="DictationPage_TasksOverview" xml:space="preserve">
+    <value>Tasks Overview</value>
+  </data>
+  <data name="DictationPage_TextCantBeEmpty" xml:space="preserve">
+    <value>Text can't be empty.</value>
+  </data>
+  <data name="DictationPage_ViewImages" xml:space="preserve">
+    <value>View Images</value>
+  </data>
+  <data name="DictationPage_ViewOrder" xml:space="preserve">
+    <value>View Order</value>
+  </data>
+  <data name="DictationPage_ViewProtocols" xml:space="preserve">
+    <value>View Protocols</value>
+  </data>
+  <data name="DictationPage_ViewProtocolsButton_NoProtocol" xml:space="preserve">
+    <value>No protocol available for this examination type.</value>
+  </data>
+  <data name="DictationPage_ViewProtocolsButton_ToolTip" xml:space="preserve">
+    <value>Click to view the protocols for this examination.</value>
+  </data>
+  <data name="DictationPage_ViewRequestForm" xml:space="preserve">
+    <value>View Request Form</value>
+  </data>
+  <data name="DictationPage_XDSDocuments" xml:space="preserve">
+    <value>XDS Documents</value>
+  </data>
+  <data name="discat_DiscussionCategoryID" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="DiscussionList_DiscussionLists" xml:space="preserve">
+    <value>Discussion List</value>
+  </data>
+  <data name="DiscussionList_PersonalLists" xml:space="preserve">
+    <value>Personal Lists:</value>
+  </data>
+  <data name="DiscussionList_SharedLists" xml:space="preserve">
+    <value>Shared Lists:</value>
+  </data>
+  <data name="DiscussionList_WorkListFilters" xml:space="preserve">
+    <value>Discussion List Work List Filters</value>
+  </data>
+  <data name="DomainLogInFailed" xml:space="preserve">
+    <value>System could not log you in at domain {0} with username {1}.</value>
+  </data>
+  <data name="EditedSuffix" xml:space="preserve">
+    <value>(edited)</value>
+  </data>
+  <data name="EditOrder_CopyTo" xml:space="preserve">
+    <value>Send Copy To</value>
+  </data>
+  <data name="EditOrder_CopyToPhysician" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="EditOrder_CopyToRequesterLocation" xml:space="preserve">
+    <value>Requesting Location</value>
+  </data>
+  <data name="EditOrder_CopyToWorkLocation" xml:space="preserve">
+    <value>Work Location</value>
+  </data>
+  <data name="EditOrder_CreateOrderFor" xml:space="preserve">
+    <value>Create order for </value>
+  </data>
+  <data name="EditOrder_DirectBookFlag" xml:space="preserve">
+    <value>Start automatic scheduling</value>
+  </data>
+  <data name="editOrder_EditingOrder" xml:space="preserve">
+    <value>Editing order </value>
+  </data>
+  <data name="EditOrder_ExaminationHeader" xml:space="preserve">
+    <value>Examinations:</value>
+  </data>
+  <data name="EditOrder_ImportOrder" xml:space="preserve">
+    <value>Import order for </value>
+  </data>
+  <data name="EditOrder_LocationsHeader" xml:space="preserve">
+    <value>Possible Locations:</value>
+  </data>
+  <data name="EditOrder_ManualPlanning" xml:space="preserve">
+    <value>Create manual planned order for </value>
+  </data>
+  <data name="EditOrder_NoLocationsSelectedForScheduler" xml:space="preserve">
+    <value>Can not schedule the examinations, please select one or more locations.</value>
+  </data>
+  <data name="EditOrder_SaveExaminationsFailed" xml:space="preserve">
+    <value>Failed to save the examinations to the order.</value>
+  </data>
+  <data name="EditOrder_SaveOrderFailed" xml:space="preserve">
+    <value>Failed to save the order.</value>
+  </data>
+  <data name="EditOrder_ScheduleExaminationFailed" xml:space="preserve">
+    <value>Failed to schedule one or more of the examinations.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_ImpossibleLocationExaminations" xml:space="preserve">
+    <value>The following examinations can not be executed in {0}:
+
+{1}.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_InvalidBehaviorMode" xml:space="preserve">
+    <value>This is not a new order, unable to book the examinations now.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_InvalidStatusExaminations" xml:space="preserve">
+    <value>The order can only be scheduled now when the examinations are in status {0} or {1}.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_UnexpectedError" xml:space="preserve">
+    <value>An unknown error occurred while trying to book the order now.</value>
+  </data>
+  <data name="EditOrder_ScheduleOrderNow" xml:space="preserve">
+    <value>Schedule order now</value>
+  </data>
+  <data name="EditOrder_SecondCopyRequired" xml:space="preserve">
+    <value>Second copy required</value>
+  </data>
+  <data name="EditOrder_ShowAdditionalInformation" xml:space="preserve">
+    <value>Show additional information</value>
+  </data>
+  <data name="EditOrder_ShowClinicalInformation" xml:space="preserve">
+    <value>Show clinical information</value>
+  </data>
+  <data name="EditOrder_ViewingOrder" xml:space="preserve">
+    <value>Viewing order</value>
+  </data>
+  <data name="EditOrderPage_CompletionDate" xml:space="preserve">
+    <value>Completion Date</value>
+  </data>
+  <data name="EditOrderPage_RetrospectiveBooking" xml:space="preserve">
+    <value>Retrospective booking</value>
+  </data>
+  <data name="errorConcurrency" xml:space="preserve">
+    <value>Unfortunately someone else changed this information. Cancel your changes and redo them again please.</value>
+  </data>
+  <data name="ErrorPage_Default_ContinueButton" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="ErrorPage_Default_ContinueLabel" xml:space="preserve">
+    <value>Click 'Continue' to navigate to your default page.</value>
+  </data>
+  <data name="ErrorPage_Default_ResetButton" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ErrorPage_Default_ResetLabel" xml:space="preserve">
+    <value>If the error keeps on occurring you could try to reset your session by clicking the 'Reset' button.
+
+You will however lose unsaved changes.</value>
+  </data>
+  <data name="ErrorPage_Popup_ContinueButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ErrorPage_Popup_ContinueLabel" xml:space="preserve">
+    <value>Click 'Close' to close this popup and continue or retry your modification.</value>
+  </data>
+  <data name="ErrorPage_Popup_ResetButton" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ErrorPage_Popup_ResetLabel" xml:space="preserve">
+    <value>If the error keeps on occurring you could try to reset your session by clicking the 'Reset' button.
+
+You will however lose unsaved changes.</value>
+  </data>
+  <data name="ErrorPage_TechnicalDetails" xml:space="preserve">
+    <value>Technical details:</value>
+  </data>
+  <data name="exa_ExaminationID" xml:space="preserve">
+    <value>Examination ID</value>
+  </data>
+  <data name="exa_ExaminationStatusID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="exa_ExaminationTypeID" xml:space="preserve">
+    <value>Examination type</value>
+  </data>
+  <data name="exa_LastModifiedBy" xml:space="preserve">
+    <value>Last modified by</value>
+  </data>
+  <data name="exa_Laterality" xml:space="preserve">
+    <value>Laterality</value>
+  </data>
+  <data name="exa_ManuallyPlanned" xml:space="preserve">
+    <value>Forced</value>
+  </data>
+  <data name="exa_Memo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="exa_OrderID" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="exaass_AssigmentExecutor" xml:space="preserve">
+    <value>Executor</value>
+  </data>
+  <data name="exaass_ExaminationID" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="exaass_RisUserID" xml:space="preserve">
+    <value>RIS user</value>
+  </data>
+  <data name="exaass_RoleID" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="exadislis_Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="ExaminationDetails_AccessionNumber" xml:space="preserve">
+    <value>Accession Number</value>
+  </data>
+  <data name="ExaminationDetails_Documents" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="ExaminationDetails_ExaminationType" xml:space="preserve">
+    <value>Examination Type</value>
+  </data>
+  <data name="ExaminationDetails_Protocol" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="ExaminationDetails_ReferringPhysician" xml:space="preserve">
+    <value>Referring Physician</value>
+  </data>
+  <data name="ExaminationDetails_Scheduled" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="ExaminationNotFound" xml:space="preserve">
+    <value>Examination could not be found in the database.</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsControl_AvailableProtocolsCaption" xml:space="preserve">
+    <value>Available Examination Protocols</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsControl_FreeTextProtocolButton_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsControl_FreeTextProtocolButton_SaveAssign" xml:space="preserve">
+    <value>Save and assign</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsControl_NextExaminationButton" xml:space="preserve">
+    <value>Next Examination</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsPage_Examinations" xml:space="preserve">
+    <value>Examinations</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsPage_Statuses" xml:space="preserve">
+    <value>Statuses:</value>
+  </data>
+  <data name="ExaminationsTimeStampLoggingGridViewHeader" xml:space="preserve">
+    <value>Examination status history</value>
+  </data>
+  <data name="ExaminationTypes" xml:space="preserve">
+    <value>ExaminationTypes</value>
+  </data>
+  <data name="exapro_ExaminationProcedureID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="exapro_ExaminationProcedureName" xml:space="preserve">
+    <value>Procedure</value>
+  </data>
+  <data name="exapro_ExaminationProcedureText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="exarep_ExaminationID" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="exarep_ReportID" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="exasta_StatusID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="exasta_statusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="exatyp_ExaminationTypeID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="exatyp_ExaminationTypeName" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="exatyp_ExaminationTypeProcedureID" xml:space="preserve">
+    <value>Procedure</value>
+  </data>
+  <data name="exatyp_ExamTypeCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="exatyp_Laterality" xml:space="preserve">
+    <value>Laterality</value>
+  </data>
+  <data name="exatypact_ActionID" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="exatypact_ExaminationStep" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="exatypact_ExaminationTypeID" xml:space="preserve">
+    <value>Examination type</value>
+  </data>
+  <data name="exatypctgcod_CTGCodeID" xml:space="preserve">
+    <value>CTG code</value>
+  </data>
+  <data name="exatypctgcod_ExaminationTypeID" xml:space="preserve">
+    <value>Examination type</value>
+  </data>
+  <data name="exatypgro_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="exatypgro_ExaminationType" xml:space="preserve">
+    <value>Examination type</value>
+  </data>
+  <data name="exatypgro_GroupID" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="exatypgro_GroupName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="exatypspe_ExaminationTypeID" xml:space="preserve">
+    <value>Examination type</value>
+  </data>
+  <data name="exatypspe_SpecialisationID" xml:space="preserve">
+    <value>Specialisation</value>
+  </data>
+  <data name="extphy_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="extphy_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="extphy_Degree" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="extphy_DepartmentID" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="extphy_FaxNumber" xml:space="preserve">
+    <value>Fax number</value>
+  </data>
+  <data name="extphy_PhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="extphy_PhysicianID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="extphy_StreetName" xml:space="preserve">
+    <value>Street name</value>
+  </data>
+  <data name="extphy_ZipCode" xml:space="preserve">
+    <value>Zipcode</value>
+  </data>
+  <data name="FailedPrintsWorklist" xml:space="preserve">
+    <value>Failed prints worklist</value>
+  </data>
+  <data name="Filter_ExaminationReports" xml:space="preserve">
+    <value>Examination reports</value>
+  </data>
+  <data name="Filter_ExaminationStatusName" xml:space="preserve">
+    <value>Examinationstatus</value>
+  </data>
+  <data name="Filter_ExaminationTypeName" xml:space="preserve">
+    <value>Examinationtype</value>
+  </data>
+  <data name="Filter_PhysicianSurName" xml:space="preserve">
+    <value>Requesting physician</value>
+  </data>
+  <data name="Filter_ReferralType" xml:space="preserve">
+    <value>Patient category</value>
+  </data>
+  <data name="Filter_UserName" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="FormIncompleteArguments" xml:space="preserve">
+    <value>Missing arguments for form.</value>
+  </data>
+  <data name="frmPatients_AdmissionHistory" xml:space="preserve">
+    <value>Patient Admission History</value>
+  </data>
+  <data name="frmPatients_CreatePatient" xml:space="preserve">
+    <value>Create a new patient</value>
+  </data>
+  <data name="frmPatients_EditPatient" xml:space="preserve">
+    <value>Editing a patient </value>
+  </data>
+  <data name="frmPatients_PatientsInformation" xml:space="preserve">
+    <value>Patient Information</value>
+  </data>
+  <data name="frmStatistics_HeaderText_Production" xml:space="preserve">
+    <value>Production statistics</value>
+  </data>
+  <data name="frmStatistics_HeaderText_WaitingTimes" xml:space="preserve">
+    <value>Waitingtimes</value>
+  </data>
+  <data name="frmStatistics_OverviewText" xml:space="preserve">
+    <value>Overview waitingtimes</value>
+  </data>
+  <data name="frmStatistics_OverviewTextDictation" xml:space="preserve">
+    <value>Waitingtimes for dictations</value>
+  </data>
+  <data name="frmStatistics_WrongStatusChange" xml:space="preserve">
+    <value>Wrong statuschange selected</value>
+  </data>
+  <data name="funspe_FunctionSpecialisationID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="funspe_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="gen_GenderHL7Value" xml:space="preserve">
+    <value>HL7 value</value>
+  </data>
+  <data name="gen_GenderID" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="gen_GenderName" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="General_AbortButton" xml:space="preserve">
+    <value>Abort</value>
+  </data>
+  <data name="General_AddButton" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="General_ClearButton" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="General_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="General_ConfirmAllButton" xml:space="preserve">
+    <value>Confirm all</value>
+  </data>
+  <data name="General_ConfirmButton" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="General_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="General_DetailsButton" xml:space="preserve">
+    <value>View details</value>
+  </data>
+  <data name="General_False" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="General_FinishButton" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="General_GoToToday" xml:space="preserve">
+    <value>Go to today</value>
+  </data>
+  <data name="General_Less" xml:space="preserve">
+    <value>Less</value>
+  </data>
+  <data name="General_More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="General_Name_Label" xml:space="preserve">
+    <value>Name: </value>
+  </data>
+  <data name="General_New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="General_NoMemoFound" xml:space="preserve">
+    <value>No memo found.</value>
+  </data>
+  <data name="General_OkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="General_PrintMultipleAppointmentConfirmationsUnsupported" xml:space="preserve">
+    <value>You can only download one appointment confirmation at once.</value>
+  </data>
+  <data name="General_PrintMultiplePatientLabelsUnsupported" xml:space="preserve">
+    <value>You can only download one patient label at once.</value>
+  </data>
+  <data name="General_Reason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="General_Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="General_RequestedCommandUnknown" xml:space="preserve">
+    <value>The requested command {0} is unknown.</value>
+  </data>
+  <data name="General_SelectedDate" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="General_Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="General_True" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="General_UnexpectedError" xml:space="preserve">
+    <value>An unexpected error occurred while trying to process the command.</value>
+  </data>
+  <data name="General_ViewButton" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="GeneralPractitioner" xml:space="preserve">
+    <value>General Practitioner</value>
+  </data>
+  <data name="genpra_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Genpra_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="genpra_CountryID" xml:space="preserve">
+    <value>Country ID</value>
+  </data>
+  <data name="Genpra_General_Practitioner_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="genpra_GeneralPractitioner" xml:space="preserve">
+    <value>General Practitioner</value>
+  </data>
+  <data name="genpra_GeneralPractitionerID" xml:space="preserve">
+    <value>General Practitioner ID</value>
+  </data>
+  <data name="genpra_GeneralPractitionerName" xml:space="preserve">
+    <value>General Practitioner Name</value>
+  </data>
+  <data name="genpra_PhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="genpra_PhysicianID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Genpra_Postal_Code" xml:space="preserve">
+    <value>ZIP Code</value>
+  </data>
+  <data name="genpra_PostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="genpra_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Genpra_Street_Name" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Genpra_Street_Number" xml:space="preserve">
+    <value>Street Number</value>
+  </data>
+  <data name="genpra_StreetName" xml:space="preserve">
+    <value>Street Name</value>
+  </data>
+  <data name="genpra_StreetNumber" xml:space="preserve">
+    <value>Street Number</value>
+  </data>
+  <data name="GenpraCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="GenpraGeneralPractitioner" xml:space="preserve">
+    <value>General Practitioner ID</value>
+  </data>
+  <data name="hisloc_HistoryLocationId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hisloc_HistoryLocationName" xml:space="preserve">
+    <value>Historic location</value>
+  </data>
+  <data name="History_Location" xml:space="preserve">
+    <value>Location history</value>
+  </data>
+  <data name="hl7cre_MessageID" xml:space="preserve">
+    <value>hl7cre_MessageID</value>
+  </data>
+  <data name="hl7cre_MessageText" xml:space="preserve">
+    <value>hl7cre_MessageText</value>
+  </data>
+  <data name="hl7mesrou_Host" xml:space="preserve">
+    <value>hl7mesrou_Host</value>
+  </data>
+  <data name="hl7mesrou_MessageType" xml:space="preserve">
+    <value>hl7mesrou_MessageType</value>
+  </data>
+  <data name="hl7mesrou_Port" xml:space="preserve">
+    <value>hl7mesrou_Port</value>
+  </data>
+  <data name="hl7rec_Error" xml:space="preserve">
+    <value>hl7rec_Error</value>
+  </data>
+  <data name="hl7rec_MessageText" xml:space="preserve">
+    <value>hl7rec_MessageText</value>
+  </data>
+  <data name="hl7rec_ReceiveDateTime" xml:space="preserve">
+    <value>hl7rec_ReceiveDateTime</value>
+  </data>
+  <data name="hl7rec_ReceiveID" xml:space="preserve">
+    <value>hl7rec_ReceiveID</value>
+  </data>
+  <data name="hl7rec_ReceivingHost" xml:space="preserve">
+    <value>hl7rec_ReceivingHost</value>
+  </data>
+  <data name="hl7rec_ReceivingPort" xml:space="preserve">
+    <value>hl7rec_ReceivingPort</value>
+  </data>
+  <data name="hl7rec_ResponseToMessage" xml:space="preserve">
+    <value>hl7rec_ResponseToMessage</value>
+  </data>
+  <data name="hl7rec_ResultFunction" xml:space="preserve">
+    <value>hl7rec_ResultFunction</value>
+  </data>
+  <data name="hl7rec_SendingHost" xml:space="preserve">
+    <value>hl7rec_SendingHost</value>
+  </data>
+  <data name="hl7rec_SendingPort" xml:space="preserve">
+    <value>hl7rec_SendingPort</value>
+  </data>
+  <data name="hl7sen_Error" xml:space="preserve">
+    <value>hl7sen_Error</value>
+  </data>
+  <data name="hl7sen_MessageText" xml:space="preserve">
+    <value>hl7sen_MessageText</value>
+  </data>
+  <data name="hl7sen_ReceivingHost" xml:space="preserve">
+    <value>hl7sen_ReceivingHost</value>
+  </data>
+  <data name="hl7sen_ReceivingPort" xml:space="preserve">
+    <value>hl7sen_ReceivingPort</value>
+  </data>
+  <data name="hl7sen_ResponseToMessage" xml:space="preserve">
+    <value>hl7sen_ResponseToMessage</value>
+  </data>
+  <data name="hl7sen_ResultFunction" xml:space="preserve">
+    <value>hl7sen_ResultFunction</value>
+  </data>
+  <data name="hl7sen_SendDateTime" xml:space="preserve">
+    <value>hl7sen_SendDateTime</value>
+  </data>
+  <data name="hl7sen_SendID" xml:space="preserve">
+    <value>hl7sen_SendID</value>
+  </data>
+  <data name="hl7sen_SendingHost" xml:space="preserve">
+    <value>hl7sen_SendingHost</value>
+  </data>
+  <data name="hl7sen_SendingPort" xml:space="preserve">
+    <value>hl7sen_SendingPort</value>
+  </data>
+  <data name="Hloc" xml:space="preserve">
+    <value>Historic Location</value>
+  </data>
+  <data name="Hloc_" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hloc_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="hloc_HistoryLocationDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="hloc_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hloc_Name" xml:space="preserve">
+    <value>History Location</value>
+  </data>
+  <data name="hos_HospitalCity" xml:space="preserve">
+    <value>Residence</value>
+  </data>
+  <data name="hos_HospitalCountry" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="hos_HospitalID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hos_HospitalName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="hos_HospitalPhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="hos_HospitalStreetName" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="hos_HospitalZipCode" xml:space="preserve">
+    <value>ZIP Code</value>
+  </data>
+  <data name="Housekeeping_WorkListFilters" xml:space="preserve">
+    <value>Housekeeping Work List Filters</value>
+  </data>
+  <data name="htCalendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="htDictation" xml:space="preserve">
+    <value>Dictation</value>
+  </data>
+  <data name="htDiscussions" xml:space="preserve">
+    <value>Discussion Lists</value>
+  </data>
+  <data name="htErrorPage" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="htImaging" xml:space="preserve">
+    <value>Imaging</value>
+  </data>
+  <data name="htReception" xml:space="preserve">
+    <value>Reception</value>
+  </data>
+  <data name="htStartPage" xml:space="preserve">
+    <value>Start page</value>
+  </data>
+  <data name="Imaging_CompletedExaminationsCaption" xml:space="preserve">
+    <value>Completed Examinations</value>
+  </data>
+  <data name="Imaging_ExaminationMemo" xml:space="preserve">
+    <value>Memos</value>
+  </data>
+  <data name="Imaging_ExaminationsInProgressCaption" xml:space="preserve">
+    <value>Examinations</value>
+  </data>
+  <data name="Imaging_InDepartmentCaption" xml:space="preserve">
+    <value>Arrived Patients</value>
+  </data>
+  <data name="Imaging_IntermediateExaminationsCaption" xml:space="preserve">
+    <value>Intermediate Patients</value>
+  </data>
+  <data name="Imaging_IntermediateMemo" xml:space="preserve">
+    <value>Intermediate Memo</value>
+  </data>
+  <data name="Imaging_IntermediateStatusChanged" xml:space="preserve">
+    <value>The intermediate status has been changed, please refresh and accept the latest status.</value>
+  </data>
+  <data name="Imaging_NoExaminationSelected" xml:space="preserve">
+    <value>No examination has been selected.</value>
+  </data>
+  <data name="Imaging_NoMemo" xml:space="preserve">
+    <value>No memo</value>
+  </data>
+  <data name="Imaging_NoProtocol" xml:space="preserve">
+    <value>No protocol assigned</value>
+  </data>
+  <data name="Imaging_OrderMemo" xml:space="preserve">
+    <value>Order Memo</value>
+  </data>
+  <data name="Imaging_PatientHistoryCaption" xml:space="preserve">
+    <value>Patient History</value>
+  </data>
+  <data name="Imaging_PatientsInProgressCaption" xml:space="preserve">
+    <value>Patients</value>
+  </data>
+  <data name="Imaging_WorkListFilters" xml:space="preserve">
+    <value>Imaging Work List Filters</value>
+  </data>
+  <data name="ImagingPage_ArrivedPatients" xml:space="preserve">
+    <value>Arrived Patients</value>
+  </data>
+  <data name="ImagingPage_DisplayCompletedExaminations" xml:space="preserve">
+    <value>Show completed examinations</value>
+  </data>
+  <data name="ImagingPage_ExaminationProtocolAssignmentError" xml:space="preserve">
+    <value>There was a problem when trying to assign the requested protocol.</value>
+  </data>
+  <data name="ImagingPage_ExaminationProtocolCaption" xml:space="preserve">
+    <value>Available Examination Protocols</value>
+  </data>
+  <data name="ImagingPage_ExaminationProtocolTab" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="ImagingPage_ExaminationProtocolTabWithCode" xml:space="preserve">
+    <value>Protocol ({0})</value>
+  </data>
+  <data name="ImagingPage_Filter" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="ImagingPage_FilterInDepartment" xml:space="preserve">
+    <value>Show only arrived patients</value>
+  </data>
+  <data name="ImagingPage_SendAllToButton" xml:space="preserve">
+    <value>Send All To</value>
+  </data>
+  <data name="ImagingPage_ShowHistoryInformation" xml:space="preserve">
+    <value>Show Patient History</value>
+  </data>
+  <data name="ImagingPage_ShowRequestInformation" xml:space="preserve">
+    <value>Show Request Information</value>
+  </data>
+  <data name="ImgExamination_ExaminationsInProgress_CompleteAll" xml:space="preserve">
+    <value>Complete All</value>
+  </data>
+  <data name="ImgExamination_ExaminationsInProgress_CompleteSelection" xml:space="preserve">
+    <value>Complete Selection</value>
+  </data>
+  <data name="ImportOrderInfomessage" xml:space="preserve">
+    <value>The following accessionnumbers were created:</value>
+  </data>
+  <data name="InactiveSuffix" xml:space="preserve">
+    <value>(inactive)</value>
+  </data>
+  <data name="Inscom_Insurance_Company_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="inscom_InsuranceCompanyID" xml:space="preserve">
+    <value>Insurance Company ID</value>
+  </data>
+  <data name="inscom_InsuranceCompanyName" xml:space="preserve">
+    <value>Insurance Company Name</value>
+  </data>
+  <data name="InscomInsuranceCompany" xml:space="preserve">
+    <value>Insurance Company ID</value>
+  </data>
+  <data name="IntendedVetter" xml:space="preserve">
+    <value>Intended Approver</value>
+  </data>
+  <data name="InteractiveDictation" xml:space="preserve">
+    <value>Zillion RIS - Interactive Dictation</value>
+  </data>
+  <data name="InteractiveDictation_CancelDictation" xml:space="preserve">
+    <value>Are you sure you want to cancel dictation?</value>
+  </data>
+  <data name="InteractiveDictation_CreatingBridge" xml:space="preserve">
+    <value>Creating bridge... - Zillion RIS - Interactive Dictation</value>
+  </data>
+  <data name="InteractiveDictation_Error" xml:space="preserve">
+    <value>Error - Zillion RIS - Interactive Dictation</value>
+  </data>
+  <data name="InteractiveDictation_InternetExplorer" xml:space="preserve">
+    <value>Make sure you are running Zillion RIS from Internet Explorer (in 64-bit when available).</value>
+  </data>
+  <data name="InteractiveDictation_NewDocument" xml:space="preserve">
+    <value>New document... - Zillion RIS - Interactive Dictation</value>
+  </data>
+  <data name="InteractiveDictation_NoSessionDetected" xml:space="preserve">
+    <value>No interactive dictation session detected, please try again.</value>
+  </data>
+  <data name="InteractiveDictation_Silverlight" xml:space="preserve">
+    <value>Silverlight control could not be found.</value>
+  </data>
+  <data name="InteractiveDictation_Title" xml:space="preserve">
+    <value>Loading... - Zillion RIS - Interactive Dictation</value>
+  </data>
+  <data name="InteractiveDictation_UnableOpenDocument" xml:space="preserve">
+    <value>InterActive was unable to open a new document.</value>
+  </data>
+  <data name="InteractiveDictation_UnableToFindMainWindow" xml:space="preserve">
+    <value>Unable to find the main window, please restart dictation.</value>
+  </data>
+  <data name="InteractiveDictation_UnableToInitialize" xml:space="preserve">
+    <value>InterActive was unable to initialize.</value>
+  </data>
+  <data name="InteractiveDictation_ZillionSpeechClientInstalled" xml:space="preserve">
+    <value>Interactive Dictation requires the &lt;strong&gt;Zillion Speech Client&lt;/strong&gt; to be installed.</value>
+  </data>
+  <data name="intphy_DepartmentID" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="intphy_PhysicianDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="intphy_PhysicianID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="intsta_IntermediateStatusDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="intsta_IntermediateStatusID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="intsta_IntermediateStatusName" xml:space="preserve">
+    <value>Intermediate status</value>
+  </data>
+  <data name="lblMemo" xml:space="preserve">
+    <value>Examination Memos:</value>
+  </data>
+  <data name="lblOrderMemo" xml:space="preserve">
+    <value>Order Memo:</value>
+  </data>
+  <data name="loading" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="loc_LocationName" xml:space="preserve">
+    <value>Location Name</value>
+  </data>
+  <data name="Login_domain" xml:space="preserve">
+    <value>Domain: </value>
+  </data>
+  <data name="Login_ErrorPopupTitle" xml:space="preserve">
+    <value>An error occurred while logging in to the RIS</value>
+  </data>
+  <data name="Login_LanguageLabel" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="Login_LoggingNotInitialized" xml:space="preserve">
+    <value>Rogan SysLog could not be initialized.
+
+Please contact your system administrator.</value>
+  </data>
+  <data name="LoginPage_LowProfileCheckBox" xml:space="preserve">
+    <value>Use low profile web pages</value>
+  </data>
+  <data name="LowProfileMaster_About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="LowProfileMaster_Alerts" xml:space="preserve">
+    <value>Alerts:</value>
+  </data>
+  <data name="LowProfileMaster_ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="LowProfileMaster_CloseViewer" xml:space="preserve">
+    <value>Close Viewer</value>
+  </data>
+  <data name="LowProfileMaster_CurrentLabelPrinter" xml:space="preserve">
+    <value>Current Label Printer</value>
+  </data>
+  <data name="LowProfileMaster_CurrentPrinter" xml:space="preserve">
+    <value>Current Printer</value>
+  </data>
+  <data name="LowProfileMaster_Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="LowProfileMaster_LastAccessedExaminations" xml:space="preserve">
+    <value>Last Accessed Examinations</value>
+  </data>
+  <data name="LowProfileMaster_Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="LowProfileMaster_Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LowProfileMaster_Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_AccessionNumber" xml:space="preserve">
+    <value>Accession Number</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_DateOfBirth" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_MaidenName" xml:space="preserve">
+    <value>Maiden Name</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_OrderNumber" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_PatientNumber" xml:space="preserve">
+    <value>Patient Number</value>
+  </data>
+  <data name="LowProfileMaster_SelectLocation" xml:space="preserve">
+    <value>Select a Location</value>
+  </data>
+  <data name="LowProfileMaster_SelectPrinter" xml:space="preserve">
+    <value>Select a Printer</value>
+  </data>
+  <data name="LowProfileMaster_SelectStyleForTabs" xml:space="preserve">
+    <value>Select a Style for tabs</value>
+  </data>
+  <data name="LowProfileMaster_Settings" xml:space="preserve">
+    <value>Change Settings</value>
+  </data>
+  <data name="LowProfileMaster_User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="ltAccessionNumber" xml:space="preserve">
+    <value>Acc. number</value>
+  </data>
+  <data name="ltAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ltAdvancedSearch" xml:space="preserve">
+    <value>Advanced Search</value>
+  </data>
+  <data name="ltOrderInformation" xml:space="preserve">
+    <value>Order Information</value>
+  </data>
+  <data name="ltApprover" xml:space="preserve">
+    <value>Approver</value>
+  </data>
+  <data name="ltAssignments" xml:space="preserve">
+    <value>Assignments</value>
+  </data>
+  <data name="ltAtLeast3Chars" xml:space="preserve">
+    <value>Provide at least three characters.</value>
+  </data>
+  <data name="ltAuthor" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="ltAuthorizer" xml:space="preserve">
+    <value>Authorizer</value>
+  </data>
+  <data name="ltBook" xml:space="preserve">
+    <value>Book</value>
+  </data>
+  <data name="ltBookAppointment" xml:space="preserve">
+    <value>Book appointment</value>
+  </data>
+  <data name="ltCalculateSchedule" xml:space="preserve">
+    <value>Calculating schedule...</value>
+  </data>
+  <data name="ltCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ltChangeDefaultConfiguration" xml:space="preserve">
+    <value>Default Configuration</value>
+  </data>
+  <data name="ltCity" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ltClearFields" xml:space="preserve">
+    <value>Clear Fields</value>
+  </data>
+  <data name="ltClinicalInformation" xml:space="preserve">
+    <value>Clinical Information</value>
+  </data>
+  <data name="ltComplete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="ltCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="ltConcurrencyError" xml:space="preserve">
+    <value>An other user used this data. Page will be reloaded.</value>
+  </data>
+  <data name="ltConfiguration" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="ltConfirmMerge" xml:space="preserve">
+    <value>Are you sure you want to merge the patients?</value>
+  </data>
+  <data name="ltContinue" xml:space="preserve">
+    <value>Continue?</value>
+  </data>
+  <data name="ltCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ltCreatedOn" xml:space="preserve">
+    <value>Report created on</value>
+  </data>
+  <data name="ltCriterion" xml:space="preserve">
+    <value>Criterion</value>
+  </data>
+  <data name="ltCustomDuration" xml:space="preserve">
+    <value>Custom Duration</value>
+  </data>
+  <data name="ltDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ltDateOfBirth" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="ltDeleteExamFromOrder" xml:space="preserve">
+    <value>Delete Examination</value>
+  </data>
+  <data name="ltDeleteOrder" xml:space="preserve">
+    <value>Cancel order</value>
+  </data>
+  <data name="ltDeselectAll" xml:space="preserve">
+    <value>Deselect all reports</value>
+  </data>
+  <data name="ltDictate" xml:space="preserve">
+    <value>Dictate:</value>
+  </data>
+  <data name="ltDictateBatch" xml:space="preserve">
+    <value>Batch</value>
+  </data>
+  <data name="ltDictated" xml:space="preserve">
+    <value>Dictated</value>
+  </data>
+  <data name="ltDictateDigital" xml:space="preserve">
+    <value>Digital</value>
+  </data>
+  <data name="ltDictateInteractive" xml:space="preserve">
+    <value>Interactive</value>
+  </data>
+  <data name="ltDictationTypes" xml:space="preserve">
+    <value>Dictation Types</value>
+  </data>
+  <data name="ltDiscussionList" xml:space="preserve">
+    <value>Discussion List</value>
+  </data>
+  <data name="ltDocuments" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="ltDummyPatient" xml:space="preserve">
+    <value>Dummy Patient</value>
+  </data>
+  <data name="ltEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ltEditOrder" xml:space="preserve">
+    <value>Edit order</value>
+  </data>
+  <data name="ltElectronicDocuments" xml:space="preserve">
+    <value>Electronic documents</value>
+  </data>
+  <data name="ltEmailAddress" xml:space="preserve">
+    <value>E-mail Address</value>
+  </data>
+  <data name="ltEmptyMailboxNumbers" xml:space="preserve">
+    <value>Only without mailbox</value>
+  </data>
+  <data name="ltEmptyRequestFormTitle" xml:space="preserve">
+    <value>No request form available</value>
+  </data>
+  <data name="ltEnd" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="ltEndExaminationStatus" xml:space="preserve">
+    <value>To examinationStatus</value>
+  </data>
+  <data name="ltExamination" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="ltExaminationDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ltExaminationDetails" xml:space="preserve">
+    <value>Examination details</value>
+  </data>
+  <data name="ltExaminationOverview" xml:space="preserve">
+    <value>Examination overview</value>
+  </data>
+  <data name="ltExaminationReports" xml:space="preserve">
+    <value>Examination Reports</value>
+  </data>
+  <data name="ltExaminations" xml:space="preserve">
+    <value>Examinations</value>
+  </data>
+  <data name="ltExaminationsInformation" xml:space="preserve">
+    <value>Patient History</value>
+  </data>
+  <data name="ltExaminationStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ltExaminationType" xml:space="preserve">
+    <value>Examination type</value>
+  </data>
+  <data name="ltExtraInformation" xml:space="preserve">
+    <value>Additional information</value>
+  </data>
+  <data name="ltFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="ltFirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="ltFirstPossibilities" xml:space="preserve">
+    <value>First Possibilities</value>
+  </data>
+  <data name="ltFor" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="ltFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="ltFunctionSpecialisation" xml:space="preserve">
+    <value>Function specialisation</value>
+  </data>
+  <data name="ltGender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="ltGenderFemale" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="ltGenderMale" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ltGeneralPhysicianInformation" xml:space="preserve">
+    <value>General Practitioner Data</value>
+  </data>
+  <data name="ltGeneralPhysicianName" xml:space="preserve">
+    <value>General Practitioner</value>
+  </data>
+  <data name="ltGeneralPracticionerAddress" xml:space="preserve">
+    <value>General Practitioner Address</value>
+  </data>
+  <data name="ltGeneralPractitionerAddress" xml:space="preserve">
+    <value>General Practitioner Address</value>
+  </data>
+  <data name="ltGeneralPractitionerPracticeInformation" xml:space="preserve">
+    <value>General Practitioner Practice Data</value>
+  </data>
+  <data name="ltGPPracticeCCGCode" xml:space="preserve">
+    <value>Practice CCG Code</value>
+  </data>
+  <data name="ltGPPracticeCode" xml:space="preserve">
+    <value>Practice Code</value>
+  </data>
+  <data name="ltGPPracticeDescription" xml:space="preserve">
+    <value>Practice Description</value>
+  </data>
+  <data name="ltGPWorkLocationAddress" xml:space="preserve">
+    <value>GP Practice address</value>
+  </data>
+  <data name="ltGPWorkLocationPhoneNumber" xml:space="preserve">
+    <value>GP Practice phone number</value>
+  </data>
+  <data name="ltGPWorkLocationPostalCode" xml:space="preserve">
+    <value>GP Practice postal code</value>
+  </data>
+  <data name="ltHistory" xml:space="preserve">
+    <value>Patient History</value>
+  </data>
+  <data name="ltHistoryInformation" xml:space="preserve">
+    <value>Patient History</value>
+  </data>
+  <data name="ltHistoryLocation" xml:space="preserve">
+    <value>Film record history</value>
+  </data>
+  <data name="ltHours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="ltICD10Search" xml:space="preserve">
+    <value>ICD10 Search</value>
+  </data>
+  <data name="ltIDDocuments" xml:space="preserve">
+    <value>Identification documents</value>
+  </data>
+  <data name="ltImportOrder" xml:space="preserve">
+    <value>Import Order</value>
+  </data>
+  <data name="ltInactiveExaminations" xml:space="preserve">
+    <value>This order does contain inactive examinations and needs to be rescheduled. </value>
+  </data>
+  <data name="ltInDepartment" xml:space="preserve">
+    <value>In Department</value>
+  </data>
+  <data name="ltInfoMessage" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="ltInitials" xml:space="preserve">
+    <value>Initials</value>
+  </data>
+  <data name="ltInProgress" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="ltInsuranceCompany" xml:space="preserve">
+    <value>Insurance company</value>
+  </data>
+  <data name="ltInsuranceDocuments" xml:space="preserve">
+    <value>Insurance documents</value>
+  </data>
+  <data name="ltInsuranceInformation" xml:space="preserve">
+    <value>Insurance data</value>
+  </data>
+  <data name="ltInsuranceNumber" xml:space="preserve">
+    <value>Insurance number</value>
+  </data>
+  <data name="ltIntendedReporter" xml:space="preserve">
+    <value>Intended reporter</value>
+  </data>
+  <data name="ltIntermediate" xml:space="preserve">
+    <value>Intermediate</value>
+  </data>
+  <data name="ltLabResults" xml:space="preserve">
+    <value>Lab results</value>
+  </data>
+  <data name="ltLastName" xml:space="preserve">
+    <value>Birth name</value>
+  </data>
+  <data name="ltLaterality" xml:space="preserve">
+    <value>Laterality</value>
+  </data>
+  <data name="ltLocality" xml:space="preserve">
+    <value>Locality</value>
+  </data>
+  <data name="ltLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="ltMaidenName" xml:space="preserve">
+    <value>Maiden name</value>
+  </data>
+  <data name="ltMaintenanceEntityDetails" xml:space="preserve">
+    <value>Details for:</value>
+  </data>
+  <data name="ltMaritialState" xml:space="preserve">
+    <value>Marital state</value>
+  </data>
+  <data name="ltMemo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="ltMergePatient" xml:space="preserve">
+    <value>Merge</value>
+  </data>
+  <data name="ltMergeWarning" xml:space="preserve">
+    <value>The patient to set in departement is a temporary patient. The patient should be merged before setting it in department.</value>
+  </data>
+  <data name="ltMinutes" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="ltMobility" xml:space="preserve">
+    <value>Mobility</value>
+  </data>
+  <data name="ltModality" xml:space="preserve">
+    <value>Modality</value>
+  </data>
+  <data name="ltMove" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="ltMoveOrder" xml:space="preserve">
+    <value>Move order</value>
+  </data>
+  <data name="ltMoveStudy" xml:space="preserve">
+    <value>Move study</value>
+  </data>
+  <data name="ltNewOrder" xml:space="preserve">
+    <value>New Order</value>
+  </data>
+  <data name="ltNewPatient" xml:space="preserve">
+    <value>New Patient</value>
+  </data>
+  <data name="ltNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="ltNextOfKinInformation" xml:space="preserve">
+    <value>Next Of Kin Information</value>
+  </data>
+  <data name="ltNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ltNoHistoryAvailable" xml:space="preserve">
+    <value>No history available</value>
+  </data>
+  <data name="ltNoMedicalInformation" xml:space="preserve">
+    <value>No medical information available</value>
+  </data>
+  <data name="ltNoOrdersFound" xml:space="preserve">
+    <value>No Orders found!</value>
+  </data>
+  <data name="ltNoPatientInformationAvailable" xml:space="preserve">
+    <value>No patient information available</value>
+  </data>
+  <data name="ltNoPatientsFound" xml:space="preserve">
+    <value>No Patients found!</value>
+  </data>
+  <data name="ltNoRequestForm" xml:space="preserve">
+    <value>This is an electronic request!</value>
+  </data>
+  <data name="ltNoResultsFound" xml:space="preserve">
+    <value>No results found!</value>
+  </data>
+  <data name="ltNoStudiesFound" xml:space="preserve">
+    <value>No studies found!</value>
+  </data>
+  <data name="ltNote" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="ltNumber" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="ltObservationInformation" xml:space="preserve">
+    <value>Observations</value>
+  </data>
+  <data name="ltObservations" xml:space="preserve">
+    <value>Observations:</value>
+  </data>
+  <data name="ltOpen" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="ltOrderDate" xml:space="preserve">
+    <value>Order date</value>
+  </data>
+  <data name="ltOrderNumber" xml:space="preserve">
+    <value>Order number</value>
+  </data>
+  <data name="ltOrderSearch" xml:space="preserve">
+    <value>Order search:</value>
+  </data>
+  <data name="ltOrderSearchResult" xml:space="preserve">
+    <value>Order search result:</value>
+  </data>
+  <data name="ltOrderSearchToolTip" xml:space="preserve">
+    <value>Provide order number, patient name or patient ID.</value>
+  </data>
+  <data name="ltOrderType" xml:space="preserve">
+    <value>Order Type</value>
+  </data>
+  <data name="ltOrigin" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="ltOutOfSchedule" xml:space="preserve">
+    <value>The chosen date must be between 6 months from now.</value>
+  </data>
+  <data name="ltPartnerName" xml:space="preserve">
+    <value>Partner Name</value>
+  </data>
+  <data name="ltPartnerPrefix" xml:space="preserve">
+    <value>Partner Prefix</value>
+  </data>
+  <data name="ltPatient" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="ltPatientAdmissionHistory" xml:space="preserve">
+    <value>Patient Admission History</value>
+  </data>
+  <data name="ltPatientCategory" xml:space="preserve">
+    <value>Patient Category</value>
+  </data>
+  <data name="ltPatientInformation" xml:space="preserve">
+    <value>Patient Information</value>
+  </data>
+  <data name="ltPatientName" xml:space="preserve">
+    <value>Patient name</value>
+  </data>
+  <data name="ltPatientNr" xml:space="preserve">
+    <value>Patient Nr</value>
+  </data>
+  <data name="ltPatientNumber" xml:space="preserve">
+    <value>Patient number</value>
+  </data>
+  <data name="ltPatientPlanned" xml:space="preserve">
+    <value>A patient is already planned at this time.</value>
+  </data>
+  <data name="ltPatientSearch" xml:space="preserve">
+    <value>Patient search:</value>
+  </data>
+  <data name="ltPatientSearchResult" xml:space="preserve">
+    <value>Patient search result:</value>
+  </data>
+  <data name="ltPatientSearchToolTip" xml:space="preserve">
+    <value>Provide patient name, patient ID, birthdate or order number.</value>
+  </data>
+  <data name="ltPersonalInformation" xml:space="preserve">
+    <value>Identifiable information</value>
+  </data>
+  <data name="ltPhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="ltPhoneNumberSecond" xml:space="preserve">
+    <value>Second phone number</value>
+  </data>
+  <data name="ltPleaseWait" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="ltPostalCode" xml:space="preserve">
+    <value>Postal code</value>
+  </data>
+  <data name="ltPracticeCCGCode" xml:space="preserve">
+    <value>CCG Code</value>
+  </data>
+  <data name="ltPracticeCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ltPracticeDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ltPrefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="ltPreliminary" xml:space="preserve">
+    <value>This is a preliminary report</value>
+  </data>
+  <data name="ltPrevious" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="ltPrint" xml:space="preserve">
+    <value>Print all</value>
+  </data>
+  <data name="ltPrintConfirmationLetter" xml:space="preserve">
+    <value>Print confirmation letter</value>
+  </data>
+  <data name="ltPrintingDone" xml:space="preserve">
+    <value>Print request sent</value>
+  </data>
+  <data name="ltPrintPatientLabel" xml:space="preserve">
+    <value>Print patient label</value>
+  </data>
+  <data name="ltPrintReqForm" xml:space="preserve">
+    <value>Print request form</value>
+  </data>
+  <data name="ltPrintSelectedReports" xml:space="preserve">
+    <value>Print selected reports</value>
+  </data>
+  <data name="ltProtocol" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="ltRadiologist" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="ltRecorder" xml:space="preserve">
+    <value>Recorder</value>
+  </data>
+  <data name="ltReferralType" xml:space="preserve">
+    <value>Referral Type</value>
+  </data>
+  <data name="ltReferringPhysician" xml:space="preserve">
+    <value>Referrer</value>
+  </data>
+  <data name="ltReferringWorkLocation" xml:space="preserve">
+    <value>Referring Work Location</value>
+  </data>
+  <data name="ltRemove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="ltRequester" xml:space="preserve">
+    <value>Requester</value>
+  </data>
+  <data name="ltRequestForm" xml:space="preserve">
+    <value>Request Form</value>
+  </data>
+  <data name="ltRequestFormTitle" xml:space="preserve">
+    <value>Request form for patient:</value>
+  </data>
+  <data name="ltRequestingLocation" xml:space="preserve">
+    <value>Requesting Location</value>
+  </data>
+  <data name="ltRequestingSite" xml:space="preserve">
+    <value>Hospital Location</value>
+  </data>
+  <data name="ltReserve" xml:space="preserve">
+    <value>Reserve</value>
+  </data>
+  <data name="ltReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ltRoom" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="ltRoomIsClosed" xml:space="preserve">
+    <value>The room is closed at this time.</value>
+  </data>
+  <data name="ltScan" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="ltScanRequestForm" xml:space="preserve">
+    <value>Scan request form</value>
+  </data>
+  <data name="ltSchedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="ltScheduled" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="ltScheduledStatus" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="ltSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ltSelectAll" xml:space="preserve">
+    <value>Select all reports</value>
+  </data>
+  <data name="ltSelectedAppointments" xml:space="preserve">
+    <value>Selected appointments</value>
+  </data>
+  <data name="ltSelectNone" xml:space="preserve">
+    <value>Select none</value>
+  </data>
+  <data name="ltSendTo" xml:space="preserve">
+    <value>Send to</value>
+  </data>
+  <data name="ltSex" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="ltShowComplicationForm" xml:space="preserve">
+    <value>Complication Form</value>
+  </data>
+  <data name="ltShowPerformanceIndicatorForm" xml:space="preserve">
+    <value>Indicator Form</value>
+  </data>
+  <data name="ltShowRequestForm" xml:space="preserve">
+    <value>Show request form</value>
+  </data>
+  <data name="ltSocialSecurityNumber" xml:space="preserve">
+    <value>NHS number</value>
+  </data>
+  <data name="ltSpecifyStudies" xml:space="preserve">
+    <value>Please specify at least one study!</value>
+  </data>
+  <data name="ltStart" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="ltStartExaminationStatus" xml:space="preserve">
+    <value>From examinationStatus</value>
+  </data>
+  <data name="ltStartPage" xml:space="preserve">
+    <value>There are no permissions set for you. Please contact your administrator</value>
+  </data>
+  <data name="ltState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="ltStoredDocuments" xml:space="preserve">
+    <value>Stored Documents</value>
+  </data>
+  <data name="ltStreetName" xml:space="preserve">
+    <value>Street name</value>
+  </data>
+  <data name="ltStreetNumber" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="ltStudies" xml:space="preserve">
+    <value>Studies</value>
+  </data>
+  <data name="ltStudyHistory" xml:space="preserve">
+    <value>Study History</value>
+  </data>
+  <data name="ltSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="ltTechnician" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="ltTextDictation" xml:space="preserve">
+    <value>Text Dictation</value>
+  </data>
+  <data name="ltTextProtocol" xml:space="preserve">
+    <value>Free Text Protocol</value>
+  </data>
+  <data name="ltTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="ltTimeOutsideDailySchedule" xml:space="preserve">
+    <value>The time is outside normal room schedule.</value>
+  </data>
+  <data name="ltTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="ltttSearch" xml:space="preserve">
+    <value>Enter last name.</value>
+  </data>
+  <data name="ltUnexpectedErrorEncountered" xml:space="preserve">
+    <value>An unexpected error has occurred. More information can be found in the logging. </value>
+  </data>
+  <data name="ltUnexpectedErrorEncounteredException" xml:space="preserve">
+    <value>An error has occurred.
+
+Error message:
+{0}</value>
+  </data>
+  <data name="ltUrgency" xml:space="preserve">
+    <value>Urgency</value>
+  </data>
+  <data name="ltUseAuthorisationDate" xml:space="preserve">
+    <value>Use authorisation date</value>
+  </data>
+  <data name="ltUser" xml:space="preserve">
+    <value>Initials</value>
+  </data>
+  <data name="ltUserUnknown" xml:space="preserve">
+    <value>User is unknown!</value>
+  </data>
+  <data name="ltUseScheduleDate" xml:space="preserve">
+    <value>Use schedule date</value>
+  </data>
+  <data name="ltValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="ltValueNotValid" xml:space="preserve">
+    <value>Please provide a correct value.</value>
+  </data>
+  <data name="ltView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ltViewRequestForm" xml:space="preserve">
+    <value>View request form</value>
+  </data>
+  <data name="ltWard" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="ltWarning" xml:space="preserve">
+    <value>Warning!</value>
+  </data>
+  <data name="ltWorkLocationInformation" xml:space="preserve">
+    <value>Work Location Information</value>
+  </data>
+  <data name="ltYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ltZISData" xml:space="preserve">
+    <value>ZIS Data</value>
+  </data>
+  <data name="marst_MaritalStateHL7Value" xml:space="preserve">
+    <value>HL7 value</value>
+  </data>
+  <data name="Marsta_Maritial_State_Name" xml:space="preserve">
+    <value>Marital State</value>
+  </data>
+  <data name="marsta_MaritialStateID" xml:space="preserve">
+    <value>Marital State ID</value>
+  </data>
+  <data name="marsta_MaritialStateName" xml:space="preserve">
+    <value>Marital State Name</value>
+  </data>
+  <data name="MarstaMaritialState" xml:space="preserve">
+    <value>Marital State ID</value>
+  </data>
+  <data name="MasterPage_ProductName" xml:space="preserve">
+    <value>Zillion RIS</value>
+  </data>
+  <data name="MasterPage_Reset_Layout_Information" xml:space="preserve">
+    <value>Reset your layout information</value>
+  </data>
+  <data name="MasterPage_SideBar_LocationLabel" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="MasterPage_SideBar_NoLocationConnected" xml:space="preserve">
+    <value>No location (room) connected to the user.</value>
+  </data>
+  <data name="MasterPage_SideBar_UnknownLocation" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="MasterPage_SideBar_UnknownUser" xml:space="preserve">
+    <value>not logged on</value>
+  </data>
+  <data name="MasterPage_SideBar_UserNameLabel" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="MasterPage_SysButton_About" xml:space="preserve">
+    <value>About Zillion RIS ...</value>
+  </data>
+  <data name="MasterPage_SysButton_CloseViewPro" xml:space="preserve">
+    <value>Close View Pro</value>
+  </data>
+  <data name="MasterPage_SysButton_Help" xml:space="preserve">
+    <value>Zillion RIS Documentation</value>
+  </data>
+  <data name="MasterPage_SysButton_Logout" xml:space="preserve">
+    <value>Log off</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MergePatientsControl_AddPatients" xml:space="preserve">
+    <value>Add patients</value>
+  </data>
+  <data name="MergePatientsControl_CancelMergeButton" xml:space="preserve">
+    <value>Cancel Merge</value>
+  </data>
+  <data name="MergePatientsControl_ClearPatientsButton" xml:space="preserve">
+    <value>Clear Patients</value>
+  </data>
+  <data name="MergePatientsControl_EmptySelectionText" xml:space="preserve">
+    <value>This list represents the patients you want to merge.
+&lt;br /&gt;
+In order to add new patients to the list, search for patients on the left and click add.</value>
+  </data>
+  <data name="MergePatientsControl_MergeButton_Continue" xml:space="preserve">
+    <value>Merge these patients</value>
+  </data>
+  <data name="MergePatientsControl_MergeButton_Execute" xml:space="preserve">
+    <value>Merge patients to {0}</value>
+    <comment>Argument 0: The master patient's name.</comment>
+  </data>
+  <data name="MergePatientsControl_MergeListHeader_AddPatients" xml:space="preserve">
+    <value>Patients Selected for Merging</value>
+  </data>
+  <data name="MergePatientsControl_MergeListHeader_SelectMasterPatient" xml:space="preserve">
+    <value>Please select the master patient...</value>
+  </data>
+  <data name="MergePatientsControl_PatientDetails" xml:space="preserve">
+    <value>Patient details</value>
+  </data>
+  <data name="MergePatientsControl_SearchResult_AddSingleToSelectionButton" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="MergePatientsControl_SearchResult_AddToSelection" xml:space="preserve">
+    <value>Add to Selection</value>
+  </data>
+  <data name="MergePatientsControl_SearchResultHeader_PatientFullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="MergePatientsControl_SearchResultHeader_PatientNumber" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="MergePatientsControl_SearchSelectionUsageTip" xml:space="preserve">
+    <value>Tip: Use Ctrl to select more then one patient at once.</value>
+  </data>
+  <data name="Mob_Mobility_Description" xml:space="preserve">
+    <value>Mobility Description</value>
+  </data>
+  <data name="Mob_Mobility_Name" xml:space="preserve">
+    <value>Mobility Name</value>
+  </data>
+  <data name="mob_MobilityDescription" xml:space="preserve">
+    <value>Mobility</value>
+  </data>
+  <data name="mob_MobilityID" xml:space="preserve">
+    <value>Mobility ID</value>
+  </data>
+  <data name="mob_MobilityName" xml:space="preserve">
+    <value>Mobility Name</value>
+  </data>
+  <data name="MobMobility" xml:space="preserve">
+    <value>Mobility ID</value>
+  </data>
+  <data name="Mod_Modality_Description" xml:space="preserve">
+    <value>Modality Description</value>
+  </data>
+  <data name="Mod_Modality_Name" xml:space="preserve">
+    <value>Modality Name</value>
+  </data>
+  <data name="mod_ModalityCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="mod_ModalityDescription" xml:space="preserve">
+    <value>Modality</value>
+  </data>
+  <data name="mod_ModalityID" xml:space="preserve">
+    <value>Modality ID</value>
+  </data>
+  <data name="mod_ModalityName" xml:space="preserve">
+    <value>Modality Name</value>
+  </data>
+  <data name="Modality" xml:space="preserve">
+    <value>Modality</value>
+  </data>
+  <data name="modModality" xml:space="preserve">
+    <value>Modality ID</value>
+  </data>
+  <data name="modroo_ModalityTypeID" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="modroo_RoomID" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="MoveOrderExamination_ExaminationNotFound" xml:space="preserve">
+    <value>Examination not found [{0}]."</value>
+  </data>
+  <data name="msgDelete" xml:space="preserve">
+    <value>Delete record? This action can not be undone!</value>
+  </data>
+  <data name="msgMaintenance" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="NoPassword" xml:space="preserve">
+    <value> This user does not have a password yet, contact the administrator.</value>
+  </data>
+  <data name="NoPatientDocuments" xml:space="preserve">
+    <value>There are no documents for this patient.</value>
+  </data>
+  <data name="NoWorklocationsFound" xml:space="preserve">
+    <value>No work locations found.</value>
+  </data>
+  <data name="Obs_Observation_Description" xml:space="preserve">
+    <value>Observation Description</value>
+  </data>
+  <data name="Obs_Observation_Name" xml:space="preserve">
+    <value>Observation Name</value>
+  </data>
+  <data name="obs_ObservationDescription" xml:space="preserve">
+    <value>Observation Description</value>
+  </data>
+  <data name="obs_ObservationID" xml:space="preserve">
+    <value>Observation ID</value>
+  </data>
+  <data name="obs_ObservationName" xml:space="preserve">
+    <value>Observation Name</value>
+  </data>
+  <data name="Observation" xml:space="preserve">
+    <value>Observation</value>
+  </data>
+  <data name="ObsObservation" xml:space="preserve">
+    <value>Observation</value>
+  </data>
+  <data name="ord_MedicalIndication" xml:space="preserve">
+    <value>Medical indication</value>
+  </data>
+  <data name="ord_OrderDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ord_OrderID" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="ord_OrderMemo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="ord_OrderStatusID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ord_OrderTypeID" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ord_OriginID" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="ord_PatientID" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="ord_PhysicianID" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="ord_ReferralTypeID" xml:space="preserve">
+    <value>Referral type</value>
+  </data>
+  <data name="ord_UrgencyID" xml:space="preserve">
+    <value>Urgency</value>
+  </data>
+  <data name="ord_WaitingForApproval" xml:space="preserve">
+    <value>Waiting For Approval</value>
+  </data>
+  <data name="Order_Number" xml:space="preserve">
+    <value>Order Number</value>
+  </data>
+  <data name="OrderApproval_ChangeUrgency" xml:space="preserve">
+    <value>Change Urgency:</value>
+  </data>
+  <data name="OrderApproval_ChangeUrgencyTitle" xml:space="preserve">
+    <value>Change Urgency</value>
+  </data>
+  <data name="OrderApproval_ErrorApproving" xml:space="preserve">
+    <value>An error occurred while approving an examination.</value>
+  </data>
+  <data name="OrderApproval_ErrorDeclining" xml:space="preserve">
+    <value>An error occurred while declining an examination.</value>
+  </data>
+  <data name="OrderApproval_Examinations" xml:space="preserve">
+    <value>Examinations</value>
+  </data>
+  <data name="OrderApproval_MultipleMode" xml:space="preserve">
+    <value>Multiple Mode</value>
+  </data>
+  <data name="OrderApproval_OrdersPending" xml:space="preserve">
+    <value>Orders Pending</value>
+  </data>
+  <data name="OrderApproval_SingleMode" xml:space="preserve">
+    <value>Single Mode</value>
+  </data>
+  <data name="OrderApproval_WorkListFilters" xml:space="preserve">
+    <value>Order Approval Work List Filters</value>
+  </data>
+  <data name="OrderBooking_Button_EditPatient" xml:space="preserve">
+    <value>Edit Patient</value>
+  </data>
+  <data name="OrderBooking_Error" xml:space="preserve">
+    <value>Unable to set the status of the examination to held because of an error.</value>
+  </data>
+  <data name="OrderBooking_ExaminationInformation" xml:space="preserve">
+    <value>Planning Notes:</value>
+  </data>
+  <data name="OrderBooking_OrderDetails" xml:space="preserve">
+    <value>Order Details:</value>
+  </data>
+  <data name="OrderBooking_Title" xml:space="preserve">
+    <value>Manual Scheduling</value>
+  </data>
+  <data name="OrderBooking_UnableToBookNow" xml:space="preserve">
+    <value>Unable to book now because of an error.</value>
+  </data>
+  <data name="OrderBooking_WorkListFilters" xml:space="preserve">
+    <value>Order Booking Work List Filters</value>
+  </data>
+  <data name="OrderInProgressExaminationCompleted" xml:space="preserve">
+    <value>Examination has been completed</value>
+  </data>
+  <data name="ordReqFor_RequestFormID" xml:space="preserve">
+    <value>Request form</value>
+  </data>
+  <data name="ordst_OrderStatusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ordtyp_OrderTypeDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ordtyp_OrderTypeID" xml:space="preserve">
+    <value>Order type</value>
+  </data>
+  <data name="ordtyp_OrderTypeName" xml:space="preserve">
+    <value>Order Type</value>
+  </data>
+  <data name="org_OrganisationCity" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="org_OrganisationCountryID" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="org_OrganisationID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="org_OrganisationName" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="org_OrganisationPostalCode" xml:space="preserve">
+    <value>Postal code</value>
+  </data>
+  <data name="org_OrganisationState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="org_OrganisationStreetName" xml:space="preserve">
+    <value>Street name</value>
+  </data>
+  <data name="Ori_Origin_Description" xml:space="preserve">
+    <value>Origin Description</value>
+  </data>
+  <data name="Ori_Origin_Name" xml:space="preserve">
+    <value>Origin Name</value>
+  </data>
+  <data name="ori_OriginDescription" xml:space="preserve">
+    <value>Origin Description</value>
+  </data>
+  <data name="ori_OriginID" xml:space="preserve">
+    <value>Origin ID</value>
+  </data>
+  <data name="ori_OriginName" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="Origin" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="OriOrigin" xml:space="preserve">
+    <value>Origin ID</value>
+  </data>
+  <data name="PageLocationFilter_LocationLabel" xml:space="preserve">
+    <value>Filter by Location:</value>
+  </data>
+  <data name="PageLocationFilter_RoomLabel" xml:space="preserve">
+    <value>Filter by Room:</value>
+  </data>
+  <data name="PageLocationFilter_WorkListLabel" xml:space="preserve">
+    <value>Work List:</value>
+  </data>
+  <data name="pat_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="pat_BirthDate" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="pat_BSN" xml:space="preserve">
+    <value>NHS Number</value>
+  </data>
+  <data name="pat_BusinessPhoneNr" xml:space="preserve">
+    <value>Business Phone Number</value>
+  </data>
+  <data name="pat_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="pat_CountryID" xml:space="preserve">
+    <value>Country ID</value>
+  </data>
+  <data name="pat_DateOfAction" xml:space="preserve">
+    <value>Action Date</value>
+  </data>
+  <data name="pat_DateOfBirth" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="pat_Degree" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="pat_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Pat_First_Name" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="pat_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="pat_GenderID" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="pat_GeneralPracticionerID" xml:space="preserve">
+    <value>General Practicioner ID</value>
+  </data>
+  <data name="pat_HistoryLocationID" xml:space="preserve">
+    <value>Historical location</value>
+  </data>
+  <data name="Pat_Home_Phone_Nr" xml:space="preserve">
+    <value>First Phone Number</value>
+  </data>
+  <data name="pat_HomePhoneNr" xml:space="preserve">
+    <value>Home Phone Number</value>
+  </data>
+  <data name="pat_Initials" xml:space="preserve">
+    <value>Initials</value>
+  </data>
+  <data name="Pat_Insurance_Number" xml:space="preserve">
+    <value>Insurance Number</value>
+  </data>
+  <data name="pat_InsuranceCompanyID" xml:space="preserve">
+    <value>Insurance Company ID</value>
+  </data>
+  <data name="pat_InsuranceNumber" xml:space="preserve">
+    <value>Insurance Number</value>
+  </data>
+  <data name="Pat_Last_Name" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="pat_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="pat_MaidenName" xml:space="preserve">
+    <value>Maiden name</value>
+  </data>
+  <data name="pat_MaidenNamePrefix" xml:space="preserve">
+    <value>Maiden name prefix</value>
+  </data>
+  <data name="pat_MailingAddress" xml:space="preserve">
+    <value>Mailing Address</value>
+  </data>
+  <data name="Pat_Maritial_State" xml:space="preserve">
+    <value>Marital State</value>
+  </data>
+  <data name="pat_MaritialState" xml:space="preserve">
+    <value>Marital State</value>
+  </data>
+  <data name="pat_MaritialStateID" xml:space="preserve">
+    <value>Marital State</value>
+  </data>
+  <data name="pat_MiddleNames" xml:space="preserve">
+    <value>Middle Names</value>
+  </data>
+  <data name="Pat_Mobile_Nr" xml:space="preserve">
+    <value>Second Phone Number</value>
+  </data>
+  <data name="pat_MobileNr" xml:space="preserve">
+    <value>Mobile Nr</value>
+  </data>
+  <data name="pat_MobilityID" xml:space="preserve">
+    <value>Mobility</value>
+  </data>
+  <data name="Pat_Patient_Number" xml:space="preserve">
+    <value>Patient Number</value>
+  </data>
+  <data name="pat_PatientID" xml:space="preserve">
+    <value>Patient ID</value>
+  </data>
+  <data name="pat_PatientName" xml:space="preserve">
+    <value>Patient Name</value>
+  </data>
+  <data name="pat_PatientNumber" xml:space="preserve">
+    <value>Patient number</value>
+  </data>
+  <data name="Pat_Postal_Code" xml:space="preserve">
+    <value>ZIP Code</value>
+  </data>
+  <data name="pat_PostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="pat_Prefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="pat_Province" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="pat_ReligionID" xml:space="preserve">
+    <value>Religion</value>
+  </data>
+  <data name="pat_SexID" xml:space="preserve">
+    <value>Gender ID</value>
+  </data>
+  <data name="pat_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Pat_Street_Number" xml:space="preserve">
+    <value>Street Number</value>
+  </data>
+  <data name="pat_StreetName" xml:space="preserve">
+    <value>Street Name</value>
+  </data>
+  <data name="pat_StreetNumber" xml:space="preserve">
+    <value>Street Number</value>
+  </data>
+  <data name="pat_WardID" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="PatGeneralPractitioner" xml:space="preserve">
+    <value>General PractitionerID</value>
+  </data>
+  <data name="PatHistoryLocation" xml:space="preserve">
+    <value>History Location ID</value>
+  </data>
+  <data name="Patient" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="PatientBanner_Address" xml:space="preserve">
+    <value>Address: </value>
+  </data>
+  <data name="PatientBanner_Bed" xml:space="preserve">
+    <value>Bed: </value>
+  </data>
+  <data name="PatientBanner_Born" xml:space="preserve">
+    <value>Born: </value>
+  </data>
+  <data name="PatientBanner_Deceased" xml:space="preserve">
+    <value>Deceased: </value>
+  </data>
+  <data name="PatientBanner_BSNNo" xml:space="preserve">
+    <value>BSN No.: </value>
+  </data>
+  <data name="PatientBanner_BusinessNumber" xml:space="preserve">
+    <value>Business Nr.: </value>
+  </data>
+  <data name="PatientBanner_Consultant" xml:space="preserve">
+    <value>Consultant: </value>
+  </data>
+  <data name="PatientBanner_CurrentLocation" xml:space="preserve">
+    <value>Current Location</value>
+  </data>
+  <data name="PatientBanner_CurrentResponsibleConsultant" xml:space="preserve">
+    <value>Current Responsible Consultant</value>
+  </data>
+  <data name="PatientBanner_Email" xml:space="preserve">
+    <value>Email: </value>
+  </data>
+  <data name="PatientBanner_Error" xml:space="preserve">
+    <value>Something went wrong. Please try again.</value>
+  </data>
+  <data name="PatientBanner_Gender" xml:space="preserve">
+    <value>Gender: </value>
+  </data>
+  <data name="PatientBanner_GeneralPractitioner" xml:space="preserve">
+    <value>GP: </value>
+  </data>
+  <data name="PatientBanner_HomeNumber" xml:space="preserve">
+    <value>Home Nr.: </value>
+  </data>
+  <data name="PatientBanner_Location" xml:space="preserve">
+    <value>Location: </value>
+  </data>
+  <data name="PatientBanner_MobileNumber" xml:space="preserve">
+    <value>Mobile Nr.: </value>
+  </data>
+  <data name="PatientBanner_NHSNo" xml:space="preserve">
+    <value>NHS No.: </value>
+  </data>
+  <data name="PatientBanner_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="PatientBanner_NoPermission" xml:space="preserve">
+    <value>You currently don't have permissions to view patient details. Please contact your system administrator.</value>
+  </data>
+  <data name="PatientBanner_Observations" xml:space="preserve">
+    <value>Observations: </value>
+  </data>
+  <data name="PatientBanner_PASNo" xml:space="preserve">
+    <value>PAS No.: </value>
+  </data>
+  <data name="PatientBanner_PhoneEmail" xml:space="preserve">
+    <value>Phone and email: </value>
+  </data>
+  <data name="PatientBanner_PointOfCare" xml:space="preserve">
+    <value>Point of Care: </value>
+  </data>
+  <data name="PatientBanner_Room" xml:space="preserve">
+    <value>Room: </value>
+  </data>
+  <data name="PatientDetailsControl_LoadPatientError" xml:space="preserve">
+    <value>Failed to load the patient details.
+
+Patient ID: {0}.</value>
+    <comment>Argument 0: Patient ID</comment>
+  </data>
+  <data name="PatientDetailsControl_PatientSearchButton" xml:space="preserve">
+    <value>Show patient order details</value>
+  </data>
+  <data name="PatientDetailsControl_SearchPatient" xml:space="preserve">
+    <value>Search Patient</value>
+  </data>
+  <data name="PatientHistory" xml:space="preserve">
+    <value>Patient History</value>
+  </data>
+  <data name="PatientInformation_MiddleNameLabel" xml:space="preserve">
+    <value>Middle name</value>
+  </data>
+  <data name="Patients_GPError_CountriesReference" xml:space="preserve">
+    <value>The countries of the general practicioners are not loaded.</value>
+  </data>
+  <data name="Patients_ParamError_CountriesReference" xml:space="preserve">
+    <value>The countries of the patient are not loaded.</value>
+  </data>
+  <data name="Patients_ParamError_GenderReference" xml:space="preserve">
+    <value>The genders of the patient are not loaded.</value>
+  </data>
+  <data name="Patients_ParamError_HistoryLocationsReference" xml:space="preserve">
+    <value>The history locations of the patient are not loaded.</value>
+  </data>
+  <data name="Patients_ParamError_MaritialStatesReference" xml:space="preserve">
+    <value>The maritial states of the patient are not loaded.</value>
+  </data>
+  <data name="Patients_ParamError_MobilitiesReference" xml:space="preserve">
+    <value>The mobilities of the patient are not loaded.</value>
+  </data>
+  <data name="Patients_ParamError_PatientObservations" xml:space="preserve">
+    <value>The observations of the patient are not loaded.</value>
+  </data>
+  <data name="Patients_ParamError_WardsReference" xml:space="preserve">
+    <value>The wards of the patient are not loaded.</value>
+  </data>
+  <data name="PatientSearch_ChangeSearchType" xml:space="preserve">
+    <value>Change the search type to </value>
+  </data>
+  <data name="PatientSearch_ComplicationFormError" xml:space="preserve">
+    <value>An unexpected error occurred while trying to show the popup for the complication form.</value>
+  </data>
+  <data name="PatientSearch_Consultant" xml:space="preserve">
+    <value>Consultant</value>
+  </data>
+  <data name="PatientSearch_CurrentPatientLocation" xml:space="preserve">
+    <value>Current Patient Location</value>
+  </data>
+  <data name="PatientSearch_CurrentResponsibleConsultant" xml:space="preserve">
+    <value>Current Responsible Consultant</value>
+  </data>
+  <data name="PatientSearch_DatePeriodEnd" xml:space="preserve">
+    <value>Date Period End</value>
+  </data>
+  <data name="PatientSearch_DatePeriodStart" xml:space="preserve">
+    <value>Date Period Start</value>
+  </data>
+  <data name="PatientSearch_DiscussionListError" xml:space="preserve">
+    <value>An unexpected error occurred while trying to show the popup for sending an examination to a discussion list.</value>
+  </data>
+  <data name="PatientSearch_ExaminationInformation" xml:space="preserve">
+    <value>Patient History</value>
+  </data>
+  <data name="PatientSearch_ExaminationRoom" xml:space="preserve">
+    <value>Examination Room</value>
+  </data>
+  <data name="PatientSearch_FilterExaminations" xml:space="preserve">
+    <value>Filter The Examinations</value>
+  </data>
+  <data name="PatientSearch_FilterOrders" xml:space="preserve">
+    <value>Filter The Orders</value>
+  </data>
+  <data name="PatientSearch_IndicatorFormError" xml:space="preserve">
+    <value>An unexpected error occurred while trying to show the popup for the indicator form.</value>
+  </data>
+  <data name="PatientSearch_IntendedReporter" xml:space="preserve">
+    <value>Intended Reporter</value>
+  </data>
+  <data name="PatientSearch_LocationGroup" xml:space="preserve">
+    <value>Location Group</value>
+  </data>
+  <data name="PatientSearch_ModalityType" xml:space="preserve">
+    <value>Modality Type</value>
+  </data>
+  <data name="PatientSearch_Operator" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="PatientSearch_OrderNumber" xml:space="preserve">
+    <value>order number</value>
+  </data>
+  <data name="PatientSearch_OrTry" xml:space="preserve">
+    <value>or try </value>
+  </data>
+  <data name="PatientSearch_PatientCategory" xml:space="preserve">
+    <value>Category Type at Request</value>
+  </data>
+  <data name="PatientSearch_PationLocationAtRequest" xml:space="preserve">
+    <value>Patient Location At Request</value>
+  </data>
+  <data name="PatientSearch_Reporter" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="PatientSearch_RequesterLocation" xml:space="preserve">
+    <value>Requester Consultant Location</value>
+  </data>
+  <data name="PatientSearch_RequestingGPWorkLocation" xml:space="preserve">
+    <value>Requesting Surgery</value>
+  </data>
+  <data name="PatientSearch_RequestingResponsibleConsultant" xml:space="preserve">
+    <value>Requester:</value>
+  </data>
+  <data name="PatientSearch_SearchPatients" xml:space="preserve">
+    <value>Search For Patients</value>
+  </data>
+  <data name="PatientSearch_TooltipClinicalInformation" xml:space="preserve">
+    <value>Texts written in separate lines has to be in the clinical information.&amp;#10;&amp;#10;For example: &amp;#10;Head trauma&amp;#10;Bleeding nose&amp;#10;&amp;#10;Result is going to be the ones containing 'Head trauma' AND 'Bleeding nose'.</value>
+  </data>
+  <data name="PatientSearch_TooltipReport" xml:space="preserve">
+    <value>Same as the clinical information.</value>
+  </data>
+  <data name="PatientSearch_WorkflowStatus" xml:space="preserve">
+    <value>Workflow Status</value>
+  </data>
+  <data name="PatientsPage_DepartmentLabel" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="PatientsPage_FirstPhysicianLabel" xml:space="preserve">
+    <value>First Physician</value>
+  </data>
+  <data name="PatientsPage_Insurance_AddCompanyButton" xml:space="preserve">
+    <value>Add Company</value>
+  </data>
+  <data name="PatientsPage_Insurance_RemoveCompanyButton" xml:space="preserve">
+    <value>Remove Company</value>
+  </data>
+  <data name="PatientsPage_IntakeDateLabel" xml:space="preserve">
+    <value>Intake Date</value>
+  </data>
+  <data name="PatientsPage_IntakeNumberLabel" xml:space="preserve">
+    <value>Intake Number</value>
+  </data>
+  <data name="PatientsPage_InvalidSsnNumber" xml:space="preserve">
+    <value>The NHS Number specified is invalid.</value>
+  </data>
+  <data name="PatientsPage_LoadingAdmissionHistoryFailed" xml:space="preserve">
+    <value>An error occurred while loading the patient's admission history from the database.
+
+Patient ID: {0}.</value>
+    <comment>Argument 0: The Patient ID.</comment>
+  </data>
+  <data name="PatientsPage_PatientLoadError" xml:space="preserve">
+    <value>An error occurred while loading the patient from the database.
+
+Patient ID: {0}.
+Message: {1}</value>
+    <comment>Argument 0: The Patient ID.
+Argument 1: The error message.</comment>
+  </data>
+  <data name="PatientsPage_PatientNotFound" xml:space="preserve">
+    <value>The requested patient could not be found.
+
+Patient ID: {0}.</value>
+  </data>
+  <data name="PatientsPage_PatientSaveError" xml:space="preserve">
+    <value>An error occurred while saving the patient to the database.
+
+Patient number: {0}.</value>
+    <comment>Argument 0: The Patient ID.</comment>
+  </data>
+  <data name="PatientsPage_RoomLabel" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="PatientsPage_SavePatientConcurrencyError" xml:space="preserve">
+    <value>Failed to save the patient, it has already been modified in the database.
+
+The patient will be reloaded.</value>
+  </data>
+  <data name="PatientsPage_SecondPhysicianLabel" xml:space="preserve">
+    <value>Second Physician</value>
+  </data>
+  <data name="PatientsPage_UnableToAddDocumentsPatientDoesNotExist" xml:space="preserve">
+    <value>Patient has to be saved before documents can be assigned, please confirm and then add the documents.</value>
+  </data>
+  <data name="PatientsPage_ValidationError_SocialSecurityNumber" xml:space="preserve">
+    <value>NHS number should be empty or contain exactly 9 digits.</value>
+  </data>
+  <data name="patins_InsuranceCompanyID" xml:space="preserve">
+    <value>Insurance company</value>
+  </data>
+  <data name="patins_InsuranceNumber" xml:space="preserve">
+    <value>Insurance number</value>
+  </data>
+  <data name="patins_PatientID" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="PatInsuranceCompanyID" xml:space="preserve">
+    <value>Insurance Company ID</value>
+  </data>
+  <data name="patobs_ObservationID" xml:space="preserve">
+    <value>Observation</value>
+  </data>
+  <data name="patobs_PatientID" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="PatPatient" xml:space="preserve">
+    <value>Patient ID</value>
+  </data>
+  <data name="PatSex" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="phy_PhysicianCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="phy_PhysicianFirstName" xml:space="preserve">
+    <value>Firstname</value>
+  </data>
+  <data name="phy_PhysicianID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="phy_PhysicianInitials" xml:space="preserve">
+    <value>Initials</value>
+  </data>
+  <data name="phy_PhysicianPrefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="phy_PhysicianSpecialisation" xml:space="preserve">
+    <value>Specialisation</value>
+  </data>
+  <data name="phy_PhysicianSurName" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="phyrepcop_OrderID" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="phyrepcop_physicianID" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="Physician" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="Popup_Report" xml:space="preserve">
+    <value>Popup report</value>
+  </data>
+  <data name="PopupEditFormCaption" xml:space="preserve">
+    <value>New Appointment Time</value>
+  </data>
+  <data name="PopupForm_SuccesLabel" xml:space="preserve">
+    <value>Form has been saved successfully.</value>
+  </data>
+  <data name="PopupMessageControl_ErrorHeaderText" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+  <data name="PopupMessageControl_InformationHeaderText" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Portering_UnableToCancel" xml:space="preserve">
+    <value>Unable to cancel portering.</value>
+  </data>
+  <data name="Portering_UnableToCancel_AnotherUser" xml:space="preserve">
+    <value>Unable to cancel portering.  \r\n\r\n Another porter is authorized for the selected patient transport</value>
+  </data>
+  <data name="Portering_UnableToComplete" xml:space="preserve">
+    <value>Unable to complete portering.</value>
+  </data>
+  <data name="Portering_UnableToComplete_AnotherUser" xml:space="preserve">
+    <value>Unable to complete portering.  \r\n\r\n Another porter is authorized for the selected patient transport</value>
+  </data>
+  <data name="Printing_AppointmentConfigurationFailed" xml:space="preserve">
+    <value>Unable to print the appointment configuration.</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Zillion RIS</value>
+  </data>
+  <data name="ProgressTemplate_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ProtocolAssignment_WorkListFilters" xml:space="preserve">
+    <value>Protocol Assignment Work List Filters</value>
+  </data>
+  <data name="Rad_Radiologist_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="rad_RadiologistID" xml:space="preserve">
+    <value>Radiologist ID</value>
+  </data>
+  <data name="rad_RadiologistName" xml:space="preserve">
+    <value>Radiologist Name</value>
+  </data>
+  <data name="radgro_GroupCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="radgro_GroupDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="radgro_GroupID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="radgro_GroupName" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="radgrorad_GroupID" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="radgrorad_RadiologistID" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="Radiologist" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="Radiologists" xml:space="preserve">
+    <value>Radiologists</value>
+  </data>
+  <data name="RadRadiologist" xml:space="preserve">
+    <value>Radiologist ID</value>
+  </data>
+  <data name="radspe_radiologistID" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="radspe_SpecialisationID" xml:space="preserve">
+    <value>Specialisation</value>
+  </data>
+  <data name="rec_OldPatientNumber" xml:space="preserve">
+    <value>Old Patient ID</value>
+  </data>
+  <data name="rec_PatientID" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="ReceptionLow_AddFilter" xml:space="preserve">
+    <value>Add new Filter</value>
+  </data>
+  <data name="ReceptionLow_Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ReceptionLow_CustomizeFilters" xml:space="preserve">
+    <value>Customize Filters</value>
+  </data>
+  <data name="ReceptionLow_DeleteFilter" xml:space="preserve">
+    <value>Delete filter</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_Approved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_InDepartment" xml:space="preserve">
+    <value>In department</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_Scheduled" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_Waiting" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="ReceptionLow_ExaminationTypes" xml:space="preserve">
+    <value>Examination Types</value>
+  </data>
+  <data name="ReceptionLow_FilterTitle" xml:space="preserve">
+    <value>Reception Work List Filters</value>
+  </data>
+  <data name="ReceptionLow_IntendedReporters" xml:space="preserve">
+    <value>Intended Reporters</value>
+  </data>
+  <data name="ReceptionLow_LabelLastExaminations" xml:space="preserve">
+    <value>Last Examinations</value>
+  </data>
+  <data name="ReceptionLow_Modalities" xml:space="preserve">
+    <value>Modalities</value>
+  </data>
+  <data name="ReceptionLow_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ReceptionLow_Operators" xml:space="preserve">
+    <value>Operators</value>
+  </data>
+  <data name="ReceptionLow_Reporters" xml:space="preserve">
+    <value>Reporters</value>
+  </data>
+  <data name="ReceptionLow_RequestingResponsibleConsultants" xml:space="preserve">
+    <value>Requesting Responsible Consultants</value>
+  </data>
+  <data name="ReceptionLow_Rooms" xml:space="preserve">
+    <value>Rooms</value>
+  </data>
+  <data name="ReceptionLow_SaveFilter" xml:space="preserve">
+    <value>Save Filter</value>
+  </data>
+  <data name="ReceptionLow_SelectFilter" xml:space="preserve">
+    <value>Select a filter:</value>
+  </data>
+  <data name="ReceptionLow_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ReceptionLow_ViewLastExaminations" xml:space="preserve">
+    <value>View Last Examinations</value>
+  </data>
+  <data name="Ref_Referring_Physician_Department" xml:space="preserve">
+    <value>Referring Physician Department</value>
+  </data>
+  <data name="Ref_Referring_Physician_Description" xml:space="preserve">
+    <value>Referring Physician Description</value>
+  </data>
+  <data name="Ref_Referring_Physician_Name" xml:space="preserve">
+    <value>Referring Physician Name</value>
+  </data>
+  <data name="Ref_Referring_Physician_Type" xml:space="preserve">
+    <value>Referring Physician Type</value>
+  </data>
+  <data name="ref_ReferringPhysicianDepartment" xml:space="preserve">
+    <value>Referring Physician Department</value>
+  </data>
+  <data name="ref_ReferringPhysicianDescription" xml:space="preserve">
+    <value>Referring Physician Description</value>
+  </data>
+  <data name="ref_ReferringPhysicianID" xml:space="preserve">
+    <value>Referring PhysicianID</value>
+  </data>
+  <data name="ref_ReferringPhysicianName" xml:space="preserve">
+    <value>Referring Physician</value>
+  </data>
+  <data name="ref_ReferringPhysicianType" xml:space="preserve">
+    <value>Referring Physician Type</value>
+  </data>
+  <data name="Referral_Type" xml:space="preserve">
+    <value>Referral Type</value>
+  </data>
+  <data name="Referring_Physician" xml:space="preserve">
+    <value>Referring Physician</value>
+  </data>
+  <data name="RefReferringPhysician" xml:space="preserve">
+    <value>Referring PhysicianID</value>
+  </data>
+  <data name="Reftyp_Referral_Type_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Reftyp_Referral_Type_Name" xml:space="preserve">
+    <value>Referral Type Name</value>
+  </data>
+  <data name="reftyp_ReferralTypeDescription" xml:space="preserve">
+    <value>Referral Type Description</value>
+  </data>
+  <data name="reftyp_ReferralTypeID" xml:space="preserve">
+    <value>Referral Type ID</value>
+  </data>
+  <data name="reftyp_ReferralTypeName" xml:space="preserve">
+    <value>Referral Type Name</value>
+  </data>
+  <data name="ReftypReferralType" xml:space="preserve">
+    <value>Reftype ID</value>
+  </data>
+  <data name="rel_ReligionID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="rel_ReligionName" xml:space="preserve">
+    <value>Religion</value>
+  </data>
+  <data name="rep_Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="rep_AuthorisationDate" xml:space="preserve">
+    <value>Authorisation Date</value>
+  </data>
+  <data name="rep_Authoriser" xml:space="preserve">
+    <value>Authoriser</value>
+  </data>
+  <data name="rep_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="rep_Conclusion" xml:space="preserve">
+    <value>Conclusion</value>
+  </data>
+  <data name="rep_CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="rep_ReportID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="rep_ReportStatusID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="rep_RetrievalDate" xml:space="preserve">
+    <value>Received Date</value>
+  </data>
+  <data name="rep_Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="rep_Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="rep_Transcriber" xml:space="preserve">
+    <value>Transcriptionist</value>
+  </data>
+  <data name="RepDictation_ExaminationAlreadyDictating" xml:space="preserve">
+    <value>The examination is already being dictated.</value>
+  </data>
+  <data name="Report_Addendum" xml:space="preserve">
+    <value>Addendum</value>
+  </data>
+  <data name="Report_Authorised" xml:space="preserve">
+    <value>Primary report</value>
+  </data>
+  <data name="Report_Preliminary" xml:space="preserve">
+    <value>Preliminary</value>
+  </data>
+  <data name="ReportForm_AuthorisationDateLabel" xml:space="preserve">
+    <value>Authorisation Date:</value>
+  </data>
+  <data name="ReportForm_AuthoriserLabel" xml:space="preserve">
+    <value>Authoriser:</value>
+  </data>
+  <data name="ReportForm_AuthorLabel" xml:space="preserve">
+    <value>Author:</value>
+  </data>
+  <data name="ReportForm_ConclusionLabel" xml:space="preserve">
+    <value>Conclusion:</value>
+  </data>
+  <data name="ReportForm_CopyToLabel" xml:space="preserve">
+    <value>Copy to:</value>
+  </data>
+  <data name="ReportForm_ExaminationTypeLabel" xml:space="preserve">
+    <value>Examination Type:</value>
+  </data>
+  <data name="ReportForm_ScheduledDateLabel" xml:space="preserve">
+    <value>Scheduled Date:</value>
+  </data>
+  <data name="repsta_ReportStatusDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="repsta_ReportStatusID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="repsta_ReportStatusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="reqfor_RequestForm" xml:space="preserve">
+    <value>Request form</value>
+  </data>
+  <data name="reqfor_RequestFormID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="res_ModalityID" xml:space="preserve">
+    <value>Modality</value>
+  </data>
+  <data name="res_ResourceID" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="res_RoomID" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="RisApplication_CriticalErrorMessage" xml:space="preserve">
+    <value>An unhandled error as occurred and has been logged.
+
+Unable to continue in the current condition, you have been logged off.</value>
+  </data>
+  <data name="RisApplication_UserAlreadyInitialized" xml:space="preserve">
+    <value>Unable to initialize the user {0}, another user has already been logged on ({1}).</value>
+    <comment>Argument 0 is the current username and argument 1 is the requested username.</comment>
+  </data>
+  <data name="risper_RISPermissionDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="risper_RISPermissionID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="risper_RISPermissionName" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="risrol_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="risrol_RoleDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="risrol_RoleID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="risrol_RoleName" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="risrolper_RISPermissionID" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="risrolper_RISRoleID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="risuse_BusinessPhoneNr" xml:space="preserve">
+    <value>Business phone number</value>
+  </data>
+  <data name="risuse_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="risuse_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="risuse_CountryID" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="risuse_DateOfBirth" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="risuse_Degree" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="risuse_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="risuse_FirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="risuse_HomePhoneNr" xml:space="preserve">
+    <value>Home phone number</value>
+  </data>
+  <data name="risuse_Initials" xml:space="preserve">
+    <value>Initials</value>
+  </data>
+  <data name="risuse_LastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="risuse_MobileNr" xml:space="preserve">
+    <value>Mobile number</value>
+  </data>
+  <data name="risuse_PostalCode" xml:space="preserve">
+    <value>Postal code</value>
+  </data>
+  <data name="risuse_Prefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="risuse_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="risuse_StreetAddress" xml:space="preserve">
+    <value>Street address</value>
+  </data>
+  <data name="risuse_UserID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="RisUser_NoLocation" xml:space="preserve">
+    <value>User {0} cannot be logged in for location {1}.</value>
+  </data>
+  <data name="RisUser_UserNotFound" xml:space="preserve">
+    <value>The user requested was not found ({0}).</value>
+  </data>
+  <data name="risuserol_RISRoleID" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="risuserol_RISUserID" xml:space="preserve">
+    <value>RIS user</value>
+  </data>
+  <data name="roo_Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Roo_Room_Description" xml:space="preserve">
+    <value>Room Description</value>
+  </data>
+  <data name="Roo_Room_Name" xml:space="preserve">
+    <value>Room Name</value>
+  </data>
+  <data name="roo_RoomDescription" xml:space="preserve">
+    <value>Room Description</value>
+  </data>
+  <data name="roo_RoomID" xml:space="preserve">
+    <value>Room ID</value>
+  </data>
+  <data name="roo_RoomName" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="Roo_Time_Slot" xml:space="preserve">
+    <value>Room Timeslot</value>
+  </data>
+  <data name="roo_TimeSlot" xml:space="preserve">
+    <value>Time Slot</value>
+  </data>
+  <data name="rooclo_EndDateTime" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="rooclo_ReasonForClose" xml:space="preserve">
+    <value>Reason for close</value>
+  </data>
+  <data name="rooclo_roomID" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="rooclo_StartDateTime" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="RoomOverview_IntendedReporter" xml:space="preserve">
+    <value>Intended Reporter: </value>
+  </data>
+  <data name="RoomPopupControl_BehaviorNotSupported" xml:space="preserve">
+    <value>Behavior not supported: {0}.</value>
+  </data>
+  <data name="RoomPopupControl_FailedBookAppointment" xml:space="preserve">
+    <value>Failed to book the appointment.</value>
+  </data>
+  <data name="RoomPopupControl_FailedMoveAppointment" xml:space="preserve">
+    <value>Failed to move the appointment.</value>
+  </data>
+  <data name="RoomPopupControl_PopupHeader" xml:space="preserve">
+    <value>Room Overview</value>
+  </data>
+  <data name="RoomPopupControl_PrintAppointmentConfirmationFailed" xml:space="preserve">
+    <value>Appointment has been made but could not be printed.
+Please contact your system administrator.</value>
+  </data>
+  <data name="RoomPopupControl_PrintPatientLabelConfirmationFailed" xml:space="preserve">
+    <value>Appointment has been made but patient label could not be printed.
+Please contact your system administrator.</value>
+  </data>
+  <data name="RoomPopupControl_SelectWholeOrder" xml:space="preserve">
+    <value>Select whole order</value>
+  </data>
+  <data name="RoomPopupControl_ValidTimeCaption" xml:space="preserve">
+    <value>Filter Results:</value>
+  </data>
+  <data name="RooRoom" xml:space="preserve">
+    <value>Room ID</value>
+  </data>
+  <data name="roosch_EndTime" xml:space="preserve">
+    <value>End time</value>
+  </data>
+  <data name="roosch_Room" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="roosch_ScheduleID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="roosch_StartTime" xml:space="preserve">
+    <value>Start time</value>
+  </data>
+  <data name="roosch_WeekDay" xml:space="preserve">
+    <value>Weekday</value>
+  </data>
+  <data name="sch_ScheduleID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="sch_ScheduleName" xml:space="preserve">
+    <value>Schedule name</value>
+  </data>
+  <data name="ServicePage_Title" xml:space="preserve">
+    <value>Service Support</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Sex_Sex_Name" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="sex_SexID" xml:space="preserve">
+    <value>Sex ID</value>
+  </data>
+  <data name="sex_SexName" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="SexSex" xml:space="preserve">
+    <value>Gender ID</value>
+  </data>
+  <data name="ShowQandAForm" xml:space="preserve">
+    <value>Show Q&amp;A Form</value>
+  </data>
+  <data name="ShowRooms" xml:space="preserve">
+    <value>Show rooms</value>
+  </data>
+  <data name="smActions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="smAdministrators" xml:space="preserve">
+    <value>Administrators</value>
+  </data>
+  <data name="smAdvancedFiltering" xml:space="preserve">
+    <value>Filtering</value>
+  </data>
+  <data name="smAdvancedPatientSearch" xml:space="preserve">
+    <value>Patient Search</value>
+  </data>
+  <data name="smAuthorization" xml:space="preserve">
+    <value>Authorization</value>
+  </data>
+  <data name="smCalendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="smCountries" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="smDepartments" xml:space="preserve">
+    <value>Departments</value>
+  </data>
+  <data name="smDictation" xml:space="preserve">
+    <value>Dictation</value>
+  </data>
+  <data name="smDictationOverview" xml:space="preserve">
+    <value>Dictation Overview</value>
+  </data>
+  <data name="smDiscussion" xml:space="preserve">
+    <value>Discussion</value>
+  </data>
+  <data name="smExaminationProcedures" xml:space="preserve">
+    <value>ExaminationProcedures</value>
+  </data>
+  <data name="smExaminations" xml:space="preserve">
+    <value>Examinations</value>
+  </data>
+  <data name="smExaminationStatus" xml:space="preserve">
+    <value>Examination status</value>
+  </data>
+  <data name="smExaminationTypeGroups" xml:space="preserve">
+    <value>ExaminationTypeGroups</value>
+  </data>
+  <data name="smExaminationTypes" xml:space="preserve">
+    <value>ExaminationTypes</value>
+  </data>
+  <data name="smExaminationTypeSpecialisations" xml:space="preserve">
+    <value>ExaminationTypeSpecialisations</value>
+  </data>
+  <data name="smGender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="smGeneralPracticioner" xml:space="preserve">
+    <value>GeneralPracticioner</value>
+  </data>
+  <data name="smHistoryLocations" xml:space="preserve">
+    <value>History locations</value>
+  </data>
+  <data name="smHousekeeping" xml:space="preserve">
+    <value>Housekeeping</value>
+  </data>
+  <data name="smImaging" xml:space="preserve">
+    <value>Imaging</value>
+  </data>
+  <data name="smInsuranceCompanies" xml:space="preserve">
+    <value>InsuranceCompanies</value>
+  </data>
+  <data name="smInternalPhysician" xml:space="preserve">
+    <value>Internal Physician</value>
+  </data>
+  <data name="smMaintenance" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="smManagement" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="smMaritialState" xml:space="preserve">
+    <value>Marital state</value>
+  </data>
+  <data name="smMobilities" xml:space="preserve">
+    <value>Mobilities</value>
+  </data>
+  <data name="smModalities" xml:space="preserve">
+    <value>Modalities</value>
+  </data>
+  <data name="smModalityRoom" xml:space="preserve">
+    <value>ModalityRoom</value>
+  </data>
+  <data name="smObservations" xml:space="preserve">
+    <value>Observations</value>
+  </data>
+  <data name="smOrderApproval" xml:space="preserve">
+    <value>Order Approval</value>
+  </data>
+  <data name="smOrderBooking" xml:space="preserve">
+    <value>Order Booking</value>
+  </data>
+  <data name="smOrderTypes" xml:space="preserve">
+    <value>Order Types</value>
+  </data>
+  <data name="smOrigins" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="smPatientInsurance" xml:space="preserve">
+    <value>PatientInsurance</value>
+  </data>
+  <data name="smPatients" xml:space="preserve">
+    <value>Patients</value>
+  </data>
+  <data name="smPhysician" xml:space="preserve">
+    <value>Physician</value>
+  </data>
+  <data name="smPhysicians" xml:space="preserve">
+    <value>Physicians</value>
+  </data>
+  <data name="smPortering" xml:space="preserve">
+    <value>Portering</value>
+  </data>
+  <data name="smPrint" xml:space="preserve">
+    <value>Printing</value>
+  </data>
+  <data name="smRadiologist" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="smRadiologistGroupRadiologist" xml:space="preserve">
+    <value>RadiologistGroupRadiologist</value>
+  </data>
+  <data name="smRadiologists" xml:space="preserve">
+    <value>Radiologists</value>
+  </data>
+  <data name="smRadiologistsGroups" xml:space="preserve">
+    <value>RadiologistsGroups</value>
+  </data>
+  <data name="smRadiologistSpecialisations" xml:space="preserve">
+    <value>RadiologistSpecialisations</value>
+  </data>
+  <data name="smReception" xml:space="preserve">
+    <value>Reception</value>
+  </data>
+  <data name="smReconciledPatientIDs" xml:space="preserve">
+    <value>ReconciledPatientIDs</value>
+  </data>
+  <data name="smReferralTypes" xml:space="preserve">
+    <value>Referral types</value>
+  </data>
+  <data name="smReferringPhysicians" xml:space="preserve">
+    <value>Referring Physicians</value>
+  </data>
+  <data name="smRegistration" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="smReporting" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="smReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="smReportStatus" xml:space="preserve">
+    <value>Report Status</value>
+  </data>
+  <data name="smRepTranscription" xml:space="preserve">
+    <value>Transcription</value>
+  </data>
+  <data name="smRequestForms" xml:space="preserve">
+    <value>Request Forms</value>
+  </data>
+  <data name="smResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="smRISUsers" xml:space="preserve">
+    <value>RIS Users</value>
+  </data>
+  <data name="smRooms" xml:space="preserve">
+    <value>Rooms</value>
+  </data>
+  <data name="smRoomSchedules" xml:space="preserve">
+    <value>Room Schedules</value>
+  </data>
+  <data name="smRoomsClosed" xml:space="preserve">
+    <value>Room closed</value>
+  </data>
+  <data name="smScan" xml:space="preserve">
+    <value>Scanning</value>
+  </data>
+  <data name="smSchedules" xml:space="preserve">
+    <value>Schedules</value>
+  </data>
+  <data name="smScheduling" xml:space="preserve">
+    <value>Scheduling</value>
+  </data>
+  <data name="smSecretaries" xml:space="preserve">
+    <value>Receptionists</value>
+  </data>
+  <data name="smSex" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="smSpecialisations" xml:space="preserve">
+    <value>Specialties</value>
+  </data>
+  <data name="smStartPage" xml:space="preserve">
+    <value>Start page</value>
+  </data>
+  <data name="smStates" xml:space="preserve">
+    <value>States</value>
+  </data>
+  <data name="smStudyTypes" xml:space="preserve">
+    <value>StudyTypes</value>
+  </data>
+  <data name="smTechnicians" xml:space="preserve">
+    <value>Technicians</value>
+  </data>
+  <data name="smTranscription" xml:space="preserve">
+    <value>Transcription</value>
+  </data>
+  <data name="smTravelTimes" xml:space="preserve">
+    <value>Travel times</value>
+  </data>
+  <data name="smUrgencies" xml:space="preserve">
+    <value>Urgencies</value>
+  </data>
+  <data name="smUsers" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="smVarious" xml:space="preserve">
+    <value>Various</value>
+  </data>
+  <data name="smWards" xml:space="preserve">
+    <value>Wards</value>
+  </data>
+  <data name="spe_SpecialisationID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="spe_SpecialisationName" xml:space="preserve">
+    <value>Specialisation</value>
+  </data>
+  <data name="Sta_State_Name" xml:space="preserve">
+    <value>State Name</value>
+  </data>
+  <data name="sta_StateID" xml:space="preserve">
+    <value>State ID</value>
+  </data>
+  <data name="sta_StateName" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="StaState" xml:space="preserve">
+    <value>State ID</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="StatusChangeForm_Completed_FirstAssignee" xml:space="preserve">
+    <value>First radiologist</value>
+  </data>
+  <data name="StatusChangeForm_Completed_SecondAssignee" xml:space="preserve">
+    <value>Second radiologist</value>
+  </data>
+  <data name="StatusChangeForm_Dictated_FirstAssignee" xml:space="preserve">
+    <value>Typist</value>
+  </data>
+  <data name="StatusChangeForm_ErrorDuplicateUsersAssigned" xml:space="preserve">
+    <value>Can not assign a single user, multiple times to the examination.</value>
+  </data>
+  <data name="StatusChangeForm_EveryExaminationStatusInvalid" xml:space="preserve">
+    <value>The examination(s) has already been changed by an other user.</value>
+  </data>
+  <data name="StatusChangeForm_InDepartment_FirstAssignee" xml:space="preserve">
+    <value>Secretary</value>
+  </data>
+  <data name="StatusChangeForm_InProgress_FirstAssignee" xml:space="preserve">
+    <value>First radiographer</value>
+  </data>
+  <data name="StatusChangeForm_InProgress_SecondAssignee" xml:space="preserve">
+    <value>Second radiographer</value>
+  </data>
+  <data name="StatusChangeForm_InProgress_ThirdAssignee" xml:space="preserve">
+    <value>Third radiographer</value>
+  </data>
+  <data name="StatusChangeForm_PartialExaminationsInvalidStatus" xml:space="preserve">
+    <value>The following examination(s) has already been changed by an other user:</value>
+  </data>
+  <data name="StatusChangeForm_PluralPatientSummary" xml:space="preserve">
+    <value>Change the status for the study(s) {0} to {1} for the patients {2}.</value>
+  </data>
+  <data name="StatusChangeForm_SingularPatientAndExaminationSummary" xml:space="preserve">
+    <value>Change the status for the study {0} to {1} for the patient {2}.</value>
+  </data>
+  <data name="StatusChangeForm_SingularPatientSummary" xml:space="preserve">
+    <value>Change the status for the study(s) {0} to {1} for the patient {2}.</value>
+  </data>
+  <data name="StatusChangeForm_Skipped_Examinations" xml:space="preserve">
+    <value>The following examinations have been skipped because it's not allowed to change in it's current status: </value>
+  </data>
+  <data name="StatusChangeForm_Verified_FirstAssignee" xml:space="preserve">
+    <value>Authorizer</value>
+  </data>
+  <data name="StatusChangeFormToIntermediate_PluralPatientSummary" xml:space="preserve">
+    <value>Change the status for the study(s) {0} to intermediate for the patients {2}.</value>
+  </data>
+  <data name="StatusChangeFormToIntermediate_SingularPatientSummary" xml:space="preserve">
+    <value>Change the status for the study(s) {0} to intermediate for the patient {2}.</value>
+  </data>
+  <data name="strCharsRemaining" xml:space="preserve">
+    <value>Characters remaining</value>
+  </data>
+  <data name="stu_AccessionNumber" xml:space="preserve">
+    <value>Accession number</value>
+  </data>
+  <data name="stu_ExaminationID" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="stu_StudyCompleted" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="stu_StudyID" xml:space="preserve">
+    <value>Study ID</value>
+  </data>
+  <data name="stu_StudyTime" xml:space="preserve">
+    <value>Study Date</value>
+  </data>
+  <data name="Study_Type" xml:space="preserve">
+    <value>Study Type</value>
+  </data>
+  <data name="stupen_RadiologistID" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="stupen_StudyID" xml:space="preserve">
+    <value>Study</value>
+  </data>
+  <data name="stutyp_ModalityID" xml:space="preserve">
+    <value>Modality ID</value>
+  </data>
+  <data name="Stutyp_Study_Type_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Stutyp_Study_Type_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="stutyp_StudyTypeDescription" xml:space="preserve">
+    <value>Study Type Description</value>
+  </data>
+  <data name="stutyp_StudyTypeID" xml:space="preserve">
+    <value>Study Type ID</value>
+  </data>
+  <data name="stutyp_StudyTypeName" xml:space="preserve">
+    <value>Study description</value>
+  </data>
+  <data name="StutypModality" xml:space="preserve">
+    <value>Study Type Modality</value>
+  </data>
+  <data name="StutypStudyType" xml:space="preserve">
+    <value>Study Type</value>
+  </data>
+  <data name="Tab_NormalOrders" xml:space="preserve">
+    <value>Normal orders</value>
+  </data>
+  <data name="Tab_OnHoldOrders" xml:space="preserve">
+    <value>On hold orders</value>
+  </data>
+  <data name="Technician" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="Transcription_AutoFinishNext" xml:space="preserve">
+    <value>Finish and open next</value>
+  </data>
+  <data name="Transcription_AutoFinishNextTooltip" xml:space="preserve">
+    <value>Finish transcription and select the next available dictation</value>
+  </data>
+  <data name="Transcription_AutoNext" xml:space="preserve">
+    <value>Finish and open next</value>
+  </data>
+  <data name="Transcription_AutoNextTooltip" xml:space="preserve">
+    <value>Select the next available dictation</value>
+  </data>
+  <data name="Transcription_BeingTranscribed" xml:space="preserve">
+    <value>This examination is already being transcribed by</value>
+  </data>
+  <data name="Transcription_CancelTranscription" xml:space="preserve">
+    <value>Cancel Transcription</value>
+  </data>
+  <data name="Transcription_FinishTranscription" xml:space="preserve">
+    <value>Finish Transcription</value>
+  </data>
+  <data name="Transcription_PauseTranscription" xml:space="preserve">
+    <value>Pause Transcription</value>
+  </data>
+  <data name="Transcription_StartTranscription" xml:space="preserve">
+    <value>Start Transcription</value>
+  </data>
+  <data name="Transcription_WorkListFilters" xml:space="preserve">
+    <value>Transcription Work List Filters</value>
+  </data>
+  <data name="TranscriptionPage_AlreadyTranscribing" xml:space="preserve">
+    <value>Somebody is already verifying this examination.</value>
+  </data>
+  <data name="TranscriptionPage_StartTranscribing" xml:space="preserve">
+    <value>Start transcribing</value>
+  </data>
+  <data name="TranscriptionPage_TranscriptionGridViewHeader" xml:space="preserve">
+    <value>Examinations to transcribe</value>
+  </data>
+  <data name="tratim_FromRoomID" xml:space="preserve">
+    <value>From room</value>
+  </data>
+  <data name="tratim_Minutes" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="tratim_ToRoomID" xml:space="preserve">
+    <value>To room</value>
+  </data>
+  <data name="ttPatientDetails" xml:space="preserve">
+    <value>Show patient details</value>
+  </data>
+  <data name="Urg_Urgency_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Urg_Urgency_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="urg_UrgencyDescription" xml:space="preserve">
+    <value>Urgency Description</value>
+  </data>
+  <data name="urg_UrgencyID" xml:space="preserve">
+    <value>Urgency ID</value>
+  </data>
+  <data name="urg_UrgencyName" xml:space="preserve">
+    <value>Urgency Name</value>
+  </data>
+  <data name="Urgency" xml:space="preserve">
+    <value>Urgency</value>
+  </data>
+  <data name="UrgUrgency" xml:space="preserve">
+    <value>Urgency ID</value>
+  </data>
+  <data name="UserNotAuthorizedExaminationDetails" xml:space="preserve">
+    <value>User is not authorized to view examination details.</value>
+  </data>
+  <data name="Wa_Ward_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Wa_Ward_Name" xml:space="preserve">
+    <value>Ward Name</value>
+  </data>
+  <data name="wa_WardDescription" xml:space="preserve">
+    <value>Ward Description</value>
+  </data>
+  <data name="wa_WardID" xml:space="preserve">
+    <value>Ward ID</value>
+  </data>
+  <data name="wa_WardName" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="war_DepartmentID" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="war_WardDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="war_WardID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="war_WardName" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="Ward" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="WaWard" xml:space="preserve">
+    <value>Ward ID</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows Authentication</value>
+  </data>
+  <data name="WindowsUserNotVerified" xml:space="preserve">
+    <value>This user is not allowed to log in with windows credentials.</value>
+  </data>
+  <data name="Work_Location" xml:space="preserve">
+    <value>Work location</value>
+  </data>
+  <data name="Worklist_AllLocations" xml:space="preserve">
+    <value>All Locations</value>
+  </data>
+  <data name="Worklist_AllRoom" xml:space="preserve">
+    <value>All Rooms</value>
+  </data>
+  <data name="Worklist_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Worklist_Title" xml:space="preserve">
+    <value>Work List</value>
+  </data>
+  <data name="WorkListFilter_AllWaiting" xml:space="preserve">
+    <value>All waiting or cancelled</value>
+  </data>
+  <data name="WorkListFilter_AnyApproved" xml:space="preserve">
+    <value>Any approved</value>
+  </data>
+  <data name="WorkListFilter_DateRange" xml:space="preserve">
+    <value>Date Range</value>
+  </data>
+  <data name="WorkListFilter_ExaminationStatuses" xml:space="preserve">
+    <value>Examination Statuses</value>
+  </data>
+  <data name="WorkListFilter_ModalityType" xml:space="preserve">
+    <value>Modality Type</value>
+  </data>
+  <data name="WorkListFilter_NextXDays" xml:space="preserve">
+    <value>(next X days)</value>
+  </data>
+  <data name="WorkListFilter_Radiologist" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="WorkListFilter_RelativeDate" xml:space="preserve">
+    <value>Date Range (last X days)</value>
+  </data>
+  <data name="WorkListFilter_Rooms" xml:space="preserve">
+    <value>Rooms</value>
+  </data>
+  <data name="WorkListFilter_ScheduleDateRange" xml:space="preserve">
+    <value>Schedule Date Range</value>
+  </data>
+  <data name="WorkListFilter_Supervisor" xml:space="preserve">
+    <value>Supervisor</value>
+  </data>
+  <data name="WorklistPage_ExaminationsViewHeader" xml:space="preserve">
+    <value>Completed examinations</value>
+  </data>
+  <data name="ZillionRisWebService_FileUpload_ArgumentDocumentTypeValueUnknown" xml:space="preserve">
+    <value>Unknown document type specified, unable to handle your request (document type: {0}).</value>
+    <comment>Argument 0: The document type.</comment>
+  </data>
+  <data name="ZillionRisWebService_FileUpload_ParseErrorSourceIDAsOrderID" xml:space="preserve">
+    <value>Unable to process the request form, couldn't parse the source ID as order ID (source ID: {0}).</value>
+    <comment>Argument 0: The value of SourceID.</comment>
+  </data>
+  <data name="ZillionRisWebService_FileUpload_ParseErrorSourceIDAsPatientID" xml:space="preserve">
+    <value>Unable to process patient document, couldn't parse the source ID as patient ID (source ID: {0}).</value>
+    <comment>Argument 0: The value of SourceID.</comment>
+  </data>
+  <data name="ZillionRisWebService_OrderIDNotFoundInDatabase" xml:space="preserve">
+    <value>The specified order ID does not exist in the database (order ID: {0}).</value>
+    <comment>Argument 0: The Order ID.</comment>
+  </data>
+  <data name="ZillionRisWebService_PatientIDNotFoundInDatabase" xml:space="preserve">
+    <value>The specified patient ID does not exist in the database (patient ID: {0}).</value>
+    <comment>Argument 0: The Patient ID.</comment>
+  </data>
+  <data name="DigitalQandA" xml:space="preserve">
+    <value>Q&amp;A</value>
+  </data>
+  <data name="DigitalQandAForExamination" xml:space="preserve">
+    <value>Q&amp;A for the examination</value>
+  </data>
+  <data name="DigitalQandAForOrder" xml:space="preserve">
+    <value>Q&amp;A for the order</value>
+  </data>
+  <data name="OrderDetails_NoPermission" xml:space="preserve">
+    <value>You currently don't have permissions to view order details. Please contact your system administrator.</value>
+  </data>
+</root>

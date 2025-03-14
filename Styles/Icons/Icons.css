@@ -1,0 +1,140 @@
+.rogan.loading.ani-1,
+.rogan.loading.ani-10,
+.rogan.loading.ani-2,
+.rogan.loading.ani-3,
+.rogan.loading.ani-4,
+.rogan.loading.ani-5,
+.rogan.loading.ani-6,
+.rogan.loading.ani-7,
+.rogan.loading.ani-8,
+.rogan.loading.ani-9,
+.zillion-ris.app-icon.about,
+.zillion-ris.app-icon.change-urgency,
+.zillion-ris.app-icon.close-viewer,
+.zillion-ris.app-icon.configuration-menu,
+.zillion-ris.app-icon.configuration-menu-active,
+.zillion-ris.app-icon.configuration-menu-hover,
+.zillion-ris.app-icon.context-menu,
+.zillion-ris.app-icon.context-menu-active,
+.zillion-ris.app-icon.context-menu-hover,
+.zillion-ris.app-icon.customize-table,
+.zillion-ris.app-icon.error-16,
+.zillion-ris.app-icon.error-51,
+.zillion-ris.app-icon.flag-blue,
+.zillion-ris.app-icon.logout,
+.zillion-ris.app-icon.navigate-left,
+.zillion-ris.app-icon.navigate-left-active,
+.zillion-ris.app-icon.navigate-right,
+.zillion-ris.app-icon.navigate-right-active,
+.zillion-ris.app-icon.refresh,
+.zillion-ris.app-icon.reset-layout,
+.zillion-ris.app-icon.stored-document,
+.zillion-ris.app-icon.stored-document-active,
+.zillion-ris.examinations-icon.examination-assignments,
+.zillion-ris.examinations-icon.failsafe,
+.zillion-ris.examinations-icon.indication-form,
+.zillion-ris.examinations-icon.protocol,
+.zillion-ris.examinations-icon.protocol-assign,
+.zillion-ris.examinations-icon.q-and-a,
+.zillion-ris.examinations-icon.report-authorized,
+.zillion-ris.examinations-icon.report-dictated,
+.zillion-ris.examinations-icon.report-transcribed,
+.zillion-ris.orders-icon.audittrail,
+.zillion-ris.orders-icon.details,
+.zillion-ris.orders-icon.edit-order,
+.zillion-ris.orders-icon.memo,
+.zillion-ris.orders-icon.memo-available,
+.zillion-ris.orders-icon.note,
+.zillion-ris.orders-icon.note-available,
+.zillion-ris.orders-icon.request-form,
+.zillion-ris.orders-icon.scan-request-form,
+.zillion-ris.patients-icon.contact-information,
+.zillion-ris.patients-icon.merge-patient,
+.zillion-ris.patients-icon.patient-details-16,
+.zillion-ris.patients-icon.patient-details-50,
+.zillion-ris.patients-icon.search-patient,
+.zillion-ris.workflow-icon.accepted,
+.zillion-ris.workflow-icon.broom,
+.zillion-ris.workflow-icon.broom-active,
+.zillion-ris.workflow-icon.broom-hover,
+.zillion-ris.workflow-icon.changepassword,
+.zillion-ris.workflow-icon.changepractice,
+.zillion-ris.workflow-icon.declined,
+.zillion-ris.workflow-icon.demote-status,
+.zillion-ris.workflow-icon.pending,
+.zillion-ris.workflow-icon.print-page,
+.zillion-ris.workflow-icon.print-page-active,
+.zillion-ris.workflow-icon.print-page-hover,
+.zillion-ris.workflow-icon.promote-status,
+.zillion-ris.workflow-icon.reschedule,
+.zillion-ris.workflow-icon.send-to { background-image: url('Images/Icons.Sprite.png'); }
+.rogan.loading.ani-1 { background-position: -408px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-10 { background-position: -552px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-2 { background-position: -424px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-3 { background-position: -440px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-4 { background-position: -456px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-5 { background-position: -472px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-6 { background-position: -488px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-7 { background-position: -504px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-8 { background-position: -520px -60px; width: 16px; height: 16px; }
+.rogan.loading.ani-9 { background-position: -536px -60px; width: 16px; height: 16px; }
+.zillion-ris.app-icon.about { background-position: -30px -114px; width: 30px; height: 30px; }
+.zillion-ris.app-icon.change-urgency { background-position: -120px -60px; width: 16px; height: 16px; }
+.zillion-ris.app-icon.close-viewer { background-position: -90px -114px; width: 30px; height: 30px; }
+.zillion-ris.app-icon.configuration-menu { background-position: 0px -94px; width: 28px; height: 20px; }
+.zillion-ris.app-icon.configuration-menu-active { background-position: -56px -94px; width: 28px; height: 20px; }
+.zillion-ris.app-icon.configuration-menu-hover { background-position: -28px -94px; width: 28px; height: 20px; }
+.zillion-ris.app-icon.context-menu { background-position: -16px -60px; width: 24px; height: 16px; }
+.zillion-ris.app-icon.context-menu-active { background-position: -64px -60px; width: 24px; height: 16px; }
+.zillion-ris.app-icon.context-menu-hover { background-position: -40px -60px; width: 24px; height: 16px; }
+.zillion-ris.app-icon.customize-table { background-position: -88px -60px; width: 16px; height: 16px; }
+.zillion-ris.app-icon.error-16 { background-position: 0px -60px; width: 16px; height: 16px; }
+.zillion-ris.app-icon.error-51 { background-position: 0px -194px; width: 51px; height: 51px; }
+.zillion-ris.app-icon.flag-blue { background-position: -136px -60px; width: 16px; height: 16px; }
+.zillion-ris.app-icon.logout { background-position: 0px -114px; width: 30px; height: 30px; }
+.zillion-ris.app-icon.navigate-left { background-position: 0px -245px; width: 30px; height: 120px; }
+.zillion-ris.app-icon.navigate-left-active { background-position: -30px -245px; width: 30px; height: 120px; }
+.zillion-ris.app-icon.navigate-right { background-position: -60px -245px; width: 30px; height: 120px; }
+.zillion-ris.app-icon.navigate-right-active { background-position: -90px -245px; width: 30px; height: 120px; }
+.zillion-ris.app-icon.refresh { background-position: -104px -60px; width: 16px; height: 16px; }
+.zillion-ris.app-icon.reset-layout { background-position: -60px -114px; width: 30px; height: 30px; }
+.zillion-ris.app-icon.stored-document { background-position: 0px -46px; width: 13px; height: 14px; }
+.zillion-ris.app-icon.stored-document-active { background-position: -13px -46px; width: 13px; height: 14px; }
+.zillion-ris.examinations-icon.examination-assignments { background-position: -360px -60px; width: 16px; height: 16px; }
+.zillion-ris.examinations-icon.failsafe { background-position: -105px -46px; width: 15px; height: 14px; }
+.zillion-ris.examinations-icon.indication-form { background-position: -376px -60px; width: 16px; height: 16px; }
+.zillion-ris.examinations-icon.protocol { background-position: -120px -46px; width: 13px; height: 14px; }
+.zillion-ris.examinations-icon.protocol-assign { background-position: -133px -46px; width: 13px; height: 14px; }
+.zillion-ris.examinations-icon.q-and-a { background-position: -392px -60px; width: 16px; height: 16px; }
+.zillion-ris.examinations-icon.report-authorized { background-position: -146px -46px; width: 13px; height: 14px; }
+.zillion-ris.examinations-icon.report-dictated { background-position: -159px -46px; width: 13px; height: 14px; }
+.zillion-ris.examinations-icon.report-transcribed { background-position: -172px -46px; width: 13px; height: 14px; }
+.zillion-ris.orders-icon.audittrail { background-position: -344px -60px; width: 16px; height: 16px; }
+.zillion-ris.orders-icon.details { background-position: -328px -60px; width: 16px; height: 16px; }
+.zillion-ris.orders-icon.edit-order { background-position: -296px -60px; width: 16px; height: 16px; }
+.zillion-ris.orders-icon.memo { background-position: -53px -46px; width: 13px; height: 14px; }
+.zillion-ris.orders-icon.memo-available { background-position: -66px -46px; width: 13px; height: 14px; }
+.zillion-ris.orders-icon.note { background-position: -79px -46px; width: 13px; height: 14px; }
+.zillion-ris.orders-icon.note-available { background-position: -92px -46px; width: 13px; height: 14px; }
+.zillion-ris.orders-icon.request-form { background-position: -40px -46px; width: 13px; height: 14px; }
+.zillion-ris.orders-icon.scan-request-form { background-position: -312px -60px; width: 16px; height: 16px; }
+.zillion-ris.patients-icon.contact-information { background-position: -280px -60px; width: 16px; height: 16px; }
+.zillion-ris.patients-icon.merge-patient { background-position: -26px -46px; width: 14px; height: 14px; }
+.zillion-ris.patients-icon.patient-details-16 { background-position: -264px -60px; width: 16px; height: 16px; }
+.zillion-ris.patients-icon.patient-details-50 { background-position: 0px -144px; width: 50px; height: 50px; }
+.zillion-ris.patients-icon.search-patient { background-position: 0px -76px; width: 23px; height: 18px; }
+.zillion-ris.workflow-icon.accepted { background-position: 0px 0px; width: 12px; height: 10px; }
+.zillion-ris.workflow-icon.broom { background-position: -168px -60px; width: 16px; height: 16px; }
+.zillion-ris.workflow-icon.broom-active { background-position: -200px -60px; width: 16px; height: 16px; }
+.zillion-ris.workflow-icon.broom-hover { background-position: -184px -60px; width: 16px; height: 16px; }
+.zillion-ris.workflow-icon.changepassword { background-position: -13px -33px; width: 13px; height: 13px; }
+.zillion-ris.workflow-icon.changepractice { background-position: -12px 0px; width: 10px; height: 10px; }
+.zillion-ris.workflow-icon.declined { background-position: -26px -10px; width: 12px; height: 11px; }
+.zillion-ris.workflow-icon.demote-status { background-position: -13px -10px; width: 13px; height: 11px; }
+.zillion-ris.workflow-icon.pending { background-position: 0px -33px; width: 13px; height: 13px; }
+.zillion-ris.workflow-icon.print-page { background-position: -216px -60px; width: 16px; height: 16px; }
+.zillion-ris.workflow-icon.print-page-active { background-position: -248px -60px; width: 16px; height: 16px; }
+.zillion-ris.workflow-icon.print-page-hover { background-position: -232px -60px; width: 16px; height: 16px; }
+.zillion-ris.workflow-icon.promote-status { background-position: 0px -10px; width: 13px; height: 11px; }
+.zillion-ris.workflow-icon.reschedule { background-position: -152px -60px; width: 16px; height: 16px; }
+.zillion-ris.workflow-icon.send-to { background-position: 0px -21px; width: 9px; height: 12px; }

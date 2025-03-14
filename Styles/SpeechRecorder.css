@@ -1,0 +1,157 @@
+﻿
+#MainPanel { position: relative; }
+
+#LeftPanel { bottom: 0; left: 0; margin-right: 0; position: absolute; top: 0; width: 290px; }
+
+#RightPanel { display: block; margin-left: 300px; width: auto; }
+        
+.transcription-controls { padding: 10px 0; text-align: center }
+
+.transcription-controls span { display: block; font-family: 'Segoe UI'; font-size: 20px; font-weight: 400; line-height: 1.25em; padding: 5px; }
+
+.transcription-controls span a { cursor: pointer; }
+
+.ui-group-panel-toolbar .ui-input, .ui-group-panel-toolbar .zpselect { min-width: 170px; }
+
+.report-input { font-size: 130%; letter-spacing: 1px; line-height: 1.5em; padding: 1em; resize: none; width: 100%; word-spacing: .35em; }
+
+.report-input-low-contrast { background: #444; color: #fff !important; }
+
+.worklist-nav-controls { background: #E4EBF8; margin-bottom: 1em; padding: 5px; text-align: left; border: 1px solid #C7D3E9; }
+.worklist-nav-controls hr { background: #C7D3E9; }
+
+.worklist-nav-controls button { /*background: #448;*/background: transparent; border: none; color: #468; cursor: pointer; font: 400 18px/1em Arial; padding: 6px; transition: background-color 0.1s ease; }
+.worklist-nav-controls button.green { color: #486; }
+
+.worklist-nav-controls button.left { text-align: left; }
+
+.worklist-nav-controls button.right { text-align: right; }
+
+.worklist-nav-controls button.full { width: 100% }
+
+.worklist-nav-controls button.full-34 { width: 100% }
+
+.worklist-nav-controls button.full-14 { width: 100% }
+
+.worklist-nav-controls button:hover { background: #d0d8e8; color: #468; text-shadow: 0 0 10px #def; }
+.worklist-nav-controls button.green:hover { color: #486; }
+
+.worklist-nav-controls button:active { background: #c0c8d8; color: #000 }
+.worklist-nav-controls button.green:active { color: #040 }
+
+.worklist-nav-controls button:disabled { background: #666; color: #ccc; }
+
+.interactive-player-controls { background: transparent; display: inline-block; margin: 0; padding: 5px; text-align: center; }
+
+.interactive-player-controls button { background: #080; border: none; color: #fff; cursor: pointer; font: 400 18px/20px FontAwesome; padding: 8px; transition: background-color 0.1s ease }
+
+.interactive-player-controls button:hover { background: #0c0; text-shadow: 0 0 10px #0f0; }
+
+.interactive-player-controls button:active { background: #060; color: #ccc }
+
+.interactive-player-controls button:disabled { background: #666; color: #ccc; }
+
+.interactive-player-controls button.active { background: #0c0; text-shadow: 0 0 10px #0f0; /* box-shadow: inset 0px 2px 4px -1px #040;*/ }
+
+.interactive-player-controls button.red:hover { background: #b40; text-shadow: 0 0 10px #f00; }
+
+.interactive-player-controls button.red:active { background: #660; color: #ccc }
+
+.text-controls-bottom { bottom: 0; left: 0; position: absolute; right: 0; }
+
+.text-controls { color: #888; margin: 0.5em; }
+
+.text-controls a { color: #666; padding-right: 5px; text-decoration: none; }
+
+.text-controls a.active { color: #000; }
+
+.text-controls:hover a { color: #444; text-decoration: none; }
+
+.text-controls a:hover { color: #00f; }
+
+.speechstate-info { color: #00f; margin: 0.5em; }
+
+.speechstate-info-label { color: #444; }
+
+.page-transcription-small .text-controls,
+.page-transcription-small .speechstate-info { font-size: 12px; line-height: 1.5em; }
+
+.page-transcription-large .text-controls,
+.page-transcription-large .speechstate-info { font-size: 15px; line-height: 1.5em; }
+
+.interactive-player-controls .position { background: #050; color: #fff; font: 400 14px/24px 'Segoe UI'; margin-top: 5px; padding: 2px; }
+
+.interactive-player-controls .position .position-bar { background: #040; height: 5px; }
+
+.interactive-player-controls .position .position-progress { background: #0c0; border-radius: 3px; height: 5px; transition: background 0.2s ease, width 0.2s ease; }
+
+.interactive-player-controls .position .position-bar.active .position-progress { box-shadow: inset -8px 0px 4px -2px rgba(0, 255, 0, 1); }
+
+.interactive-player-controls .position .position-bar.inactive { -webkit-animation: progressBarOpacity 1s ease infinite; animation: progressBarOpacity 1s ease infinite; }
+
+.interactive-player-controls .position .position-bar.inactive .position-progress { background: #cc0; }
+
+.interactive-player-controls .position:hover .position-progress { background-color: #0e0 }
+
+.interactive-player-controls.inactive  .position { background: #555; color: #ccc; }
+.interactive-player-controls.inactive .position .position-bar { background: #444; }
+.interactive-player-controls.inactive .position .position-progress { background: #ccc; }
+.interactive-player-controls.inactive .position .position-bar.active .position-progress { box-shadow: none; }
+.interactive-player-controls.inactive .position .position-bar.inactive { -webkit-animation: none; animation: none; }
+.interactive-player-controls.inactive .position .position-bar.inactive .position-progress { background: #ccc; }
+.interactive-player-controls.inactive button { background: #888!important; color: #ccc!important; cursor: default!important; text-shadow: none !important; }
+
+@-webkit-keyframes progressBarOpacity {
+    0% { opacity: 1; }
+
+    80% { opacity: 0.75; }
+
+    100% { opacity: 1; }
+}
+
+
+.dictation-type-filter { margin-right: 5px; }
+
+.dictation-type-filter label { margin-right: 5px; }
+
+.dictation-type-filter label input { vertical-align: middle; }
+
+.dictation-type-filter label:hover { color: #00f }
+
+.dictation-type-filter label.inactive { color: #aaa }
+
+.dictation-type-filter label.inactive input { opacity: 0.5 }
+
+.page-transcription-small #LeftPanel { width: 300px; }
+
+.page-transcription-small #RightPanel { margin-left: 310px; }
+
+.transcription-error { background: #fff; border: 1px solid #800 }
+
+.transcription-error-message { color: #a00; margin: 1em; }
+
+.transcription-error-controls { margin: 1em; }
+
+.page-transcription-large #LeftPanel { width: 600px; }
+
+.page-transcription-large #RightPanel { margin-left: 610px; }
+
+.page-transcription-large .worklist-nav-controls { margin: 0; }
+
+.page-transcription-large .worklist-nav-controls button { font-size: 14px; padding: 5px; width: 49%; }
+
+.page-transcription-large .transcription-controls { margin: 0em; }
+
+.page-transcription-large .transcription-controls span { font-size: 16px; padding: 2px; }
+
+.page-transcription-large .interactive-player-controls { margin: 0; }
+
+.page-transcription-large .interactive-player-controls { margin: 0; }
+
+.page-transcription-large .worklist-nav-controls { margin: 0 10% }
+
+.page-transcription-large .worklist-nav-controls button.full { margin-left: 25%; width: 50%; }
+
+.page-transcription-large .worklist-nav-controls button.full-34 { margin-left: 25%; width: 50%; }
+
+.page-transcription-large .worklist-nav-controls button.full-14 { width: 20% }

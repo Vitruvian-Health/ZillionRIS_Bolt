@@ -1,0 +1,1251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECA13268-F797-43BD-8BE9-D96BB6559E58}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rogan.ZillionRis.Website</RootNamespace>
+    <AssemblyName>Rogan.ZillionRis.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <OutputPath>bin\</OutputPath>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <Prefer32Bit>false</Prefer32Bit>
+    <MvcBuildViews>true</MvcBuildViews>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Rogan.ZillionRis.EntityData, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Data Access\Output\Rogan.ZillionRis.EntityData.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Includes\ZillionRIS_Product.cs">
+      <Link>Properties\ZillionRIS_Product.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Includes\ZillionRIS_Version.cs">
+      <Link>Properties\ZillionRIS_Version.cs</Link>
+    </Compile>
+    <Compile Include="AdvancedOverview.ashx.cs">
+      <DependentUpon>AdvancedOverview.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\JSResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JSResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\WebResources.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Authorization.aspx.cs">
+      <DependentUpon>Authorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authorization.aspx.designer.cs">
+      <DependentUpon>Authorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Api\Tasks\VersionInfoTask.cs" />
+    <Compile Include="Code\Common\ExaminationsFilterResultViewModelExaminationIDComparer.cs" />
+    <Compile Include="Code\Common\SystemUserSessionContextFactory.cs" />
+    <Compile Include="Code\Legacy\DatabaseHealthCheck.cs" />
+    <Compile Include="Code\Legacy\DBVersionNumber.cs" />
+    <Compile Include="Code\Legacy\EngineStartTask.cs" />
+    <Compile Include="EditOrder\ChangedExaminationModel.cs" />
+    <Compile Include="EditOrder\BookingAction.cs" />
+    <Compile Include="EditOrder\EditOrderChangeResolver.cs" />
+    <Compile Include="EditOrder\ManualScheduleInfoData.cs" />
+    <Compile Include="EditOrder\ReadOnlyLevel.cs" />
+    <Compile Include="EditOrder\WorkflowResult.cs" />
+    <Compile Include="EditOrder\EditOrderBehavior.cs" />
+    <Compile Include="EditOrder\EditOrderModel.cs" />
+    <Compile Include="Code\Api\ZillionRisWebModule.cs" />
+    <Compile Include="Code\Api\Data\AdvancedFilterPageService.cs" />
+    <Compile Include="Code\Api\Data\AdvancedPatientSearchPageService.cs" />
+    <Compile Include="Code\Api\Data\DiscussionListPageService.cs" />
+    <Compile Include="Code\Api\Data\EpochConverter.cs" />
+    <Compile Include="Code\Api\Data\ExaminationProtocolAssignmentsService.cs" />
+    <Compile Include="Code\Api\Data\CultureService.cs" />
+    <Compile Include="Code\Api\Data\FunctionSpecialisationService.cs" />
+    <Compile Include="Code\Api\Data\StatisticsPageService.cs" />
+    <Compile Include="Code\Api\Data\UsersResource.cs" />
+    <Compile Include="Code\Api\Data\LocationService.cs" />
+    <Compile Include="Code\Api\Data\PatientSearchService.cs" />
+    <Compile Include="Code\Api\Data\PhysiciansResourceService.cs" />
+    <Compile Include="Code\Api\Data\ScheduleOrderService.cs" />
+    <Compile Include="Code\Api\Data\TimeSynchronizationService.cs" />
+    <Compile Include="Code\Api\Data\UpdateOrderTaskRequest.cs" />
+    <Compile Include="Code\Api\Data\UrgencyService.cs" />
+    <Compile Include="Code\Api\Tasks\HousekeepingService.cs" />
+    <Compile Include="Code\Api\ZillionRisWebApi.cs" />
+    <Compile Include="Code\Common\RisGlobalCacheRenewalComponent.cs" />
+    <Compile Include="Code\Common\DisposableContainer.cs" />
+    <Compile Include="Code\Common\HousekeepingMenuModuleProvider.cs" />
+    <Compile Include="Code\Common\HttpContextExtensions.cs" />
+    <Compile Include="Code\Common\ManagementMenuModuleProvider.cs" />
+    <Compile Include="Code\Common\ModulePageExtensions.cs" />
+    <Compile Include="Code\Common\ModulePageMenuProvider.cs" />
+    <Compile Include="Code\Common\RisGlobalCache.cs" />
+    <Compile Include="Code\Common\NavigationHelper.cs" />
+    <Compile Include="Code\Common\RisApplication.cs" />
+    <Compile Include="Code\Common\StoredDocumentListener.cs" />
+    <Compile Include="Code\Common\WebApplicationTaskAspect.cs" />
+    <Compile Include="Code\Common\ZillionRisBusiness.cs" />
+    <Compile Include="Code\Common\ZillionRisSessionContextLogger.cs" />
+    <Compile Include="Code\Controls\ModulePages\ModulePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Controls\ModulePages\ModulePageRouteHandler.cs" />
+    <Compile Include="Code\Controls\PageBaseBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ExaminationCancelledDisplay.cs">
+      <DependentUpon>ExaminationCancelledDisplay.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ClinicalInformationDisplay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicalInformationDisplay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDisplay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDisplay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StoredDocumentsPopup.aspx.cs">
+      <DependentUpon>StoredDocumentsPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoredDocumentsPopup.aspx.designer.cs">
+      <DependentUpon>StoredDocumentsPopup.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Data\ClientDependency\Placeholder.txt" />
+    <Compile Include="Code\Legacy\PrintAppointmentLetterTask.cs" />
+    <Compile Include="Code\Legacy\LegacyModuleBuilder.cs" />
+    <Compile Include="Code\Legacy\PrintDnaLetterTask.cs" />
+    <Compile Include="Code\Legacy\PrintPatientLabelTask.cs" />
+    <Compile Include="Code\Legacy\WebAppHealthCheck.cs" />
+    <Compile Include="Controls\PatientSearchCriteriaControl.ascx.designer.cs">
+      <DependentUpon>PatientSearchCriteriaControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\EditAppointment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditAppointment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PatientLabel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientLabel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics.aspx.designer.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DNALetter.ashx.cs">
+      <DependentUpon>DNALetter.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Dictation\StandardReport.aspx.cs">
+      <DependentUpon>StandardReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditOrderAppointment.ashx.cs">
+      <DependentUpon>EditOrderAppointment.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Housekeeping.aspx.cs">
+      <DependentUpon>Housekeeping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Housekeeping.aspx.designer.cs">
+      <DependentUpon>Housekeeping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientLabel.ashx.cs">
+      <DependentUpon>PatientLabel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Portering.aspx.cs">
+      <DependentUpon>Portering.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DictationOverview.aspx.cs">
+      <DependentUpon>DictationOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DictationOverview.aspx.designer.cs">
+      <DependentUpon>DictationOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dictation\Worklist.aspx.cs">
+      <DependentUpon>Worklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dictation\Worklist.aspx.designer.cs">
+      <DependentUpon>Worklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Controls\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\IMasterPage.cs" />
+    <Compile Include="Code\Security\SecurityHelper.cs" />
+    <Compile Include="Controls\PopupMessageControl.ascx.cs">
+      <DependentUpon>PopupMessageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PopupMessageControl.ascx.designer.cs">
+      <DependentUpon>PopupMessageControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Authorization.aspx" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Content\zillion-parts.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="ScriptLibrary\zillion-ris.ng-ris-ui-module.js" />
+    <Content Include="ScriptLibrary\zillion-ris.ng-ris-module.js" />
+    <Content Include="Dev\Config\log4net.config" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
+    <Content Include="Content\zillion-parts.min.scss" />
+    <Content Include="Scripts\angular-animate.min.js.map" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-animate.min.js.map" />
+    <Content Include="Content\zillion-parts.min.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <None Include="Scripts\jquery-2.2.4.intellisense.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\jquery-migrate.js" />
+    <Content Include="Scripts\jquery-migrate.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.PrintArea.js" />
+    <Content Include="Dev\Config\ServiceClient.config" />
+    <Content Include="Dev\Config\MachineKey.config" />
+    <Content Include="Config\MachineKey.config" />
+    <Content Include="Config\ServiceClient.config" />
+    <Content Include="Config\Hl7PackageCollection.config" />
+    <Content Include="Dev\Config\Hl7PackageCollection.config" />
+    <Content Include="JSLintNet.json" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <EmbeddedResource Include="Reports\ReportDisplay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportDisplay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Scripts\knockout-latest.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\ng-infinite-scroll.js" />
+    <Content Include="Scripts\rangyinputs-jquery.js" />
+    <Content Include="Scripts\zillion-parts.js" />
+    <Content Include="Scripts\zillion-parts.min.js" />
+    <Content Include="Statistics.aspx" />
+    <Content Include="DNALetter.ashx" />
+    <Compile Include="DiscussionLists.aspx.cs">
+      <DependentUpon>DiscussionLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DiscussionLists.aspx.designer.cs">
+      <DependentUpon>DiscussionLists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditOrder.aspx.cs">
+      <DependentUpon>EditOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditOrder.aspx.designer.cs">
+      <DependentUpon>EditOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExaminationProtocolAssignments.aspx.cs">
+      <DependentUpon>ExaminationProtocolAssignments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExaminationProtocolAssignments.aspx.designer.cs">
+      <DependentUpon>ExaminationProtocolAssignments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdvancedFilter.aspx.cs">
+      <DependentUpon>frmAdvancedFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAdvancedFilter.aspx.designer.cs">
+      <DependentUpon>frmAdvancedFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdvancedPatientSearch.aspx.cs">
+      <DependentUpon>frmAdvancedPatientSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAdvancedPatientSearch.aspx.designer.cs">
+      <DependentUpon>frmAdvancedPatientSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatients.aspx.cs">
+      <DependentUpon>frmPatients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatients.aspx.designer.cs">
+      <DependentUpon>frmPatients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetImage.aspx.cs">
+      <DependentUpon>GetImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetImage.aspx.designer.cs">
+      <DependentUpon>GetImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging.aspx.cs">
+      <DependentUpon>Imaging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Imaging.aspx.designer.cs">
+      <DependentUpon>Imaging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LowProfileMaster.master.cs">
+      <DependentUpon>LowProfileMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LowProfileMaster.master.designer.cs">
+      <DependentUpon>LowProfileMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="OrderAppointment.ashx.cs">
+      <DependentUpon>OrderAppointment.ashx</DependentUpon>
+    </Compile>
+    <Content Include="Authorization.js" />
+    <Content Include="Controls\PatientSearchCriteriaControl.js" />
+    <Content Include="Controls\PatientSearchCriteriaControl.ascx" />
+    <Content Include="Diagnose\SpeechMike.html" />
+    <Content Include="Dictation\StandardReport.aspx" />
+    <Content Include="EditOrder.js" />
+    <Content Include="frmAdvancedPatientSearch.js" />
+    <Content Include="DictationOverview.js" />
+    <Content Include="DiscussionLists.js" />
+    <Content Include="ExaminationProtocolAssignments.js" />
+    <Content Include="frmAdvancedFilter.js" />
+    <Content Include="frmPatients.js" />
+    <Content Include="Statistics.js" />
+    <Content Include="Housekeeping.aspx" />
+    <Content Include="Housekeeping.js" />
+    <Content Include="OrderApproval.js" />
+    <Content Include="OrderApproval.OrderExaminationsTable.js" />
+    <Content Include="OrderApproval.OrdersPendingTable.js" />
+    <Content Include="OrderApproval.PatientHistoryTable.js" />
+    <Content Include="OrderBooking.js" />
+    <Content Include="Portering.js" />
+    <Content Include="Portering.aspx" />
+    <Content Include="frmAdvancedPatientSearch.aspx" />
+    <Content Include="Imaging.aspx" />
+    <Content Include="LowProfileMaster.js" />
+    <Content Include="OrderApproval.aspx" />
+    <Content Include="OrderBooking.aspx" />
+    <EmbeddedResource Include="Code\Api\Views\IntermediateView.cshtml" />
+    <Content Include="Parts\PatientContactInformation.cshtml" />
+    <Content Include="PatientSearch.aspx" />
+    <Content Include="PatientSearch.js" />
+    <Content Include="QandAFormStatistics.aspx" />
+    <Content Include="RepTranscription.aspx" />
+    <Content Include="RepTranscription.js" />
+    <Content Include="ScriptLibrary\eventsource.js" />
+    <Content Include="ScriptLibrary\knockout-jqauto.js" />
+    <Content Include="ScriptLibrary\knockout.mapping-2.1.0.js" />
+    <Content Include="ScriptLibrary\legacy-popup.js" />
+    <Content Include="Dictation\Worklist.js" />
+    <Compile Include="OrderApproval.aspx.cs">
+      <DependentUpon>OrderApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderApproval.aspx.designer.cs">
+      <DependentUpon>OrderApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBooking.aspx.cs">
+      <DependentUpon>OrderBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderBooking.aspx.designer.cs">
+      <DependentUpon>OrderBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDisplay.ashx.cs">
+      <DependentUpon>OrderDisplay.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Parts\JavaScriptLanguage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JavaScriptLanguage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Parts\RisRazorBase.cs" />
+    <Compile Include="PatientSearch.aspx.cs">
+      <DependentUpon>PatientSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientSearch.aspx.designer.cs">
+      <DependentUpon>PatientSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QandAFormStatistics.aspx.cs">
+      <DependentUpon>QandAFormStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QandAFormStatistics.aspx.designer.cs">
+      <DependentUpon>QandAFormStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReceptionLow.aspx.cs">
+      <DependentUpon>ReceptionLow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepTranscription.aspx.cs">
+      <DependentUpon>RepTranscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RepTranscription.aspx.designer.cs">
+      <DependentUpon>RepTranscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsReport.ashx.cs">
+      <DependentUpon>StatisticsReport.ashx</DependentUpon>
+    </Compile>
+    <Content Include="Styles\Aqua\custom-theme\images\ui-bg_glass_100_c9e0fc_1x400.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-bg_glass_50_c9e0fc_1x400.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-bg_glass_60_fec143_1x400.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-bg_glass_90_fec143_1x400.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-bg_highlight-hard_0_aaaaaa_1x100.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-icons_002d6b_256x240.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-icons_2c4d79_256x240.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-icons_6c3604_256x240.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-icons_7e3c31_256x240.png" />
+    <Content Include="Styles\Aqua\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\Aqua\custom-theme\jquery-ui.structure.css" />
+    <Content Include="Styles\Aqua\custom-theme\jquery-ui.theme.css" />
+    <Content Include="Styles\images\ui-bg_glass_100_c9e0fc_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_50_c9e0fc_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_60_fec143_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_90_fec143_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\images\ui-bg_highlight-hard_0_aaaaaa_1x100.png" />
+    <Content Include="Styles\images\ui-icons_002d6b_256x240.png" />
+    <Content Include="Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="Styles\images\ui-icons_2c4d79_256x240.png" />
+    <Content Include="Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\images\ui-icons_6c3604_256x240.png" />
+    <Content Include="Styles\images\ui-icons_7e3c31_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
+    <Content Include="web.config" />
+    <Content Include="Styles\Aqua\custom-theme\jquery-ui.css" />
+    <Content Include="Styles\Aqua\custom-theme\jquery-ui.custom.scss" />
+    <Content Include="Scripts\zillion-parts.min.js.map" />
+    <Content Include="Scripts\jquery.min.map" />
+    <None Include="web.Debug.config_base">
+      <DependentUpon>web.config_base</DependentUpon>
+    </None>
+    <None Include="web.Release.config_base">
+      <DependentUpon>web.config_base</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Themes\Aqua\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdvancedOverview.ashx" />
+    <Content Include="ScriptLibrary\support.js" />
+    <Content Include="ScriptLibrary\support.touch.js" />
+    <Content Include="ScriptLibrary\zillion-ris.async-iterator.js" />
+    <Content Include="ScriptLibrary\zillion-ris.command-resources.js" />
+    <Content Include="ScriptLibrary\zillion-ris.commands.js" />
+    <Content Include="ScriptLibrary\zillion-ris.core.js" />
+    <Content Include="ScriptLibrary\zillion-ris.housekeeping.js" />
+    <Content Include="ScriptLibrary\zillion-ris.knockout.js" />
+    <Content Include="ScriptLibrary\zillion-ris.last-accessed-examinations.js" />
+    <Content Include="ScriptLibrary\zillion-ris.locations.js" />
+    <Content Include="ScriptLibrary\zillion-ris.modules.js" />
+    <Content Include="ScriptLibrary\zillion-ris.patient-history.js" />
+    <Content Include="ScriptLibrary\zillion-ris.server-time.js" />
+    <Content Include="ScriptLibrary\zillion-ris.specialisations.js" />
+    <Content Include="ScriptLibrary\zillion-ris.sub-page-nav.js" />
+    <Content Include="ScriptLibrary\zillion-ris.user-settings.js" />
+    <Content Include="ScriptLibrary\zillion-ris.virtual-data-grid.js" />
+    <Content Include="ScriptLibrary\zillion-ris.zillion-speech.js" />
+    <Content Include="StoredDocumentsPopup.aspx" />
+    <Content Include="Styles\Aqua\special-loading-overlays.css" />
+    <Content Include="Parts\ModuleViewer.cshtml" />
+    <Content Include="PatientLabel.ashx" />
+    <Content Include="Parts\OrderInformation.cshtml" />
+    <Content Include="Parts\ImagingExaminationInformation.cshtml" />
+    <Content Include="Config\AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Reports\DNALetter.rpt" />
+    <Content Include="EditOrderAppointment.ashx" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-100.svg" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-300.svg" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-500.svg" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-regular.svg" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin.css" />
+    <Content Include="Styles\Animation.scss" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-100.eot" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-100.ttf" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-100.woff" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-100.woff2" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-300.eot" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-300.ttf" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-300.woff" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-300.woff2" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-500.eot" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-500.ttf" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-500.woff" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-500.woff2" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-regular.eot" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-regular.ttf" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-regular.woff" />
+    <Content Include="Styles\Fonts\roboto-v15-latin\roboto-v15-latin-regular.woff2" />
+    <Content Include="Styles\Layout.scss" />
+    <Content Include="Styles\bootstrap\mixins\_alerts.scss" />
+    <Content Include="Styles\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="Styles\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="Styles\bootstrap\mixins\_buttons.scss" />
+    <Content Include="Styles\bootstrap\mixins\_center-block.scss" />
+    <Content Include="Styles\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="Styles\bootstrap\mixins\_forms.scss" />
+    <Content Include="Styles\bootstrap\mixins\_gradients.scss" />
+    <Content Include="Styles\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="Styles\bootstrap\mixins\_grid.scss" />
+    <Content Include="Styles\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="Styles\bootstrap\mixins\_image.scss" />
+    <Content Include="Styles\bootstrap\mixins\_labels.scss" />
+    <Content Include="Styles\bootstrap\mixins\_list-group.scss" />
+    <Content Include="Styles\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="Styles\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="Styles\bootstrap\mixins\_opacity.scss" />
+    <Content Include="Styles\bootstrap\mixins\_pagination.scss" />
+    <Content Include="Styles\bootstrap\mixins\_panels.scss" />
+    <Content Include="Styles\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="Styles\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="Styles\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="Styles\bootstrap\mixins\_resize.scss" />
+    <Content Include="Styles\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="Styles\bootstrap\mixins\_size.scss" />
+    <Content Include="Styles\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="Styles\bootstrap\mixins\_table-row.scss" />
+    <Content Include="Styles\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="Styles\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="Styles\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="Styles\bootstrap\_alerts.scss" />
+    <Content Include="Styles\bootstrap\_badges.scss" />
+    <Content Include="Styles\bootstrap\_breadcrumbs.scss" />
+    <Content Include="Styles\bootstrap\_button-groups.scss" />
+    <Content Include="Styles\bootstrap\_buttons.scss" />
+    <Content Include="Styles\bootstrap\_carousel.scss" />
+    <Content Include="Styles\bootstrap\_close.scss" />
+    <Content Include="Styles\bootstrap\_code.scss" />
+    <Content Include="Styles\bootstrap\_component-animations.scss" />
+    <Content Include="Styles\bootstrap\_dropdowns.scss" />
+    <Content Include="Styles\bootstrap\_forms.scss" />
+    <Content Include="Styles\bootstrap\_glyphicons.scss" />
+    <Content Include="Styles\bootstrap\_grid.scss" />
+    <Content Include="Styles\bootstrap\_input-groups.scss" />
+    <Content Include="Styles\bootstrap\_jumbotron.scss" />
+    <Content Include="Styles\bootstrap\_labels.scss" />
+    <Content Include="Styles\bootstrap\_list-group.scss" />
+    <Content Include="Styles\bootstrap\_media.scss" />
+    <Content Include="Styles\bootstrap\_mixins.scss" />
+    <Content Include="Styles\bootstrap\_modals.scss" />
+    <Content Include="Styles\bootstrap\_navbar.scss" />
+    <Content Include="Styles\bootstrap\_navs.scss" />
+    <Content Include="Styles\bootstrap\_normalize.scss" />
+    <Content Include="Styles\bootstrap\_pager.scss" />
+    <Content Include="Styles\bootstrap\_pagination.scss" />
+    <Content Include="Styles\bootstrap\_panels.scss" />
+    <Content Include="Styles\bootstrap\_popovers.scss" />
+    <Content Include="Styles\bootstrap\_print.scss" />
+    <Content Include="Styles\bootstrap\_progress-bars.scss" />
+    <Content Include="Styles\bootstrap\_responsive-embed.scss" />
+    <Content Include="Styles\bootstrap\_responsive-utilities.scss" />
+    <Content Include="Styles\bootstrap\_scaffolding.scss" />
+    <Content Include="Styles\bootstrap\_tables.scss" />
+    <Content Include="Styles\bootstrap\_theme.scss" />
+    <Content Include="Styles\bootstrap\_thumbnails.scss" />
+    <Content Include="Styles\bootstrap\_tooltip.scss" />
+    <Content Include="Styles\bootstrap\_type.scss" />
+    <Content Include="Styles\bootstrap\_utilities.scss" />
+    <Content Include="Styles\bootstrap\_variables.scss" />
+    <Content Include="Styles\bootstrap\_wells.scss" />
+    <None Include="Styles\MasterPage.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="Styles\Reset.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="Styles\Fonts.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="Styles\Site.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <None Include="Styles\Brushes.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </None>
+    <Content Include="Styles\Default\Loading\1.png" />
+    <Content Include="Styles\Default\Loading\10.png" />
+    <Content Include="Styles\Default\Loading\2.png" />
+    <Content Include="Styles\Default\Loading\3.png" />
+    <Content Include="Styles\Default\Loading\4.png" />
+    <Content Include="Styles\Default\Loading\5.png" />
+    <Content Include="Styles\Default\Loading\6.png" />
+    <Content Include="Styles\Default\Loading\7.png" />
+    <Content Include="Styles\Default\Loading\8.png" />
+    <Content Include="Styles\Default\Loading\9.png" />
+    <Content Include="Styles\Icons\Images\Icons.Sprite.png" />
+    <Content Include="Styles\images\Background.gif" />
+    <Content Include="Styles\images\CalendarIcon.png" />
+    <Content Include="Styles\images\DetailsBG.gif" />
+    <Content Include="Styles\images\ErrorIcon.png" />
+    <Content Include="Styles\images\Form-Gradient.png" />
+    <Content Include="Styles\images\GridViewHeader.gif" />
+    <Content Include="Styles\images\Info_ZillionRIS.png" />
+    <Content Include="Styles\images\logo_zillion.png" />
+    <Content Include="Styles\images\logo_zillion_alert.png" />
+    <Content Include="Styles\images\Search-Grey.png" />
+    <Content Include="Styles\images\StateButtons.png" />
+    <Content Include="Styles\images\transparant_black_10.png" />
+    <Content Include="Styles\images\transparant_white.png" />
+    <Content Include="Parts\OrderDetails.cshtml" />
+    <Content Include="Parts\ExaminationDetails2.cshtml" />
+    <Content Include="Styles\Site.css">
+      <DependentUpon>Site.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\SpeechRecorder.css" />
+    <Content Include="Styles\Default\Images\ArrowRightLarge.png" />
+    <Content Include="Styles\Default\Images\CompatMenu.png" />
+    <Content Include="Styles\Default\Images\down.png" />
+    <Content Include="Styles\Default\Images\Error.gif" />
+    <Content Include="Styles\images\favicon.ico" />
+    <Content Include="Styles\Default\Images\info.png" />
+    <Content Include="Styles\Default\Images\up.png" />
+    <Content Include="Styles\Default\Images\wrong.png" />
+    <Content Include="Controls\PopupMessageControl.ascx" />
+    <Content Include="DictationOverview.aspx" />
+    <Content Include="OrderDisplay.ashx" />
+    <Content Include="Imaging.Commands.js" />
+    <Content Include="Parts\PatientBanner.cshtml" />
+    <Content Include="ScriptLibrary\tool-tip.js" />
+    <Content Include="Service.aspx" />
+    <Content Include="ScriptLibrary\zillion-ris.interval-timer.js" />
+    <Content Include="ScriptLibrary\zillion-ris.notifications.js" />
+    <Content Include="ScriptLibrary\zillion-ris.work-list-filters.js" />
+    <Content Include="Styles\Aqua\Images\Page-Loading.gif" />
+    <Content Include="Styles\Aqua\tool-tip.css" />
+    <Content Include="Styles\Aqua\tooltip-background.png" />
+    <Content Include="Styles\Icons\Icons.css" />
+    <Content Include="Dictation\Worklist.aspx" />
+    <Content Include="Documents\history.txt" />
+    <Content Include="ExaminationProtocolAssignments.aspx" />
+    <Content Include="LowProfileMaster.master" />
+    <Content Include="OpenSearch.ashx" />
+    <Content Include="OrderAppointment.ashx" />
+    <Content Include="PatientDocuments\readme.txt" />
+    <Content Include="RequestForms\rf.txt" />
+    <Content Include="ScriptLibrary\JSGeneral.js">
+      <LastGenOutput>JSGeneral.min.js</LastGenOutput>
+    </Content>
+    <Content Include="ScriptLibrary\Silverlight.js" />
+    <Content Include="StyleSheets\BPPCDocumentView.xsl" />
+    <Content Include="StyleSheets\XDSDocumentView.xsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="DiscussionLists.aspx" />
+    <Content Include="EditOrder.aspx" />
+    <Content Include="frmAdvancedFilter.aspx" />
+    <Content Include="frmPatients.aspx" />
+    <Content Include="GetImage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="ReceptionLow.aspx" />
+    <Content Include="Imaging.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Documents\Help.pdf" />
+    <None Include="Reports\ExaminationsPerPhysician.rpt" />
+    <None Include="Reports\ExaminationsPerPractitioner.rpt" />
+    <None Include="Reports\ExaminationsPerRadiologist.rpt" />
+    <None Include="Reports\GetAmountOfBillings.rpt" />
+    <None Include="Reports\GetAmountOfExaminationsPerRoomBilled.rpt" />
+    <None Include="Reports\GetAmountOfExaminationsPerRoomUnbilled.rpt" />
+    <None Include="Reports\GetExaminationsWithoutImages.rpt" />
+    <None Include="Reports\GetSpecialisationExaminations.rpt" />
+    <None Include="Reports\NumberOfExaminationsPerPhysician.rpt" />
+    <None Include="Reports\NumberOfExaminationsPerRadiologist.rpt" />
+    <None Include="Reports\OrderAppointment.rpt" />
+    <None Include="Reports\OrderDisplay.rpt" />
+    <None Include="Reports\OrderTypes.rpt" />
+    <None Include="Reports\PatientOverviewPerDay.rpt" />
+    <None Include="Reports\ProductionPerExaminationTypeForModality.rpt" />
+    <None Include="Reports\StudyDisplay.rpt" />
+    <None Include="Reports\TotalProduction.rpt" />
+    <None Include="Reports\TotalProductionPerModality.rpt" />
+    <None Include="Reports\TotalProductionPerModalityPerCTG.rpt" />
+    <None Include="Reports\TotalProductionPerOrderType.rpt" />
+    <None Include="Reports\WaitingTimesPerExaminationTypeForModality.rpt" />
+    <Content Include="StatisticsReport.ashx" />
+    <None Include="Reports\WaitingTimesPerExaminationTypeForModalityForDictation.rpt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DelftDI.ZillionRis.Licensing\DelftDI.ZillionRis.Licensing.csproj">
+      <Project>{2180c14b-67b6-4922-9ad3-dece5e7f9cdb}</Project>
+      <Name>DelftDI.ZillionRis.Licensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DelftDI.ZillionRis.Logging\DelftDI.ZillionRis.Logging.csproj">
+      <Project>{c72826b1-5241-423c-845b-eab924572162}</Project>
+      <Name>DelftDI.ZillionRis.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.ApplicationSettings\Rogan.ZillionRis.ApplicationSettings.csproj">
+      <Project>{c8ea83ae-b8bb-4966-be36-3dd247681d05}</Project>
+      <Name>Rogan.ZillionRis.ApplicationSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.AuditTrail\Rogan.ZillionRis.AuditTrail.csproj">
+      <Project>{F452605F-54FE-40A5-A6D1-04E3FDC1D313}</Project>
+      <Name>Rogan.ZillionRis.AuditTrail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.CancelledExaminations\Rogan.ZillionRis.CancelledExaminations.csproj">
+      <Project>{ffac6b17-6e86-4b25-ab8c-04c9b9339787}</Project>
+      <Name>Rogan.ZillionRis.CancelledExaminations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.ConflictingAppointments\Rogan.ZillionRis.ConflictingAppointments.csproj">
+      <Project>{8207a68e-8ba4-48d6-9a22-077f4edc672f}</Project>
+      <Name>Rogan.ZillionRis.ConflictingAppointments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.CustomFilters\Rogan.ZillionRis.CustomFilters.csproj">
+      <Project>{5c9b29a2-96e3-4bcd-9e5f-c3d1a98c6139}</Project>
+      <Name>Rogan.ZillionRis.CustomFilters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.DeceasedPatients\Rogan.ZillionRis.DeceasedPatients.csproj">
+      <Project>{f70ff0e0-38f5-420b-ab0b-bcd91a2b9b69}</Project>
+      <Name>Rogan.ZillionRis.DeceasedPatients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Dictation.Digital\Rogan.ZillionRis.Dictation.Digital.csproj">
+      <Project>{6CDCD6E3-2F9B-491A-B814-9F61FAA59ECB}</Project>
+      <Name>Rogan.ZillionRis.Dictation.Digital</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Dictation.InterActive\Rogan.ZillionRis.Dictation.InterActive.csproj">
+      <Project>{84A15B0F-B09D-4CBC-8703-5952AF792FEF}</Project>
+      <Name>Rogan.ZillionRis.Dictation.InterActive</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Dictation.Text\Rogan.ZillionRis.Dictation.Text.csproj">
+      <Project>{17D9508F-38F8-48E3-B30E-9044503ACFAA}</Project>
+      <Name>Rogan.ZillionRis.Dictation.Text</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRIS.HtmlEditor\Rogan.ZillionRis.HtmlEditor.csproj">
+      <Project>{70D332AB-7988-4611-9421-A8F3A40606D9}</Project>
+      <Name>Rogan.ZillionRis.HtmlEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.ErrorReporting\Rogan.ZillionRis.ErrorReporting.csproj">
+      <Project>{a80db4b3-04a8-475c-bd53-c03db8a8c5fb}</Project>
+      <Name>Rogan.ZillionRis.ErrorReporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.ExaminationDiscussion\Rogan.ZillionRis.ExaminationDiscussion.csproj">
+      <Project>{BD287685-C55A-4425-A395-F780ED1357AC}</Project>
+      <Name>Rogan.ZillionRis.ExaminationDiscussion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.FailSafe\Rogan.ZillionRis.FailSafe.csproj">
+      <Project>{072e0ce5-a93e-44d9-a04c-264301c70c4b}</Project>
+      <Name>Rogan.ZillionRis.FailSafe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.HL7Overview\Rogan.ZillionRis.HL7Overview.csproj">
+      <Project>{e5ae3a4d-3793-4ee0-8a4f-151633625076}</Project>
+      <Name>Rogan.ZillionRis.HL7Overview</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Housekeeping\Rogan.ZillionRis.Housekeeping.csproj">
+      <Project>{F033771D-B147-4B0F-8B8C-31838AEAB4F9}</Project>
+      <Name>Rogan.ZillionRis.Housekeeping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.KioskIntegration\Rogan.ZillionRis.KioskIntegration.csproj">
+      <Project>{ec3f133f-7710-4fae-827c-f652a9a6fdbb}</Project>
+      <Name>Rogan.ZillionRis.KioskIntegration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Login\Rogan.ZillionRis.Login.csproj">
+      <Project>{5bedac02-3292-4d2f-bb50-09abeb01d75a}</Project>
+      <Name>Rogan.ZillionRis.Login</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Medisec\Rogan.ZillionRis.Medisec.csproj">
+      <Project>{380c6f73-f026-48c6-98f8-208ffe018f5b}</Project>
+      <Name>Rogan.ZillionRis.Medisec</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.OrderComm\Rogan.ZillionRis.OrderComm.csproj">
+      <Project>{3ee987eb-142d-48e8-a6ed-aae6bef16e30}</Project>
+      <Name>Rogan.ZillionRis.OrderComm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Panels\Rogan.ZillionRis.Panels.csproj">
+      <Project>{ef84bacf-7bb4-48a7-949e-37bdddc326a0}</Project>
+      <Name>Rogan.ZillionRis.Panels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.PatientMerge\Rogan.ZillionRis.PatientMerge.csproj">
+      <Project>{04f1725d-aea3-4a1d-881d-f72b981a21c0}</Project>
+      <Name>Rogan.ZillionRis.PatientMerge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.PatientPortal\Rogan.ZillionRis.PatientPortal.csproj">
+      <Project>{1cb1ce90-b335-4741-a3bd-73522a2c6648}</Project>
+      <Name>Rogan.ZillionRis.PatientPortal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Performance\Rogan.ZillionRis.Performance.csproj">
+      <Project>{B6EC8390-EC32-4176-95BA-B09E59AAA017}</Project>
+      <Name>Rogan.ZillionRis.Performance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Portering\Rogan.ZillionRis.Portering.csproj">
+      <Project>{DB6E9C40-E9C9-4928-AD9E-6C728ACCBB96}</Project>
+      <Name>Rogan.ZillionRis.Portering</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.ProfilingWeb\Rogan.ZillionRis.ProfilingWeb.csproj">
+      <Project>{3b0bc98c-1a89-4c9a-b733-3b5ca733620f}</Project>
+      <Name>Rogan.ZillionRis.ProfilingWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Protocols\Rogan.ZillionRis.Protocols.csproj">
+      <Project>{c702942c-b8ad-4b14-8106-c990ed951542}</Project>
+      <Name>Rogan.ZillionRis.Protocols</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Reporting\Rogan.ZillionRis.Reporting.csproj">
+      <Project>{E55F0AE8-C540-4E6C-961C-1B9D48DDCA61}</Project>
+      <Name>Rogan.ZillionRis.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.Text.ShortCodes.Sql\Rogan.Text.ShortCodes.Sql.csproj">
+      <Project>{D7FA2067-A58A-48AA-80EC-4C3DD2141CAE}</Project>
+      <Name>Rogan.Text.ShortCodes.Sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.Text.ShortCodes.Web\Rogan.Text.ShortCodes.Web.csproj">
+      <Project>{8CA695FC-FAF7-4120-B3C9-9D56766634BA}</Project>
+      <Name>Rogan.Text.ShortCodes.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Authentication\Rogan.ZillionRis.Authentication.csproj">
+      <Project>{E76F8EB9-7D4C-4823-8EA4-7FA7054846D7}</Project>
+      <Name>Rogan.ZillionRis.Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Calendars\Rogan.ZillionRis.Calendars.csproj">
+      <Project>{15AB379E-E0F7-439A-B039-67C053D9E790}</Project>
+      <Name>Rogan.ZillionRis.Calendars</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Dictation\Rogan.ZillionRis.Dictation.csproj">
+      <Project>{01AF1D0C-D86D-435B-B3C7-F4CE79CA7C43}</Project>
+      <Name>Rogan.ZillionRis.Dictation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Extensibility\Rogan.ZillionRis.Extensibility.csproj">
+      <Project>{DEE6C093-F5A6-4462-B94F-9B4272E1B166}</Project>
+      <Name>Rogan.ZillionRis.Extensibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.LastAccessed\Rogan.ZillionRis.LastAccessed.csproj">
+      <Project>{F067992F-9A37-4FB1-8478-C79B81B4F6C0}</Project>
+      <Name>Rogan.ZillionRis.LastAccessed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Profiling\Rogan.ZillionRis.Profiling.csproj">
+      <Project>{F97D7F35-795B-431A-94D5-285C5A049EC5}</Project>
+      <Name>Rogan.ZillionRis.Profiling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Reception\Rogan.ZillionRis.Reception.csproj">
+      <Project>{CA15183F-AD54-4BB2-94BC-55066467273F}</Project>
+      <Name>Rogan.ZillionRis.Reception</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Scheduling\Rogan.ZillionRis.Scheduling.csproj">
+      <Project>{d739037b-9829-4435-9289-4c23816e3bd3}</Project>
+      <Name>Rogan.ZillionRis.Scheduling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.ScriptServer\Rogan.ZillionRis.ScriptServer.csproj">
+      <Project>{CA8376F1-CBFD-4887-BD24-FC8614E85118}</Project>
+      <Name>Rogan.ZillionRis.ScriptServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Shell\Rogan.ZillionRis.Shell.csproj">
+      <Project>{E4665731-DD53-4D9A-83C8-35BC8BBC310D}</Project>
+      <Name>Rogan.ZillionRis.Shell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Statistics\Rogan.ZillionRis.Statistics.csproj">
+      <Project>{DA945044-0EC7-4E67-B1D1-F27B84751950}</Project>
+      <Name>Rogan.ZillionRis.Statistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.StoredDocuments\Rogan.ZillionRis.StoredDocuments.csproj">
+      <Project>{C037F5ED-0893-479C-B447-227DA90DC73F}</Project>
+      <Name>Rogan.ZillionRis.StoredDocuments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Supervision\Rogan.ZillionRis.Supervision.csproj">
+      <Project>{1d01d256-d1ef-47a0-9c46-1df3776f7ab8}</Project>
+      <Name>Rogan.ZillionRis.Supervision</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Technician\Rogan.ZillionRis.Technician.csproj">
+      <Project>{37911FFC-AB9B-4C30-AE22-464E4636BD4A}</Project>
+      <Name>Rogan.ZillionRis.Technician</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Themes\Rogan.ZillionRis.Themes.csproj">
+      <Project>{b2d37599-c7c4-4614-bda7-a5f832b02a20}</Project>
+      <Name>Rogan.ZillionRis.Themes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.WebControls\Rogan.ZillionRis.WebControls.csproj">
+      <Project>{A6F4A1FD-2C53-422C-9AA5-62C08621A0B6}</Project>
+      <Name>Rogan.ZillionRis.WebControls</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Web\Rogan.ZillionRis.Web.csproj">
+      <Project>{D84056D2-037B-48E2-B979-E732CA264798}</Project>
+      <Name>Rogan.ZillionRis.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Workflow\Rogan.ZillionRis.Workflow.csproj">
+      <Project>{D2E9CB34-909F-42C6-9F13-61D6C3609ADB}</Project>
+      <Name>Rogan.ZillionRis.Workflow</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.Worklist\Rogan.ZillionRis.Worklist.csproj">
+      <Project>{29c14ab5-9a00-4049-9185-5f8fd936658c}</Project>
+      <Name>Rogan.ZillionRis.Worklist</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis.ZillionSpeech\Rogan.ZillionRis.ZillionSpeech.csproj">
+      <Project>{8a4729a9-2187-4e01-ae9e-7be47a4a2611}</Project>
+      <Name>Rogan.ZillionRis.ZillionSpeech</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rogan.ZillionRis\Rogan.ZillionRis.csproj">
+      <Project>{8A245DB7-6615-4EB5-9B9B-B02F644AB999}</Project>
+      <Name>Rogan.ZillionRis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\WebResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>WebResources.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\WebResources.nl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\WebResources.en-GB.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\JSResources.en-GB.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\JSResources.nl.resx">
+      <LastGenOutput>JSResources.nl.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\JSResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JSResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parts\JavaScriptLanguage.nl.resx" />
+    <EmbeddedResource Include="Parts\JavaScriptLanguage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>JavaScriptLanguage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Reports\ProductionPerExaminationTypeForModalityType.rpt" />
+    <EmbeddedResource Include="Reports\ExaminationCancelledDisplay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ExaminationCancelledDisplay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ClinicalInformationDisplay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClinicalInformationDisplay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\EditAppointment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EditAppointment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PatientLabel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PatientLabel.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dev\Config\AppSettings.config" />
+    <None Include="Dev\Config\ConnectionStrings.config" />
+    <None Include="Dev\Config\ClientDependency.config" />
+    <None Include="Dev\Config\Unity.config" />
+    <None Include="Dev\Config\WebModules.config" />
+    <None Include="Config\ConnectionStrings.config" />
+    <None Include="Config\ClientDependency.config" />
+    <None Include="Config\Unity.config" />
+    <None Include="Config\WebModules.config" />
+    <None Include="web.config_base">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ScriptLibrary\zillion-ris.ng-ris-ui-module-ts.ts" />
+    <None Include="ScriptLibrary\zillion-ris.ng-ris-ui-module-ts.js">
+      <DependentUpon>zillion-ris.ng-ris-ui-module-ts.ts</DependentUpon>
+    </None>
+    <None Include="ScriptLibrary\zillion-ris.ng-ris-ui-module-ts.js.map">
+      <DependentUpon>zillion-ris.ng-ris-ui-module-ts.ts</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ClientDependency">
+      <Version>1.9.2</Version>
+    </PackageReference>
+    <PackageReference Include="DelftDI.Common.Logging">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="DelftDI.Common.RIS.Json">
+      <Version>1.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="DelftDI.Common.VersionUtils">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="DelftDI.Text.ShortCodes">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="EmbeddedResourceVirtualPathProvider">
+      <Version>1.3.19</Version>
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <Version>6.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Font.Awesome">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="JSLintNet.MSBuild">
+      <Version>2.0.4</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Mvc">
+      <Version>5.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.TypeScript.MSBuild">
+      <Version>3.2.3</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="protobuf-net">
+      <Version>2.0.0.668</Version>
+    </PackageReference>
+    <PackageReference Include="RazorEngine">
+      <Version>3.9.3</Version>
+    </PackageReference>
+    <PackageReference Include="Unity">
+      <Version>4.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="xunit.runner.visualstudio">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="YUICompressor.NET">
+      <Version>2.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="ZillionPartsJS">
+      <Version>2.4.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(SolutionDir)\BeforeBuildRIS.props" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>3060</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3060/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <Target Name="NpmInstall" BeforeTargets="BeforeBuild">
+    <Exec Command="npm install" />
+  </Target>
+  <Target Name="CopyNpmDependencies" AfterTargets="NpmInstall">
+    <ItemGroup>
+      <!-- Script folder -->
+      <AngularFiles Include="node_modules\angular\angular*.js;node_modules\angular\angular.min.js.map" />
+      <AngularAnimateFiles Include="node_modules\angular-animate\angular-animate*.js*" />
+      <AngularMocksFiles Include="node_modules\angular-mocks\angular-mocks.js" />
+      <JqueryFiles Include="node_modules\jquery\dist\*.*" />
+      <JqueryUiFiles Include="node_modules\jquery-ui-dist\jquery-ui*.js" />
+      <JqueryMigrateFiles Include="node_modules\jquery-migrate\dist\*.*" />
+      <KnockoutFiles Include="node_modules\knockout\build\output\knockout-latest.js" />
+      <MomentFiles Include="node_modules\moment\moment.js;node_modules\moment\min\moment*.js" />
+      <RangyInputsFiles Include="node_modules\rangyinputs\rangyinputs-jquery.js" />
+    </ItemGroup>
+    <Copy SourceFiles="@(AngularFiles);@(AngularAnimateFiles);@(AngularMocksFiles);@(JqueryFiles);@(JqueryUiFiles);@(JqueryMigrateFiles);@(KnockoutFiles);@(MomentFiles);@(RangyInputsFiles);" DestinationFolder="Scripts" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

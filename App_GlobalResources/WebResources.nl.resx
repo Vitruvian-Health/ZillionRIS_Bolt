@@ -1,0 +1,4292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcceptImages" xml:space="preserve">
+    <value>Beelden Accepteren</value>
+  </data>
+  <data name="act_ActionID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="act_ActionName" xml:space="preserve">
+    <value>Actie</value>
+  </data>
+  <data name="act_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="actreq_Action" xml:space="preserve">
+    <value>Actie</value>
+  </data>
+  <data name="actreq_Minutes" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="actreq_Resource" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="actsch_ActionID" xml:space="preserve">
+    <value>Actie</value>
+  </data>
+  <data name="actsch_examinationID" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="actsch_ResourceID" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="actsch_StartDateTime" xml:space="preserve">
+    <value>Tijd</value>
+  </data>
+  <data name="Addendum_Report" xml:space="preserve">
+    <value>Addendum:</value>
+  </data>
+  <data name="AddIntendedVetter_SummaryLabel" xml:space="preserve">
+    <value>Toevoegen Beoogde Goedkeurder</value>
+  </data>
+  <data name="AdvancedFilter_AllLocations" xml:space="preserve">
+    <value>Alle locaties</value>
+  </data>
+  <data name="AdvancedFilter_CriterionCaption" xml:space="preserve">
+    <value>Kies filtertype...</value>
+  </data>
+  <data name="AdvancedFilter_NoFilterSelected" xml:space="preserve">
+    <value>(Geen filter)</value>
+  </data>
+  <data name="AdvancedFilter_ReportType" xml:space="preserve">
+    <value>Verslagtype</value>
+  </data>
+  <data name="AdvancedFilter_ValueCaption" xml:space="preserve">
+    <value>Kies...</value>
+  </data>
+  <data name="AdvancedOverview_DateFromUnspecified" xml:space="preserve">
+    <value>Datum van gespecificeerd.</value>
+  </data>
+  <data name="AdvancedOverview_DateToUnspecified" xml:space="preserve">
+    <value>Datum om niet gespecificeerd.</value>
+  </data>
+  <data name="AdvancedOverview_InvalidLocationID" xml:space="preserve">
+    <value>Ongeldige opgegeven locatie-ID.</value>
+  </data>
+  <data name="AdvancedPatientSearchPage_PatientsSearchResultGridViewHeader" xml:space="preserve">
+    <value>Patiënt Zoekresultaat</value>
+  </data>
+  <data name="Appointments_FailedToMoveTheOrder" xml:space="preserve">
+    <value>Kan de order om te verplaatsen.</value>
+  </data>
+  <data name="Appointments_FailedToMoveTheStudy" xml:space="preserve">
+    <value>Kan de studie te verplaatsen.</value>
+  </data>
+  <data name="Appointments_FailedToRegisterThePatient" xml:space="preserve">
+    <value>Kan de patiënt te registreren.</value>
+  </data>
+  <data name="Appointments_NoPatientSelected" xml:space="preserve">
+    <value>Geen enkele patiënt is geselecteerd.</value>
+  </data>
+  <data name="Appointments_Submit" xml:space="preserve">
+    <value>Verzenden (XDS)</value>
+  </data>
+  <data name="Appointments_SubmitPatient" xml:space="preserve">
+    <value>Verzend Patiënt (XDS)</value>
+  </data>
+  <data name="General_AddAddendum" xml:space="preserve">
+    <value>Addendum Toevoegen</value>
+  </data>
+  <data name="AuditTrails_FinishDictation" xml:space="preserve">
+    <value> {0} dictatie afgerond voor {1} onderzoek(en) ({2}). Volgende actie: {3}.</value>
+  </data>
+  <data name="AuditTrails_OpenDictation" xml:space="preserve">
+    <value>Dictatiepagina geopend voor {0} onderzoek(en) ({1}).</value>
+  </data>
+  <data name="AuditTrails_StartDictation" xml:space="preserve">
+    <value>{0} dictatie gestart voor {1} onderzoek(en) ({2}).</value>
+  </data>
+  <data name="Authorization_Authorize" xml:space="preserve">
+    <value>Rapport Autoriseren</value>
+  </data>
+  <data name="Authorization_AutoFinishNextTooltip" xml:space="preserve">
+    <value>Authorisatie opslaan en selecteer de volgende dictatie</value>
+  </data>
+  <data name="Authorization_ChangeTextArea" xml:space="preserve">
+    <value>Maak het tekstveld</value>
+  </data>
+  <data name="Authorization_ContinueLater" xml:space="preserve">
+    <value>Later verder gaan</value>
+  </data>
+  <data name="Authorization_DisableAudio" xml:space="preserve">
+    <value>Audio uitschakelen</value>
+  </data>
+  <data name="Authorization_FilterText" xml:space="preserve">
+    <value>Tekst</value>
+  </data>
+  <data name="Authorization_InterActive" xml:space="preserve">
+    <value>InterActief</value>
+  </data>
+  <data name="Authorization_Large" xml:space="preserve">
+    <value>Groot</value>
+  </data>
+  <data name="Authorization_Multiple" xml:space="preserve">
+    <value>Meervoudig</value>
+  </data>
+  <data name="Authorization_NextAuthorize" xml:space="preserve">
+    <value>Autoriseren en volgende </value>
+  </data>
+  <data name="Authorization_Open" xml:space="preserve">
+    <value>Start Autoriseren</value>
+  </data>
+  <data name="Authorization_Other" xml:space="preserve">
+    <value>Overig</value>
+  </data>
+  <data name="Authorization_RestoreDefaultSize" xml:space="preserve">
+    <value>Herstellen naar standaard formaat</value>
+  </data>
+  <data name="Authorization_Single" xml:space="preserve">
+    <value>Enkelvoudig</value>
+  </data>
+  <data name="Authorization_Small" xml:space="preserve">
+    <value>Klein</value>
+  </data>
+  <data name="Authorization_Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Authorization_WorkListFilters" xml:space="preserve">
+    <value>Geavanceerde Filters</value>
+  </data>
+  <data name="AuthorizationPage_AuthorizationGridViewHeader" xml:space="preserve">
+    <value>Te authoriseren onderzoeken</value>
+  </data>
+  <data name="AuthorizationPage_StartAuthorize" xml:space="preserve">
+    <value>Start authoriseren</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Voeg toe</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="btnChange" xml:space="preserve">
+    <value>Aanpassen</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Verwijder</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>Bewerk</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+  <data name="Button_BookManually" xml:space="preserve">
+    <value>Handmatig inplannen</value>
+  </data>
+  <data name="Button_BookOrder" xml:space="preserve">
+    <value>Automatisch inplannen</value>
+  </data>
+  <data name="Button_BookOrderNow" xml:space="preserve">
+    <value>Aanvraag nu inboeken</value>
+  </data>
+  <data name="Button_CreateDummyPatient" xml:space="preserve">
+    <value>Nieuwe Dummy Patiënt</value>
+  </data>
+  <data name="Calendar_Date" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="Calendar_Time" xml:space="preserve">
+    <value>Tijd</value>
+  </data>
+  <data name="Calendar_TimeBackward" xml:space="preserve">
+    <value>Eerder</value>
+  </data>
+  <data name="Calendar_TimeForward" xml:space="preserve">
+    <value>Later</value>
+  </data>
+  <data name="CalendarPage_CalendarGridViewHeader" xml:space="preserve">
+    <value>Plan per locatie</value>
+  </data>
+  <data name="CalendarPage_FailedToLoad" xml:space="preserve">
+    <value>Kan het agenda overzicht niet laden</value>
+  </data>
+  <data name="CalendarPage_SingleClick" xml:space="preserve">
+    <value>Plan per locatie</value>
+  </data>
+  <data name="canrea_Text" xml:space="preserve">
+    <value>Reden voor annulering</value>
+  </data>
+  <data name="ClinicalInformationForExamination" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="ClinicalInformationForExamination_Long" xml:space="preserve">
+    <value>Medische gegevens voor onderzoek</value>
+  </data>
+  <data name="closedRoomFormEndTime" xml:space="preserve">
+    <value>Eindtijd:</value>
+  </data>
+  <data name="closedRoomFormReason" xml:space="preserve">
+    <value>Reden:</value>
+  </data>
+  <data name="closedRoomFormResource" xml:space="preserve">
+    <value>Kamer:</value>
+  </data>
+  <data name="closedRoomFormStartTime" xml:space="preserve">
+    <value>Starttijd:</value>
+  </data>
+  <data name="Co_Country_Name" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="co_CountryID" xml:space="preserve">
+    <value>Land ID</value>
+  </data>
+  <data name="CoCountry" xml:space="preserve">
+    <value>Land ID</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_actsch_StartDateTime" xml:space="preserve">
+    <value>Gepland</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_exatyp_ExaminationTypeName" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_gen_GenderName" xml:space="preserve">
+    <value>M/V</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_pat_PatientName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_pat_PatientNumber" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_ref_ReferringPhysicianName" xml:space="preserve">
+    <value>Aanvrager</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_reftyp_ReferralTypeName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_roo_RoomName" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="Column_Appointments_ExaminationTypeName" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="Column_Appointments_PatientName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Column_Appointments_RoomName" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="Column_Appointments_StartDateTime" xml:space="preserve">
+    <value>Tijd</value>
+  </data>
+  <data name="Column_DiscussionLists_AccessionNumber" xml:space="preserve">
+    <value>Onderzoeksnummer</value>
+  </data>
+  <data name="Column_DiscussionLists_DiscussionCategoryID" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="Column_DiscussionLists_DiscussionNote" xml:space="preserve">
+    <value>Opmerking</value>
+  </data>
+  <data name="Column_DiscussionLists_ExaminationDisplayName" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="Column_DiscussionLists_PatientName" xml:space="preserve">
+    <value>Patiëntnaam</value>
+  </data>
+  <data name="Column_DiscussionLists_PatientNumber" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="Column_DiscussionLists_Requester" xml:space="preserve">
+    <value>Aanvrager</value>
+  </data>
+  <data name="Column_DiscussionLists_RequesterType" xml:space="preserve">
+    <value>Aanvraagtype</value>
+  </data>
+  <data name="Column_Examinations_AccessionNumber" xml:space="preserve">
+    <value>Onderzoeksnummer</value>
+  </data>
+  <data name="Column_Examinations_actsch_StartDateTime" xml:space="preserve">
+    <value>Onderzoekdatum</value>
+  </data>
+  <data name="Column_Examinations_AuthoriserName" xml:space="preserve">
+    <value>Autoriseerder</value>
+  </data>
+  <data name="Column_Examinations_CancellationReason" xml:space="preserve">
+    <value>Reden van annuleren</value>
+  </data>
+  <data name="Column_Examinations_canrea_Text" xml:space="preserve">
+    <value>Reden annulering</value>
+  </data>
+  <data name="Column_Examinations_DepartmentName" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="Column_Examinations_discat_DiscussionCategoryID" xml:space="preserve">
+    <value>Bespreek ID</value>
+  </data>
+  <data name="Column_Examinations_exa_ManuallyPlanned" xml:space="preserve">
+    <value>Geforceerd</value>
+  </data>
+  <data name="Column_Examinations_exadislis_DateTime" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="Column_Examinations_exadislis_Note" xml:space="preserve">
+    <value>Notitie</value>
+  </data>
+  <data name="Column_Examinations_ExaminationDisplayName" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="Column_Examinations_ExaminationStatusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Column_Examinations_ExaminationTypeName" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="Column_Examinations_exasta_statusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Column_Examinations_exatyp_ExaminationTypeName" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="Column_Examinations_gen_GenderName" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="Column_Examinations_loc_LocationName" xml:space="preserve">
+    <value>Locatie</value>
+  </data>
+  <data name="Column_Examinations_LocationName" xml:space="preserve">
+    <value>Locatie</value>
+  </data>
+  <data name="Column_Examinations_Modality" xml:space="preserve">
+    <value>Modaliteit</value>
+  </data>
+  <data name="Column_Examinations_ord_OrderID" xml:space="preserve">
+    <value>Aanvraagnummer</value>
+  </data>
+  <data name="Column_Examinations_OrderID" xml:space="preserve">
+    <value>Aanvraagnummer</value>
+  </data>
+  <data name="Column_Examinations_ordtyp_OrderTypeName" xml:space="preserve">
+    <value>Aanvraagtype</value>
+  </data>
+  <data name="Column_Examinations_ori_OriginName" xml:space="preserve">
+    <value>Oorsprong</value>
+  </data>
+  <data name="Column_Examinations_pat_DateOfBirth" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="Column_Examinations_pat_PatientName" xml:space="preserve">
+    <value>Patiëntnaam</value>
+  </data>
+  <data name="Column_Examinations_pat_PatientNumber" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="Column_Examinations_PatientName" xml:space="preserve">
+    <value>Patiëntnaam</value>
+  </data>
+  <data name="Column_Examinations_Physician" xml:space="preserve">
+    <value>Arts</value>
+  </data>
+  <data name="Column_Examinations_PhysicianName" xml:space="preserve">
+    <value>Arts</value>
+  </data>
+  <data name="Column_Examinations_Radiologist" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="Column_Examinations_RadiologistName" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="Column_Examinations_Radiologists" xml:space="preserve">
+    <value>Radiologen</value>
+  </data>
+  <data name="Column_Examinations_ref_ReferringPhysicianName" xml:space="preserve">
+    <value>Aanvrager</value>
+  </data>
+  <data name="Column_Examinations_ReferralTypeName" xml:space="preserve">
+    <value>Verwijstype</value>
+  </data>
+  <data name="Column_Examinations_ReferringPhysicianName" xml:space="preserve">
+    <value>Aanvrager</value>
+  </data>
+  <data name="Column_Examinations_reftyp_ReferralTypeName" xml:space="preserve">
+    <value>Verwijstype</value>
+  </data>
+  <data name="Column_Examinations_risuse_Name" xml:space="preserve">
+    <value>Uitvoerend</value>
+  </data>
+  <data name="Column_Examinations_roo_RoomName" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="Column_Examinations_RoomName" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="Column_Examinations_ScheduleDateTime" xml:space="preserve">
+    <value>Onderzoeksdatum</value>
+  </data>
+  <data name="Column_Examinations_Speciality" xml:space="preserve">
+    <value>Specialisme</value>
+  </data>
+  <data name="Column_Examinations_SpeechCreationDate" xml:space="preserve">
+    <value>Dictatie tijdstip</value>
+  </data>
+  <data name="Column_Examinations_SpeechStatusName" xml:space="preserve">
+    <value>Dictatiestatus</value>
+  </data>
+  <data name="Column_Examinations_stu_AccessionNumber" xml:space="preserve">
+    <value>Onderzoeksnummer</value>
+  </data>
+  <data name="Column_Examinations_TypistName" xml:space="preserve">
+    <value>Typist</value>
+  </data>
+  <data name="Column_Examinations_war_WardName" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="Column_Orders_DateOfRequest" xml:space="preserve">
+    <value>Aanvraagdatum</value>
+  </data>
+  <data name="Column_Orders_IntendedApprover" xml:space="preserve">
+    <value>Beoogde goedkeurder</value>
+  </data>
+  <data name="Column_Orders_OrderID" xml:space="preserve">
+    <value>Aanvraagnummer </value>
+  </data>
+  <data name="Column_Orders_PatientName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Column_Orders_PatientNumber" xml:space="preserve">
+    <value>Patiëntnummer </value>
+  </data>
+  <data name="Column_Patients_Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Column_Patients_DateOfBirth" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="Column_Patients_FullName" xml:space="preserve">
+    <value>Patiëntnaam</value>
+  </data>
+  <data name="Column_Patients_Gender" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="Column_Patients_PatientDisplayName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Column_Patients_PatientName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Column_Patients_PatientNumber" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="Column_Protocols_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Column_Protocols_Title" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Column_Timestamps_ExaminationStatusName" xml:space="preserve">
+    <value>Doel status</value>
+  </data>
+  <data name="Column_TimestampsLogging_ExaminationStatusName" xml:space="preserve">
+    <value>Doel Status</value>
+  </data>
+  <data name="Column_TimestampsLogging_RISUserName" xml:space="preserve">
+    <value>RIS Gebruikersnaam</value>
+  </data>
+  <data name="Column_TimestampsLogging_TimeStamp" xml:space="preserve">
+    <value>Tijdstip</value>
+  </data>
+  <data name="con_CountryName" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="ctg_CtgCodeDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="ctg_CtgCodeID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ctg_CtgCodeName" xml:space="preserve">
+    <value>CTG code</value>
+  </data>
+  <data name="ctg_SandersPunten" xml:space="preserve">
+    <value>Sanderspunten</value>
+  </data>
+  <data name="DeclineImages" xml:space="preserve">
+    <value>Beelden Afwijzen</value>
+  </data>
+  <data name="dep_DepartmentDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="dep_DepartmentName" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="dep_HospitalID" xml:space="preserve">
+    <value>ZiekenhuisID</value>
+  </data>
+  <data name="Dictation_ActiveWorkItems" xml:space="preserve">
+    <value>Actieve Onderzoeken</value>
+  </data>
+  <data name="Dictation_ActiveWorklistOverview" xml:space="preserve">
+    <value>Actieve onderzoeken</value>
+  </data>
+  <data name="Dictation_AuthorizationSkipped" xml:space="preserve">
+    <value>Autorisatie wordt overgeslagen</value>
+  </data>
+  <data name="Dictation_AuthorizationSkippedTooltip" xml:space="preserve">
+    <value>Uw huidige instellingen leiden ertoe dat een rapport direct na dictatie aangemaakt wordt en authorisatie overgeslagen.</value>
+  </data>
+  <data name="Dictation_ClearSelection" xml:space="preserve">
+    <value>Selectie Leegmaken</value>
+  </data>
+  <data name="Dictation_ConfirmDictateStatusDictating" xml:space="preserve">
+    <value>Dit onderzoek heeft de status dicteren, bent u zeker dat u dit onderzoek te openen voor een andere dicteren?</value>
+  </data>
+  <data name="Dictation_MoveToRadiologist" xml:space="preserve">
+    <value>Verander beoogde verslaglegger</value>
+  </data>
+  <data name="Dictation_SendToSupervisor" xml:space="preserve">
+    <value>Stuur naar supervisor</value>
+  </data>
+  <data name="Dictation_WorkListFilters" xml:space="preserve">
+    <value>Dictatiewerklijstfilters</value>
+  </data>
+  <data name="DictationLow_FailedToLoadAMemo" xml:space="preserve">
+    <value>Niet in geslaagd een memo te laden voor een examen.</value>
+  </data>
+  <data name="DictationLow_FailedToLoadAReport" xml:space="preserve">
+    <value>Niet in geslaagd een rapport voor een onderzoek te laden.</value>
+  </data>
+  <data name="DictationLow_UnableToContinue" xml:space="preserve">
+    <value>Niet verder met dicteren.</value>
+  </data>
+  <data name="DictationLow_WorkList_Addendum" xml:space="preserve">
+    <value>Addendum</value>
+  </data>
+  <data name="DictationLow_WorkList_Completed" xml:space="preserve">
+    <value>Individueel</value>
+  </data>
+  <data name="DictationLow_WorkList_Intermediate" xml:space="preserve">
+    <value>Tussentijds ({0})</value>
+  </data>
+  <data name="DictationLow_WorkList_Overview" xml:space="preserve">
+    <value>Gezamenlijk</value>
+  </data>
+  <data name="DictationLow_WorkList_ToBeDictated" xml:space="preserve">
+    <value>Te dicteren onderzoeken</value>
+  </data>
+  <data name="DictationOverview_ChangeStatus" xml:space="preserve">
+    <value>Verander status</value>
+  </data>
+  <data name="DictationOverview_SpeechOverviewCaption" xml:space="preserve">
+    <value>Overzicht dictaties</value>
+  </data>
+  <data name="DictationPage_AddImages" xml:space="preserve">
+    <value>Beelden Toevoegen</value>
+  </data>
+  <data name="DictationPage_Configuration_AutoStart_Label" xml:space="preserve">
+    <value>Start de dictatie automatisch, wanneer een pagina is geopend.</value>
+  </data>
+  <data name="DictationPage_Configuration_AutoStart_Text" xml:space="preserve">
+    <value>Start de dictatie automatisch, wanneer de pagina is geladen.</value>
+  </data>
+  <data name="DictationPage_Configuration_CreateReport_Label" xml:space="preserve">
+    <value>Maak een rapport voor de voltooide dictatie.</value>
+  </data>
+  <data name="DictationPage_Configuration_CreateReport_Text" xml:space="preserve">
+    <value>Indien ingeschakeld zal er een rapport worden gecreëerd in plaats van het verzenden van het dictaat naar de transcriptionist.</value>
+  </data>
+  <data name="DictationPage_Configuration_OpenNext_Label" xml:space="preserve">
+    <value>Open de volgende dictatie, wanneer compleet.</value>
+  </data>
+  <data name="DictationPage_Configuration_OpenNext_Text" xml:space="preserve">
+    <value>Indien ingeschakeld zal het volgende dictaat van dezelfde order geopend worden voor dictatie, anders de volgende in de werklijst.
+						Als er geen voltooid onderzoek beschikbaar is, zal u doorverwezen worden naar de werklijst.</value>
+  </data>
+  <data name="DictationPage_ConsultingSpecialistPatient" xml:space="preserve">
+    <value>Consulterende Specialist Patiënt</value>
+  </data>
+  <data name="DictationPage_ExaminationMemoLabel" xml:space="preserve">
+    <value>Memo's:</value>
+  </data>
+  <data name="DictationPage_LoadMoreExaminations" xml:space="preserve">
+    <value>Laad Meer Onderzoeken</value>
+  </data>
+  <data name="DictationPage_Memo_NullText" xml:space="preserve">
+    <value>Druk om enter om een memo toe te voegen</value>
+  </data>
+  <data name="DictationPage_OpenDictation" xml:space="preserve">
+    <value>Open Dictaat</value>
+  </data>
+  <data name="DictationPage_OrderDocuments" xml:space="preserve">
+    <value>Aanvraagdocumenten</value>
+  </data>
+  <data name="DictationPage_OrderMemoLabel" xml:space="preserve">
+    <value>Aanvraag memo:</value>
+  </data>
+  <data name="DictationPage_RequestInformation" xml:space="preserve">
+    <value>Aanvraag informatie</value>
+  </data>
+  <data name="DictationPage_ResumeDictationText" xml:space="preserve">
+    <value>Dictatie vervolgen</value>
+  </data>
+  <data name="DictationPage_ResumeDictationTooltip" xml:space="preserve">
+    <value>Er is nog een onderzoek in dictatie, door te klikken kunt u de dictatie opnieuw starten.</value>
+  </data>
+  <data name="DictationPage_StartSpeechDictation" xml:space="preserve">
+    <value>Start spraakdictatie</value>
+  </data>
+  <data name="DictationPage_TasksOverview" xml:space="preserve">
+    <value>Taakoverzicht</value>
+  </data>
+  <data name="DictationPage_TextCantBeEmpty" xml:space="preserve">
+    <value>Tekst mag niet leeg zijn.</value>
+  </data>
+  <data name="DictationPage_ViewImages" xml:space="preserve">
+    <value>Toon Beelden</value>
+  </data>
+  <data name="DictationPage_ViewOrder" xml:space="preserve">
+    <value>Toon Aanvraag</value>
+  </data>
+  <data name="DictationPage_ViewProtocols" xml:space="preserve">
+    <value>Toon Protocollen</value>
+  </data>
+  <data name="DictationPage_ViewProtocolsButton_NoProtocol" xml:space="preserve">
+    <value>Er is geen protocol beschikbaar voor dit type onderzoek.</value>
+  </data>
+  <data name="DictationPage_ViewProtocolsButton_ToolTip" xml:space="preserve">
+    <value>Klik om de protocollen voor dit onderzoek te tonen.</value>
+  </data>
+  <data name="DictationPage_ViewRequestForm" xml:space="preserve">
+    <value>Toon Aanvraagformulier</value>
+  </data>
+  <data name="DictationPage_XDSDocuments" xml:space="preserve">
+    <value>XDS Documenten</value>
+  </data>
+  <data name="discat_DiscussionCategoryID" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="DiscussionList_DiscussionLists" xml:space="preserve">
+    <value>Bespreeklijst</value>
+  </data>
+  <data name="DiscussionList_PersonalLists" xml:space="preserve">
+    <value>Persoonlijke Lijsten:</value>
+  </data>
+  <data name="DiscussionList_SharedLists" xml:space="preserve">
+    <value>Gedeelde Lijsten:</value>
+  </data>
+  <data name="DiscussionList_WorkListFilters" xml:space="preserve">
+    <value>Geavanceerde Filters</value>
+  </data>
+  <data name="DomainLogInFailed" xml:space="preserve">
+    <value>Het systeem kon u niet inloggen op domein {0} met gebruikersnaam {1}.</value>
+  </data>
+  <data name="EditedSuffix" xml:space="preserve">
+    <value>(aangepast)</value>
+  </data>
+  <data name="EditOrder_CopyTo" xml:space="preserve">
+    <value>Stuur kopie naar</value>
+  </data>
+  <data name="EditOrder_CopyToPhysician" xml:space="preserve">
+    <value>Arts</value>
+  </data>
+  <data name="EditOrder_CopyToRequesterLocation" xml:space="preserve">
+    <value>Aanvraaglocatie</value>
+  </data>
+  <data name="EditOrder_CopyToWorkLocation" xml:space="preserve">
+    <value>Werklocatie</value>
+  </data>
+  <data name="EditOrder_CreateOrderFor" xml:space="preserve">
+    <value>Aanvraag maken voor </value>
+  </data>
+  <data name="EditOrder_DirectBookFlag" xml:space="preserve">
+    <value>Automatisch plannen</value>
+  </data>
+  <data name="editOrder_EditingOrder" xml:space="preserve">
+    <value>Wijzigen aanvraag </value>
+  </data>
+  <data name="EditOrder_ExaminationHeader" xml:space="preserve">
+    <value>Onderzoeken:</value>
+  </data>
+  <data name="EditOrder_ImportOrder" xml:space="preserve">
+    <value>Aanvraag importeren voor </value>
+  </data>
+  <data name="EditOrder_LocationsHeader" xml:space="preserve">
+    <value>Mogelijke locaties:</value>
+  </data>
+  <data name="EditOrder_ManualPlanning" xml:space="preserve">
+    <value>Maak handmatig geplande aanvraag aan voor</value>
+  </data>
+  <data name="EditOrder_NoLocationsSelectedForScheduler" xml:space="preserve">
+    <value>Kan de aanvraag niet inplannen, selecteer een of meerdere locaties.</value>
+  </data>
+  <data name="EditOrder_SaveExaminationsFailed" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het opslaan van de onderzoeken.</value>
+  </data>
+  <data name="EditOrder_SaveOrderFailed" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het opslaan van de aanvraag.</value>
+  </data>
+  <data name="EditOrder_ScheduleExaminationFailed" xml:space="preserve">
+    <value>Kon een of meerdere onderzoeken niet inplannen.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_ImpossibleLocationExaminations" xml:space="preserve">
+    <value>De volgende onderzoeken kunnen niet worden uitgevoerd in {0}:
+
+{1}.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_InvalidBehaviorMode" xml:space="preserve">
+    <value>Dit is niet een nieuwe aanvraag, niet mogelijk om de onderzoeken nu te boeken.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_InvalidStatusExaminations" xml:space="preserve">
+    <value>De onderzoeken kunnen alleen 'nu' worden ingepland {0} of {1}.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_UnexpectedError" xml:space="preserve">
+    <value>Een onbekende fout is voorgekomen tijdens het inboeken.</value>
+  </data>
+  <data name="EditOrder_ScheduleOrderNow" xml:space="preserve">
+    <value>Nu inboeken</value>
+  </data>
+  <data name="EditOrder_SecondCopyRequired" xml:space="preserve">
+    <value>Kopie benodigd</value>
+  </data>
+  <data name="EditOrder_ShowAdditionalInformation" xml:space="preserve">
+    <value>Toon aanvullende informatie</value>
+  </data>
+  <data name="EditOrder_ShowClinicalInformation" xml:space="preserve">
+    <value>Toon medische gegevens</value>
+  </data>
+  <data name="EditOrder_ViewingOrder" xml:space="preserve">
+    <value>Aanvraag</value>
+  </data>
+  <data name="EditOrderPage_CompletionDate" xml:space="preserve">
+    <value>Onderzoeksdatum</value>
+  </data>
+  <data name="EditOrderPage_RetrospectiveBooking" xml:space="preserve">
+    <value>Achteraf boeken</value>
+  </data>
+  <data name="errorConcurrency" xml:space="preserve">
+    <value>Helaas zijn de gegevens al door iemand anders gewijzigd. Annuleer deze verandering en voer de wijziging opnieuw uit alstublieft.</value>
+  </data>
+  <data name="ErrorPage_Default_ContinueButton" xml:space="preserve">
+    <value>Doorgaan</value>
+  </data>
+  <data name="ErrorPage_Default_ContinueLabel" xml:space="preserve">
+    <value>Klik op 'Doorgaan' om naar uw startpagina te gaan.</value>
+  </data>
+  <data name="ErrorPage_Default_ResetButton" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ErrorPage_Default_ResetLabel" xml:space="preserve">
+    <value>Kies de 'reset' knop als de fout blijft optreden. Gegegevens die niet opgeslagen zijn gaan verloren.</value>
+  </data>
+  <data name="ErrorPage_Popup_ContinueButton" xml:space="preserve">
+    <value>Sluiten</value>
+  </data>
+  <data name="ErrorPage_Popup_ContinueLabel" xml:space="preserve">
+    <value>Klik op 'Sluiten' om deze pop up the sluiten.</value>
+  </data>
+  <data name="ErrorPage_Popup_ResetButton" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ErrorPage_Popup_ResetLabel" xml:space="preserve">
+    <value>Kies de 'reset' knop als de fout blijft optreden. Gegegevens die niet opgeslagen zijn gaan verloren.</value>
+  </data>
+  <data name="ErrorPage_TechnicalDetails" xml:space="preserve">
+    <value>Technische Details:</value>
+  </data>
+  <data name="exa_ExaminationID" xml:space="preserve">
+    <value>Onderzoek ID</value>
+  </data>
+  <data name="exa_ExaminationStatusID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="exa_ExaminationTypeID" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="exa_LastModifiedBy" xml:space="preserve">
+    <value>Laatst gewijzigd door</value>
+  </data>
+  <data name="exa_Laterality" xml:space="preserve">
+    <value>Lateraliteit</value>
+  </data>
+  <data name="exa_ManuallyPlanned" xml:space="preserve">
+    <value>Geforceerd</value>
+  </data>
+  <data name="exa_Memo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="exa_OrderID" xml:space="preserve">
+    <value>Aanvraag</value>
+  </data>
+  <data name="exaass_AssigmentExecutor" xml:space="preserve">
+    <value>Uitvoerend</value>
+  </data>
+  <data name="exaass_ExaminationID" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="exaass_RisUserID" xml:space="preserve">
+    <value>RIS gebruiker</value>
+  </data>
+  <data name="exaass_RoleID" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="exadislis_Note" xml:space="preserve">
+    <value>Notitie</value>
+  </data>
+  <data name="ExaminationNotFound" xml:space="preserve">
+    <value>Het onderzoek kon niet worden gevonden in de database.</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsControl_AvailableProtocolsCaption" xml:space="preserve">
+    <value>Beschikbare Protocollen</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsControl_FreeTextProtocolButton_Edit" xml:space="preserve">
+    <value>Bewerken</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsControl_FreeTextProtocolButton_SaveAssign" xml:space="preserve">
+    <value>Opslaan en toewijzen</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsControl_NextExaminationButton" xml:space="preserve">
+    <value>Volgende Onderzoek</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsPage_Examinations" xml:space="preserve">
+    <value>Onderzoeken</value>
+  </data>
+  <data name="ExaminationProtocolAssignmentsPage_Statuses" xml:space="preserve">
+    <value>Statussen:</value>
+  </data>
+  <data name="ExaminationsTimeStampLoggingGridViewHeader" xml:space="preserve">
+    <value>Onderzoekssstatus geschiedenis</value>
+  </data>
+  <data name="ExaminationTypes" xml:space="preserve">
+    <value>ExaminationTypes</value>
+  </data>
+  <data name="exapro_ExaminationProcedureID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="exapro_ExaminationProcedureName" xml:space="preserve">
+    <value>Procedure</value>
+  </data>
+  <data name="exapro_ExaminationProcedureText" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="exarep_ExaminationID" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="exarep_ReportID" xml:space="preserve">
+    <value>Rapport</value>
+  </data>
+  <data name="exasta_StatusID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="exasta_statusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="exatyp_ExaminationTypeID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="exatyp_ExaminationTypeName" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="exatyp_ExaminationTypeProcedureID" xml:space="preserve">
+    <value>Procedure</value>
+  </data>
+  <data name="exatyp_ExamTypeCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="exatyp_Laterality" xml:space="preserve">
+    <value>Lateraliteit</value>
+  </data>
+  <data name="exatypact_ActionID" xml:space="preserve">
+    <value>Actie</value>
+  </data>
+  <data name="exatypact_ExaminationStep" xml:space="preserve">
+    <value>Onderzoeksstap</value>
+  </data>
+  <data name="exatypact_ExaminationTypeID" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="exatypctgcod_CTGCodeID" xml:space="preserve">
+    <value>CTG code</value>
+  </data>
+  <data name="exatypctgcod_ExaminationTypeID" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="exatypgro_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="exatypgro_ExaminationType" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="exatypgro_GroupID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="exatypgro_GroupName" xml:space="preserve">
+    <value>Groep</value>
+  </data>
+  <data name="exatypspe_ExaminationTypeID" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="exatypspe_SpecialisationID" xml:space="preserve">
+    <value>Specialisatie</value>
+  </data>
+  <data name="extphy_City" xml:space="preserve">
+    <value>Woonplaats</value>
+  </data>
+  <data name="extphy_Country" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="extphy_Degree" xml:space="preserve">
+    <value>Graad</value>
+  </data>
+  <data name="extphy_DepartmentID" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="extphy_FaxNumber" xml:space="preserve">
+    <value>Faxnummer</value>
+  </data>
+  <data name="extphy_PhoneNumber" xml:space="preserve">
+    <value>Telefoonnummer</value>
+  </data>
+  <data name="extphy_PhysicianID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="extphy_StreetName" xml:space="preserve">
+    <value>Straatnaam</value>
+  </data>
+  <data name="extphy_ZipCode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="FailedPrintsWorklist" xml:space="preserve">
+    <value>Mislukte print werklijst</value>
+  </data>
+  <data name="Filter_ExaminationReports" xml:space="preserve">
+    <value>Onderzoeksverslagen</value>
+  </data>
+  <data name="Filter_ExaminationStatusName" xml:space="preserve">
+    <value>Onderzoekstatus</value>
+  </data>
+  <data name="Filter_ExaminationTypeName" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="Filter_PhysicianSurName" xml:space="preserve">
+    <value>Aanvragend arts</value>
+  </data>
+  <data name="Filter_ReferralType" xml:space="preserve">
+    <value>Type Verwijzing</value>
+  </data>
+  <data name="Filter_UserName" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="FormIncompleteArguments" xml:space="preserve">
+    <value>Ontbrekende argumenten voor formulier.</value>
+  </data>
+  <data name="frmPatients_AdmissionHistory" xml:space="preserve">
+    <value>Patiëntopnamegeschiedenis</value>
+  </data>
+  <data name="frmPatients_CreatePatient" xml:space="preserve">
+    <value>Maak nieuwe patiënt aan</value>
+  </data>
+  <data name="frmPatients_EditPatient" xml:space="preserve">
+    <value>Wijzigen patiënt</value>
+  </data>
+  <data name="frmPatients_PatientsInformation" xml:space="preserve">
+    <value>Patiëntinformatie</value>
+  </data>
+  <data name="frmStatistics_HeaderText_Production" xml:space="preserve">
+    <value>Productiestatistieken</value>
+  </data>
+  <data name="frmStatistics_HeaderText_WaitingTimes" xml:space="preserve">
+    <value>Wacht- en doorlooptijden</value>
+  </data>
+  <data name="frmStatistics_OverviewText" xml:space="preserve">
+    <value>Overzicht van wacht-en doorlooptijden</value>
+  </data>
+  <data name="frmStatistics_OverviewTextDictation" xml:space="preserve">
+    <value>Overzicht van wacht-en doorlooptijden voor dictaties</value>
+  </data>
+  <data name="frmStatistics_WrongStatusChange" xml:space="preserve">
+    <value>Ongeldige statusovergang gekozen</value>
+  </data>
+  <data name="funspe_FunctionSpecialisationID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="funspe_Name" xml:space="preserve">
+    <value>Functiespecialisatie</value>
+  </data>
+  <data name="gen_GenderHL7Value" xml:space="preserve">
+    <value>HL7 waarde</value>
+  </data>
+  <data name="gen_GenderID" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="gen_GenderName" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="General_AbortButton" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="General_AddButton" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="General_ClearButton" xml:space="preserve">
+    <value>Leegmaken</value>
+  </data>
+  <data name="General_Close" xml:space="preserve">
+    <value>Sluiten</value>
+  </data>
+  <data name="General_ConfirmAllButton" xml:space="preserve">
+    <value>Bevestig alle</value>
+  </data>
+  <data name="General_ConfirmButton" xml:space="preserve">
+    <value>Bevestig</value>
+  </data>
+  <data name="General_Delete" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="General_DetailsButton" xml:space="preserve">
+    <value>Bekijk details</value>
+  </data>
+  <data name="General_False" xml:space="preserve">
+    <value>Niet</value>
+  </data>
+  <data name="General_FinishButton" xml:space="preserve">
+    <value>Klaar</value>
+  </data>
+  <data name="General_GoToToday" xml:space="preserve">
+    <value>Naar vandaag</value>
+  </data>
+  <data name="General_Less" xml:space="preserve">
+    <value>Minder</value>
+  </data>
+  <data name="General_More" xml:space="preserve">
+    <value>Meer</value>
+  </data>
+  <data name="General_Name_Label" xml:space="preserve">
+    <value>Naam: </value>
+  </data>
+  <data name="General_New" xml:space="preserve">
+    <value>Nieuw</value>
+  </data>
+  <data name="General_NoMemoFound" xml:space="preserve">
+    <value>Geen memo gevonden</value>
+  </data>
+  <data name="General_OkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="General_PrintMultipleAppointmentConfirmationsUnsupported" xml:space="preserve">
+    <value>Het is alleen mogelijk één afspraak bevestiging te downloaden per keer.</value>
+  </data>
+  <data name="General_PrintMultiplePatientLabelsUnsupported" xml:space="preserve">
+    <value>Het is alleen mogelijk één patient label te downloaden per keer.</value>
+  </data>
+  <data name="General_Reason" xml:space="preserve">
+    <value>Reden</value>
+  </data>
+  <data name="General_Refresh" xml:space="preserve">
+    <value>Vernieuwen</value>
+  </data>
+  <data name="General_RequestedCommandUnknown" xml:space="preserve">
+    <value>Het gevraagde commando {0} is onbekend.</value>
+  </data>
+  <data name="General_SelectedDate" xml:space="preserve">
+    <value>Datum:</value>
+  </data>
+  <data name="General_Today" xml:space="preserve">
+    <value>Vandaag</value>
+  </data>
+  <data name="General_True" xml:space="preserve">
+    <value>Wel</value>
+  </data>
+  <data name="General_UnexpectedError" xml:space="preserve">
+    <value>Er is een onverwachte fout opgetreden tijdens het verwerken van de opdracht</value>
+  </data>
+  <data name="General_ViewButton" xml:space="preserve">
+    <value>Bekijk</value>
+  </data>
+  <data name="GeneralPractitioner" xml:space="preserve">
+    <value>Huisarts</value>
+  </data>
+  <data name="genpra_City" xml:space="preserve">
+    <value>Plaats</value>
+  </data>
+  <data name="Genpra_Country" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="genpra_CountryID" xml:space="preserve">
+    <value>Land ID</value>
+  </data>
+  <data name="Genpra_General_Practitioner_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="genpra_GeneralPractitioner" xml:space="preserve">
+    <value>Huisarts</value>
+  </data>
+  <data name="genpra_GeneralPractitionerID" xml:space="preserve">
+    <value>Huisarts ID</value>
+  </data>
+  <data name="genpra_GeneralPractitionerName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="genpra_PhoneNumber" xml:space="preserve">
+    <value>Telefoonnummer</value>
+  </data>
+  <data name="genpra_PhysicianID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Genpra_Postal_Code" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="genpra_PostalCode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="genpra_State" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="Genpra_Street_Name" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Genpra_Street_Number" xml:space="preserve">
+    <value>Huisnummer </value>
+  </data>
+  <data name="genpra_StreetName" xml:space="preserve">
+    <value>Straatnaam</value>
+  </data>
+  <data name="genpra_StreetNumber" xml:space="preserve">
+    <value>Huisnummer</value>
+  </data>
+  <data name="GenpraCountry" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="GenpraGeneralPractitioner" xml:space="preserve">
+    <value>HuisartsID</value>
+  </data>
+  <data name="hisloc_HistoryLocationId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hisloc_HistoryLocationName" xml:space="preserve">
+    <value>Historische locatie</value>
+  </data>
+  <data name="History_Location" xml:space="preserve">
+    <value>Locatie historie</value>
+  </data>
+  <data name="hl7cre_MessageID" xml:space="preserve">
+    <value>hl7cre_MessageID</value>
+  </data>
+  <data name="hl7cre_MessageText" xml:space="preserve">
+    <value>hl7cre_MessageText</value>
+  </data>
+  <data name="hl7mesrou_Host" xml:space="preserve">
+    <value>hl7mesrou_Host</value>
+  </data>
+  <data name="hl7mesrou_MessageType" xml:space="preserve">
+    <value>hl7mesrou_MessageType</value>
+  </data>
+  <data name="hl7mesrou_Port" xml:space="preserve">
+    <value>hl7mesrou_Port</value>
+  </data>
+  <data name="hl7rec_Error" xml:space="preserve">
+    <value>hl7rec_Error</value>
+  </data>
+  <data name="hl7rec_MessageText" xml:space="preserve">
+    <value>hl7rec_MessageText</value>
+  </data>
+  <data name="hl7rec_ReceiveDateTime" xml:space="preserve">
+    <value>hl7rec_ReceiveDateTime</value>
+  </data>
+  <data name="hl7rec_ReceiveID" xml:space="preserve">
+    <value>hl7rec_ReceiveID</value>
+  </data>
+  <data name="hl7rec_ReceivingHost" xml:space="preserve">
+    <value>hl7rec_ReceivingHost</value>
+  </data>
+  <data name="hl7rec_ReceivingPort" xml:space="preserve">
+    <value>hl7rec_ReceivingPort</value>
+  </data>
+  <data name="hl7rec_ResponseToMessage" xml:space="preserve">
+    <value>hl7rec_ResponseToMessage</value>
+  </data>
+  <data name="hl7rec_ResultFunction" xml:space="preserve">
+    <value>hl7rec_ResultFunction</value>
+  </data>
+  <data name="hl7rec_SendingHost" xml:space="preserve">
+    <value>hl7rec_SendingHost</value>
+  </data>
+  <data name="hl7rec_SendingPort" xml:space="preserve">
+    <value>hl7rec_SendingPort</value>
+  </data>
+  <data name="hl7sen_Error" xml:space="preserve">
+    <value>hl7sen_Error</value>
+  </data>
+  <data name="hl7sen_MessageText" xml:space="preserve">
+    <value>hl7sen_MessageText</value>
+  </data>
+  <data name="hl7sen_ReceivingHost" xml:space="preserve">
+    <value>hl7sen_ReceivingHost</value>
+  </data>
+  <data name="hl7sen_ReceivingPort" xml:space="preserve">
+    <value>hl7sen_ReceivingPort</value>
+  </data>
+  <data name="hl7sen_ResponseToMessage" xml:space="preserve">
+    <value>hl7sen_ResponseToMessage</value>
+  </data>
+  <data name="hl7sen_ResultFunction" xml:space="preserve">
+    <value>hl7sen_ResultFunction</value>
+  </data>
+  <data name="hl7sen_SendDateTime" xml:space="preserve">
+    <value>hl7sen_SendDateTime</value>
+  </data>
+  <data name="hl7sen_SendID" xml:space="preserve">
+    <value>hl7sen_SendID</value>
+  </data>
+  <data name="hl7sen_SendingHost" xml:space="preserve">
+    <value>hl7sen_SendingHost</value>
+  </data>
+  <data name="hl7sen_SendingPort" xml:space="preserve">
+    <value>hl7sen_SendingPort</value>
+  </data>
+  <data name="Hloc" xml:space="preserve">
+    <value>Locatiehistorie</value>
+  </data>
+  <data name="Hloc_" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hloc_Description" xml:space="preserve">
+    <value>Beschrijving</value>
+  </data>
+  <data name="hloc_HistoryLocationDescription" xml:space="preserve">
+    <value>Beschrijving</value>
+  </data>
+  <data name="hloc_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hloc_Name" xml:space="preserve">
+    <value>Locatiehistorie</value>
+  </data>
+  <data name="hos_HospitalCity" xml:space="preserve">
+    <value>Woonplaats</value>
+  </data>
+  <data name="hos_HospitalCountry" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="hos_HospitalID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hos_HospitalName" xml:space="preserve">
+    <value>Ziekenhuis</value>
+  </data>
+  <data name="hos_HospitalPhoneNumber" xml:space="preserve">
+    <value>Telefoonnummer</value>
+  </data>
+  <data name="hos_HospitalStreetName" xml:space="preserve">
+    <value>Straatnaam</value>
+  </data>
+  <data name="hos_HospitalZipCode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="Housekeeping_WorkListFilters" xml:space="preserve">
+    <value>Geavanceerde Filters</value>
+  </data>
+  <data name="htCalendar" xml:space="preserve">
+    <value>Kalender</value>
+  </data>
+  <data name="htDictation" xml:space="preserve">
+    <value>Verslaglegging</value>
+  </data>
+  <data name="htDiscussions" xml:space="preserve">
+    <value>Voeg toe aan bespreeklijsten</value>
+  </data>
+  <data name="htErrorPage" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+  <data name="htImaging" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="htReception" xml:space="preserve">
+    <value>Receptie</value>
+  </data>
+  <data name="htStartPage" xml:space="preserve">
+    <value>Startpagina</value>
+  </data>
+  <data name="Imaging_CompletedExaminationsCaption" xml:space="preserve">
+    <value>Afgeronde onderzoeken</value>
+  </data>
+  <data name="Imaging_ExaminationMemo" xml:space="preserve">
+    <value>Memo's</value>
+  </data>
+  <data name="Imaging_ExaminationsInProgressCaption" xml:space="preserve">
+    <value>Onderzoeken</value>
+  </data>
+  <data name="Imaging_InDepartmentCaption" xml:space="preserve">
+    <value>Wachtkamer</value>
+  </data>
+  <data name="Imaging_IntermediateExaminationsCaption" xml:space="preserve">
+    <value>Tussentijdse patiënten</value>
+  </data>
+  <data name="Imaging_IntermediateMemo" xml:space="preserve">
+    <value>Tussentijdse Memo</value>
+  </data>
+  <data name="Imaging_IntermediateStatusChanged" xml:space="preserve">
+    <value>De tussentijdse status is veranderd. Vernieuw de pagina en accepteer de laatste status a.u.b.</value>
+  </data>
+  <data name="Imaging_NoExaminationSelected" xml:space="preserve">
+    <value>Er is geen onderzoek geselecteerd.</value>
+  </data>
+  <data name="Imaging_NoMemo" xml:space="preserve">
+    <value>Geen memo</value>
+  </data>
+  <data name="Imaging_NoProtocol" xml:space="preserve">
+    <value>Geen protocol toegewezen</value>
+  </data>
+  <data name="Imaging_OrderMemo" xml:space="preserve">
+    <value>Aanvraagmemo</value>
+  </data>
+  <data name="Imaging_PatientHistoryCaption" xml:space="preserve">
+    <value>Onderzoeksgeschiedenis</value>
+  </data>
+  <data name="Imaging_PatientsInProgressCaption" xml:space="preserve">
+    <value>Patiënten</value>
+  </data>
+  <data name="Imaging_WorkListFilters" xml:space="preserve">
+    <value>Onderzoekswerklijstfilters</value>
+  </data>
+  <data name="ImagingPage_ArrivedPatients" xml:space="preserve">
+    <value>Gearriveerde Patiënten</value>
+  </data>
+  <data name="ImagingPage_DisplayCompletedExaminations" xml:space="preserve">
+    <value>Toon afgeronde onderzoeken</value>
+  </data>
+  <data name="ImagingPage_ExaminationProtocolAssignmentError" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het toewijzen van het protocol.</value>
+  </data>
+  <data name="ImagingPage_ExaminationProtocolCaption" xml:space="preserve">
+    <value>Beschikbare Protocollen</value>
+  </data>
+  <data name="ImagingPage_ExaminationProtocolTab" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="ImagingPage_ExaminationProtocolTabWithCode" xml:space="preserve">
+    <value>Protocol ({0})</value>
+  </data>
+  <data name="ImagingPage_Filter" xml:space="preserve">
+    <value>Filter:</value>
+  </data>
+  <data name="ImagingPage_FilterInDepartment" xml:space="preserve">
+    <value>Toon alleen aangekomen patiënten</value>
+  </data>
+  <data name="ImagingPage_SendAllToButton" xml:space="preserve">
+    <value>Stuur alles naar</value>
+  </data>
+  <data name="ImagingPage_ShowHistoryInformation" xml:space="preserve">
+    <value>Toon Geschiedenis</value>
+  </data>
+  <data name="ImagingPage_ShowRequestInformation" xml:space="preserve">
+    <value>Toon Aanvraaginformatie</value>
+  </data>
+  <data name="ImgExamination_ExaminationsInProgress_CompleteAll" xml:space="preserve">
+    <value>Alles is compleet</value>
+  </data>
+  <data name="ImgExamination_ExaminationsInProgress_CompleteSelection" xml:space="preserve">
+    <value>Selectie is compleet</value>
+  </data>
+  <data name="ImportOrderInfomessage" xml:space="preserve">
+    <value>De volgende onderzoeksnummers zijn gemaakt:</value>
+  </data>
+  <data name="InactiveSuffix" xml:space="preserve">
+    <value>(inactief)</value>
+  </data>
+  <data name="Inscom_Insurance_Company_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="inscom_InsuranceCompanyID" xml:space="preserve">
+    <value>Verzekeringsinstantie ID</value>
+  </data>
+  <data name="inscom_InsuranceCompanyName" xml:space="preserve">
+    <value>Verzekeraar</value>
+  </data>
+  <data name="InscomInsuranceCompany" xml:space="preserve">
+    <value>VerzekeringsMaatschappijID</value>
+  </data>
+  <data name="IntendedVetter" xml:space="preserve">
+    <value>Beoogde goedkeurder</value>
+  </data>
+  <data name="InteractiveDictation" xml:space="preserve">
+    <value>Zillion RIS - Interactieve Dictatie</value>
+  </data>
+  <data name="InteractiveDictation_CancelDictation" xml:space="preserve">
+    <value>Weet u zeker dat u de dictatie wilt annuleren?</value>
+  </data>
+  <data name="InteractiveDictation_CreatingBridge" xml:space="preserve">
+    <value>Bezig met brug creëren... - Zillion RIS - Interactieve Dictatie</value>
+  </data>
+  <data name="InteractiveDictation_Error" xml:space="preserve">
+    <value>Fout - Zillion RIS - Interactieve Dictatie</value>
+  </data>
+  <data name="InteractiveDictation_InternetExplorer" xml:space="preserve">
+    <value>Zorg ervoor dat u het Zillion RIS uitvoert met Internet Explorer (in 64-bit wanneer beschikbaar).</value>
+  </data>
+  <data name="InteractiveDictation_NewDocument" xml:space="preserve">
+    <value>Nieuw Document... - Zillion RIS - Interactieve Dictatie</value>
+  </data>
+  <data name="InteractiveDictation_NoSessionDetected" xml:space="preserve">
+    <value>Er is geen interactieve dictatiesessie gedetecteerd. Probeer het opnieuw a.u.b.</value>
+  </data>
+  <data name="InteractiveDictation_Silverlight" xml:space="preserve">
+    <value>Silverlight control kan niet gevonden worden.</value>
+  </data>
+  <data name="InteractiveDictation_Title" xml:space="preserve">
+    <value>Bezig met laden... - Zillion RIS - Interactieve Dictatie</value>
+  </data>
+  <data name="InteractiveDictation_UnableOpenDocument" xml:space="preserve">
+    <value>Interactieve dictatie was niet in staat een nieuw document te openen.</value>
+  </data>
+  <data name="InteractiveDictation_UnableToFindMainWindow" xml:space="preserve">
+    <value>Kan het hoofdvenster niet vinden, herstart de dictatie a.u.b.</value>
+  </data>
+  <data name="InteractiveDictation_UnableToInitialize" xml:space="preserve">
+    <value>Interactieve dictatie was niet in staat om te initialiseren.</value>
+  </data>
+  <data name="InteractiveDictation_ZillionSpeechClientInstalled" xml:space="preserve">
+    <value>Interactieve dictatie vereist dat de &lt;strong&gt;Zillion SpeechClient&lt;/strong&gt; geïnstalleerd is.</value>
+  </data>
+  <data name="intphy_DepartmentID" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="intphy_PhysicianDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="intphy_PhysicianID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="intsta_IntermediateStatusDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="intsta_IntermediateStatusID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="intsta_IntermediateStatusName" xml:space="preserve">
+    <value>Tussenstatus</value>
+  </data>
+  <data name="LastAccessedExaminations_LastAccessedExaminations" xml:space="preserve">
+    <value> laatst gewijzigde onderzoeken.</value>
+  </data>
+  <data name="LastAccessedExaminations_ShowingTotal" xml:space="preserve">
+    <value>Laat het totaal zien van </value>
+  </data>
+  <data name="LastAccessedExaminations_Title" xml:space="preserve">
+    <value>Mijn Laatst Gewijzigde Onderzoeken</value>
+  </data>
+  <data name="lblMemo" xml:space="preserve">
+    <value>Onderzoeksmemo's:</value>
+  </data>
+  <data name="lblOrderMemo" xml:space="preserve">
+    <value>Aanvraagmemo:</value>
+  </data>
+  <data name="loading" xml:space="preserve">
+    <value>Laden</value>
+  </data>
+  <data name="loc_LocationName" xml:space="preserve">
+    <value>Locatienaam</value>
+  </data>
+  <data name="Login_domain" xml:space="preserve">
+    <value>Domein: </value>
+  </data>
+  <data name="Login_ErrorPopupTitle" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens inloggen</value>
+  </data>
+  <data name="Login_LanguageLabel" xml:space="preserve">
+    <value>Taal:</value>
+  </data>
+  <data name="Login_LoggingNotInitialized" xml:space="preserve">
+    <value>Rogan SysLog kon niet worden gestart.
+
+Neem a.u.b contact op met uw systeem beheerder.</value>
+  </data>
+  <data name="LoginPage_LowProfileCheckBox" xml:space="preserve">
+    <value>'Light' versie</value>
+  </data>
+  <data name="LowProfileMaster_About" xml:space="preserve">
+    <value>Over</value>
+  </data>
+  <data name="LowProfileMaster_Alerts" xml:space="preserve">
+    <value>Alerts:</value>
+  </data>
+  <data name="LowProfileMaster_ChangePassword" xml:space="preserve">
+    <value>Wijzig Wachtwoord</value>
+  </data>
+  <data name="LowProfileMaster_CloseViewer" xml:space="preserve">
+    <value>Sluit Viewer</value>
+  </data>
+  <data name="LowProfileMaster_CurrentPrinter" xml:space="preserve">
+    <value>Huidige Printer</value>
+  </data>
+  <data name="LowProfileMaster_Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="LowProfileMaster_LastAccessedExaminations" xml:space="preserve">
+    <value>Laatst Gewijzigde Onderzoeken</value>
+  </data>
+  <data name="LowProfileMaster_Location" xml:space="preserve">
+    <value>Locatie</value>
+  </data>
+  <data name="LowProfileMaster_Logout" xml:space="preserve">
+    <value>Uitloggen</value>
+  </data>
+  <data name="LowProfileMaster_Options" xml:space="preserve">
+    <value>Opties</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_AccessionNumber" xml:space="preserve">
+    <value>Toetredingsnummer</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_DateOfBirth" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_LastName" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_MaidenName" xml:space="preserve">
+    <value>Meisjesnaam</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_OrderNumber" xml:space="preserve">
+    <value>Aanvraagnummer</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_PatientName" xml:space="preserve">
+    <value>Patiëntnaam</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_PatientNumber" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="LowProfileMaster_SelectLocation" xml:space="preserve">
+    <value>Selecteer een locatie</value>
+  </data>
+  <data name="LowProfileMaster_SelectPrinter" xml:space="preserve">
+    <value>Selecteer een printer</value>
+  </data>
+  <data name="LowProfileMaster_SelectStyleForTabs" xml:space="preserve">
+    <value>Selecteer een stijl</value>
+  </data>
+  <data name="LowProfileMaster_Settings" xml:space="preserve">
+    <value>Wijzig de instellingen</value>
+  </data>
+  <data name="LowProfileMaster_User" xml:space="preserve">
+    <value>Gebruiker</value>
+  </data>
+  <data name="ltAccessionNumber" xml:space="preserve">
+    <value>Onderzoeksnummer</value>
+  </data>
+  <data name="ltAddress" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="ltAdvancedSearch" xml:space="preserve">
+    <value>Geavanceerd Zoeken</value>
+  </data>
+  <data name="ltOrderInformation" xml:space="preserve">
+    <value>Afspraakinformatie</value>
+  </data>
+  <data name="ltApprover" xml:space="preserve">
+    <value>Goedkeurder</value>
+  </data>
+  <data name="ltAssignments" xml:space="preserve">
+    <value>Toewijzingen</value>
+  </data>
+  <data name="ltAtLeast3Chars" xml:space="preserve">
+    <value>Zoek met minstens 3 karakters</value>
+  </data>
+  <data name="ltAuthor" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="ltAuthorizer" xml:space="preserve">
+    <value>Geautoriseerd door</value>
+  </data>
+  <data name="ltBook" xml:space="preserve">
+    <value>Boek</value>
+  </data>
+  <data name="ltBookAppointment" xml:space="preserve">
+    <value>Boek aanvraag</value>
+  </data>
+  <data name="ltCalculateSchedule" xml:space="preserve">
+    <value>Planning berekenen...</value>
+  </data>
+  <data name="ltCancel" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="ltChangeDefaultConfiguration" xml:space="preserve">
+    <value>Standaard Configuratie</value>
+  </data>
+  <data name="ltCity" xml:space="preserve">
+    <value>Stad</value>
+  </data>
+  <data name="ltClearFields" xml:space="preserve">
+    <value>Clear Fields</value>
+  </data>
+  <data name="ltClinicalInformation" xml:space="preserve">
+    <value>Medische gegevens</value>
+  </data>
+  <data name="ltComplete" xml:space="preserve">
+    <value>Compleet</value>
+  </data>
+  <data name="ltCompleted" xml:space="preserve">
+    <value>Compleet</value>
+  </data>
+  <data name="ltConcurrencyError" xml:space="preserve">
+    <value>Een andere gebruiker heeft de gegevens gebruikt / veranderd. De pagina zal worden herladen.</value>
+  </data>
+  <data name="ltConfiguration" xml:space="preserve">
+    <value>Configuratie</value>
+  </data>
+  <data name="ltConfirmMerge" xml:space="preserve">
+    <value>Weet u zeker dat u de patiënten wilt samenvoegen?</value>
+  </data>
+  <data name="ltContinue" xml:space="preserve">
+    <value>Doorgaan?</value>
+  </data>
+  <data name="ltCountry" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="ltCreatedOn" xml:space="preserve">
+    <value>Verslag gemaakt op</value>
+  </data>
+  <data name="ltCriterion" xml:space="preserve">
+    <value>Criterium</value>
+  </data>
+  <data name="ltCustomDuration" xml:space="preserve">
+    <value>Extra onderzoekstijd</value>
+  </data>
+  <data name="ltDate" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="ltDateOfBirth" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="ltDeleteExamFromOrder" xml:space="preserve">
+    <value>Verwijder onderzoek</value>
+  </data>
+  <data name="ltDeleteOrder" xml:space="preserve">
+    <value>Annuleer aanvraag</value>
+  </data>
+  <data name="ltDeselectAll" xml:space="preserve">
+    <value>Deselecteer alle verslagen</value>
+  </data>
+  <data name="ltDictate" xml:space="preserve">
+    <value>Dicteer:</value>
+  </data>
+  <data name="ltDictateBatch" xml:space="preserve">
+    <value>Batch</value>
+  </data>
+  <data name="ltDictated" xml:space="preserve">
+    <value>Gedicteerd</value>
+  </data>
+  <data name="ltDictateDigital" xml:space="preserve">
+    <value>Digitaal</value>
+  </data>
+  <data name="ltDictateInteractive" xml:space="preserve">
+    <value>Interactief</value>
+  </data>
+  <data name="ltDictationTypes" xml:space="preserve">
+    <value>Dicteer methode</value>
+  </data>
+  <data name="ltDiscussionList" xml:space="preserve">
+    <value>Bespreeklijst</value>
+  </data>
+  <data name="ltDocuments" xml:space="preserve">
+    <value>Documenten</value>
+  </data>
+  <data name="ltDummyPatient" xml:space="preserve">
+    <value>Dummy patiënt</value>
+  </data>
+  <data name="ltEdit" xml:space="preserve">
+    <value>Wijzig</value>
+  </data>
+  <data name="ltEditOrder" xml:space="preserve">
+    <value>Wijzig aanvraag</value>
+  </data>
+  <data name="ltElectronicDocuments" xml:space="preserve">
+    <value>Documenten</value>
+  </data>
+  <data name="ltEmailAddress" xml:space="preserve">
+    <value>E-mail Adres</value>
+  </data>
+  <data name="ltEmptyMailboxNumbers" xml:space="preserve">
+    <value>Alleen zonder mailbox</value>
+  </data>
+  <data name="ltEmptyRequestFormTitle" xml:space="preserve">
+    <value>Geen onderzoeksaanvraag beschikbaar</value>
+  </data>
+  <data name="ltEnd" xml:space="preserve">
+    <value>Einde</value>
+  </data>
+  <data name="ltEndExaminationStatus" xml:space="preserve">
+    <value>Naar onderzoeksstatus</value>
+  </data>
+  <data name="ltExamination" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="ltExaminationDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="ltExaminationDetails" xml:space="preserve">
+    <value>Onderzoeksdetails</value>
+  </data>
+  <data name="ltExaminationOverview" xml:space="preserve">
+    <value>Onderzoeksoverzicht</value>
+  </data>
+  <data name="ltExaminationReports" xml:space="preserve">
+    <value>Onderzoeksverslagen</value>
+  </data>
+  <data name="ltExaminations" xml:space="preserve">
+    <value>Onderzoeken</value>
+  </data>
+  <data name="ltExaminationsInformation" xml:space="preserve">
+    <value>Onderzoeksinformatie</value>
+  </data>
+  <data name="ltExaminationStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ltExaminationType" xml:space="preserve">
+    <value>Onderzoekstype</value>
+  </data>
+  <data name="ltExtraInformation" xml:space="preserve">
+    <value>Aanvullende informatie</value>
+  </data>
+  <data name="ltFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="ltFirstName" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="ltFirstPossibilities" xml:space="preserve">
+    <value>Eerste Mogelijkheden</value>
+  </data>
+  <data name="ltFor" xml:space="preserve">
+    <value>voor</value>
+  </data>
+  <data name="ltFrom" xml:space="preserve">
+    <value>Van</value>
+  </data>
+  <data name="ltFunctionSpecialisation" xml:space="preserve">
+    <value>Functiespecialisatie</value>
+  </data>
+  <data name="ltGender" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="ltGenderFemale" xml:space="preserve">
+    <value>Vrouw</value>
+  </data>
+  <data name="ltGenderMale" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="ltGeneralPhysicianInformation" xml:space="preserve">
+    <value>Huisartsgegevens</value>
+  </data>
+  <data name="ltGeneralPhysicianName" xml:space="preserve">
+    <value>Huisarts</value>
+  </data>
+  <data name="ltGeneralPracticionerAddress" xml:space="preserve">
+    <value>Huisartsadres</value>
+  </data>
+  <data name="ltGeneralPractitionerAddress" xml:space="preserve">
+    <value>Huisartsadres</value>
+  </data>
+  <data name="ltGeneralPractitionerPracticeInformation" xml:space="preserve">
+    <value>Huisartspraktijkinformatie</value>
+  </data>
+  <data name="ltGPPracticeCCGCode" xml:space="preserve">
+    <value>Practice CCG Code</value>
+  </data>
+  <data name="ltGPPracticeCode" xml:space="preserve">
+    <value>Practice Code</value>
+  </data>
+  <data name="ltGPPracticeDescription" xml:space="preserve">
+    <value>Practice Description</value>
+  </data>
+  <data name="ltGPWorkLocationAddress" xml:space="preserve">
+    <value>Huisartsenpraktijk adres</value>
+  </data>
+  <data name="ltGPWorkLocationPhoneNumber" xml:space="preserve">
+    <value>Huisartsenpraktijk telnr.</value>
+  </data>
+  <data name="ltGPWorkLocationPostalCode" xml:space="preserve">
+    <value>Huisartsenpraktijk postcode</value>
+  </data>
+  <data name="ltHistory" xml:space="preserve">
+    <value>Historie</value>
+  </data>
+  <data name="ltHistoryInformation" xml:space="preserve">
+    <value>Historie informatie</value>
+  </data>
+  <data name="ltHistoryLocation" xml:space="preserve">
+    <value>Analoge historie</value>
+  </data>
+  <data name="ltHours" xml:space="preserve">
+    <value>Uren</value>
+  </data>
+  <data name="ltICD10Search" xml:space="preserve">
+    <value>Zoek ICD10 code </value>
+  </data>
+  <data name="ltIDDocuments" xml:space="preserve">
+    <value>Identificerende documenten</value>
+  </data>
+  <data name="ltImportOrder" xml:space="preserve">
+    <value>Aanvraag Importeren</value>
+  </data>
+  <data name="ltInactiveExaminations" xml:space="preserve">
+    <value>Deze aanvraag bevat inactieve onderzoeken en dient daarom opnieuw te worden ingepland.</value>
+  </data>
+  <data name="ltInDepartment" xml:space="preserve">
+    <value>Wachtkamer</value>
+  </data>
+  <data name="ltInfoMessage" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="ltInitials" xml:space="preserve">
+    <value>Initialen</value>
+  </data>
+  <data name="ltInProgress" xml:space="preserve">
+    <value>In behandeling</value>
+  </data>
+  <data name="ltInsuranceCompany" xml:space="preserve">
+    <value>Verzekeringsmaatschappij</value>
+  </data>
+  <data name="ltInsuranceDocuments" xml:space="preserve">
+    <value>Verzekeringsdocumenten</value>
+  </data>
+  <data name="ltInsuranceInformation" xml:space="preserve">
+    <value>Verzekeringsgegevens</value>
+  </data>
+  <data name="ltInsuranceNumber" xml:space="preserve">
+    <value>Verzekerdennummer</value>
+  </data>
+  <data name="ltIntendedReporter" xml:space="preserve">
+    <value>Beoogde verslaglegger</value>
+  </data>
+  <data name="ltIntermediate" xml:space="preserve">
+    <value>Tussentijds</value>
+  </data>
+  <data name="ltLabResults" xml:space="preserve">
+    <value>Labresultaten</value>
+  </data>
+  <data name="ltLastName" xml:space="preserve">
+    <value>Geboortenaam</value>
+  </data>
+  <data name="ltLaterality" xml:space="preserve">
+    <value>Lateraliteit</value>
+  </data>
+  <data name="ltLocality" xml:space="preserve">
+    <value>Locality</value>
+  </data>
+  <data name="ltLocation" xml:space="preserve">
+    <value>Locatie</value>
+  </data>
+  <data name="ltMaidenName" xml:space="preserve">
+    <value>Meisjesnaam</value>
+  </data>
+  <data name="ltMaintenanceEntityDetails" xml:space="preserve">
+    <value>Details voor:</value>
+  </data>
+  <data name="ltMaritialState" xml:space="preserve">
+    <value>Huwelijkse staat</value>
+  </data>
+  <data name="ltMemo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="ltMergePatient" xml:space="preserve">
+    <value>Samenvoegen</value>
+  </data>
+  <data name="ltMergeWarning" xml:space="preserve">
+    <value>De patiënt die u aan wilt melden is een tijdelijke patiënt en dient eerste te worden samengevoegd voordat deze kan worden aangemeld.</value>
+  </data>
+  <data name="ltMinutes" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="ltMobility" xml:space="preserve">
+    <value>Mobiliteit</value>
+  </data>
+  <data name="ltModality" xml:space="preserve">
+    <value>Modaliteit</value>
+  </data>
+  <data name="ltMove" xml:space="preserve">
+    <value>Verplaats</value>
+  </data>
+  <data name="ltMoveOrder" xml:space="preserve">
+    <value>Verplaats aanvraag</value>
+  </data>
+  <data name="ltMoveStudy" xml:space="preserve">
+    <value>Verplaats onderzoek</value>
+  </data>
+  <data name="ltNewOrder" xml:space="preserve">
+    <value>Nieuwe Aanvraag</value>
+  </data>
+  <data name="ltNewPatient" xml:space="preserve">
+    <value>Nieuwe Patiënt</value>
+  </data>
+  <data name="ltNext" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="ltNextOfKinInformation" xml:space="preserve">
+    <value>Naaste verwanten</value>
+  </data>
+  <data name="ltNo" xml:space="preserve">
+    <value>Nee</value>
+  </data>
+  <data name="ltNoHistoryAvailable" xml:space="preserve">
+    <value>Geen historische gegevens beschikbaar!</value>
+  </data>
+  <data name="ltNoMedicalInformation" xml:space="preserve">
+    <value>Geen medische gegevens beschikbaar</value>
+  </data>
+  <data name="ltNoOrdersFound" xml:space="preserve">
+    <value>Geer aanvragen gevonden!</value>
+  </data>
+  <data name="ltNoPatientInformationAvailable" xml:space="preserve">
+    <value>Geen patiënt informatie beschikbaar</value>
+  </data>
+  <data name="ltNoPatientsFound" xml:space="preserve">
+    <value>Geen patiënten gevonden!</value>
+  </data>
+  <data name="ltNoRequestForm" xml:space="preserve">
+    <value>Geen onderzoeksaanvraag gevonden!</value>
+  </data>
+  <data name="ltNoResultsFound" xml:space="preserve">
+    <value>Geen resultaten gevonden!</value>
+  </data>
+  <data name="ltNoStudiesFound" xml:space="preserve">
+    <value>Geen onderzoeken gevonden!</value>
+  </data>
+  <data name="ltNote" xml:space="preserve">
+    <value>Notitie</value>
+  </data>
+  <data name="ltNumber" xml:space="preserve">
+    <value>Nummer</value>
+  </data>
+  <data name="ltObservationInformation" xml:space="preserve">
+    <value>Observaties</value>
+  </data>
+  <data name="ltObservations" xml:space="preserve">
+    <value>Observaties:</value>
+  </data>
+  <data name="ltOpen" xml:space="preserve">
+    <value>Openen</value>
+  </data>
+  <data name="ltOrderDate" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="ltOrderNumber" xml:space="preserve">
+    <value>Aanvraagnummer</value>
+  </data>
+  <data name="ltOrderSearch" xml:space="preserve">
+    <value>Aanvraag zoeken:</value>
+  </data>
+  <data name="ltOrderSearchResult" xml:space="preserve">
+    <value>Aanvraag zoekresultaat</value>
+  </data>
+  <data name="ltOrderSearchToolTip" xml:space="preserve">
+    <value>Mogelijke zoek termen: aanvraag nummer, naam van de patiënt of patiënt nummer.</value>
+  </data>
+  <data name="ltOrderType" xml:space="preserve">
+    <value>Aanvraagtype</value>
+  </data>
+  <data name="ltOrigin" xml:space="preserve">
+    <value>Oorsprong</value>
+  </data>
+  <data name="ltOutOfSchedule" xml:space="preserve">
+    <value>De gekozen datum moet liggen tussen vandaag en zes maanden.</value>
+  </data>
+  <data name="ltPartnerName" xml:space="preserve">
+    <value>Naam Partner</value>
+  </data>
+  <data name="ltPartnerPrefix" xml:space="preserve">
+    <value>Voorvoegsel Partner</value>
+  </data>
+  <data name="ltPatient" xml:space="preserve">
+    <value>Patiënt</value>
+  </data>
+  <data name="ltPatientAdmissionHistory" xml:space="preserve">
+    <value>Patiëntopnamegeschiedenis</value>
+  </data>
+  <data name="ltPatientCategory" xml:space="preserve">
+    <value>Patiëntcategorie</value>
+  </data>
+  <data name="ltPatientInformation" xml:space="preserve">
+    <value>Patiëntinformatie</value>
+  </data>
+  <data name="ltPatientName" xml:space="preserve">
+    <value>Patiëntnaam</value>
+  </data>
+  <data name="ltPatientNr" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="ltPatientNumber" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="ltPatientPlanned" xml:space="preserve">
+    <value>Op dit tijdstip is al een patiënt gepland.</value>
+  </data>
+  <data name="ltPatientSearch" xml:space="preserve">
+    <value>Patiënt zoeken:</value>
+  </data>
+  <data name="ltPatientSearchResult" xml:space="preserve">
+    <value>Patiënt zoekresultaat</value>
+  </data>
+  <data name="ltPatientSearchToolTip" xml:space="preserve">
+    <value>Voer naam, patiënt nummer, aanvraag nummer, BSN of geboortedatum in.</value>
+  </data>
+  <data name="ltPersonalInformation" xml:space="preserve">
+    <value>Persoonsgegevens</value>
+  </data>
+  <data name="ltPhoneNumber" xml:space="preserve">
+    <value>Telefoonnummer</value>
+  </data>
+  <data name="ltPhoneNumberSecond" xml:space="preserve">
+    <value>Tweede telefoonnummer</value>
+  </data>
+  <data name="ltPleaseWait" xml:space="preserve">
+    <value>Even geduld...</value>
+  </data>
+  <data name="ltPostalCode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="ltPracticeCCGCode" xml:space="preserve">
+    <value>CCG Code</value>
+  </data>
+  <data name="ltPracticeCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ltPracticeDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="ltPrefix" xml:space="preserve">
+    <value>Voorvoegsel</value>
+  </data>
+  <data name="ltPreliminary" xml:space="preserve">
+    <value>Dit is een voorlopig rapport</value>
+  </data>
+  <data name="ltPrevious" xml:space="preserve">
+    <value>Vorige</value>
+  </data>
+  <data name="ltPrint" xml:space="preserve">
+    <value>Print alle</value>
+  </data>
+  <data name="ltPrintConfirmationLetter" xml:space="preserve">
+    <value>Print bevestigingsbrief</value>
+  </data>
+  <data name="ltPrintingDone" xml:space="preserve">
+    <value>Printopdracht verzonden</value>
+  </data>
+  <data name="ltPrintPatientLabel" xml:space="preserve">
+    <value>Print patiëntlabel</value>
+  </data>
+  <data name="ltPrintReqForm" xml:space="preserve">
+    <value>Print bevestiging</value>
+  </data>
+  <data name="ltPrintSelectedReports" xml:space="preserve">
+    <value>Print geselecteerde verslagen</value>
+  </data>
+  <data name="ltProtocol" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="ltRadiologist" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="ltRecorder" xml:space="preserve">
+    <value>Recorder</value>
+  </data>
+  <data name="ltReferralType" xml:space="preserve">
+    <value>Type Verwijzing</value>
+  </data>
+  <data name="ltReferringPhysician" xml:space="preserve">
+    <value>Aanvrager</value>
+  </data>
+  <data name="ltReferringWorkLocation" xml:space="preserve">
+    <value>Werklocatie Verwijzer</value>
+  </data>
+  <data name="ltRemove" xml:space="preserve">
+    <value>Verwijder</value>
+  </data>
+  <data name="ltRequester" xml:space="preserve">
+    <value>Aanvragend arts</value>
+  </data>
+  <data name="ltRequestForm" xml:space="preserve">
+    <value>Aanvraagformulier</value>
+  </data>
+  <data name="ltRequestFormTitle" xml:space="preserve">
+    <value>Onderzoeksaanvraag voor patiënt:</value>
+  </data>
+  <data name="ltRequestingLocation" xml:space="preserve">
+    <value>Aanvraaglocatie</value>
+  </data>
+  <data name="ltRequestingSite" xml:space="preserve">
+    <value>Ziekenhuis locatie</value>
+  </data>
+  <data name="ltReserve" xml:space="preserve">
+    <value>Reserveer</value>
+  </data>
+  <data name="ltRoom" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="ltRoomIsClosed" xml:space="preserve">
+    <value>De kamer is gesloten op dit tijdstip</value>
+  </data>
+  <data name="ltScan" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="ltScanRequestForm" xml:space="preserve">
+    <value>Scan aanvraagformulier</value>
+  </data>
+  <data name="ltSchedule" xml:space="preserve">
+    <value>Planning</value>
+  </data>
+  <data name="ltScheduled" xml:space="preserve">
+    <value>Onderzoeksdatum</value>
+  </data>
+  <data name="ltScheduledStatus" xml:space="preserve">
+    <value>Geboekt</value>
+  </data>
+  <data name="ltSearch" xml:space="preserve">
+    <value>Zoeken</value>
+  </data>
+  <data name="ltSelectAll" xml:space="preserve">
+    <value>Selecteer alle verslagen</value>
+  </data>
+  <data name="ltSelectedAppointments" xml:space="preserve">
+    <value>Geselecteerde afspraken</value>
+  </data>
+  <data name="ltSelectNone" xml:space="preserve">
+    <value>Geen selectie</value>
+  </data>
+  <data name="ltSendTo" xml:space="preserve">
+    <value>Stuur naar</value>
+  </data>
+  <data name="ltSex" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="ltShowComplicationForm" xml:space="preserve">
+    <value>Complicatieformulier</value>
+  </data>
+  <data name="ltShowPerformanceIndicatorForm" xml:space="preserve">
+    <value>Indicatorformulier</value>
+  </data>
+  <data name="ltShowRequestForm" xml:space="preserve">
+    <value>Onderzoeksaanvraag</value>
+  </data>
+  <data name="ltSocialSecurityNumber" xml:space="preserve">
+    <value>Burgerservicenummer</value>
+  </data>
+  <data name="ltSpecifyStudies" xml:space="preserve">
+    <value>Selecteer minstens één onderzoek!</value>
+  </data>
+  <data name="ltStart" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="ltStartExaminationStatus" xml:space="preserve">
+    <value>Van onderzoeksstatus</value>
+  </data>
+  <data name="ltStartPage" xml:space="preserve">
+    <value>Er zijn geen permissie's geconfigureerd voor u. Neemt u alstublieft contact op met de systeembeheerder.</value>
+  </data>
+  <data name="ltState" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="ltStoredDocuments" xml:space="preserve">
+    <value>Opgeslagen documenten</value>
+  </data>
+  <data name="ltStreetName" xml:space="preserve">
+    <value>Straatnaam</value>
+  </data>
+  <data name="ltStreetNumber" xml:space="preserve">
+    <value>Huisnummer</value>
+  </data>
+  <data name="ltStudies" xml:space="preserve">
+    <value>Onderzoeken</value>
+  </data>
+  <data name="ltStudyHistory" xml:space="preserve">
+    <value>Onderzoekshistorie</value>
+  </data>
+  <data name="ltSummary" xml:space="preserve">
+    <value>Samenvatting</value>
+  </data>
+  <data name="ltTechnician" xml:space="preserve">
+    <value>Laborant</value>
+  </data>
+  <data name="ltTextDictation" xml:space="preserve">
+    <value>Tekst Dictatie</value>
+  </data>
+  <data name="ltTextProtocol" xml:space="preserve">
+    <value>tekstinvoer protocol</value>
+  </data>
+  <data name="ltTime" xml:space="preserve">
+    <value>Tijd</value>
+  </data>
+  <data name="ltTimeOutsideDailySchedule" xml:space="preserve">
+    <value>Het tijdstip ligt buiten de normale kamerplanning. </value>
+  </data>
+  <data name="ltTo" xml:space="preserve">
+    <value>Tot en met</value>
+  </data>
+  <data name="ltttSearch" xml:space="preserve">
+    <value>Voer achternaam in</value>
+  </data>
+  <data name="ltUnexpectedErrorEncountered" xml:space="preserve">
+    <value>Een onbekende fout is opgetreden. Informatie hierover is vastgelegd in de log bestanden. U wordt geadviseerd om Zillion RIS af te sluiten en opnieuw in te loggen. Excuses voor het ongemak.</value>
+  </data>
+  <data name="ltUnexpectedErrorEncounteredException" xml:space="preserve">
+    <value>Er is een fout opgetreden.
+
+Fout melding:
+{0}</value>
+  </data>
+  <data name="ltUrgency" xml:space="preserve">
+    <value>Urgentie</value>
+  </data>
+  <data name="ltUseAuthorisationDate" xml:space="preserve">
+    <value>Gebruik autorisatiedatum</value>
+  </data>
+  <data name="ltUser" xml:space="preserve">
+    <value>Medewerker</value>
+  </data>
+  <data name="ltUserUnknown" xml:space="preserve">
+    <value>Onbekende gebruiker!</value>
+  </data>
+  <data name="ltUseScheduleDate" xml:space="preserve">
+    <value>Gebruik plandatum</value>
+  </data>
+  <data name="ltValue" xml:space="preserve">
+    <value>Waarde</value>
+  </data>
+  <data name="ltValueNotValid" xml:space="preserve">
+    <value>Voer alstublieft een correcte waarde in</value>
+  </data>
+  <data name="ltView" xml:space="preserve">
+    <value>Bekijk</value>
+  </data>
+  <data name="ltViewRequestForm" xml:space="preserve">
+    <value>Bekijk aanvraagformulier</value>
+  </data>
+  <data name="ltWard" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="ltWarning" xml:space="preserve">
+    <value>Waarschuwing!</value>
+  </data>
+  <data name="ltWorkLocationInformation" xml:space="preserve">
+    <value>Werklocatie Informatie</value>
+  </data>
+  <data name="ltYes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="ltZISData" xml:space="preserve">
+    <value>ZIS Data</value>
+  </data>
+  <data name="marst_MaritalStateHL7Value" xml:space="preserve">
+    <value>HL7 waarde</value>
+  </data>
+  <data name="Marsta_Maritial_State_Name" xml:space="preserve">
+    <value>Burgerlijke Staat</value>
+  </data>
+  <data name="marsta_MaritialStateID" xml:space="preserve">
+    <value>Huwelijkse staat ID</value>
+  </data>
+  <data name="marsta_MaritialStateName" xml:space="preserve">
+    <value>Huwelijkse staat</value>
+  </data>
+  <data name="MarstaMaritialState" xml:space="preserve">
+    <value>Burgerlijke staat ID</value>
+  </data>
+  <data name="MasterPage_ProductName" xml:space="preserve">
+    <value>Zillion RIS</value>
+  </data>
+  <data name="MasterPage_Reset_Layout_Information" xml:space="preserve">
+    <value>Herstel de layout informatie</value>
+  </data>
+  <data name="MasterPage_SideBar_LocationLabel" xml:space="preserve">
+    <value>Locatie:</value>
+  </data>
+  <data name="MasterPage_SideBar_NoLocationConnected" xml:space="preserve">
+    <value>Geen locatie toegewezen aan gebruiker</value>
+  </data>
+  <data name="MasterPage_SideBar_UnknownLocation" xml:space="preserve">
+    <value>Onbekend</value>
+  </data>
+  <data name="MasterPage_SideBar_UnknownUser" xml:space="preserve">
+    <value>Niet Ingelogd</value>
+  </data>
+  <data name="MasterPage_SideBar_UserNameLabel" xml:space="preserve">
+    <value>Gebruiker:</value>
+  </data>
+  <data name="MasterPage_SysButton_About" xml:space="preserve">
+    <value>Over Zillion RIS ...</value>
+  </data>
+  <data name="MasterPage_SysButton_CloseViewPro" xml:space="preserve">
+    <value>View Pro Sluiten</value>
+  </data>
+  <data name="MasterPage_SysButton_Help" xml:space="preserve">
+    <value>Zillion RIS Documentatie</value>
+  </data>
+  <data name="MasterPage_SysButton_Logout" xml:space="preserve">
+    <value>Uitloggen</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="MergePatientsControl_AddPatients" xml:space="preserve">
+    <value>Toevoegen patiënten</value>
+  </data>
+  <data name="MergePatientsControl_CancelMergeButton" xml:space="preserve">
+    <value>Samenvoegen Annuleren</value>
+  </data>
+  <data name="MergePatientsControl_ClearPatientsButton" xml:space="preserve">
+    <value>Patiënten lijst leegmaken</value>
+  </data>
+  <data name="MergePatientsControl_EmptySelectionText" xml:space="preserve">
+    <value>Deze lijst houd de patiënten die u wilt samenvoegen vast.&lt;br /&gt;
+Om nieuwe patiënten toe te voegen aan de lijst zoekt u patiënten aan de linker kant en klik op Toevoegen.</value>
+  </data>
+  <data name="MergePatientsControl_MergeButton_Continue" xml:space="preserve">
+    <value>Deze patiënten samenvoegen</value>
+  </data>
+  <data name="MergePatientsControl_MergeButton_Execute" xml:space="preserve">
+    <value>Patiënten samenvoegen in {0}</value>
+  </data>
+  <data name="MergePatientsControl_MergeListHeader_AddPatients" xml:space="preserve">
+    <value>Patiënten lijst voor samenvoegen</value>
+  </data>
+  <data name="MergePatientsControl_MergeListHeader_SelectMasterPatient" xml:space="preserve">
+    <value>Selecteer de hoofdpatiënt ...</value>
+  </data>
+  <data name="MergePatientsControl_PatientDetails" xml:space="preserve">
+    <value>Patiëntgegevens</value>
+  </data>
+  <data name="MergePatientsControl_SearchResult_AddSingleToSelectionButton" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="MergePatientsControl_SearchResult_AddToSelection" xml:space="preserve">
+    <value>Toevoegen aan selectie</value>
+  </data>
+  <data name="MergePatientsControl_SearchResultHeader_PatientFullName" xml:space="preserve">
+    <value>Volledige naam</value>
+  </data>
+  <data name="MergePatientsControl_SearchResultHeader_PatientNumber" xml:space="preserve">
+    <value>Nummer</value>
+  </data>
+  <data name="MergePatientsControl_SearchSelectionUsageTip" xml:space="preserve">
+    <value>Tip: Houd Ctrl ingedrukt om meerdere patiënten tegelijk te kunnen selecteren.</value>
+  </data>
+  <data name="Mob_Mobility_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Mob_Mobility_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="mob_MobilityDescription" xml:space="preserve">
+    <value>Mobiliteit</value>
+  </data>
+  <data name="mob_MobilityID" xml:space="preserve">
+    <value>Mobiliteit ID</value>
+  </data>
+  <data name="mob_MobilityName" xml:space="preserve">
+    <value>Mobiliteit naam</value>
+  </data>
+  <data name="MobMobility" xml:space="preserve">
+    <value>Mobiliteits ID</value>
+  </data>
+  <data name="Mod_Modality_Description" xml:space="preserve">
+    <value>Modaliteitsomschrijving</value>
+  </data>
+  <data name="Mod_Modality_Name" xml:space="preserve">
+    <value>Modaliteitsnaam</value>
+  </data>
+  <data name="mod_ModalityCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="mod_ModalityDescription" xml:space="preserve">
+    <value>Modaliteit</value>
+  </data>
+  <data name="mod_ModalityID" xml:space="preserve">
+    <value>Modaliteit ID</value>
+  </data>
+  <data name="mod_ModalityName" xml:space="preserve">
+    <value>Modaliteitnaam</value>
+  </data>
+  <data name="Modality" xml:space="preserve">
+    <value>Modaliteit</value>
+  </data>
+  <data name="modModality" xml:space="preserve">
+    <value>ModaliteitID</value>
+  </data>
+  <data name="modroo_ModalityTypeID" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="modroo_RoomID" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="MoveOrderExamination_ExaminationNotFound" xml:space="preserve">
+    <value>Onderzoek niet gevonden [{0}].</value>
+  </data>
+  <data name="msgDelete" xml:space="preserve">
+    <value>Wilt u dit record verwijderen? Deze actie kan niet worden teruggedraaid!</value>
+  </data>
+  <data name="msgMaintenance" xml:space="preserve">
+    <value>Beheer</value>
+  </data>
+  <data name="NoPassword" xml:space="preserve">
+    <value>Deze gebruiker heeft nog geen wachtwoord, neem contact op met uw administrator.</value>
+  </data>
+  <data name="NoPatientDocuments" xml:space="preserve">
+    <value>Er zijn geen documenten voor deze patiënt.</value>
+  </data>
+  <data name="NoWorklocationsFound" xml:space="preserve">
+    <value>Geen werklocaties gevonden</value>
+  </data>
+  <data name="Obs_Observation_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Obs_Observation_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="obs_ObservationDescription" xml:space="preserve">
+    <value>Observaties omschrijving</value>
+  </data>
+  <data name="obs_ObservationID" xml:space="preserve">
+    <value>Observaties ID</value>
+  </data>
+  <data name="obs_ObservationName" xml:space="preserve">
+    <value>Observaties naam</value>
+  </data>
+  <data name="Observation" xml:space="preserve">
+    <value>Observaties</value>
+  </data>
+  <data name="ObsObservation" xml:space="preserve">
+    <value>Observaties</value>
+  </data>
+  <data name="ord_MedicalIndication" xml:space="preserve">
+    <value>Medische indicatie</value>
+  </data>
+  <data name="ord_OrderDate" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="ord_OrderID" xml:space="preserve">
+    <value>Ordernummer</value>
+  </data>
+  <data name="ord_OrderMemo" xml:space="preserve">
+    <value>Memo</value>
+  </data>
+  <data name="ord_OrderStatusID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ord_OrderTypeID" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ord_OriginID" xml:space="preserve">
+    <value>Afkomst</value>
+  </data>
+  <data name="ord_PatientID" xml:space="preserve">
+    <value>Patiënt</value>
+  </data>
+  <data name="ord_PhysicianID" xml:space="preserve">
+    <value>Arts</value>
+  </data>
+  <data name="ord_ReferralTypeID" xml:space="preserve">
+    <value>Refererend type</value>
+  </data>
+  <data name="ord_UrgencyID" xml:space="preserve">
+    <value>Urgentie</value>
+  </data>
+  <data name="ord_WaitingForApproval" xml:space="preserve">
+    <value>Waiting For Approval</value>
+  </data>
+  <data name="order" xml:space="preserve">
+    <value>De onderzoeken van deze aanvraag kunnen niet op een locatie gepland worden. </value>
+  </data>
+  <data name="Order_Number" xml:space="preserve">
+    <value>Aanvraagnummer</value>
+  </data>
+  <data name="OrderApproval_ChangeUrgency" xml:space="preserve">
+    <value>Wijzig urgentie:</value>
+  </data>
+  <data name="OrderApproval_ChangeUrgencyTitle" xml:space="preserve">
+    <value>Wijzig urgentie</value>
+  </data>
+  <data name="OrderApproval_ErrorApproving" xml:space="preserve">
+    <value>Er is een fout opgetreden bij het goedkeuren van de order.</value>
+  </data>
+  <data name="OrderApproval_ErrorDeclining" xml:space="preserve">
+    <value>Er is een fout opgetreden bij het afwijzen van de order.</value>
+  </data>
+  <data name="OrderApproval_Examinations" xml:space="preserve">
+    <value>Onderzoeken</value>
+  </data>
+  <data name="OrderApproval_MultipleMode" xml:space="preserve">
+    <value>Meervoudig modus</value>
+  </data>
+  <data name="OrderApproval_OrdersPending" xml:space="preserve">
+    <value>Lopende onderzoeken</value>
+  </data>
+  <data name="OrderApproval_SingleMode" xml:space="preserve">
+    <value>Enkel modus</value>
+  </data>
+  <data name="OrderApproval_WorkListFilters" xml:space="preserve">
+    <value>Geavanceerde Filters</value>
+  </data>
+  <data name="OrderBooking_Button_BookManually" xml:space="preserve">
+    <value>Handmatig inplannen</value>
+  </data>
+  <data name="OrderBooking_Button_EditPatient" xml:space="preserve">
+    <value>Wijzig patiënt</value>
+  </data>
+  <data name="OrderBooking_Error" xml:space="preserve">
+    <value>Kan de status van het onderzoek niet naar 'wachtend' zetten vanwege een fout.</value>
+  </data>
+  <data name="OrderBooking_ExaminationInformation" xml:space="preserve">
+    <value>Planning Notitie:</value>
+  </data>
+  <data name="OrderBooking_OrderDetails" xml:space="preserve">
+    <value>Details aanvraag:</value>
+  </data>
+  <data name="OrderBooking_Title" xml:space="preserve">
+    <value>Handmatig plannen</value>
+  </data>
+  <data name="OrderBooking_UnableToBookNow" xml:space="preserve">
+    <value>Kan de aanvraag niet nu inboeken vanwege een fout.</value>
+  </data>
+  <data name="OrderBooking_WorkListFilters" xml:space="preserve">
+    <value>Geavanceerde Filters</value>
+  </data>
+  <data name="OrderInProgressExaminationCompleted" xml:space="preserve">
+    <value>Onderzoek is compleet</value>
+  </data>
+  <data name="ordReqFor_RequestFormID" xml:space="preserve">
+    <value>Aanvraagformulier</value>
+  </data>
+  <data name="ordst_OrderStatusName" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ordtyp_OrderTypeDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="ordtyp_OrderTypeID" xml:space="preserve">
+    <value>Aanvraagtype</value>
+  </data>
+  <data name="ordtyp_OrderTypeName" xml:space="preserve">
+    <value>Aanvraagtype</value>
+  </data>
+  <data name="org_OrganisationCity" xml:space="preserve">
+    <value>Woonplaats</value>
+  </data>
+  <data name="org_OrganisationCountryID" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="org_OrganisationID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="org_OrganisationName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="org_OrganisationPostalCode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="org_OrganisationState" xml:space="preserve">
+    <value>Staat</value>
+  </data>
+  <data name="org_OrganisationStreetName" xml:space="preserve">
+    <value>Straatnaam</value>
+  </data>
+  <data name="Ori_Origin_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Ori_Origin_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="ori_OriginDescription" xml:space="preserve">
+    <value>Herkomstomschrijving</value>
+  </data>
+  <data name="ori_OriginID" xml:space="preserve">
+    <value>Herkomst ID</value>
+  </data>
+  <data name="ori_OriginName" xml:space="preserve">
+    <value>Herkomst</value>
+  </data>
+  <data name="Origin" xml:space="preserve">
+    <value>Herkomst</value>
+  </data>
+  <data name="OriOrigin" xml:space="preserve">
+    <value>Oorsprong ID</value>
+  </data>
+  <data name="PageLocationFilter_LocationLabel" xml:space="preserve">
+    <value>Filter op locatie:</value>
+  </data>
+  <data name="PageLocationFilter_RoomLabel" xml:space="preserve">
+    <value>Filter op kamer:</value>
+  </data>
+  <data name="PageLocationFilter_WorkListLabel" xml:space="preserve">
+    <value>Werklijst:</value>
+  </data>
+  <data name="PageTitle_OrderApproval" xml:space="preserve">
+    <value>aanvraag accordering</value>
+  </data>
+  <data name="pat_Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="pat_BirthDate" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="pat_BSN" xml:space="preserve">
+    <value>Burgerservicenummer</value>
+  </data>
+  <data name="pat_BusinessPhoneNr" xml:space="preserve">
+    <value>Zakelijk telefoonnummer</value>
+  </data>
+  <data name="pat_City" xml:space="preserve">
+    <value>Woonplaats</value>
+  </data>
+  <data name="pat_CountryID" xml:space="preserve">
+    <value>Land ID</value>
+  </data>
+  <data name="pat_DateOfAction" xml:space="preserve">
+    <value>Actiedatum</value>
+  </data>
+  <data name="pat_DateOfBirth" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="pat_Degree" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="pat_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Pat_First_Name" xml:space="preserve">
+    <value>Roepnaam</value>
+  </data>
+  <data name="pat_FirstName" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="pat_GenderID" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="pat_GeneralPracticionerID" xml:space="preserve">
+    <value>Huisarts ID</value>
+  </data>
+  <data name="pat_HistoryLocationID" xml:space="preserve">
+    <value>Historische locatie</value>
+  </data>
+  <data name="Pat_Home_Phone_Nr" xml:space="preserve">
+    <value>Telefoon</value>
+  </data>
+  <data name="pat_HomePhoneNr" xml:space="preserve">
+    <value>Telefoonnummer (vast)</value>
+  </data>
+  <data name="pat_Initials" xml:space="preserve">
+    <value>voorletters</value>
+  </data>
+  <data name="Pat_Insurance_Number" xml:space="preserve">
+    <value>Verzekeringsnummer</value>
+  </data>
+  <data name="pat_InsuranceCompanyID" xml:space="preserve">
+    <value>Verzekeraar ID</value>
+  </data>
+  <data name="pat_InsuranceNumber" xml:space="preserve">
+    <value>Verzekerdennummer</value>
+  </data>
+  <data name="Pat_Last_Name" xml:space="preserve">
+    <value>Familienaam</value>
+  </data>
+  <data name="pat_LastName" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="pat_MaidenName" xml:space="preserve">
+    <value>Meisjesnaam</value>
+  </data>
+  <data name="pat_MaidenNamePrefix" xml:space="preserve">
+    <value>Tussenvoegsel</value>
+  </data>
+  <data name="pat_MailingAddress" xml:space="preserve">
+    <value>Postadres</value>
+  </data>
+  <data name="Pat_Maritial_State" xml:space="preserve">
+    <value>Burgerlijke Staat</value>
+  </data>
+  <data name="pat_MaritialState" xml:space="preserve">
+    <value>Huwelijkse staat</value>
+  </data>
+  <data name="pat_MaritialStateID" xml:space="preserve">
+    <value>Huwelijkse staat</value>
+  </data>
+  <data name="pat_MiddleNames" xml:space="preserve">
+    <value>Middelste naam</value>
+  </data>
+  <data name="Pat_Mobile_Nr" xml:space="preserve">
+    <value>Tweede telefoonnummer</value>
+  </data>
+  <data name="pat_MobileNr" xml:space="preserve">
+    <value>Telefoonnummer (mobiel)</value>
+  </data>
+  <data name="pat_MobilityID" xml:space="preserve">
+    <value>Mobiliteit</value>
+  </data>
+  <data name="Pat_Patient_Number" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="pat_PatientID" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="pat_PatientName" xml:space="preserve">
+    <value>Patiëntnaam</value>
+  </data>
+  <data name="pat_PatientNumber" xml:space="preserve">
+    <value>Patiëntnummer</value>
+  </data>
+  <data name="Pat_Postal_Code" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="pat_PostalCode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="pat_Prefix" xml:space="preserve">
+    <value>Tussenvoegsel</value>
+  </data>
+  <data name="pat_Province" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="pat_ReligionID" xml:space="preserve">
+    <value>Religie</value>
+  </data>
+  <data name="pat_SexID" xml:space="preserve">
+    <value>Geslacht ID</value>
+  </data>
+  <data name="pat_State" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="Pat_Street_Number" xml:space="preserve">
+    <value>Huisnummer</value>
+  </data>
+  <data name="pat_StreetName" xml:space="preserve">
+    <value>Straatnaam</value>
+  </data>
+  <data name="pat_StreetNumber" xml:space="preserve">
+    <value>Huisnummer</value>
+  </data>
+  <data name="pat_WardID" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="PatGeneralPractitioner" xml:space="preserve">
+    <value>Huisarts ID</value>
+  </data>
+  <data name="PatHistoryLocation" xml:space="preserve">
+    <value>Historische Locatie</value>
+  </data>
+  <data name="Patient" xml:space="preserve">
+    <value>Patiënt</value>
+  </data>
+  <data name="PatientBanner_Address" xml:space="preserve">
+    <value>Adres: </value>
+  </data>
+  <data name="PatientBanner_Bed" xml:space="preserve">
+    <value>Bed: </value>
+  </data>
+  <data name="PatientBanner_Born" xml:space="preserve">
+    <value>Geboren: </value>
+  </data>
+  <data name="PatientBanner_Deceased" xml:space="preserve">
+    <value>Overleden: </value>
+  </data>
+  <data name="PatientBanner_BSNNo" xml:space="preserve">
+    <value>BSN No.: </value>
+  </data>
+  <data name="PatientBanner_BusinessNumber" xml:space="preserve">
+    <value>Zakelijk Nr.: </value>
+  </data>
+  <data name="PatientBanner_Consultant" xml:space="preserve">
+    <value>Consultant: </value>
+  </data>
+  <data name="PatientBanner_CurrentLocation" xml:space="preserve">
+    <value>Huidige Patiënt Locatie</value>
+  </data>
+  <data name="PatientBanner_CurrentResponsibleConsultant" xml:space="preserve">
+    <value>Huidige Verantwoordelijke Consultant</value>
+  </data>
+  <data name="PatientBanner_Email" xml:space="preserve">
+    <value>Email: </value>
+  </data>
+  <data name="PatientBanner_Error" xml:space="preserve">
+    <value>Er ging iets fout. Probeer het opnieuw a.u.b.</value>
+  </data>
+  <data name="PatientBanner_Gender" xml:space="preserve">
+    <value>Geslacht: </value>
+  </data>
+  <data name="PatientBanner_GeneralPractitioner" xml:space="preserve">
+    <value>Huisarts: </value>
+  </data>
+  <data name="PatientBanner_HomeNumber" xml:space="preserve">
+    <value>Thuis Nr.: </value>
+  </data>
+  <data name="PatientBanner_Location" xml:space="preserve">
+    <value>Locatie: </value>
+  </data>
+  <data name="PatientBanner_MobileNumber" xml:space="preserve">
+    <value>Mobiel Nr.: </value>
+  </data>
+  <data name="PatientBanner_NHSNo" xml:space="preserve">
+    <value>NHS Nr.: </value>
+  </data>
+  <data name="PatientBanner_None" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="PatientBanner_NoPermission" xml:space="preserve">
+    <value>U heeft momenteel geen rechten om de patiëntdetails te bekijken. Neem a.u.b. contact op met uw systeem administrator.</value>
+  </data>
+  <data name="PatientBanner_Observations" xml:space="preserve">
+    <value>Observaties: </value>
+  </data>
+  <data name="PatientBanner_PASNo" xml:space="preserve">
+    <value>PAT Nr.: </value>
+  </data>
+  <data name="PatientBanner_PhoneEmail" xml:space="preserve">
+    <value>Telefoon en email: </value>
+  </data>
+  <data name="PatientBanner_PointOfCare" xml:space="preserve">
+    <value>Point Of Care: </value>
+  </data>
+  <data name="PatientBanner_Room" xml:space="preserve">
+    <value>Kamer: </value>
+  </data>
+  <data name="PatientDetailsControl_LoadPatientError" xml:space="preserve">
+    <value>Kon de patient gegevens niet laden.
+
+Patient ID: {0}.</value>
+    <comment>Argument 0: Patient ID</comment>
+  </data>
+  <data name="PatientDetailsControl_PatientSearchButton" xml:space="preserve">
+    <value>Patiënt onderzoek aanvragen laten zien</value>
+  </data>
+  <data name="PatientDetailsControl_SearchPatient" xml:space="preserve">
+    <value>Zoek Patiënt</value>
+  </data>
+  <data name="PatientHistory" xml:space="preserve">
+    <value>Patiëntgeschiedenis</value>
+  </data>
+  <data name="PatientInformation_MiddleNameLabel" xml:space="preserve">
+    <value>Tweede naam</value>
+  </data>
+  <data name="Patients_GPError_CountriesReference" xml:space="preserve">
+    <value>De landen van de algemene beoefenaars zijn niet geladen.</value>
+  </data>
+  <data name="Patients_ParamError_CountriesReference" xml:space="preserve">
+    <value>De landen van de patiënt zijn niet geladen.</value>
+  </data>
+  <data name="Patients_ParamError_GenderReference" xml:space="preserve">
+    <value>De geslachten van de patiënt zijn niet geladen.</value>
+  </data>
+  <data name="Patients_ParamError_HistoryLocationsReference" xml:space="preserve">
+    <value>De historische locaties van de patiënt zijn niet geladen.</value>
+  </data>
+  <data name="Patients_ParamError_MaritialStatesReference" xml:space="preserve">
+    <value>De burgelijke staten van de patiënt zijn niet geladen.</value>
+  </data>
+  <data name="Patients_ParamError_MobilitiesReference" xml:space="preserve">
+    <value>De mobiliteiten van de patiënt zijn niet geladen.</value>
+  </data>
+  <data name="Patients_ParamError_PatientObservations" xml:space="preserve">
+    <value>De observaties van de patiënt zijn niet geladen.</value>
+  </data>
+  <data name="Patients_ParamError_WardsReference" xml:space="preserve">
+    <value>De afdelingen van de patiënt zijn niet geladen.</value>
+  </data>
+  <data name="PatientSearch_ChangeSearchType" xml:space="preserve">
+    <value>Verander zoektype naar </value>
+  </data>
+  <data name="PatientSearch_ComplicationFormError" xml:space="preserve">
+    <value>Er is een onverwachten fout opgetreden tijdens het proberen een popup te tonen voor het complicatieformulier.</value>
+  </data>
+  <data name="PatientSearch_Consultant" xml:space="preserve">
+    <value>Consultant</value>
+  </data>
+  <data name="PatientSearch_CurrentPatientLocation" xml:space="preserve">
+    <value>Huidige Patiëntlocatie</value>
+  </data>
+  <data name="PatientSearch_CurrentResponsibleConsultant" xml:space="preserve">
+    <value>Huidige Verantwoordelijke Consultant</value>
+  </data>
+  <data name="PatientSearch_DatePeriodEnd" xml:space="preserve">
+    <value>Datum Eind Periode</value>
+  </data>
+  <data name="PatientSearch_DatePeriodStart" xml:space="preserve">
+    <value>Datum Start Periode</value>
+  </data>
+  <data name="PatientSearch_DiscussionListError" xml:space="preserve">
+    <value>Er is een onverwachte fout opgetreden tijdens het proberen een popup te tonen voor het verzenden van een onderzoek naar een bespreeklijst.</value>
+  </data>
+  <data name="PatientSearch_ExaminationInformation" xml:space="preserve">
+    <value>Onderzoeksinformatie</value>
+  </data>
+  <data name="PatientSearch_ExaminationRoom" xml:space="preserve">
+    <value>Onderzoekskamer</value>
+  </data>
+  <data name="PatientSearch_FilterExaminations" xml:space="preserve">
+    <value>Onderzoeken Filteren</value>
+  </data>
+  <data name="PatientSearch_FilterOrders" xml:space="preserve">
+    <value>Geavanceerde Filters</value>
+  </data>
+  <data name="PatientSearch_IndicatorFormError" xml:space="preserve">
+    <value>Er is een onverwachte fout opgetreden tijdens het proberen een popup te tonen voor het indicatorformulier.</value>
+  </data>
+  <data name="PatientSearch_IntendedReporter" xml:space="preserve">
+    <value>Beoogde Verslaglegger</value>
+  </data>
+  <data name="PatientSearch_LocationGroup" xml:space="preserve">
+    <value>Locatiegroep</value>
+  </data>
+  <data name="PatientSearch_ModalityType" xml:space="preserve">
+    <value>Type Modaliteit</value>
+  </data>
+  <data name="PatientSearch_Operator" xml:space="preserve">
+    <value>Laborant</value>
+  </data>
+  <data name="PatientSearch_OrderNumber" xml:space="preserve">
+    <value>aanvraagnummer</value>
+  </data>
+  <data name="PatientSearch_OrTry" xml:space="preserve">
+    <value>of probeer </value>
+  </data>
+  <data name="PatientSearch_PatientCategory" xml:space="preserve">
+    <value>Aanvragend Categorietype</value>
+  </data>
+  <data name="PatientSearch_PationLocationAtRequest" xml:space="preserve">
+    <value>Patiëntlocatie Bij Aanvraag</value>
+  </data>
+  <data name="PatientSearch_Reporter" xml:space="preserve">
+    <value>Verslaggever</value>
+  </data>
+  <data name="PatientSearch_RequesterLocation" xml:space="preserve">
+    <value>Aanvragend Consultant Locatie</value>
+  </data>
+  <data name="PatientSearch_RequestingGPWorkLocation" xml:space="preserve">
+    <value>Aanvragend huisarts werklocatie</value>
+  </data>
+  <data name="PatientSearch_RequestingResponsibleConsultant" xml:space="preserve">
+    <value>Aanvrager:</value>
+  </data>
+  <data name="PatientSearch_SearchPatients" xml:space="preserve">
+    <value>Zoek Naar Patiënten</value>
+  </data>
+  <data name="PatientSearch_TooltipClinicalInformation" xml:space="preserve">
+    <value>Teksten moeten in afzonderlijke regels in de medische gegevens.&amp;#10;&amp;#10;Bijvoorbeeld: &amp;#10;Hoofdtrauma&amp;#10;Bloedneus&amp;#10;&amp;#10;Het resultaat zijn degenen die 'Hoofdtrauma' en 'Bloedneus' bevatten.</value>
+  </data>
+  <data name="PatientSearch_TooltipReport" xml:space="preserve">
+    <value>Hetzelfde als bij Medische Gegevens</value>
+  </data>
+  <data name="PatientSearch_WorkflowStatus" xml:space="preserve">
+    <value>Workflowstatus</value>
+  </data>
+  <data name="PatientsPage_DepartmentLabel" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="PatientsPage_FirstPhysicianLabel" xml:space="preserve">
+    <value>Eerste arts</value>
+  </data>
+  <data name="PatientsPage_Insurance_AddCompanyButton" xml:space="preserve">
+    <value>Bedrijf Toevoegen</value>
+  </data>
+  <data name="PatientsPage_Insurance_RemoveCompanyButton" xml:space="preserve">
+    <value>Bedrijf Verwijderen</value>
+  </data>
+  <data name="PatientsPage_IntakeDateLabel" xml:space="preserve">
+    <value>Intake datum</value>
+  </data>
+  <data name="PatientsPage_IntakeNumberLabel" xml:space="preserve">
+    <value>Aantal intakes</value>
+  </data>
+  <data name="PatientsPage_InvalidSsnNumber" xml:space="preserve">
+    <value>Er is een ongeldig Burger Service Nummer ingevuld.</value>
+  </data>
+  <data name="PatientsPage_LoadingAdmissionHistoryFailed" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het laden van de patient opname gegevens uit de database.
+
+Patient ID: {0}.</value>
+  </data>
+  <data name="PatientsPage_PatientLoadError" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het laden van de patiënt uit de database.
+
+Patiënt ID: {0}.
+Message: {1}</value>
+  </data>
+  <data name="PatientsPage_PatientNotFound" xml:space="preserve">
+    <value>Kon de opgevraagde patiënt niet vinden.
+
+Patiënt ID: {0}.</value>
+  </data>
+  <data name="PatientsPage_PatientSaveError" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het opslaan van de patiënt naar de database.
+
+Patiënt nummer: {0}.</value>
+  </data>
+  <data name="PatientsPage_RoomLabel" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="PatientsPage_SavePatientConcurrencyError" xml:space="preserve">
+    <value>Een andere gebruiker heeft de patiënt aangepast, kon de wijzigingen nu niet opslaan.
+
+De patiënt gegevens worden ververst.</value>
+  </data>
+  <data name="PatientsPage_SecondPhysicianLabel" xml:space="preserve">
+    <value>Tweede arts</value>
+  </data>
+  <data name="PatientsPage_UnableToAddDocumentsPatientDoesNotExist" xml:space="preserve">
+    <value>De patiënt moet opgeslagen zijn voordat er documenten aan verbonden kunnen worden.</value>
+  </data>
+  <data name="PatientsPage_ValidationError_SocialSecurityNumber" xml:space="preserve">
+    <value>Het burgerservicenummer moet leeg zijn of exact 9 cijfers bevatten.</value>
+  </data>
+  <data name="patins_InsuranceCompanyID" xml:space="preserve">
+    <value>Verzekeringsinstantie</value>
+  </data>
+  <data name="patins_InsuranceNumber" xml:space="preserve">
+    <value>Verzekeringsnummer</value>
+  </data>
+  <data name="patins_PatientID" xml:space="preserve">
+    <value>PatiëntID</value>
+  </data>
+  <data name="PatInsuranceCompanyID" xml:space="preserve">
+    <value>VerzekeringmaatschappijID</value>
+  </data>
+  <data name="patobs_ObservationID" xml:space="preserve">
+    <value>Observatie</value>
+  </data>
+  <data name="patobs_PatientID" xml:space="preserve">
+    <value>Patient</value>
+  </data>
+  <data name="PatPatient" xml:space="preserve">
+    <value>Patiënt ID</value>
+  </data>
+  <data name="PatSex" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="phy_PhysicianCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="phy_PhysicianFirstName" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="phy_PhysicianID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="phy_PhysicianInitials" xml:space="preserve">
+    <value>Voorletters</value>
+  </data>
+  <data name="phy_PhysicianPrefix" xml:space="preserve">
+    <value>Tussenvoegsel</value>
+  </data>
+  <data name="phy_PhysicianSpecialisation" xml:space="preserve">
+    <value>Specialisatie</value>
+  </data>
+  <data name="phy_PhysicianSurName" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="phyrepcop_OrderID" xml:space="preserve">
+    <value>Aanvraagnummer</value>
+  </data>
+  <data name="phyrepcop_physicianID" xml:space="preserve">
+    <value>ArtsID</value>
+  </data>
+  <data name="Physician" xml:space="preserve">
+    <value>Arts</value>
+  </data>
+  <data name="Popup_Report" xml:space="preserve">
+    <value>Pop-up verslag</value>
+  </data>
+  <data name="PopupEditFormCaption" xml:space="preserve">
+    <value>Nieuwe afspraaktijd</value>
+  </data>
+  <data name="PopupForm_SuccesLabel" xml:space="preserve">
+    <value>Formulier is succesvol opgeslagen.</value>
+  </data>
+  <data name="PopupMessageControl_ErrorHeaderText" xml:space="preserve">
+    <value>Er is een fout opgetreden</value>
+  </data>
+  <data name="PopupMessageControl_InformationHeaderText" xml:space="preserve">
+    <value>Informatie</value>
+  </data>
+  <data name="Portering_UnableToCancel" xml:space="preserve">
+    <value>Kan portering niet annuleren.</value>
+  </data>
+  <data name="Portering_UnableToCancel_AnotherUser" xml:space="preserve">
+    <value>Kan portering niet annuleren. \r\n\r\n Een andere portier is bevoegd voor het geselecteerde patiënttransport.</value>
+  </data>
+  <data name="Portering_UnableToComplete" xml:space="preserve">
+    <value>Kan portering niet voltooien.</value>
+  </data>
+  <data name="Portering_UnableToComplete_AnotherUser" xml:space="preserve">
+    <value>Kan portering niet voltooien. \r\n\r\n Een andere portier is bevoegd voor het geselecteerde patiënttransport.</value>
+  </data>
+  <data name="Printing_AppointmentConfigurationFailed" xml:space="preserve">
+    <value>Kon de afspraak bevestiging niet printen.</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Zillion RIS</value>
+  </data>
+  <data name="ProgressTemplate_Cancel" xml:space="preserve">
+    <value>Afbreken</value>
+  </data>
+  <data name="ProtocolAssignment_WorkListFilters" xml:space="preserve">
+    <value>Geavanceerde Filters</value>
+  </data>
+  <data name="Rad_Radiologist_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="rad_RadiologistID" xml:space="preserve">
+    <value>Radioloog ID</value>
+  </data>
+  <data name="rad_RadiologistName" xml:space="preserve">
+    <value>Radioloog naam</value>
+  </data>
+  <data name="radgro_GroupCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="radgro_GroupDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="radgro_GroupID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="radgro_GroupName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="radgrorad_GroupID" xml:space="preserve">
+    <value>GroupID</value>
+  </data>
+  <data name="radgrorad_RadiologistID" xml:space="preserve">
+    <value>RadioloogID</value>
+  </data>
+  <data name="Radiologist" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="Radiologists" xml:space="preserve">
+    <value>Radiologen</value>
+  </data>
+  <data name="RadRadiologist" xml:space="preserve">
+    <value>Radioloog ID</value>
+  </data>
+  <data name="radspe_radiologistID" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="radspe_SpecialisationID" xml:space="preserve">
+    <value>Specialisatie</value>
+  </data>
+  <data name="rec_OldPatientNumber" xml:space="preserve">
+    <value>Oud patiëntnummer</value>
+  </data>
+  <data name="rec_PatientID" xml:space="preserve">
+    <value>PatiëntID</value>
+  </data>
+  <data name="ReceptionLow_AddFilter" xml:space="preserve">
+    <value>Nieuw Filter Toevoegen</value>
+  </data>
+  <data name="ReceptionLow_Close" xml:space="preserve">
+    <value>Sluiten</value>
+  </data>
+  <data name="ReceptionLow_CustomizeFilters" xml:space="preserve">
+    <value>Filters Aanpassen</value>
+  </data>
+  <data name="ReceptionLow_DeleteFilter" xml:space="preserve">
+    <value>Verwijder Filter</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_Approved" xml:space="preserve">
+    <value>Goedgekeurd</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_InDepartment" xml:space="preserve">
+    <value>In wachtkamer</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_Scheduled" xml:space="preserve">
+    <value>Gepland</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_Waiting" xml:space="preserve">
+    <value>Wachtend</value>
+  </data>
+  <data name="ReceptionLow_ExaminationTypes" xml:space="preserve">
+    <value>Onderzoekstypes</value>
+  </data>
+  <data name="ReceptionLow_FilterTitle" xml:space="preserve">
+    <value>Receptie Werklijstfilters</value>
+  </data>
+  <data name="ReceptionLow_IntendedReporters" xml:space="preserve">
+    <value>Beoogde verslagleggers</value>
+  </data>
+  <data name="ReceptionLow_LabelLastExaminations" xml:space="preserve">
+    <value>Laatst Bekeken Onderzoeken</value>
+  </data>
+  <data name="ReceptionLow_Modalities" xml:space="preserve">
+    <value>Modaliteiten</value>
+  </data>
+  <data name="ReceptionLow_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="ReceptionLow_Operators" xml:space="preserve">
+    <value>Laboranten</value>
+  </data>
+  <data name="ReceptionLow_Reporters" xml:space="preserve">
+    <value>Verslagleggers</value>
+  </data>
+  <data name="ReceptionLow_RequestingResponsibleConsultants" xml:space="preserve">
+    <value>Aanvrager</value>
+  </data>
+  <data name="ReceptionLow_Rooms" xml:space="preserve">
+    <value>Kamers</value>
+  </data>
+  <data name="ReceptionLow_SaveFilter" xml:space="preserve">
+    <value>Filter Opslaan</value>
+  </data>
+  <data name="ReceptionLow_SelectFilter" xml:space="preserve">
+    <value>Filter Selecteren</value>
+  </data>
+  <data name="ReceptionLow_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ReceptionLow_ViewLastExaminations" xml:space="preserve">
+    <value>Toon Laatste Onderzoeken</value>
+  </data>
+  <data name="Ref_Referring_Physician_Department" xml:space="preserve">
+    <value>Afdeling aanvragend arts</value>
+  </data>
+  <data name="Ref_Referring_Physician_Description" xml:space="preserve">
+    <value>Omschrijving aanvragend arts</value>
+  </data>
+  <data name="Ref_Referring_Physician_Name" xml:space="preserve">
+    <value>Naam aanvragend arts</value>
+  </data>
+  <data name="Ref_Referring_Physician_Type" xml:space="preserve">
+    <value>Aanvragend arts type</value>
+  </data>
+  <data name="ref_ReferringPhysicianDepartment" xml:space="preserve">
+    <value>Aanvragend arts afdeling</value>
+  </data>
+  <data name="ref_ReferringPhysicianDescription" xml:space="preserve">
+    <value>Aanvragend arts omschrijving</value>
+  </data>
+  <data name="ref_ReferringPhysicianID" xml:space="preserve">
+    <value>Aanvragend arts ID</value>
+  </data>
+  <data name="ref_ReferringPhysicianName" xml:space="preserve">
+    <value>Aanvrager</value>
+  </data>
+  <data name="ref_ReferringPhysicianType" xml:space="preserve">
+    <value>Aanvragend arts type</value>
+  </data>
+  <data name="Referral_Type" xml:space="preserve">
+    <value>Type verwijzing</value>
+  </data>
+  <data name="Referring_Physician" xml:space="preserve">
+    <value>Aanvragend arts</value>
+  </data>
+  <data name="RefReferringPhysician" xml:space="preserve">
+    <value>aanvragend arts ID</value>
+  </data>
+  <data name="Reftyp_Referral_Type_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Reftyp_Referral_Type_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="reftyp_ReferralTypeDescription" xml:space="preserve">
+    <value>Aanvraagtype omschrijving</value>
+  </data>
+  <data name="reftyp_ReferralTypeID" xml:space="preserve">
+    <value>Aanvraagtype ID</value>
+  </data>
+  <data name="reftyp_ReferralTypeName" xml:space="preserve">
+    <value>Aanvraagtype naam</value>
+  </data>
+  <data name="ReftypReferralType" xml:space="preserve">
+    <value>Aanvragertype ID</value>
+  </data>
+  <data name="rel_ReligionID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="rel_ReligionName" xml:space="preserve">
+    <value>Geloof</value>
+  </data>
+  <data name="rep_Author" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="rep_AuthorisationDate" xml:space="preserve">
+    <value>Autorisatie datum</value>
+  </data>
+  <data name="rep_Authoriser" xml:space="preserve">
+    <value>Geautoriseerd door</value>
+  </data>
+  <data name="rep_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="rep_Conclusion" xml:space="preserve">
+    <value>Conclusie</value>
+  </data>
+  <data name="rep_CreationDate" xml:space="preserve">
+    <value>Creatiedatum</value>
+  </data>
+  <data name="rep_ReportID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="rep_ReportStatusID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="rep_RetrievalDate" xml:space="preserve">
+    <value>Ontvangstdatum</value>
+  </data>
+  <data name="rep_Text" xml:space="preserve">
+    <value>Tekst</value>
+  </data>
+  <data name="rep_Title" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="rep_Transcriber" xml:space="preserve">
+    <value>Typist</value>
+  </data>
+  <data name="RepDictation_ExaminationAlreadyDictating" xml:space="preserve">
+    <value>Het onderzoek word op dit moment al verslagen.</value>
+  </data>
+  <data name="Report_Addendum" xml:space="preserve">
+    <value>Addendum</value>
+  </data>
+  <data name="Report_Authorised" xml:space="preserve">
+    <value>Primair verslag</value>
+  </data>
+  <data name="Report_Preliminary" xml:space="preserve">
+    <value>Voorlopig</value>
+  </data>
+  <data name="ReportForm_AuthorisationDateLabel" xml:space="preserve">
+    <value>Verslagdatum:</value>
+  </data>
+  <data name="ReportForm_AuthoriserLabel" xml:space="preserve">
+    <value>Geautoriseerd door:</value>
+  </data>
+  <data name="ReportForm_AuthorLabel" xml:space="preserve">
+    <value>Auteur:</value>
+  </data>
+  <data name="ReportForm_ConclusionLabel" xml:space="preserve">
+    <value>Conclusie:</value>
+  </data>
+  <data name="ReportForm_CopyToLabel" xml:space="preserve">
+    <value>Kopie naar:</value>
+  </data>
+  <data name="ReportForm_ExaminationTypeLabel" xml:space="preserve">
+    <value>Onderzoekstype:</value>
+  </data>
+  <data name="ReportForm_ScheduledDateLabel" xml:space="preserve">
+    <value>Onderzoekdatum:</value>
+  </data>
+  <data name="repsta_ReportStatusDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="repsta_ReportStatusID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="repsta_ReportStatusName" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="reqfor_RequestForm" xml:space="preserve">
+    <value>Aanvraagformulier</value>
+  </data>
+  <data name="reqfor_RequestFormID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="res_ModalityID" xml:space="preserve">
+    <value>Modaliteit</value>
+  </data>
+  <data name="res_ResourceID" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="res_RoomID" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="RisApplication_CriticalErrorMessage" xml:space="preserve">
+    <value>Er is een fout opgetrede, details zijn opgeslagen in de log file. U wordt uitgelogd. Excuses voor het ongemak.</value>
+  </data>
+  <data name="RisApplication_UserAlreadyInitialized" xml:space="preserve">
+    <value>Kon de gebruiker {0} niet laden, er is al een gebruiker in gelogt ({1}).</value>
+    <comment>
+			Argument 0 is the current username and argument 1 is the requested username.
+		</comment>
+  </data>
+  <data name="risper_RISPermissionDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="risper_RISPermissionID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="risper_RISPermissionName" xml:space="preserve">
+    <value>Permissie</value>
+  </data>
+  <data name="risrol_Active" xml:space="preserve">
+    <value>Actief</value>
+  </data>
+  <data name="risrol_RoleDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="risrol_RoleID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="risrol_RoleName" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="risrolper_RISPermissionID" xml:space="preserve">
+    <value>Permissie</value>
+  </data>
+  <data name="risrolper_RISRoleID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="risuse_BusinessPhoneNr" xml:space="preserve">
+    <value>Telefoonnummer zakelijk</value>
+  </data>
+  <data name="risuse_City" xml:space="preserve">
+    <value>Woonplaats</value>
+  </data>
+  <data name="risuse_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="risuse_CountryID" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="risuse_DateOfBirth" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="risuse_Degree" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="risuse_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="risuse_FirstName" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="risuse_HomePhoneNr" xml:space="preserve">
+    <value>Telefoonnummer privé</value>
+  </data>
+  <data name="risuse_Initials" xml:space="preserve">
+    <value>Voorletters</value>
+  </data>
+  <data name="risuse_LastName" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="risuse_MobileNr" xml:space="preserve">
+    <value>Telefoonnummer mobiel</value>
+  </data>
+  <data name="risuse_PostalCode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="risuse_Prefix" xml:space="preserve">
+    <value>Tussenvoegsel</value>
+  </data>
+  <data name="risuse_State" xml:space="preserve">
+    <value>Staat</value>
+  </data>
+  <data name="risuse_StreetAddress" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="risuse_UserID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="RisUser_NoLocation" xml:space="preserve">
+    <value>De gebruiker {0} kan niet worden ingelogt voor de locatie {1}.</value>
+  </data>
+  <data name="RisUser_UserNotFound" xml:space="preserve">
+    <value>The opgevraagde gebruiker kon niet worden gevonden ({0}).</value>
+  </data>
+  <data name="risuserol_RISRoleID" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="risuserol_RISUserID" xml:space="preserve">
+    <value>RIS gebruiker</value>
+  </data>
+  <data name="roo_Notes" xml:space="preserve">
+    <value>Opmerkingen</value>
+  </data>
+  <data name="Roo_Room_Description" xml:space="preserve">
+    <value>Kameromschrijving</value>
+  </data>
+  <data name="Roo_Room_Name" xml:space="preserve">
+    <value>Kamernaam</value>
+  </data>
+  <data name="roo_RoomDescription" xml:space="preserve">
+    <value>Kameromschrijving</value>
+  </data>
+  <data name="roo_RoomID" xml:space="preserve">
+    <value>Kamer ID</value>
+  </data>
+  <data name="roo_RoomName" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="Roo_Time_Slot" xml:space="preserve">
+    <value>Tijdslot</value>
+  </data>
+  <data name="roo_TimeSlot" xml:space="preserve">
+    <value>Tijd</value>
+  </data>
+  <data name="rooclo_EndDateTime" xml:space="preserve">
+    <value>Einddatum</value>
+  </data>
+  <data name="rooclo_ReasonForClose" xml:space="preserve">
+    <value>Reden voor sluiting</value>
+  </data>
+  <data name="rooclo_roomID" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="rooclo_StartDateTime" xml:space="preserve">
+    <value>Startdatum</value>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="RoomOverview_IntendedReporter" xml:space="preserve">
+    <value>Beoogde Verslaglegger: </value>
+  </data>
+  <data name="RoomPopupControl_BehaviorNotSupported" xml:space="preserve">
+    <value>Gedrag wordt niet ondersteund: {0}</value>
+  </data>
+  <data name="RoomPopupControl_FailedBookAppointment" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het inplannen van een afspraak.</value>
+  </data>
+  <data name="RoomPopupControl_FailedMoveAppointment" xml:space="preserve">
+    <value>Er is een fout opgetreden tijdens het verplaatsen van een onderzoek.</value>
+  </data>
+  <data name="RoomPopupControl_PopupHeader" xml:space="preserve">
+    <value>Kameroverzicht</value>
+  </data>
+  <data name="RoomPopupControl_PrintAppointmentConfirmationFailed" xml:space="preserve">
+    <value>De gemaakte afspraak kon niet worden geprint. Neem contact op met uw systeembeheerder.</value>
+  </data>
+  <data name="RoomPopupControl_PrintPatientLabelConfirmationFailed" xml:space="preserve">
+    <value>De patiëntlabel kon niet worden geprint. Neem contact op met uw systeembeheerder.</value>
+  </data>
+  <data name="RoomPopupControl_SelectWholeOrder" xml:space="preserve">
+    <value>Selecteer hele aanvraag</value>
+  </data>
+  <data name="RoomPopupControl_ValidTimeCaption" xml:space="preserve">
+    <value>Aangepaste resultaten:</value>
+  </data>
+  <data name="RooRoom" xml:space="preserve">
+    <value>Kamer ID</value>
+  </data>
+  <data name="roosch_EndTime" xml:space="preserve">
+    <value>Einddatum</value>
+  </data>
+  <data name="roosch_Room" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="roosch_ScheduleID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="roosch_StartTime" xml:space="preserve">
+    <value>Startdatum</value>
+  </data>
+  <data name="roosch_WeekDay" xml:space="preserve">
+    <value>Dag van de week</value>
+  </data>
+  <data name="sch_ScheduleID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="sch_ScheduleName" xml:space="preserve">
+    <value>Planning</value>
+  </data>
+  <data name="ServicePage_Title" xml:space="preserve">
+    <value>Service Support</value>
+  </data>
+  <data name="Sex" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="Sex_Sex_Name" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="sex_SexID" xml:space="preserve">
+    <value>Geslacht ID</value>
+  </data>
+  <data name="sex_SexName" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="SexSex" xml:space="preserve">
+    <value>Geslacht ID</value>
+  </data>
+  <data name="ShowQandAForm" xml:space="preserve">
+    <value>Q&amp;A Formulier</value>
+  </data>
+  <data name="ShowRooms" xml:space="preserve">
+    <value>Toon kamers</value>
+  </data>
+  <data name="smActions" xml:space="preserve">
+    <value>Actie</value>
+  </data>
+  <data name="smAdministrators" xml:space="preserve">
+    <value>Administrators</value>
+  </data>
+  <data name="smAdvancedFiltering" xml:space="preserve">
+    <value>Filteren</value>
+  </data>
+  <data name="smAdvancedPatientSearch" xml:space="preserve">
+    <value>Patiënt zoeken</value>
+  </data>
+  <data name="smAuthorization" xml:space="preserve">
+    <value>Authorisatie</value>
+  </data>
+  <data name="smCalendar" xml:space="preserve">
+    <value>Kalender</value>
+  </data>
+  <data name="smCountries" xml:space="preserve">
+    <value>Landen</value>
+  </data>
+  <data name="smDepartments" xml:space="preserve">
+    <value>Afdelingen</value>
+  </data>
+  <data name="smDictation" xml:space="preserve">
+    <value>Verslaglegging</value>
+  </data>
+  <data name="smDictationOverview" xml:space="preserve">
+    <value>Dictatie Overzicht</value>
+  </data>
+  <data name="smDiscussion" xml:space="preserve">
+    <value>Bespreken</value>
+  </data>
+  <data name="smExaminationProcedures" xml:space="preserve">
+    <value>Onderzoeksprocedure</value>
+  </data>
+  <data name="smExaminations" xml:space="preserve">
+    <value>Onderzoeken</value>
+  </data>
+  <data name="smExaminationStatus" xml:space="preserve">
+    <value>Onderzoeksstatus</value>
+  </data>
+  <data name="smExaminationTypeGroups" xml:space="preserve">
+    <value>Onderzoekstypegroepen</value>
+  </data>
+  <data name="smExaminationTypes" xml:space="preserve">
+    <value>Onderzoekstypes</value>
+  </data>
+  <data name="smExaminationTypeSpecialisations" xml:space="preserve">
+    <value>Onderzoekstypespecialisaties</value>
+  </data>
+  <data name="smGender" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="smGeneralPracticioner" xml:space="preserve">
+    <value>Huisartsen</value>
+  </data>
+  <data name="smHistoryLocations" xml:space="preserve">
+    <value>Locaties historische data</value>
+  </data>
+  <data name="smHousekeeping" xml:space="preserve">
+    <value>Huishouding</value>
+  </data>
+  <data name="smImaging" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="smInsuranceCompanies" xml:space="preserve">
+    <value>Verzekeringsinstanties</value>
+  </data>
+  <data name="smInternalPhysician" xml:space="preserve">
+    <value>Interne Specialist</value>
+  </data>
+  <data name="smMaintenance" xml:space="preserve">
+    <value>Beheer</value>
+  </data>
+  <data name="smManagement" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="smMaritialState" xml:space="preserve">
+    <value>Huwelijkse staat</value>
+  </data>
+  <data name="smMobilities" xml:space="preserve">
+    <value>Mobiliteiten</value>
+  </data>
+  <data name="smModalities" xml:space="preserve">
+    <value>Modaliteiten</value>
+  </data>
+  <data name="smModalityRoom" xml:space="preserve">
+    <value>Kamer</value>
+  </data>
+  <data name="smObservations" xml:space="preserve">
+    <value>Observaties</value>
+  </data>
+  <data name="smOrderApproval" xml:space="preserve">
+    <value>Aanvragen goedkeuren</value>
+  </data>
+  <data name="smOrderBooking" xml:space="preserve">
+    <value>Aanvragen inboeken</value>
+  </data>
+  <data name="smOrderTypes" xml:space="preserve">
+    <value>Aanvraagtypes</value>
+  </data>
+  <data name="smOrigins" xml:space="preserve">
+    <value>Herkomst</value>
+  </data>
+  <data name="smPatientInsurance" xml:space="preserve">
+    <value>Patiëntverzekering</value>
+  </data>
+  <data name="smPatients" xml:space="preserve">
+    <value>Patiënten</value>
+  </data>
+  <data name="smPhysician" xml:space="preserve">
+    <value>Specialist</value>
+  </data>
+  <data name="smPhysicians" xml:space="preserve">
+    <value>Artsen</value>
+  </data>
+  <data name="smPortering" xml:space="preserve">
+    <value>Vervoer</value>
+  </data>
+  <data name="smPrint" xml:space="preserve">
+    <value>Printen</value>
+  </data>
+  <data name="smRadiologist" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="smRadiologistGroupRadiologist" xml:space="preserve">
+    <value>RadiologenGroepRadioloog</value>
+  </data>
+  <data name="smRadiologists" xml:space="preserve">
+    <value>Radiologen</value>
+  </data>
+  <data name="smRadiologistsGroups" xml:space="preserve">
+    <value>RadiologenGroepen</value>
+  </data>
+  <data name="smRadiologistSpecialisations" xml:space="preserve">
+    <value>RadioloogSpecialisaties</value>
+  </data>
+  <data name="smReception" xml:space="preserve">
+    <value>Receptie</value>
+  </data>
+  <data name="smReconciledPatientIDs" xml:space="preserve">
+    <value>ReconciledPatiëntIDs</value>
+  </data>
+  <data name="smReferralTypes" xml:space="preserve">
+    <value>Aanvraagtypes</value>
+  </data>
+  <data name="smReferringPhysicians" xml:space="preserve">
+    <value>Aanvragend artsen</value>
+  </data>
+  <data name="smRegistration" xml:space="preserve">
+    <value>Registratie</value>
+  </data>
+  <data name="smReporting" xml:space="preserve">
+    <value>Verslaglegging</value>
+  </data>
+  <data name="smReports" xml:space="preserve">
+    <value>Rapporten</value>
+  </data>
+  <data name="smReportStatus" xml:space="preserve">
+    <value>Raport Status</value>
+  </data>
+  <data name="smRepTranscription" xml:space="preserve">
+    <value>Transcriptie</value>
+  </data>
+  <data name="smRequestForms" xml:space="preserve">
+    <value>Aanvraag formulieren</value>
+  </data>
+  <data name="smResources" xml:space="preserve">
+    <value>Bronnen</value>
+  </data>
+  <data name="smRISUsers" xml:space="preserve">
+    <value>RIS Gebruikers</value>
+  </data>
+  <data name="smRooms" xml:space="preserve">
+    <value>Kamers</value>
+  </data>
+  <data name="smRoomSchedules" xml:space="preserve">
+    <value>Kamerplanning</value>
+  </data>
+  <data name="smRoomsClosed" xml:space="preserve">
+    <value>Kamer gesloten</value>
+  </data>
+  <data name="smScan" xml:space="preserve">
+    <value>Scannen</value>
+  </data>
+  <data name="smSchedules" xml:space="preserve">
+    <value>Planningen</value>
+  </data>
+  <data name="smScheduling" xml:space="preserve">
+    <value>Planning</value>
+  </data>
+  <data name="smSecretaries" xml:space="preserve">
+    <value>Secretaresses</value>
+  </data>
+  <data name="smSex" xml:space="preserve">
+    <value>Geslacht</value>
+  </data>
+  <data name="smSpecialisations" xml:space="preserve">
+    <value>Specialisaties</value>
+  </data>
+  <data name="smStartPage" xml:space="preserve">
+    <value>Startpagina</value>
+  </data>
+  <data name="smStates" xml:space="preserve">
+    <value>Provincies</value>
+  </data>
+  <data name="smStudyTypes" xml:space="preserve">
+    <value>Onderzoekstypes</value>
+  </data>
+  <data name="smTechnicians" xml:space="preserve">
+    <value>Laboranten</value>
+  </data>
+  <data name="smTranscription" xml:space="preserve">
+    <value>Transcriptie</value>
+  </data>
+  <data name="smTravelTimes" xml:space="preserve">
+    <value>Reistijden</value>
+  </data>
+  <data name="smUrgencies" xml:space="preserve">
+    <value>Urgenties</value>
+  </data>
+  <data name="smUsers" xml:space="preserve">
+    <value>Gebruikers</value>
+  </data>
+  <data name="smVarious" xml:space="preserve">
+    <value>Verscheiden</value>
+  </data>
+  <data name="smWards" xml:space="preserve">
+    <value>Afdelingen</value>
+  </data>
+  <data name="spe_SpecialisationID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="spe_SpecialisationName" xml:space="preserve">
+    <value>Specialisatie</value>
+  </data>
+  <data name="Sta_State_Name" xml:space="preserve">
+    <value>Provincienaam</value>
+  </data>
+  <data name="sta_StateID" xml:space="preserve">
+    <value>Provincie ID</value>
+  </data>
+  <data name="sta_StateName" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="StaState" xml:space="preserve">
+    <value>Provincie ID</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Provincie</value>
+  </data>
+  <data name="StatusChangeForm_Completed_FirstAssignee" xml:space="preserve">
+    <value>Eerste radioloog</value>
+  </data>
+  <data name="StatusChangeForm_Completed_SecondAssignee" xml:space="preserve">
+    <value>Tweede radioloog</value>
+  </data>
+  <data name="StatusChangeForm_Dictated_FirstAssignee" xml:space="preserve">
+    <value>Medisch secretaresse </value>
+  </data>
+  <data name="StatusChangeForm_ErrorDuplicateUsersAssigned" xml:space="preserve">
+    <value>Een gebruiker is meerdere keren geselecteerd om te koppelen aan het onderzoek.</value>
+  </data>
+  <data name="StatusChangeForm_EveryExaminationStatusInvalid" xml:space="preserve">
+    <value>Eén of meerdere onderzoeken is reeds veranderd door een andere gebruiker.</value>
+  </data>
+  <data name="StatusChangeForm_InDepartment_FirstAssignee" xml:space="preserve">
+    <value>Secretaresse</value>
+  </data>
+  <data name="StatusChangeForm_InProgress_FirstAssignee" xml:space="preserve">
+    <value>Eerste laborant</value>
+  </data>
+  <data name="StatusChangeForm_InProgress_SecondAssignee" xml:space="preserve">
+    <value>Tweede laborant</value>
+  </data>
+  <data name="StatusChangeForm_InProgress_ThirdAssignee" xml:space="preserve">
+    <value>Derde laborant</value>
+  </data>
+  <data name="StatusChangeForm_PartialExaminationsInvalidStatus" xml:space="preserve">
+    <value>De volgende onderzoeken zijn reeds veranderd door een andere gebruiker:</value>
+  </data>
+  <data name="StatusChangeForm_PluralPatientSummary" xml:space="preserve">
+    <value>Verander de status van de onderzoeken {0} naar {1} voor de patienten {2}.</value>
+  </data>
+  <data name="StatusChangeForm_SingularPatientAndExaminationSummary" xml:space="preserve">
+    <value>Verander de status van de onderzoek {0} naar {1} voor {2}.</value>
+  </data>
+  <data name="StatusChangeForm_SingularPatientSummary" xml:space="preserve">
+    <value>Verander de status van de onderzoeken {0} naar {1} voor {2}.</value>
+  </data>
+  <data name="StatusChangeForm_Skipped_Examinations" xml:space="preserve">
+    <value>De volgende onderzoeken zijn overgeslagen omdat het niet toegestaan is ze in hun huidige staat te veranderen: </value>
+  </data>
+  <data name="StatusChangeForm_Verified_FirstAssignee" xml:space="preserve">
+    <value>Autoriseerder</value>
+  </data>
+  <data name="StatusChangeFormToIntermediate_PluralPatientSummary" xml:space="preserve">
+    <value>Verander de status voor de volgende onderzoeken {0} naar een tussentijdse beoordeling status voor de patient {2}.</value>
+  </data>
+  <data name="StatusChangeFormToIntermediate_SingularPatientSummary" xml:space="preserve">
+    <value>Verander de status voor de volgende onderzoeken {0} naar een tussentijdse beoordeling status voor de patient {2}.</value>
+  </data>
+  <data name="StatusChangeToIntermediateForm_PluralPatientSummary" xml:space="preserve">
+    <value>Zet de onderzoeken in status voor wegkijken.</value>
+  </data>
+  <data name="StatusChangeToIntermediateForm_SingularPatientSummary" xml:space="preserve">
+    <value>Zet de onderzoeken in status voor wegkijken.</value>
+  </data>
+  <data name="strCharsRemaining" xml:space="preserve">
+    <value>karakters over</value>
+  </data>
+  <data name="stu_AccessionNumber" xml:space="preserve">
+    <value>Onderzoeksnummer</value>
+  </data>
+  <data name="stu_ExaminationID" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="stu_StudyCompleted" xml:space="preserve">
+    <value>Compleet</value>
+  </data>
+  <data name="stu_StudyID" xml:space="preserve">
+    <value>Studienummer</value>
+  </data>
+  <data name="stu_StudyTime" xml:space="preserve">
+    <value>Onderzoeksdatum</value>
+  </data>
+  <data name="Study_Type" xml:space="preserve">
+    <value>Studie type</value>
+  </data>
+  <data name="stupen_RadiologistID" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="stupen_StudyID" xml:space="preserve">
+    <value>Onderzoek</value>
+  </data>
+  <data name="stutyp_ModalityID" xml:space="preserve">
+    <value>Modaliteit ID</value>
+  </data>
+  <data name="Stutyp_Study_Type_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Stutyp_Study_Type_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="stutyp_StudyTypeDescription" xml:space="preserve">
+    <value>Onderzoekstype omschrijving</value>
+  </data>
+  <data name="stutyp_StudyTypeID" xml:space="preserve">
+    <value>Onderzoekstype ID</value>
+  </data>
+  <data name="stutyp_StudyTypeName" xml:space="preserve">
+    <value>Onderzoeksomschrijving</value>
+  </data>
+  <data name="StutypModality" xml:space="preserve">
+    <value>Studie type Modaliteit</value>
+  </data>
+  <data name="StutypStudyType" xml:space="preserve">
+    <value>Studie type</value>
+  </data>
+  <data name="Tab_NormalOrders" xml:space="preserve">
+    <value>Normale aanvragen</value>
+  </data>
+  <data name="Tab_OnHoldOrders" xml:space="preserve">
+    <value>Aanvragen in wacht</value>
+  </data>
+  <data name="tec_TechnicianName" xml:space="preserve">
+    <value>Laborant naam</value>
+  </data>
+  <data name="Technician" xml:space="preserve">
+    <value>Laborant</value>
+  </data>
+  <data name="TitleApproval" xml:space="preserve">
+    <value>Goedkeuren</value>
+  </data>
+  <data name="TitleAuthorize" xml:space="preserve">
+    <value>Authoriseren</value>
+  </data>
+  <data name="TitleDictation" xml:space="preserve">
+    <value>Dicteren</value>
+  </data>
+  <data name="TitleDiscuss" xml:space="preserve">
+    <value>Bespreeklijsten</value>
+  </data>
+  <data name="TitleProtocolAssignment" xml:space="preserve">
+    <value>Protocol Toewijzen</value>
+  </data>
+  <data name="Transcription_AutoFinishNext" xml:space="preserve">
+    <value>Opslaan en open volgende</value>
+  </data>
+  <data name="Transcription_AutoFinishNextTooltip" xml:space="preserve">
+    <value>Transcriptie opslaan en selecteer de volgende dictatie</value>
+  </data>
+  <data name="Transcription_AutoNext" xml:space="preserve">
+    <value>Opslaan en open volgende</value>
+  </data>
+  <data name="Transcription_AutoNextTooltip" xml:space="preserve">
+    <value>Selecteer de volgende dictatie</value>
+  </data>
+  <data name="Transcription_BeingTranscribed" xml:space="preserve">
+    <value>Dit onderzoek wordt al geverifieerd door</value>
+  </data>
+  <data name="Transcription_CancelTranscription" xml:space="preserve">
+    <value>Transcriptie Annuleren</value>
+  </data>
+  <data name="Transcription_FinishTranscription" xml:space="preserve">
+    <value>Transcriptie Opslaan</value>
+  </data>
+  <data name="Transcription_PauseTranscription" xml:space="preserve">
+    <value>Transcriptie Pauzeren</value>
+  </data>
+  <data name="Transcription_StartTranscription" xml:space="preserve">
+    <value>Transcriptie Openen</value>
+  </data>
+  <data name="Transcription_WorkListFilters" xml:space="preserve">
+    <value>Geavanceerde Filters</value>
+  </data>
+  <data name="TranscriptionPage_AlreadyTranscribing" xml:space="preserve">
+    <value>Dit onderzoek wordt al geverifieerd.</value>
+  </data>
+  <data name="TranscriptionPage_StartTranscribing" xml:space="preserve">
+    <value>Start verifiëren</value>
+  </data>
+  <data name="TranscriptionPage_TranscriptionGridViewHeader" xml:space="preserve">
+    <value>Te controleren onderzoeken</value>
+  </data>
+  <data name="tratim_FromRoomID" xml:space="preserve">
+    <value>Van kamer</value>
+  </data>
+  <data name="tratim_Minutes" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="tratim_ToRoomID" xml:space="preserve">
+    <value>Naar kamer</value>
+  </data>
+  <data name="ttPatientDetails" xml:space="preserve">
+    <value>Toon patiëntdetails</value>
+  </data>
+  <data name="Urg_Urgency_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Urg_Urgency_Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="urg_UrgencyDescription" xml:space="preserve">
+    <value>Urgentieomschrijving</value>
+  </data>
+  <data name="urg_UrgencyID" xml:space="preserve">
+    <value>Urgentie ID</value>
+  </data>
+  <data name="urg_UrgencyName" xml:space="preserve">
+    <value>Urgentienaam</value>
+  </data>
+  <data name="Urgency" xml:space="preserve">
+    <value>Urgentie</value>
+  </data>
+  <data name="UrgUrgency" xml:space="preserve">
+    <value>Urgentie ID</value>
+  </data>
+  <data name="UserNotAuthorizedExaminationDetails" xml:space="preserve">
+    <value>De gebruiker heeft geen rechten om de onderzoeksdetails te bekijken.</value>
+  </data>
+  <data name="Wa_Ward_Description" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="Wa_Ward_Name" xml:space="preserve">
+    <value>Afdelingsnaam</value>
+  </data>
+  <data name="wa_WardDescription" xml:space="preserve">
+    <value>Afdelingsomschrijving</value>
+  </data>
+  <data name="wa_WardID" xml:space="preserve">
+    <value>Afdeling ID</value>
+  </data>
+  <data name="wa_WardName" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="war_DepartmentID" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="war_WardDescription" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="war_WardID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="war_WardName" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="Ward" xml:space="preserve">
+    <value>Afdeling</value>
+  </data>
+  <data name="WaWard" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="WindowsAuthentication" xml:space="preserve">
+    <value>Windows Authenticatie</value>
+  </data>
+  <data name="WindowsUserNotVerified" xml:space="preserve">
+    <value>Deze gebruiker is niet gerechtigd om in te loggen via Windows.</value>
+  </data>
+  <data name="Work_Location" xml:space="preserve">
+    <value>Werklocatie</value>
+  </data>
+  <data name="Worklist_AllLocations" xml:space="preserve">
+    <value>Alle Locaties</value>
+  </data>
+  <data name="Worklist_AllRoom" xml:space="preserve">
+    <value>Alle Kamers</value>
+  </data>
+  <data name="Worklist_None" xml:space="preserve">
+    <value>Geen</value>
+  </data>
+  <data name="Worklist_Title" xml:space="preserve">
+    <value>Werklijst</value>
+  </data>
+  <data name="WorkListFilter_AllWaiting" xml:space="preserve">
+    <value>Alle wachtende of geannuleerde</value>
+  </data>
+  <data name="WorkListFilter_AnyApproved" xml:space="preserve">
+    <value>Goedgekeurde</value>
+  </data>
+  <data name="WorkListFilter_DateRange" xml:space="preserve">
+    <value>Datumbereik</value>
+  </data>
+  <data name="WorkListFilter_ExaminationStatuses" xml:space="preserve">
+    <value>Onderzoekstatussen </value>
+  </data>
+  <data name="WorkListFilter_ModalityType" xml:space="preserve">
+    <value>Type modaliteit</value>
+  </data>
+  <data name="WorkListFilter_NextXDays" xml:space="preserve">
+    <value>(komende X dagen)</value>
+  </data>
+  <data name="WorkListFilter_Radiologist" xml:space="preserve">
+    <value>Radioloog</value>
+  </data>
+  <data name="WorkListFilter_RelativeDate" xml:space="preserve">
+    <value>Datumbereik (laatste X dagen)</value>
+  </data>
+  <data name="WorkListFilter_Rooms" xml:space="preserve">
+    <value>Kamers</value>
+  </data>
+  <data name="WorkListFilter_ScheduleDateRange" xml:space="preserve">
+    <value>Plandatumbereik</value>
+  </data>
+  <data name="WorklistPage_ExaminationsViewHeader" xml:space="preserve">
+    <value>Voltooide onderzoeken</value>
+  </data>
+  <data name="ZillionRisWebService_FileUpload_ArgumentDocumentTypeValueUnknown" xml:space="preserve">
+    <value>Onbekend documenttype gespecificeerd, niet in staat uw verzoek af te handelen (documenttype: {0}).</value>
+  </data>
+  <data name="ZillionRisWebService_FileUpload_ParseErrorSourceIDAsOrderID" xml:space="preserve">
+    <value>Kan het verzoek formulier niet verwerken, het bron nummer kon niet worden gebruikt als aanvraag nummer (bron ID: {0}).</value>
+  </data>
+  <data name="ZillionRisWebService_FileUpload_ParseErrorSourceIDAsPatientID" xml:space="preserve">
+    <value>Niet in staat om de patiënt document te verwerken, het bron nummer kon niet worden gebruikt als patiënt nummer (aanvraag ID: {0}).</value>
+  </data>
+  <data name="ZillionRisWebService_OrderIDNotFoundInDatabase" xml:space="preserve">
+    <value>Het aangegeven aanvraag ID bestaat niet in de database (aanvraag ID: {0}).</value>
+  </data>
+  <data name="ZillionRisWebService_PatientIDNotFoundInDatabase" xml:space="preserve">
+    <value>Het opgegeven patiënt-ID bestaat niet in de database (patiënt ID: {0}).</value>
+  </data>
+  <data name="DigitalQandA" xml:space="preserve">
+    <value>Q&amp;A</value>
+  </data>
+  <data name="DigitalQandAForExamination" xml:space="preserve">
+    <value>Q&amp;A voor het onderzoek</value>
+  </data>
+  <data name="DigitalQandAForOrder" xml:space="preserve">
+    <value>Q&amp;A voor de aanvraag</value>
+  </data>
+  <data name="OrderDetails_NoPermission" xml:space="preserve">
+    <value>U heeft momenteel geen rechten om de aanvraaginformatie te bekijken. Neem a.u.b. contact op met uw systeem administrator.</value>
+  </data>
+</root>

@@ -1,0 +1,458 @@
+﻿@using System
+@using System.Linq
+@using System.Web
+@using DelftDI.Common.RIS.Common
+@using DelftDI.Common.RIS.Json
+@using Rogan.ZillionRis.Business
+@using Rogan.ZillionRis.Configuration
+@using Rogan.ZillionRis.Data.Examinations
+@using Rogan.ZillionRis.Extensibility.Security
+@using Rogan.ZillionRis.UrnUtility
+@using Rogan.ZillionRis.Utilities
+@using Rogan.ZillionRis.WebControls.Common
+@using Rogan.ZillionRis.Website.App_GlobalResources
+@using ZillionRis.Utilities
+
+@inherits ASP.RisRazorBase
+@{
+    if (Application.UserHasPermission(UserPermissions.PatientContactInformation) == false)
+    {
+        // return nothing, easy peasy
+        return;
+    }
+
+    if (string.IsNullOrEmpty(Application.Request.Params["id"]))
+    {
+        throw new Exception(WebResources.PatientBanner_Error);
+    }
+
+    Application.Response.Cache.SetCacheability(HttpCacheability.Private);  // Add the using system.web
+    Application.Response.Cache.SetExpires(DateTime.Now.AddSeconds(30d));
+    Application.Response.Cache.SetMaxAge(TimeSpan.FromSeconds(30d));
+
+    InitializeCulture();
+
+    var patientID = Convert.ToInt32(Application.Request.Params["id"]);
+    var patient = Database.Patients.FirstOrDefault(item => item.per_PersonID == patientID);
+    if (patient == null)
+    {
+        throw new ApplicationException("Patient could not be found.");
+    }
+
+    var lastAdmissionEvent = patient.AdmissionEvents.OrderByDescending(o => o.patadmevt_MessageCreationDateTime).FirstOrDefault();
+    var isInpatient = patient.pat_IsInPatient ?? false;
+
+    var loc = new PatientLocationSummary(lastAdmissionEvent);
+    var patientLocation = loc.DisplayName();
+
+    var dateOfBirth = patient.Person.per_DateOfBirth;
+    var hasDateOfBirth = dateOfBirth.HasValue;
+
+    var dateOfDeath = patient.pat_DeathDateTime;
+    var hasDeathIndicator = patient.pat_DeathIndicator;
+    var hasDateOfDeath = hasDeathIndicator && dateOfDeath.HasValue;
+    var age = hasDateOfBirth
+        ? Age.FromDates(dateOfBirth.Value.LocalDateTime, hasDateOfDeath ? dateOfDeath.Value.LocalDateTime : DateTime.Now)
+        : Age.Empty;
+
+    var displayAge = hasDateOfBirth && (!hasDeathIndicator || hasDateOfDeath);
+
+    var isNhsNumber = RisAppSettings.EnglishSocialSecurityNumber;
+    var socialSecurityNumber = isNhsNumber
+        ? patient.Person.PersonExternalCodes.Where(ec => ec.perextcod_Type == UrnNamespaces.NhsNumber).Select(ec => ec.perextcod_Value).FirstOrDefault()
+        : patient.Person.PersonExternalCodes.Where(ec => ec.perextcod_Type == UrnNamespaces.BsnNumber).Select(ec => ec.perextcod_Value).FirstOrDefault();
+
+    var observations = PatientSupport.GetObservationsSummary(Database, patient.per_PersonID);
+
+    var sessionContext = Application.GetSessionContext();
+    var patientBasedModules = sessionContext.GetPatientBasedModules().ToArray();
+
+    var alwaysShowGP = RisAppSettings.AlwaysShowGP;
+    var showPatientLocation = RisAppSettings.PatientBannerShowPatientLocation && Application.UserHasPermission(UserPermissions.SeePatientLocationInBanner);
+}
+<div style="position: relative;" class="patient-banner box-shadow-on-hover">
+    <div style="white-space: normal;"  class="patient-banner-first-line">
+
+        <span class="left" style="line-height: inherit">
+            @foreach (var controlButton in patientBasedModules.SelectMany( x => x.Buttons))
+            {
+                <input type="button" class="module-button" title="@controlButton.Title" value="@controlButton.ButtonText" onclick='PatientBanner.ModuleButton.OnClickFunction(@controlButton.CommandName.ToJson());' />
+            }
+               
+            <a data-field="PatientName" class="patient-banner-bold ui-link" style="font-size: 15px">
+                @patient.Person.per_DisplayName.ToHtmlEncodedText()
+            </a>
+            <i class="ui-icon ui-icon-info" onclick="PatientBanner.PatientInfo()" style="display: inline-block; cursor: pointer;vertical-align: text-bottom"></i>
+        </span>
+                   
+        <span class="right" style="line-height: inherit">
+            <span class="patient-banner-first-line-label">@WebResources.PatientBanner_Born</span><span class="patient-banner-bold">@(hasDateOfBirth ? dateOfBirth.Value.LocalDateTime.ToShortDateString() : "-")</span>
+            @if (hasDeathIndicator)
+            {
+                <span id="PatientDateOfDeathLabel" style="display: none" class="patient-banner-first-line-label">@WebResources.PatientBanner_Deceased</span>
+                <span id="PatientDateOfDeath" style="display: none" class=" patient-banner-bold">@(hasDateOfDeath ? dateOfDeath.Value.LocalDateTime.ToShortDateString() : "-")</span>
+            }
+            <span id="PatientAge" style="display:none" class="patient-banner-bold">(@(displayAge ? age.Format("{years}y {months}m {days}d") : "-"))</span>
+            <span class="patient-banner-first-line-label">@WebResources.PatientBanner_Gender</span><span id="PatientGender" class="patient-banner-bold">@(patient.Person.Gender == null ? "-" : patient.Person.Gender.gen_GenderName[0].ToString())</span>
+            @if (isNhsNumber)
+            {
+                <span class="patient-banner-first-line-label">@WebResources.PatientBanner_NHSNo</span>
+            }
+            else
+            {
+                <span class="patient-banner-first-line-label">@WebResources.PatientBanner_BSNNo</span>
+            }
+            <span class="patient-banner-bold">@(String.IsNullOrWhiteSpace(socialSecurityNumber) ? "N/A" : socialSecurityNumber)</span>
+            <span class="patient-banner-first-line-label">@WebResources.PatientBanner_PASNo</span>
+            @if (string.IsNullOrEmpty(patient.pat_PatientNumber))
+            {
+                <span class="patient-banner-bold">N/A</span>
+            }
+            else
+            {
+                <span id="PatientBanner_PatientNumber" class="patient-banner-bold">@patient.pat_PatientNumber</span>
+            }
+        </span>
+    </div>
+
+        <table id="InformationSummary" style="background-color: #C9E0FC; border-top: 1px solid #AECAF0; cursor: pointer; cursor: pointer; line-height: 16px; overflow: hidden; table-layout: fixed; width: 100%;" >
+            <thead>
+                <tr>
+                    <td style="width: 25%" class="patient-banner-shadow patient-banner-ellipsis">
+                        <span style="font-style: italic">@WebResources.PatientBanner_Address</span> 
+                        @{
+                            var homeAddress = patient.Person.PersonAddresses.FirstOrDefault(x=>x.peradd_Code == MagicConstants.AddressCode_Home);
+                            if (homeAddress != null)
+                            {
+                                <span class="patient-banner-bold patient-info-short">@homeAddress.Address.add_DisplayName.Replace("\r\n", ", ")</span>
+                            }
+                        }
+                    </td>
+                    <td style="border-left: 1px solid #AECAF0; width: 18%;" class="patient-banner-shadow patient-banner-ellipsis">
+                        <span style="font-style: italic">@WebResources.PatientBanner_PhoneEmail</span>
+							
+                        @{
+                            var personContact = patient.Person.PersonContacts.FirstOrDefault(x => x.percon_Code == MagicConstants.ContactCode_Home);
+                            if (personContact == null)
+                            {
+                                <span class="patient-info-short patient-banner-bold">N/A</span>
+                            }
+                            else if (!string.IsNullOrEmpty(personContact.Contact.con_HomePhoneNumber))
+                            {
+                                <span class="patient-info-short patient-banner-bold">@personContact.Contact.con_HomePhoneNumber</span>
+                            }
+                            else if (!string.IsNullOrEmpty(personContact.Contact.con_MobileNumber))
+                            {
+                                <span class="patient-info-short patient-banner-bold">@personContact.Contact.con_MobileNumber</span>
+                            }
+                            else if (!string.IsNullOrEmpty(personContact.Contact.con_BusinessPhoneNumber))
+                            {
+                                <span class="patient-info-short patient-banner-bold">@personContact.Contact.con_BusinessPhoneNumber</span>
+                            }
+                            else
+                            {
+                                <span class="patient-info-short patient-banner-bold">N/A</span>
+                            }
+                        }
+                    </td>
+                    @if (showPatientLocation)
+                    {
+                        <td style="border-left: 1px solid #AECAF0; width: 13%;" class="patient-banner-shadow patient-banner-ellipsis">
+                            @if (isInpatient)
+                            {
+                                <span style="font-style: italic">@WebResources.PatientBanner_Location</span>
+                                <span class="patient-banner-bold">@patientLocation</span>
+                            }
+                            else
+                            {
+                                <span style="font-style: italic">@WebResources.PatientBanner_CurrentLocation</span>
+                            }
+                        </td>
+                    }
+                    @if (alwaysShowGP)
+                    {
+                        <td style="border-left: 1px solid #AECAF0; width: 14%;" class="patient-banner-shadow patient-banner-ellipsis">
+                            @if (patient.PatientsGeneralPractitionersWorkLocations.Any() && patient.PatientsGeneralPractitionersWorkLocations.First().GeneralPracticioner.Person != null)
+                            {
+                                var gp = patient.PatientsGeneralPractitionersWorkLocations.First().GeneralPracticioner;
+                                <span class="contact-link" data-person="@gp.Person.per_PersonID">
+                                    <span style="font-style: italic">@WebResources.PatientBanner_GeneralPractitioner</span><span class="patient-banner-bold">@gp.Person.per_DisplayName.ToHtmlEncodedText()</span>
+                                </span>
+                            }
+                            else
+                            {
+                                <span style="font-style: italic">@WebResources.GeneralPractitioner</span>
+                            }
+                        </td>
+                    }
+                    else
+                    {
+                        <td style="border-left: 1px solid #AECAF0; width: 14%;" class="patient-banner-shadow patient-banner-ellipsis">
+                            @if (isInpatient && lastAdmissionEvent != null && lastAdmissionEvent.AdmittingDoctor != null)
+                            {
+                                var person = lastAdmissionEvent.AdmittingDoctor.Person;
+                                if (person != null)
+                                {
+                                    <span class="contact-link" data-person="@person.per_PersonID">
+                                        <span style="font-style: italic">@WebResources.PatientBanner_Consultant</span><span class=" patient-info-short patient-banner-bold">@person.per_DisplayName.ToHtmlEncodedText()</span>
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span style="font-style: italic">@WebResources.PatientBanner_Consultant</span>
+                                    <span class="patient-banner-bold"></span>
+                                }
+                            }
+                            else
+                            {
+                                <span style="font-style: italic">@WebResources.PatientBanner_CurrentResponsibleConsultant</span>
+                            }
+                        </td>
+                    }
+
+
+                    @if (String.IsNullOrWhiteSpace(observations) == false)
+                    {
+                        <td style="border-left: 1px solid #AECAF0;" class="patient-banner-shadow patient-banner-red patient-banner-ellipsis">
+                            <span id="PatientObservationLabel" style="display: none; font-style: italic">@WebResources.PatientBanner_Observations</span>
+                            <span class="patient-banner-bold patient-info-short" title="@WebResources.PatientBanner_Observations">
+                                @observations
+                            </span>
+                        </td>
+                    }
+                    else
+                    {
+                        <td style="border-left: 1px solid #AECAF0;" class="patient-banner-shadow patient-banner-ellipsis">
+                            <span style="font-style: italic">@WebResources.PatientBanner_Observations</span>
+                            <span class="patient-info-short patient-banner-bold">@WebResources.PatientBanner_None</span>
+                        </td>
+						
+                    }
+                    <td style="background-color: White; border-left: 1px solid #AECAF0; width: 24px;" id="SummaryPointer" >
+                        <a class="ui-custom-button zillion-ris app-icon context-menu" />
+                    </td>
+                </tr>
+            </thead>
+        </table>  
+
+    <div zp-fluids="window" >
+        <table id="FullInformation"  style="background-color: #F6F9FF; display: none; table-layout: fixed; width: 100%;"> 
+            <tr>
+                <td  class="patient-banner-fullinformation" style="width: 25%;">
+                    <div >
+                        <span class="patient-banner-bold">
+                            @(homeAddress != null ? homeAddress.Address.add_DisplayName.ToHtmlEncodedText() : "")
+                        </span>
+                    </div>
+                </td>
+                <td class="patient-banner-fullinformation" style="width: 18%;">
+                    <div >
+                        @{
+                            if (patient.Person.PersonContacts.FirstOrDefault() != null)
+                            {
+                                <span>@WebResources.PatientBanner_HomeNumber</span>
+                                <span class="patient-banner-bold">@patient.Person.PersonContacts.FirstOrDefault().Contact.con_HomePhoneNumber</span>
+                                <br />
+                                <span>@WebResources.PatientBanner_MobileNumber </span>
+                                <span class="patient-banner-bold">@patient.Person.PersonContacts.FirstOrDefault().Contact.con_MobileNumber</span>
+                                <br />
+                                <span>@WebResources.PatientBanner_BusinessNumber </span>
+                                <span class="patient-banner-bold">@patient.Person.PersonContacts.FirstOrDefault().Contact.con_BusinessPhoneNumber</span>
+                                <br />
+                                <span>@WebResources.PatientBanner_Email</span>
+                                <span class="patient-banner-bold">@patient.Person.PersonContacts.FirstOrDefault().Contact.con_EmailAddress</span>
+                            }
+                        }
+                    </div>
+                </td>
+                @if (showPatientLocation)
+                {
+                    <td class="patient-banner-fullinformation" style="width: 13%">
+                        <div >
+                            @if (isInpatient)
+                            {
+                                if (lastAdmissionEvent != null &&
+                                    (string.IsNullOrWhiteSpace(lastAdmissionEvent.patadmevt_Room) == false ||
+                                     string.IsNullOrWhiteSpace(lastAdmissionEvent.patadmevt_Bed) == false))
+                                {
+                                    <span>@WebResources.PatientBanner_PointOfCare</span>
+                                    <span class="patient-banner-bold">@lastAdmissionEvent.patadmevt_PointOfCare</span>
+                                    <br/>
+                                    <span>@WebResources.PatientBanner_Room</span>
+                                    <span class="patient-banner-bold">@lastAdmissionEvent.patadmevt_Room</span>
+                                    <br/>
+                                    <span>@WebResources.PatientBanner_Bed</span>
+                                    <span class="patient-banner-bold">@lastAdmissionEvent.patadmevt_Bed</span>
+                                }
+                                else
+                                {
+                                    <span class="patient-banner-bold">@patientLocation</span>
+                                }
+                            }
+                        </div>
+                    </td>
+                }
+
+                @if (alwaysShowGP)
+                {
+                    <td class="patient-banner-fullinformation" style="width: 14%;">
+                        <div >
+                            <span class="patient-banner-bold" >
+                                @if (patient.PatientsGeneralPractitionersWorkLocations.Any() &&
+                                     patient.PatientsGeneralPractitionersWorkLocations.First().GeneralPracticioner.Person != null)
+                                {
+                                    var gp = patient.PatientsGeneralPractitionersWorkLocations.First().GeneralPracticioner;
+
+                                    var firstContact = gp.Person.PersonContacts.FirstOrDefault();
+                                    var firstAddress = gp.Person.PersonAddresses.FirstOrDefault();
+                                    var partnerName = gp.Person.per_PartnerName;
+                                    if (String.IsNullOrWhiteSpace(partnerName))
+                                    {
+                                        @gp.Person.per_LastName
+                                        <br />
+                                    }
+                                    else
+                                    {
+                                        @String.Format("{0}-{1}", partnerName, gp.Person.per_LastName)<br />
+                                    }
+                                    @gp.Person.per_FirstName
+                                    <br />
+                                    @gp.Person.per_Initials
+                                    <br />
+                                    if (firstContact != null && firstContact.Contact != null)
+                                    {
+                                        @firstContact.Contact.con_BusinessPhoneNumber
+                                        <br />
+                                    }
+                                    if (firstAddress != null && firstAddress.Address != null)
+                                    {
+                                        @firstAddress.Address.add_DisplayName.ToHtmlEncodedText()
+                                        <br />
+                                    }
+                                }
+                            </span>
+                        </div>
+                    </td>
+                }
+                else
+                {
+                    <td class="patient-banner-fullinformation" style="width: 14%;">
+                        <div>
+                            <span class="patient-banner-bold" >
+                                @if (isInpatient && lastAdmissionEvent != null && lastAdmissionEvent.AdmittingDoctor != null)
+                                {
+                                    var person = lastAdmissionEvent.AdmittingDoctor.Person;
+                                    if (person != null)
+                                    {
+                                        if (person.per_DisplayName != null)
+                                        {
+                                            @person.per_DisplayName.ToHtmlEncodedText()
+                                        }
+                                        <br/>
+                                        if (person.PersonContacts.FirstOrDefault() != null)
+                                        {
+                                            @person.PersonContacts.FirstOrDefault().Contact.con_HomePhoneNumber
+                                        }
+                                        <br />
+                                        if (person.PersonAddresses.FirstOrDefault() != null && person.PersonAddresses.FirstOrDefault().Address.add_DisplayName != null)
+                                        {
+                                            @person.PersonAddresses.FirstOrDefault().Address.add_DisplayName.ToHtmlEncodedText()
+                                        }
+                                    }
+                                }
+                            </span>
+                        </div>
+                    </td>
+                }
+                <td zp-fluids="fixed" class="patient-banner-fullinformation">
+                    @if (String.IsNullOrWhiteSpace(observations) == false)
+                    {
+                        <div zp-fluids="fill">
+                            <span  class="patient-banner-bold" style="color: #f00; white-space: normal">
+                                @observations
+                            </span>
+                        </div>
+                    }
+                    else
+                    {
+                        <span class="patient-banner-bold">@WebResources.PatientBanner_None</span>
+                    }
+                </td>
+                <td style="border-left: 1px solid #AECAF0; vertical-align: top; width: 24px;">
+                </td>
+            </tr> 
+        </table>    
+    </div> 
+</div>
+<script>
+	(function() {
+		var downWards = false;
+
+		$("#InformationSummary").mouseover(function() {
+			$(this).css("background-color", "#AECAF0");
+		});
+
+		$("#InformationSummary").mouseout(function() {
+			$(this).css("background-color", "#C9E0FC");
+		});
+
+		$("#InformationSummary").click(function() {
+			$("#FullInformation").toggle("blind", 200);
+			if (downWards == false) {
+				$("#SummaryPointer").addClass("flip-vertical");
+                $('.patient-info-short').hide();
+                $('#PatientObservationLabel').show();
+				downWards = true;
+			} else {
+				$("#SummaryPointer").removeClass("flip-vertical");
+                $('.patient-info-short').show();
+                $('#PatientObservationLabel').hide();
+				downWards = false;
+			}
+		});
+
+		$('[data-field="PatientName"]', '#PatientBanner').click(function() {
+			ZillionRis.Patients.Search(16, @patient.pat_PatientNumber.ToJson());
+		});
+
+        var commandManager = new ZillionParts.CommandManager();
+        commandManager.assign(ZillionRis.Commands.Cards);
+        commandManager.assign(ZillionRis.Commands.Patients);
+	    
+	    var onClickFunction = function(commandName) {
+			commandManager.execute(commandName, { PersonID: @patient.Person.per_PersonID.ToJson() });
+	    };
+
+	    $('.module-button').button();
+
+	    var patientInfo = function() {
+	        commandManager.execute('patient.contact-information', { PatientID: @patient.Person.per_PersonID.ToJson() });
+		};
+
+        var patientGender = "@(patient.Person.Gender == null ? "-" : patient.Person.Gender.gen_GenderName)";
+
+        $('#PatientBanner .patient-banner-first-line').mouseover(function() {
+            $(this).find('#PatientAge').show();
+            $(this).find('#PatientDateOfDeathLabel').show();
+            $(this).find('#PatientDateOfDeath').show();
+            $(this).find('#PatientGender').text(patientGender);      
+        });
+
+        $('#PatientBanner .patient-banner-first-line').mouseout(function() {
+            $(this).find('#PatientAge').hide();
+            $(this).find('#PatientDateOfDeathLabel').hide();
+            $(this).find('#PatientDateOfDeath').hide();
+            $(this).find('#PatientGender').text(patientGender[0]);      
+        });
+
+		$.extend(true, window, {
+			PatientBanner: {
+			    ModuleButton: { 
+			        OnClickFunction: onClickFunction
+				},
+				PatientInfo: patientInfo
+			}
+		});
+	    
+	})();
+</script>

@@ -1,0 +1,223 @@
+﻿@using System
+@using System.Linq
+@using System.Web
+@using Rogan.ZillionRis
+@using Rogan.ZillionRis.Business
+@using Rogan.ZillionRis.Codes.ExaminationStatus
+@using Rogan.ZillionRis.Configuration
+@using Rogan.ZillionRis.Extensibility.Security
+@using Rogan.ZillionRis.WebControls.Common
+@using Rogan.ZillionRis.Website.App_GlobalResources
+
+@inherits ASP.RisRazorBase
+@{
+    if (this.Application.UserHasPermission(UserPermissions.PageOrderBooking) == false)
+    {
+        throw new Exception("The currently logged in user does not have permission to view order details");
+    }
+
+    this.InitializeCulture();
+    var sessionContext = Application.GetSessionContext();
+
+    if (string.IsNullOrEmpty(this.Application.Request.Params["orderID"]))
+    {
+        throw new Exception("Something went wrong. Please try again.");
+    }
+    this.Database.ContextOptions.LazyLoadingEnabled = true;
+
+    int orderID = Convert.ToInt32(this.Application.Request.Params["orderID"]);
+
+    const string waitingStatusID = ExaminationStatusValue.Waiting;
+    const string approvedStatusID = ExaminationStatusValue.Approved;
+
+    var data = this.Database.Orders
+        .Where(item => item.ord_OrderID == orderID)
+        .Select(item =>
+                new
+                {
+                    MedicalIndication = item.MedicalIndication,
+                    ExaminationClinicalInformations = item.Examinations
+                        .Select(x => new
+                        {
+                            ExaminationTypeName = x.ExaminationType.exatyp_Laterality == false || x.exa_Laterality == null
+                                ? x.ExaminationType.exatyp_ExaminationTypeName
+                                : x.ExaminationType.exatyp_ExaminationTypeName + " (" + x.exa_Laterality + ")",
+                            x.ClinicalInformation
+                        }),
+                    Memo = item.Memo,
+                    OrderID = item.ord_OrderID,
+                    OrderNumber = item.ord_OrderNumber,
+                    RequestingPhysicianName = item.RequestingPhysician.Person.per_DisplayName,
+                    ReferralType = item.ReferralType.reftyp_ReferralTypeName,
+                    UrgencyType = item.Urgency.urg_UrgencyName,
+                    ScheduleNotes = item.Examinations
+                        .Where(examination => examination.Status.exasta_StatusID == waitingStatusID
+                                            || examination.Status.exasta_StatusID == approvedStatusID)
+                        .Select(examination => new
+                        {
+                            examination.ExaminationType.exatyp_ExaminationTypeName,
+                            examination.ExaminationType.exatyp_PlanningNote
+                        }).Distinct(),
+                    OrderQandAList = item.QandASets
+                        .SelectMany(set => set.QandAs.OrderBy(qa => qa.qna_Index)
+                            .Select(qa => new { Question = qa.qna_Question, Answer = qa.qna_Answer })),
+                    ExaminationQandALists = item.Examinations
+                        .Where(x => x.QandASets.Any())
+                        .Select(x => new
+                        {
+                            ExaminationTypeName = x.ExaminationType.exatyp_Laterality == false || x.exa_Laterality == null
+                                ? x.ExaminationType.exatyp_ExaminationTypeName
+                                : x.ExaminationType.exatyp_ExaminationTypeName + " (" + x.exa_Laterality + ")",
+                            QandAList = x.QandASets
+                                .SelectMany(set => set.QandAs.OrderBy(qa => qa.qna_Index)
+                                    .Select(qa => new { Question = qa.qna_Question, Answer = qa.qna_Answer }))
+                        })
+                })
+        .FirstOrDefault();
+
+    var hasQandAForOrder = data.OrderQandAList.Any();
+    var hasQandAForExams = data.ExaminationQandALists.Any(x => x.QandAList.Any());
+}
+<style>
+    table#qAndA {
+        border-spacing: 10px 0;
+        border-collapse: separate;
+        table-layout: fixed;
+    }
+
+        table#qAndA td {
+            width: 50%;
+        }
+</style>
+@if (data != null)
+{
+    <dl class="details-list left" style="display: block; width: 40%">
+        <dt>
+            @WebResources.Order_Number<text>:</text>
+        </dt>
+        <dd>
+            @data.OrderNumber
+        </dd>
+        <dt>
+            @WebResources.Referral_Type<text>:</text>
+        </dt>
+        <dd>
+            @if (string.IsNullOrEmpty(data.ReferralType))
+            { <text>-</text> }
+            else
+            { @data.ReferralType }
+        </dd>
+        <dt>
+            @WebResources.Referring_Physician<text>:</text>
+        </dt>
+        <dd>
+            @if (data.RequestingPhysicianName == null || string.IsNullOrEmpty(data.RequestingPhysicianName))
+            { <text>-</text> }
+            else
+            { @data.RequestingPhysicianName }
+        </dd>
+        <dt>
+            @WebResources.Urgency<text>:</text>
+        </dt>
+        <dd>
+            @if (string.IsNullOrEmpty(data.UrgencyType))
+            { <text>-</text>}
+            else
+            { @data.UrgencyType }
+        </dd>
+    </dl>
+    <dl class="details-list right" style="display: block; width: 60%">
+
+
+        @if (RisAppSettings.ClinicalInformationOnExaminationLevel)
+        {
+            foreach (var examination in data.ExaminationClinicalInformations)
+            {
+                <dt>
+                    @WebResources.ClinicalInformationForExamination_Long @examination.ExaminationTypeName
+                </dt>
+                <dd>
+                    @if (examination.ClinicalInformation == null)
+                    {
+                        <text>-</text>
+                    }
+                    else
+                    {
+                        @examination.ClinicalInformation.GetChildText(sessionContext.DataContext, true, "\r\n").ToHtmlEncodedText()
+                    }
+                </dd>
+            }
+        }
+        else
+        {
+            <dt>
+                @WebResources.ltClinicalInformation
+            </dt>
+            <dd>
+                @if (data.MedicalIndication == null)
+                {
+                    <text>-</text>
+                }
+                else
+                {
+                    @data.MedicalIndication.GetChildText(sessionContext.DataContext, true, "\r\n").ToHtmlEncodedText()
+                }
+            </dd>
+        }
+
+        @if (hasQandAForOrder || hasQandAForExams)
+        {
+            <dt>
+                @WebResources.DigitalQandA
+            </dt>
+            <dd>
+                <table id="qAndA">
+                    @if (hasQandAForOrder)
+                    {
+                        <tbody>
+                            <tr><td colspan="2">@WebResources.DigitalQandAForOrder @data.OrderNumber</td></tr>
+                            @foreach (var qandA in data.OrderQandAList)
+                            {
+                                <tr><td>@HttpUtility.HtmlEncode(qandA.Question):</td><td>@HttpUtility.HtmlEncode(qandA.Answer)</td></tr>
+                            }
+                        </tbody>
+                    }
+
+                    @if (hasQandAForExams)
+                    {
+                        <tbody>
+                            @for (int i = 0; i < data.ExaminationQandALists.Count(); i++)
+                            {
+                                var examination = data.ExaminationQandALists.ToArray()[i];
+
+                                if (hasQandAForOrder || i > 0)
+                                {
+                                    <tr><td colspan="2">&nbsp;</td></tr>
+                                }
+
+                                <tr><td colspan="2">@WebResources.DigitalQandAForExamination @examination.ExaminationTypeName</td></tr>
+                                foreach (var qandA in examination.QandAList)
+                                {
+                                    <tr><td>@HttpUtility.HtmlEncode(qandA.Question):</td><td>@HttpUtility.HtmlEncode(qandA.Answer)</td></tr>
+                                }
+                            }
+                        </tbody>
+                    }
+                </table>
+            </dd>
+        }
+        <dt>
+            @WebResources.ord_OrderMemo
+        </dt>
+        <dd>
+            @if (data.Memo == null)
+            {
+                <text>-</text>
+            }
+            else
+            {
+                @data.Memo.GetChildText(sessionContext.DataContext, true, "\r\n").ToHtmlEncodedText()
+            }
+        </dd>
+    </dl>
+}

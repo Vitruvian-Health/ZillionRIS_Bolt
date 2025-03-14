@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdvancedFilter_APrintingFailed" xml:space="preserve">
+    <value>Failed to print the report of the request.</value>
+  </data>
+  <data name="Appointments_FailedToMoveTheOrder" xml:space="preserve">
+    <value>Failed to move the request.</value>
+  </data>
+  <data name="AuditTrails_FinishDictation" xml:space="preserve">
+    <value>Finished {0} dictation for {1} examination(s) ({2}). Next action: {3}.</value>
+  </data>
+  <data name="AuditTrails_OpenDictation" xml:space="preserve">
+    <value>Opened dictation page for {0} examination(s) ({1}).</value>
+  </data>
+  <data name="AuditTrails_StartDictation" xml:space="preserve">
+    <value>Started {0} dictation for {1} examination(s) ({2}).</value>
+  </data>
+  <data name="Authorization_WorkListFilters" xml:space="preserve">
+    <value>Authorization Work List Filters</value>
+  </data>
+  <data name="Button_BookManually" xml:space="preserve">
+    <value>Schedule Manually</value>
+  </data>
+  <data name="Button_BookOrder" xml:space="preserve">
+    <value>Schedule Automatically</value>
+  </data>
+  <data name="Button_BookOrderNow" xml:space="preserve">
+    <value>Schedule Now</value>
+  </data>
+  <data name="Button_CreateDummyPatient" xml:space="preserve">
+    <value>New Dummy Patient</value>
+  </data>
+  <data name="ClinicalInformationForExamination" xml:space="preserve">
+    <value>Examination</value>
+  </data>
+  <data name="ClinicalInformationForExamination_Long" xml:space="preserve">
+    <value>Clinical information for examination</value>
+  </data>
+  <data name="Column_AdvancedFilteredResults_ref_ReferringPhysicianName" xml:space="preserve">
+    <value>Referring Consultant</value>
+  </data>
+  <data name="Column_Examinations_ord_OrderID" xml:space="preserve">
+    <value>Request Number</value>
+  </data>
+  <data name="Column_Examinations_OrderID" xml:space="preserve">
+    <value>Request Number</value>
+  </data>
+  <data name="Column_Examinations_ordtyp_OrderTypeName" xml:space="preserve">
+    <value>Request Type</value>
+  </data>
+  <data name="Column_Orders_OrderID" xml:space="preserve">
+    <value>Request Number</value>
+  </data>
+  <data name="DictationPage_Configuration_OpenNext_Text" xml:space="preserve">
+    <value>When this is enabled the next dictation of the same request will be opened for dictation, otherwise the next in the work list.
+						If no completed examination is available you will be redirected to the work list.</value>
+  </data>
+  <data name="DictationPage_ConsultingSpecialistPatient" xml:space="preserve">
+    <value>Consulting Specialist Patient</value>
+  </data>
+  <data name="DictationPage_LoadMoreExaminations" xml:space="preserve">
+    <value>Load More Examinations</value>
+  </data>
+  <data name="DictationPage_OrderMemoLabel" xml:space="preserve">
+    <value>Request Memo:</value>
+  </data>
+  <data name="DictationPage_TextCantBeEmpty" xml:space="preserve">
+    <value>Text can't be empty.</value>
+  </data>
+  <data name="DictationPage_ViewOrder" xml:space="preserve">
+    <value>View Request</value>
+  </data>
+  <data name="DiscussionList_DiscussionLists" xml:space="preserve">
+    <value>MDTM List</value>
+  </data>
+  <data name="DiscussionList_WorkListFilters" xml:space="preserve">
+    <value>MDTM Work List Filters</value>
+  </data>
+  <data name="editOrder_EditingOrder" xml:space="preserve">
+    <value>Editing Request </value>
+  </data>
+  <data name="EditOrder_ManualPlanning" xml:space="preserve">
+    <value>Create manual planned order for </value>
+  </data>
+  <data name="EditOrder_SaveOrderFailed" xml:space="preserve">
+    <value>Failed to save the request</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_InvalidBehaviorMode" xml:space="preserve">
+    <value>This is not a new request, unable to book the examinations now.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_InvalidStatusExaminations" xml:space="preserve">
+    <value>The request can only be scheduled now when the examinations are in status {0}.</value>
+  </data>
+  <data name="EditOrder_ScheduleNow_UnexpectedError" xml:space="preserve">
+    <value>An unknown error occurred while trying to book the request now.</value>
+  </data>
+  <data name="EditOrder_ScheduleOrderNow" xml:space="preserve">
+    <value>Schedule request now</value>
+  </data>
+  <data name="EditOrder_ViewingOrder" xml:space="preserve">
+    <value>Viewing request</value>
+  </data>
+  <data name="exa_OrderID" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="frmPatients_CreatePatient" xml:space="preserve">
+    <value>Create a new patient</value>
+  </data>
+  <data name="frmPatients_EditPatient" xml:space="preserve">
+    <value>Editing a patient </value>
+  </data>
+  <data name="General_PrintMultiplePatientLabelsUnsupported" xml:space="preserve">
+    <value>You can only download one patient label at once.</value>
+  </data>
+  <data name="Housekeeping_WorkListFilters" xml:space="preserve">
+    <value>Housekeeping Work List Filters</value>
+  </data>
+  <data name="htDiscussions" xml:space="preserve">
+    <value>MDTM Lists</value>
+  </data>
+  <data name="Imaging_OrderMemo" xml:space="preserve">
+    <value>Request Memo</value>
+  </data>
+  <data name="Imaging_WorkListFilters" xml:space="preserve">
+    <value>Radiographer Work List Filters</value>
+  </data>
+  <data name="IntendedVetter" xml:space="preserve">
+    <value>Intended Vetter</value>
+  </data>
+  <data name="lblOrderMemo" xml:space="preserve">
+    <value>Request memo:</value>
+  </data>
+  <data name="LowProfileMaster_SearchOptions_OrderNumber" xml:space="preserve">
+    <value>Request Number</value>
+  </data>
+  <data name="ltOrderInformation" xml:space="preserve">
+    <value>Request Information</value>
+  </data>
+  <data name="ltApprover" xml:space="preserve">
+    <value>Approver</value>
+  </data>
+  <data name="ltDeleteOrder" xml:space="preserve">
+    <value>Cancel request</value>
+  </data>
+  <data name="ltDictateDigital" xml:space="preserve">
+    <value>Dictation</value>
+  </data>
+  <data name="ltDictateInteractive" xml:space="preserve">
+    <value>VR</value>
+  </data>
+  <data name="ltDiscussionList" xml:space="preserve">
+    <value>MDTM List</value>
+  </data>
+  <data name="ltEditOrder" xml:space="preserve">
+    <value>Edit request</value>
+  </data>
+  <data name="ltFor" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="ltGeneralPracticionerAddress" xml:space="preserve">
+    <value>General Practitioner Address</value>
+  </data>
+  <data name="ltImportOrder" xml:space="preserve">
+    <value>Import Request</value>
+  </data>
+  <data name="ltInactiveExaminations" xml:space="preserve">
+    <value>This request does contain inactive examinations and needs to be rescheduled.</value>
+  </data>
+  <data name="ltMoveOrder" xml:space="preserve">
+    <value>Move request</value>
+  </data>
+  <data name="ltNewOrder" xml:space="preserve">
+    <value>New Request</value>
+  </data>
+  <data name="ltNoOrdersFound" xml:space="preserve">
+    <value>No Requests found!</value>
+  </data>
+  <data name="ltOrderDate" xml:space="preserve">
+    <value>Request date</value>
+  </data>
+  <data name="ltOrderNumber" xml:space="preserve">
+    <value>Request number</value>
+  </data>
+  <data name="ltOrderSearch" xml:space="preserve">
+    <value>Request search:</value>
+  </data>
+  <data name="ltOrderSearchResult" xml:space="preserve">
+    <value>Request search result:</value>
+  </data>
+  <data name="ltOrderSearchToolTip" xml:space="preserve">
+    <value>Provide request number, patient name or patient ID.</value>
+  </data>
+  <data name="ltOrderType" xml:space="preserve">
+    <value>Request Type</value>
+  </data>
+  <data name="ltPatientSearchToolTip" xml:space="preserve">
+    <value>Provide patient name, patient ID, birthdate or request number.</value>
+  </data>
+  <data name="ltProductionPerExaminationTypeForModality" xml:space="preserve">
+    <value>Total production per request type</value>
+  </data>
+  <data name="ltReferringPhysician" xml:space="preserve">
+    <value>Referrer</value>
+  </data>
+  <data name="ltRequestingLocation" xml:space="preserve">
+    <value>Requesting Location</value>
+  </data>
+  <data name="ltRequestingSite" xml:space="preserve">
+    <value>Hospital Location</value>
+  </data>
+  <data name="ltSchedule" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="ltSocialSecurityNumber" xml:space="preserve">
+    <value>NHS number</value>
+  </data>
+  <data name="ltTechnician" xml:space="preserve">
+    <value>Radiographer</value>
+  </data>
+  <data name="ltTextDictation" xml:space="preserve">
+    <value>Typing</value>
+  </data>
+  <data name="ltTextProtocol" xml:space="preserve">
+    <value>Free Text Protocol</value>
+  </data>
+  <data name="ltUseAuthorisationDate" xml:space="preserve">
+    <value>Use authorisation date</value>
+  </data>
+  <data name="ltUseScheduleDate" xml:space="preserve">
+    <value>Use schedule date</value>
+  </data>
+  <data name="ord_OrderID" xml:space="preserve">
+    <value>Request Number</value>
+  </data>
+  <data name="order" xml:space="preserve">
+    <value>Can not schedule the examinations, the request can not be planned in one location.</value>
+  </data>
+  <data name="Order_Number" xml:space="preserve">
+    <value>Request Number</value>
+  </data>
+  <data name="OrderApproval_OrdersPending" xml:space="preserve">
+    <value>Requests Pending</value>
+  </data>
+  <data name="OrderApproval_WorkListFilters" xml:space="preserve">
+    <value>Vetting Work List Filters</value>
+  </data>
+  <data name="OrderBooking_OrderDetails" xml:space="preserve">
+    <value>Request Details:</value>
+  </data>
+  <data name="OrderBooking_Title" xml:space="preserve">
+    <value>Manual Booking</value>
+  </data>
+  <data name="OrderBooking_WorkListFilters" xml:space="preserve">
+    <value>Appointment Work List Filters</value>
+  </data>
+  <data name="ordtyp_OrderTypeID" xml:space="preserve">
+    <value>Request type</value>
+  </data>
+  <data name="ordtyp_OrderTypeName" xml:space="preserve">
+    <value>Request type</value>
+  </data>
+  <data name="PageTitle_OrderApproval" xml:space="preserve">
+    <value>Request Vetting</value>
+  </data>
+  <data name="PatientDetailsControl_PatientSearchButton" xml:space="preserve">
+    <value>Show patient request details</value>
+  </data>
+  <data name="PatientSearch_FilterOrders" xml:space="preserve">
+    <value>Filter The Requests</value>
+  </data>
+  <data name="PatientSearch_Operator" xml:space="preserve">
+    <value>Radiographer</value>
+  </data>
+  <data name="PatientSearch_OrderNumber" xml:space="preserve">
+    <value>request number</value>
+  </data>
+  <data name="PatientSearch_PatientCategory" xml:space="preserve">
+    <value>Category Type at Request</value>
+  </data>
+  <data name="phyrepcop_OrderID" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="Popup_Report" xml:space="preserve">
+    <value>Popup report</value>
+  </data>
+  <data name="ProtocolAssignment_WorkListFilters" xml:space="preserve">
+    <value>Protocol Assignment Work List Filters</value>
+  </data>
+  <data name="ReceptionLow_LabelLastExaminations" xml:space="preserve">
+    <value>Last Examinations</value>
+  </data>
+  <data name="Ref_Referring_Physician_Department" xml:space="preserve">
+    <value>Referring Consultant Department</value>
+  </data>
+  <data name="Ref_Referring_Physician_Description" xml:space="preserve">
+    <value>Referring Consultant Description</value>
+  </data>
+  <data name="Ref_Referring_Physician_Name" xml:space="preserve">
+    <value>Referring Consultant Name</value>
+  </data>
+  <data name="Ref_Referring_Physician_Type" xml:space="preserve">
+    <value>Referring Consultant Type</value>
+  </data>
+  <data name="ref_ReferringPhysicianDepartment" xml:space="preserve">
+    <value>Referring Consultant Department</value>
+  </data>
+  <data name="ref_ReferringPhysicianDescription" xml:space="preserve">
+    <value>Referring Consultant Description</value>
+  </data>
+  <data name="ref_ReferringPhysicianID" xml:space="preserve">
+    <value>Referring ConsultantID</value>
+  </data>
+  <data name="ref_ReferringPhysicianName" xml:space="preserve">
+    <value>Referring Consultant</value>
+  </data>
+  <data name="ref_ReferringPhysicianType" xml:space="preserve">
+    <value>Referring Consultant Type</value>
+  </data>
+  <data name="Referring_Physician" xml:space="preserve">
+    <value>Referring Consultant</value>
+  </data>
+  <data name="RefReferringPhysician" xml:space="preserve">
+    <value>Referring ConsultantID</value>
+  </data>
+  <data name="Report_Addendum" xml:space="preserve">
+    <value>Addendum</value>
+  </data>
+  <data name="Report_Authorised" xml:space="preserve">
+    <value>Primary report</value>
+  </data>
+  <data name="Report_Preliminary" xml:space="preserve">
+    <value>Preliminary</value>
+  </data>
+  <data name="RoomPopupControl_PrintPatientLabelConfirmationFailed" xml:space="preserve">
+    <value>Appointment has been made but patient label could not be printed.
+Please contact your system administrator.</value>
+  </data>
+  <data name="ShowRooms" xml:space="preserve">
+    <value>Show rooms</value>
+  </data>
+  <data name="smDiscussion" xml:space="preserve">
+    <value>MDTM</value>
+  </data>
+  <data name="smManagement" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="smOrderApproval" xml:space="preserve">
+    <value>Vetting</value>
+  </data>
+  <data name="smOrderBooking" xml:space="preserve">
+    <value>Appointments</value>
+  </data>
+  <data name="smOrderTypes" xml:space="preserve">
+    <value>Request Types</value>
+  </data>
+  <data name="smReferringPhysicians" xml:space="preserve">
+    <value>Referring Consultants</value>
+  </data>
+  <data name="smSecretaries" xml:space="preserve">
+    <value>Receptionists</value>
+  </data>
+  <data name="StatusChangeForm_InDepartment_FirstAssignee" xml:space="preserve">
+    <value>Clerical</value>
+  </data>
+  <data name="Tab_NormalOrders" xml:space="preserve">
+    <value>Normal orders</value>
+  </data>
+  <data name="Tab_OnHoldOrders" xml:space="preserve">
+    <value>On hold orders</value>
+  </data>
+  <data name="Transcription_WorkListFilters" xml:space="preserve">
+    <value>Transcription Work List Filters</value>
+  </data>
+  <data name="Work_Location" xml:space="preserve">
+    <value>Work location</value>
+  </data>
+  <data name="Worklist_AllLocations" xml:space="preserve">
+    <value>All Locations</value>
+  </data>
+  <data name="Worklist_AllRoom" xml:space="preserve">
+    <value>All Rooms</value>
+  </data>
+  <data name="Worklist_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="WorkListFilter_DateRange" xml:space="preserve">
+    <value>Date Range</value>
+  </data>
+  <data name="WorkListFilter_ModalityType" xml:space="preserve">
+    <value>Modality Type</value>
+  </data>
+  <data name="WorkListFilter_Radiologist" xml:space="preserve">
+    <value>Radiologist</value>
+  </data>
+  <data name="WorkListFilter_RelativeDate" xml:space="preserve">
+    <value>Date Range (last X days)</value>
+  </data>
+  <data name="WorkListFilter_Rooms" xml:space="preserve">
+    <value>Rooms</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_Approved" xml:space="preserve">
+    <value>Vetted</value>
+  </data>
+  <data name="WorkListFilter_AnyApproved" xml:space="preserve">
+    <value>Any vetted</value>
+  </data>
+  <data name="ReceptionLow_ExaminationType_Waiting" xml:space="preserve">
+    <value>Requested</value>
+  </data>
+  <data name="WorkListFilter_AllWaiting" xml:space="preserve">
+    <value>All requested or cancelled</value>
+  </data>
+  <data name="DigitalQandA" xml:space="preserve">
+    <value>Q&amp;A</value>
+  </data>
+  <data name="DigitalQandAForExamination" xml:space="preserve">
+    <value>Q&amp;A for the examination</value>
+  </data>
+  <data name="DigitalQandAForOrder" xml:space="preserve">
+    <value>Q&amp;A for the request</value>
+  </data>
+</root>

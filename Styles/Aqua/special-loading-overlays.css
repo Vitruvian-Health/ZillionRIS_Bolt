@@ -1,0 +1,12 @@
+﻿.loading-overlay-message.loading-page { -moz-animation: loading-overlay-message-glow 5s infinite ease; -webkit-animation: loading-overlay-message-glow 5s infinite ease; animation: loading-overlay-message-glow 5s infinite ease; border-radius: 3px; padding: 4px; }
+.loading-overlay-message.loading-page div { background: #fff url('Images/Page-Loading.gif') no-repeat 50% 20px; border-radius: 3px; font: normal 14px tahoma, arial, helvetica, sans-serif; min-width: 80px; padding: 90px 10px 10px 10px; }
+
+.loading-overlay.disabled-overlay { z-index: 2; background: url('/Styles/ZillionParts/Images/trans_blue.gif'); }
+.loading-overlay.disabled-overlay .loading-overlay-message { border:1px solid #CA7777;box-shadow:0 0 5px #CA7777;background:#CA7777;background-size:100% 40px;padding:2px} 
+.loading-overlay.disabled-overlay .loading-overlay-message div { background:#fff;border:1px solid #c00;color:#222;cursor:wait;font:normal 11px tahoma,arial,helvetica,sans-serif;line-height:20px;padding:10px 40px 10px 60px;text-align:center}
+
+.loading-overlay.schedule-overlay { z-index: 2; }
+
+.loading-overlay.in-front { z-index: 10000 }
+.loading-overlay.in-front .loading-overlay-message { z-index: 10001 }
+.loading-overlay.in-front .loading-overlay-message div { z-index: 10001 }

@@ -1,0 +1,9 @@
+﻿[
+  {
+    "outputFile": "Styles/Site.css",
+    "inputFile": "Styles/Site.scss",
+    "options": {
+      "sourceMap": true
+    }
+  }
+]

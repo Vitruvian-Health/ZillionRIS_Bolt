@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="../Scripts/jquery.min.js"></script>
+        <script src="../Scripts/jquery-migrate.js"></script>
+        <script src="../Scripts/jquery-ui.min.js"></script>
+        <script src="../Scripts/zillion-parts.min.js"> </script>
+        <script src="../ScriptLibrary/support.js"> </script>
+        <script src="../ScriptLibrary/eventsource.js"> </script>
+        <style>
+            #Messages { border: 1px solid #f0f0f0 }
+
+            #Messages > div {
+                border-bottom: 1px solid #f0f0f0;
+                margin: 0 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background: #f0f0f0">
+            Test Button: 
+            <span id="TestButtons"></span>
+        </div>
+        <div id="Messages">
+            
+        </div>
+        <script>
+            $(function() {
+                var testActionLinks = ['Record', 'Play', 'Stop', 'PlayStopToggle', 'FastRewind', 'FastForward', 'Eol', 'Cancel', 'Function1', 'Function2', 'Function3']
+                    .qSelect(function(x) {
+                        return $('<button></button>', {
+                            text: x
+                        })
+                            .mousedown(function() { ScriptServer.SpeechMike.TestButton({ action: x, pressed: true }); })
+                            .mouseup(function() { ScriptServer.SpeechMike.TestButton({ action: x, pressed: false }); })[0];
+                    });
+                $('#TestButtons').append($(testActionLinks));
+
+                ConnectSpeechMike(function(button) {
+                    button = button.action + ' : ' + button.pressed;
+                    $('<div></div>', { text: button }).prependTo('#Messages');
+                }).then(function() {
+                    $('<div></div>', { text: 'Connected!' }).appendTo('#Messages');
+                }, function() {
+                    $('<div></div>', { text: 'Error connecting to the Script Server / Speech Mike service.' }).appendTo('#Messages');
+                });
+            });
+        </script>
+    </body>
+</html>

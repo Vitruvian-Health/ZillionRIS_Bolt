@@ -1,0 +1,22 @@
+﻿{
+  "version": "2.0.2",
+  "output": "Warning",
+  "ignore": [
+    "\\Scripts\\"
+  ],
+  "options": {
+    "bitwise": true,
+    "browser": true,
+    "couch": false,
+    "devel": true,
+    "es6": false,
+    "eval": true,
+    "for": true,
+    "node": false,
+    "this": true,
+    "white": true
+  },
+  "globalVariables": [],
+  "runOnSave": true,
+  "runOnBuild": true
+}

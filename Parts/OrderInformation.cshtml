@@ -1,0 +1,196 @@
+﻿@using Rogan.ZillionRis.Business
+@using Rogan.ZillionRis.Configuration
+@using Rogan.ZillionRis.Extensibility.Audit
+@using Rogan.ZillionRis.Extensibility.Security
+@using Rogan.ZillionRis.WebControls.Common
+@using Rogan.ZillionRis.Website.App_GlobalResources
+
+@inherits ASP.RisRazorBase
+@{
+    InitializeCulture();
+
+    if (Application.UserHasPermission(UserPermissions.ViewExaminations) == false)
+    {
+        @WebResources.OrderDetails_NoPermission
+        return;
+    }
+
+    if (string.IsNullOrEmpty(Application.Request.Params["id"]))
+    {
+        throw new Exception("Something went wrong. Please try again.");
+    }
+    Database.ContextOptions.LazyLoadingEnabled = true;
+
+    var orderID = Convert.ToInt32(Application.Request.Params["id"]);
+
+    var order = Database.Orders.FirstOrDefault(item => item.ord_OrderID == orderID);
+    if (order == null)
+    {
+        <text>The order could not be found.</text>
+    }
+    else
+    {
+        var context = Application.GetSessionContext();
+        var auditor = context.Get<IAuditor>();
+        if (auditor == null)
+        {
+            throw new ApplicationException("Auditor could not be found.");
+        }
+        
+        var examinations = order.Examinations;
+        var referralPage = Application.Request.Params["referralPage"];
+        var auditContext = new AuditContext { Order = order, Patient = order.Patient };
+        auditor.LogView(referralPage, auditContext, new
+        {
+            Content = "OrderInformation",
+            Examinations = examinations.Select(e => new
+            {
+                AccessionNumber = e.Studies.Select(s => s.stu_AccessionNumber).FirstOrDefault(),
+                ExaminationStatus = e.Status.exasta_StatusID
+            }).ToArray()
+        });
+                
+        <table class="details-table line-spacing-normal" style="width: 100%">
+            <tr>
+                <td style="width: 30%" class="label">
+                    @WebResources.Order_Number:
+                </td>         
+                <td>            
+                    @order.ord_OrderNumber
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%" class="label">
+                    @WebResources.Urgency:
+                </td>
+                <td>    
+                    @if (order.Urgency == null)
+                    {
+                        @:-
+                    }
+                    else
+                    {
+                        @order.Urgency.urg_UrgencyName
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%" class="label">
+                    @WebResources.ltRequestingLocation:
+                </td>
+                <td>    
+                    @if (order.RequesterLocation == null)
+                    {
+                        @:-
+                    }
+                    else
+                    {
+                        @order.RequesterLocation.reqloc_Description
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr/></td>
+            </tr>
+            <tr>
+                <td style="width: 30%" class="label">
+                    @WebResources.Referral_Type:
+                </td>
+                <td>
+                    @if (order.ReferralType == null)
+                    {
+                        @:-
+                    }
+                    else
+                    {
+                        @order.ReferralType.reftyp_ReferralTypeName
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%" class="label">
+                    @WebResources.Referring_Physician:
+                </td>
+                <td>   
+                    @if (order.RequestingPhysician == null)
+                    {
+                        @:-
+                    }
+                    else
+                    {
+                        @order.RequestingPhysician.Person.per_DisplayName
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 30%" class="label">
+                    @WebResources.ltReferringWorkLocation:
+                </td>
+                <td>     
+                    @if (order.RequestingWorkLocation == null)
+                    {
+                        @:-
+                    }
+                    else
+                    {
+                        @order.RequestingWorkLocation.Practice.pra_Description
+                        <br/>
+                        @order.RequestingWorkLocation.worloc_Address
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><hr/></td>
+            </tr>
+            <tr>
+                <td style="width: 30%" class="label">
+                    @WebResources.ltClinicalInformation:
+                </td>
+                <td style="word-wrap: break-word; overflow: auto">
+                    @if (RisAppSettings.ClinicalInformationOnExaminationLevel)
+                    {
+                        var examClinicalInfoList = order.Examinations.Where(e => e.ClinicalInformation != null)
+                            .Select(e => new
+                            {
+                                ExaminationTypeName = e.ExaminationType.exatyp_Laterality == false || e.exa_Laterality == null
+                                    ? e.ExaminationType.exatyp_ExaminationTypeName
+                                    : e.ExaminationType.exatyp_ExaminationTypeName + " (" + e.exa_Laterality + ")",
+                                ClinicalInformation = e.ClinicalInformation.GetChildText(context.DataContext, true, "\r\n"),
+                            })
+                            .ToList();
+
+                        if (examClinicalInfoList.Count == 0)
+                        {
+                            @:-
+                        }
+                        else
+                        {
+                            foreach (var examClinicalInfo in examClinicalInfoList)
+                            {
+                                <div style="font-weight: 500;">
+                                    @WebResources.ClinicalInformationForExamination @examClinicalInfo.ExaminationTypeName:
+                                </div>
+                                <div style="margin-bottom: 5px;">
+                                    @examClinicalInfo.ClinicalInformation.ToHtmlEncodedText()
+                                </div>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        var orderClinicalInfo = order.MedicalIndication.GetChildText(context.DataContext, true, "\r\n");
+
+                        if (string.IsNullOrEmpty(orderClinicalInfo))
+                        {
+                            @:-
+                        }
+                        else
+                        {
+                            @orderClinicalInfo.ToHtmlEncodedText()
+                        }
+                    }
+                </td>
+            </tr>
+        </table>
+    }
+}

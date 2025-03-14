@@ -1,0 +1,348 @@
+﻿@import 'Animation';
+
+#Document {
+	min-height: 400px;
+	min-width: 1024px;
+	/*position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;*/
+}
+
+#DocumentHeader {
+	background: #e0e8f8;
+	border-bottom: 1px solid #bce;
+	box-shadow: 0 2px 8px rgba(178, 204, 238, 0.5);
+	height: 120px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.x-training {
+	#DocumentHeader:before {
+		background: #060;
+		bottom: 0;
+		color: #cfc;
+		content: 'Training Environment';
+		font: bold 15px/20px 'Segoe UI';
+		padding: 2px 10px;
+		position: absolute;
+	}
+}
+
+.x-test {
+	#DocumentHeader:before {
+		background: #060;
+		bottom: 0;
+		color: #cfc;
+		content: 'Test Environment';
+		font: bold 15px/20px 'Segoe UI';
+		padding: 2px 10px;
+		position: absolute;
+	}
+}
+
+.x-live {
+	#DocumentHeader:before {
+		background: #f00;
+		bottom: 0;
+		color: #fff;
+		content: 'Live Environment';
+		font: bold 15px/20px 'Segoe UI';
+		padding: 2px 10px;
+		position: absolute;
+	}
+}
+
+.x-acceptance {
+	#DocumentHeader:before {
+		background: #f80;
+		bottom: 0;
+		color: #fff;
+		content: 'Acceptance Environment';
+		font: bold 15px/20px 'Segoe UI';
+		padding: 2px 10px;
+		position: absolute;
+	}
+}
+
+.x-beta {
+	#DocumentHeader:before {
+		background: #00f;
+		bottom: 0;
+		color: #fff;
+		content: 'Beta Version';
+		font: bold 15px/20px 'Segoe UI';
+		padding: 2px 10px;
+		position: absolute;
+	}
+}
+
+.x-cibuild-1h {
+	#DocumentHeader:before {
+		animation: pulseFadeIn 0.5s ease;
+		background: #000;
+		border-radius: 2px;
+		bottom: 10px;
+		box-shadow: 1px 1px 0px 0px #888;
+		color: #fff;
+		content: 'Builds Every Hour';
+		font: normal 12px/19px monospace;
+		left: 10px;
+		letter-spacing: 4px;
+		padding-left: 20px;
+		padding-right: 5px;
+		position: absolute;
+		text-shadow: -1px -1px 1px #ccc,1px 0px 1px #444;
+		-webkit-animation: pulseFadeIn 0.5s ease;
+		-webkit-transform-origin: 75% -400px;
+		z-index: -1;
+	}
+}
+
+#Logo {
+	left: 5px;
+	position: absolute;
+	text-align: center;
+	top: 15px;
+	width: 230px;
+}
+
+#Logo img {
+	border: none;
+}
+
+#SysMenu {
+	position: absolute;
+	right: 180px;
+	top: 20px;
+	z-index: 1;
+}
+
+#Title {
+	color: #6090B0;
+	left: 10px;
+	line-height: 40px;
+	position: absolute;
+	top: 80px;
+}
+
+#Title .Label {
+	font-size: 2em;
+	font-weight: bold;
+	height: 100%;
+}
+
+#PatientBanner {
+	left: 250px;
+	overflow: visible;
+	position: absolute;
+	right: 220px;
+	top: 5px;
+	z-index: 3;
+}
+
+#SearchBox {
+	background-color: Transparent;
+	bottom: 10px;
+	font-size: 15px;
+	left: auto;
+	line-height: 22px;
+	position: absolute;
+	right: 20px;
+	z-index: 3;
+
+	.search-seperator {
+		color: #8090c0;
+		margin: 0 10px;
+	}
+}
+
+#PatientSearchInput {
+	text-overflow: ellipsis;
+	transition: width 100ms ease-in,background 100ms ease-in;
+	-webkit-transition: width 100ms ease-in,background 100ms ease-in;
+	width: 100px;
+}
+
+#PatientSearchInput:focus {
+	width: 180px;
+}
+
+#PatientSearchOptions.ui-menu {
+	padding: 1px 2px;
+	position: absolute;
+	right: 0;
+	top: 27px;
+	width: 180px;
+}
+
+.search-input {
+	background: #fff url("Images/Search-Grey.png") no-repeat 4px 50% !important;
+	background: rgba(255, 255, 255, 0.5) url("Images/Search-Grey.png") no-repeat 4px 50% !important;
+	border-radius: 11px !important;
+	height: 24px !important;
+	line-height: 24px !important;
+	text-indent: 26px !important;
+}
+
+.search-input:focus {
+	background: #fff url("Images/Search-Grey.png") no-repeat 4px 50% !important;
+}
+
+ul.system-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+li.system-menu-item {
+	float: left;
+	height: 28px;
+	margin: 0;
+	padding: 0;
+}
+
+#Navigation {
+	bottom: 0;
+	height: 60px;
+	left: 250px;
+	overflow: visible;
+	overflow: hidden;
+	position: absolute;
+	right: 220px;
+	z-index: 0;
+}
+
+#Content {
+	margin: 140px 20px 20px 20px;
+	/*position: relative;*/
+}
+
+#Content.content-maximized {
+	margin: 120px 0 0 0;
+}
+
+#Content.with-button-bottom-bar {
+	padding-bottom: 45px !important;
+}
+
+#CurrentTime {
+	font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	line-height: 20px;
+	position: fixed;
+	right: 20px;
+	top: 10px;
+	width: 200px;
+}
+
+#CurrentTime .mct, #CurrentTime .mcd {
+	clear: both;
+	float: right;
+}
+
+#CurrentTime .mct {
+	color: #666;
+	float: right;
+	font-size: 25px;
+}
+
+#CurrentTime .mcd {
+	color: #888;
+	float: right;
+	font-size: 14px;
+}
+/* Zillion RIS/System Menu */
+#LogoAlertCount {
+	position: absolute;
+	right: 20px;
+	top: -5px;
+}
+
+.alert-count-icon {
+	background: #f00;
+	border: 1px solid #f00;
+	border-radius: 7px;
+	color: #fff;
+	display: block;
+	font-family: sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	width: 14px;
+}
+
+.logo-image {
+	background: url(Images/logo_zillion.PNG);
+	height: 36px;
+	margin: auto;
+	width: 150px;
+}
+
+.logo-image-alert {
+	@extend .animation-notification-fadeinout;
+	background: url(Images/logo_zillion_alert.png);
+}
+
+.logo-popup {
+	background: #e5eeff;
+	border-radius: 4px;
+	box-shadow: 2px 2px 6px -3px rgba(0, 0, 0, 0.5), inset 1px 1px 3px rgba(255, 255, 255, 0.8);
+	box-sizing: border-box;
+	font-size: 10pt;
+	position: absolute;
+	width: 230px;
+	z-index: 100;
+}
+.logo-popup > div {
+	padding: 3px;
+	padding-top: 8px;
+}
+
+.logo-popup hr {
+	background: #AECAF0;
+}
+
+.logo-session-information {
+	background: #ebf2ff;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.logo-alert-container {
+	background: #ebf2ff;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.logo-alert-list {}
+
+.logo-alert-container .section-title {
+	color: #c00;
+	font-weight: bold;
+}
+
+.logo-alert-item {
+	text-indent: 1em;
+}
+
+.logo-alert-item .ui-link {
+	color: #600;
+}
+
+.logo-alert-item .ui-link:hover {
+	color: #a00;
+}
+
+.logo-menu-list {}
+
+.logo-menu-list .btn {
+	margin: 2px 0;
+	width: 100%;
+}
