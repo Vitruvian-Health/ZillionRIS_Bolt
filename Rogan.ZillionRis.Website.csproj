@@ -1226,10 +1226,10 @@
   <Target Name="NpmInstall" BeforeTargets="BeforeBuild">
     <Exec Command="npm install" />
   </Target>
-  <Target Name="CopyNpmDependencies" AfterTargets="NpmInstall">
+  <!--<Target Name="CopyNpmDependencies" AfterTargets="NpmInstall">
     <ItemGroup>
       <!-- Script folder -->
-      <AngularFiles Include="node_modules\angular\angular*.js;node_modules\angular\angular.min.js.map" />
+      <!--<AngularFiles Include="node_modules\angular\angular*.js;node_modules\angular\angular.min.js.map" />
       <AngularAnimateFiles Include="node_modules\angular-animate\angular-animate*.js*" />
       <AngularMocksFiles Include="node_modules\angular-mocks\angular-mocks.js" />
       <JqueryFiles Include="node_modules\jquery\dist\*.*" />
